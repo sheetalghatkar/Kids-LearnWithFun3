@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TestSolveCollectionCell" id="gTV-IL-0wX" customClass="TestSolveCollectionCell" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8T-p0-UXW" userLabel="View1" customClass="UIViewExtend" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="112.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" tag="1000" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVK-06-uX2" userLabel="Image View1" customClass="RoundImageView" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="3" y="3" width="106.5" height="106.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="height" multiplier="1:1" id="rNK-Qo-Dk2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right-Sign" translatesAutoresizingMaskIntoConstraints="NO" id="kiJ-pn-22L">
+                        <rect key="frame" x="3" y="3" width="106.5" height="106.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kiJ-pn-22L" secondAttribute="height" multiplier="1:1" id="FD4-oW-3hi"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-9B-oBc" userLabel="View2" customClass="UIViewExtend" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="120.5" y="0.0" width="112.5" height="112.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" tag="1001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xtf-gZ-u5I" userLabel="Image View2" customClass="RoundImageView" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="123.5" y="3" width="106.5" height="106.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xtf-gZ-u5I" secondAttribute="height" multiplier="1:1" id="cd6-iZ-2NE"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right-Sign" translatesAutoresizingMaskIntoConstraints="NO" id="Put-ct-laN">
+                        <rect key="frame" x="123.5" y="3" width="106.5" height="106.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Put-ct-laN" secondAttribute="height" multiplier="1:1" id="4d8-fm-ngn"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZn-wW-Qmd" userLabel="View3" customClass="UIViewExtend" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="119.5" width="112.5" height="112.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" tag="1002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWX-aB-jJ1" userLabel="Image View3" customClass="RoundImageView" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="3" y="122.5" width="106.5" height="106.5"/>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right-Sign" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-qQ-UQZ">
+                        <rect key="frame" x="3" y="122.5" width="106.5" height="106.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sPg-qQ-UQZ" secondAttribute="height" multiplier="1:1" id="1eV-Xk-P7c"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djo-ZN-rw1" userLabel="View4" customClass="UIViewExtend" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="120.5" y="119.5" width="112.5" height="112.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" tag="1003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-E6-tKi" userLabel="Image View4" customClass="RoundImageView" customModule="Kids_LearnWithFun1" customModuleProvider="target">
+                        <rect key="frame" x="123.5" y="122.5" width="106.5" height="106.5"/>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Right-Sign" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-ch-TuS">
+                        <rect key="frame" x="123.5" y="122.5" width="106.5" height="106.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="q7B-ch-TuS" secondAttribute="height" multiplier="1:1" id="VO9-mf-WHx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Put-ct-laN" firstAttribute="width" secondItem="kiJ-pn-22L" secondAttribute="width" multiplier="1:1" id="1dH-H9-5th"/>
+                <constraint firstItem="sPg-qQ-UQZ" firstAttribute="centerY" secondItem="VWX-aB-jJ1" secondAttribute="centerY" id="2n9-Kt-l0f"/>
+                <constraint firstItem="Djo-ZN-rw1" firstAttribute="height" secondItem="v8T-p0-UXW" secondAttribute="height" id="5F0-vt-86x"/>
+                <constraint firstAttribute="trailing" secondItem="xtf-gZ-u5I" secondAttribute="trailing" constant="3" id="7Ah-NB-Kf9"/>
+                <constraint firstItem="v8T-p0-UXW" firstAttribute="height" secondItem="YVK-06-uX2" secondAttribute="height" multiplier="1:1" constant="6" id="A4f-32-ohh"/>
+                <constraint firstItem="YVK-06-uX2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Baw-j8-dOz"/>
+                <constraint firstItem="Put-ct-laN" firstAttribute="centerY" secondItem="xtf-gZ-u5I" secondAttribute="centerY" id="Dmc-1C-NtW"/>
+                <constraint firstItem="IZn-wW-Qmd" firstAttribute="leading" secondItem="v8T-p0-UXW" secondAttribute="leading" id="ETX-6R-meN"/>
+                <constraint firstItem="q7B-ch-TuS" firstAttribute="centerX" secondItem="1Lh-E6-tKi" secondAttribute="centerX" id="FNp-vN-sCo"/>
+                <constraint firstItem="kiJ-pn-22L" firstAttribute="centerX" secondItem="YVK-06-uX2" secondAttribute="centerX" id="GzT-qa-zoN"/>
+                <constraint firstItem="Djo-ZN-rw1" firstAttribute="trailing" secondItem="F2g-9B-oBc" secondAttribute="trailing" id="HFi-St-eiv"/>
+                <constraint firstItem="v8T-p0-UXW" firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="width" multiplier="1:1" constant="6" id="IXd-Mo-BOO"/>
+                <constraint firstItem="xtf-gZ-u5I" firstAttribute="top" secondItem="YVK-06-uX2" secondAttribute="top" id="KUL-Vi-o9l"/>
+                <constraint firstItem="F2g-9B-oBc" firstAttribute="height" secondItem="v8T-p0-UXW" secondAttribute="height" id="KyC-tl-hoa"/>
+                <constraint firstItem="VWX-aB-jJ1" firstAttribute="top" secondItem="YVK-06-uX2" secondAttribute="bottom" constant="13" id="LBh-1u-h30"/>
+                <constraint firstItem="F2g-9B-oBc" firstAttribute="trailing" secondItem="xtf-gZ-u5I" secondAttribute="trailing" constant="3" id="MrA-j5-hCw"/>
+                <constraint firstItem="sPg-qQ-UQZ" firstAttribute="centerX" secondItem="VWX-aB-jJ1" secondAttribute="centerX" id="OZ1-qA-EyB"/>
+                <constraint firstItem="sPg-qQ-UQZ" firstAttribute="width" secondItem="sPg-qQ-UQZ" secondAttribute="height" multiplier="1:1" id="QJb-mf-6Iw"/>
+                <constraint firstItem="IZn-wW-Qmd" firstAttribute="width" secondItem="v8T-p0-UXW" secondAttribute="width" id="Vhe-gZ-1Mv"/>
+                <constraint firstItem="VWX-aB-jJ1" firstAttribute="leading" secondItem="YVK-06-uX2" secondAttribute="leading" id="XgU-qx-Kg0"/>
+                <constraint firstItem="kiJ-pn-22L" firstAttribute="centerY" secondItem="YVK-06-uX2" secondAttribute="centerY" id="Xkm-IM-AF5"/>
+                <constraint firstItem="1Lh-E6-tKi" firstAttribute="height" secondItem="YVK-06-uX2" secondAttribute="height" multiplier="1:1" id="Yjk-aM-cKQ"/>
+                <constraint firstItem="Put-ct-laN" firstAttribute="width" secondItem="Put-ct-laN" secondAttribute="height" multiplier="1:1" id="ZHv-VB-Kbp"/>
+                <constraint firstItem="Djo-ZN-rw1" firstAttribute="width" secondItem="v8T-p0-UXW" secondAttribute="width" id="afy-KN-P0U"/>
+                <constraint firstItem="1Lh-E6-tKi" firstAttribute="top" secondItem="VWX-aB-jJ1" secondAttribute="top" id="bRO-5t-Z5C"/>
+                <constraint firstItem="YVK-06-uX2" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1:2" constant="-10" id="brn-N0-NMS"/>
+                <constraint firstItem="q7B-ch-TuS" firstAttribute="centerY" secondItem="1Lh-E6-tKi" secondAttribute="centerY" id="c1b-9i-eDJ"/>
+                <constraint firstItem="F2g-9B-oBc" firstAttribute="top" secondItem="v8T-p0-UXW" secondAttribute="top" id="cVe-Ma-ykk"/>
+                <constraint firstItem="YVK-06-uX2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="csZ-AV-Ukq"/>
+                <constraint firstItem="IZn-wW-Qmd" firstAttribute="top" secondItem="VWX-aB-jJ1" secondAttribute="top" constant="-3" id="eJK-Jc-jjw"/>
+                <constraint firstItem="F2g-9B-oBc" firstAttribute="width" secondItem="v8T-p0-UXW" secondAttribute="width" id="f7W-54-2mA"/>
+                <constraint firstItem="q7B-ch-TuS" firstAttribute="width" secondItem="q7B-ch-TuS" secondAttribute="height" multiplier="1:1" id="jd5-YD-XHJ"/>
+                <constraint firstItem="v8T-p0-UXW" firstAttribute="leading" secondItem="YVK-06-uX2" secondAttribute="leading" constant="-3" id="klh-xF-JqR"/>
+                <constraint firstItem="IZn-wW-Qmd" firstAttribute="height" secondItem="v8T-p0-UXW" secondAttribute="height" id="n2v-99-0xw"/>
+                <constraint firstItem="VWX-aB-jJ1" firstAttribute="height" secondItem="YVK-06-uX2" secondAttribute="height" multiplier="1:1" id="oiE-B9-oKM"/>
+                <constraint firstItem="VWX-aB-jJ1" firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="width" multiplier="1:1" id="pPE-ZJ-qCg"/>
+                <constraint firstItem="Djo-ZN-rw1" firstAttribute="top" secondItem="IZn-wW-Qmd" secondAttribute="top" id="qwV-X4-jsa"/>
+                <constraint firstItem="q7B-ch-TuS" firstAttribute="width" secondItem="kiJ-pn-22L" secondAttribute="width" multiplier="1:1" id="ry2-fj-rLf"/>
+                <constraint firstItem="sPg-qQ-UQZ" firstAttribute="width" secondItem="kiJ-pn-22L" secondAttribute="width" multiplier="1:1" id="tHa-8I-LSl"/>
+                <constraint firstItem="v8T-p0-UXW" firstAttribute="top" secondItem="YVK-06-uX2" secondAttribute="top" constant="-3" id="u6p-aK-8qO"/>
+                <constraint firstItem="1Lh-E6-tKi" firstAttribute="trailing" secondItem="xtf-gZ-u5I" secondAttribute="trailing" id="vF0-mo-WVl"/>
+                <constraint firstItem="xtf-gZ-u5I" firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="width" multiplier="1:1" id="xtb-OI-200"/>
+                <constraint firstItem="kiJ-pn-22L" firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="width" multiplier="1:1" id="y3E-Bc-sAq"/>
+                <constraint firstItem="Put-ct-laN" firstAttribute="centerX" secondItem="xtf-gZ-u5I" secondAttribute="centerX" id="z7L-r0-HaD"/>
+                <constraint firstItem="1Lh-E6-tKi" firstAttribute="width" secondItem="YVK-06-uX2" secondAttribute="width" multiplier="1:1" id="ziJ-so-Yn1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="233" height="280"/>
+            <connections>
+                <outlet property="imgViewCard1" destination="YVK-06-uX2" id="O0U-Zc-DbY"/>
+                <outlet property="imgViewCard2" destination="xtf-gZ-u5I" id="tFJ-9K-FKm"/>
+                <outlet property="imgViewCard3" destination="VWX-aB-jJ1" id="ncY-PO-BW2"/>
+                <outlet property="imgViewCard4" destination="1Lh-E6-tKi" id="aTZ-rl-yga"/>
+                <outlet property="statusSignImgView1" destination="kiJ-pn-22L" id="sKD-VS-RDp"/>
+                <outlet property="statusSignImgView2" destination="Put-ct-laN" id="oQ2-Ti-NeU"/>
+                <outlet property="statusSignImgView3" destination="sPg-qQ-UQZ" id="GaF-sT-Eat"/>
+                <outlet property="statusSignImgView4" destination="q7B-ch-TuS" id="cCT-vG-XVg"/>
+            </connections>
+            <point key="canvasLocation" x="147.10144927536234" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Right-Sign" width="198" height="267.5"/>
+    </resources>
+</document>

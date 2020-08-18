@@ -1,0 +1,1627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70013AD124CDAE8800CE1AFD /* Kitchen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70013AD024CDAE8800CE1AFD /* Kitchen.gif */; };
+		70013AD324CDAFDC00CE1AFD /* House.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70013AD224CDAFDC00CE1AFD /* House.gif */; };
+		70013AD724CDB97600CE1AFD /* SchoolGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70013AD624CDB97600CE1AFD /* SchoolGif.gif */; };
+		70013AD924CDE4AC00CE1AFD /* Teapot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70013AD824CDE4AC00CE1AFD /* Teapot.mp3 */; };
+		70013ADB24CDE61900CE1AFD /* Bubble.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70013ADA24CDE61900CE1AFD /* Bubble.gif */; };
+		700CDCC424CB27E5004C8615 /* Gardening.gif in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCC324CB27E5004C8615 /* Gardening.gif */; };
+		700CDCCC24CB5CE5004C8615 /* Door Mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCB24CB5CE5004C8615 /* Door Mat.mp3 */; };
+		700CDCCE24CB5D3B004C8615 /* Cooler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCD24CB5D3B004C8615 /* Cooler.mp3 */; };
+		700CDCD024CB5E88004C8615 /* Air Cooler_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCF24CB5E88004C8615 /* Air Cooler_Question.mp3 */; };
+		700CDCD224CB5E90004C8615 /* Air Cooler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCD124CB5E90004C8615 /* Air Cooler.mp3 */; };
+		7017A9FA24BB410100C46A97 /* Ladder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E124BB40FD00C46A97 /* Ladder.mp3 */; };
+		7017A9FB24BB410100C46A97 /* Building.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E224BB40FD00C46A97 /* Building.mp3 */; };
+		7017A9FC24BB410100C46A97 /* Room.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E324BB40FD00C46A97 /* Room.mp3 */; };
+		7017A9FD24BB410100C46A97 /* Dustbin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E424BB40FD00C46A97 /* Dustbin.mp3 */; };
+		7017A9FE24BB410100C46A97 /* Stool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E524BB40FE00C46A97 /* Stool.mp3 */; };
+		7017A9FF24BB410100C46A97 /* Door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E624BB40FE00C46A97 /* Door.mp3 */; };
+		7017AA0024BB410100C46A97 /* Fan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E724BB40FE00C46A97 /* Fan.mp3 */; };
+		7017AA0124BB410100C46A97 /* Bathroom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E824BB40FE00C46A97 /* Bathroom.mp3 */; };
+		7017AA0224BB410100C46A97 /* Bed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9E924BB40FE00C46A97 /* Bed.mp3 */; };
+		7017AA0324BB410100C46A97 /* Sofa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9EA24BB40FE00C46A97 /* Sofa.mp3 */; };
+		7017AA0424BB410100C46A97 /* Curtain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9EB24BB40FF00C46A97 /* Curtain.mp3 */; };
+		7017AA0524BB410100C46A97 /* Wardrobe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9EC24BB40FF00C46A97 /* Wardrobe.mp3 */; };
+		7017AA0624BB410100C46A97 /* Gate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9ED24BB40FF00C46A97 /* Gate.mp3 */; };
+		7017AA0724BB410100C46A97 /* Staircase.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9EE24BB40FF00C46A97 /* Staircase.mp3 */; };
+		7017AA0824BB410100C46A97 /* Chair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9EF24BB40FF00C46A97 /* Chair.mp3 */; };
+		7017AA0924BB410100C46A97 /* Kitchen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F024BB40FF00C46A97 /* Kitchen.mp3 */; };
+		7017AA0A24BB410100C46A97 /* Telephone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F124BB40FF00C46A97 /* Telephone.mp3 */; };
+		7017AA0B24BB410100C46A97 /* Swing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F224BB410000C46A97 /* Swing.mp3 */; };
+		7017AA0C24BB410100C46A97 /* Mirror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F324BB410000C46A97 /* Mirror.mp3 */; };
+		7017AA0D24BB410100C46A97 /* Corridor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F424BB410000C46A97 /* Corridor.mp3 */; };
+		7017AA0E24BB410100C46A97 /* Table.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F524BB410000C46A97 /* Table.mp3 */; };
+		7017AA1024BB410100C46A97 /* Mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F724BB410000C46A97 /* Mat.mp3 */; };
+		7017AA1124BB410100C46A97 /* Broom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F824BB410100C46A97 /* Broom.mp3 */; };
+		7017AA1224BB410100C46A97 /* Window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F924BB410100C46A97 /* Window.mp3 */; };
+		7017AA2224BB928200C46A97 /* Pencil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1624BB928000C46A97 /* Pencil.mp3 */; };
+		7017AA2324BB928200C46A97 /* Playground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1724BB928000C46A97 /* Playground.mp3 */; };
+		7017AA2424BB928200C46A97 /* White Board.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1824BB928000C46A97 /* White Board.mp3 */; };
+		7017AA2524BB928200C46A97 /* School Bag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1924BB928000C46A97 /* School Bag.mp3 */; };
+		7017AA2624BB928200C46A97 /* Computer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1A24BB928100C46A97 /* Computer.mp3 */; };
+		7017AA2724BB928200C46A97 /* Classroom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1B24BB928100C46A97 /* Classroom.mp3 */; };
+		7017AA2824BB928200C46A97 /* Book.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1C24BB928100C46A97 /* Book.mp3 */; };
+		7017AA2924BB928200C46A97 /* Library.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1D24BB928100C46A97 /* Library.mp3 */; };
+		7017AA2A24BB928200C46A97 /* Map.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1E24BB928100C46A97 /* Map.mp3 */; };
+		7017AA2B24BB928200C46A97 /* Notebook.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1F24BB928100C46A97 /* Notebook.mp3 */; };
+		7017AA2C24BB928200C46A97 /* Electric Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2024BB928100C46A97 /* Electric Bell.mp3 */; };
+		7017AA2D24BB928200C46A97 /* Pen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2124BB928200C46A97 /* Pen.mp3 */; };
+		7017AA2F24BB92E800C46A97 /* Bench.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2E24BB92E800C46A97 /* Bench.mp3 */; };
+		7017AA3124BB98F500C46A97 /* School Uniform.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA3024BB98F500C46A97 /* School Uniform.mp3 */; };
+		701EF78124A294C5006C0A36 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701EF78024A294C5006C0A36 /* UIExtension.swift */; };
+		70270FDB24A369A900EB8DAB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70270FDA24A369A900EB8DAB /* TestViewController.swift */; };
+		70277DD224A4B59100072D57 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70277DD124A4B59100072D57 /* UILabelExtension.swift */; };
+		7027932A24CCAED700A863FB /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7027932924CCAED700A863FB /* BackgroundMusic.mp3 */; };
+		70329EC924C608E300E00095 /* Watering Can.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70329EC824C608E300E00095 /* Watering Can.mp3 */; };
+		70631FEB249776AB00DAE930 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FEA249776AB00DAE930 /* ImagesCollectionViewController.swift */; };
+		70631FED2497AA3000DAE930 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */; };
+		70631FF32497F11B00DAE930 /* PictureCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FF12497F11B00DAE930 /* PictureCollectionCell.swift */; };
+		70631FF42497F11B00DAE930 /* PictureCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70631FF22497F11B00DAE930 /* PictureCollectionCell.xib */; };
+		7068EFCF24AB4C6900B448C3 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068EFCE24AB4C6900B448C3 /* AppConstant.swift */; };
+		7068EFD424AB5DCE00B448C3 /* TestSolveCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068EFD224AB5DCE00B448C3 /* TestSolveCollectionCell.swift */; };
+		7068EFD524AB5DCE00B448C3 /* TestSolveCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */; };
+		707ECA22249CB3E10024D06C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ECA21249CB3E10024D06C /* UIViewExtension.swift */; };
+		709D3379249B712B002B1114 /* UiCollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */; };
+		70AF537924A0CCCF00AD4794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FF090B24962D9B002861AE /* Main.storyboard */; };
+		70E3B42224C4536F0053B679 /* Axe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B41E24C4536F0053B679 /* Axe.mp3 */; };
+		70E3B42324C4536F0053B679 /* Cultivator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B41F24C4536F0053B679 /* Cultivator.mp3 */; };
+		70E3B42424C4536F0053B679 /* Hand Fork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42024C4536F0053B679 /* Hand Fork.mp3 */; };
+		70E3B42524C4536F0053B679 /* Shovel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42124C4536F0053B679 /* Shovel.mp3 */; };
+		70E3B42824C453CE0053B679 /* Spade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42624C453CE0053B679 /* Spade.mp3 */; };
+		70E3B42924C453CE0053B679 /* Trowel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42724C453CE0053B679 /* Trowel.mp3 */; };
+		70E3B42D24C4556A0053B679 /* Hedge Shears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */; };
+		70E3B42E24C4556A0053B679 /* Hose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42B24C4556A0053B679 /* Hose.mp3 */; };
+		70E3B42F24C4556A0053B679 /* Prunning Saw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */; };
+		70E3B43224C456380053B679 /* Garden Gloves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B43024C456370053B679 /* Garden Gloves.mp3 */; };
+		70E3B43324C456380053B679 /* Wheelbarrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B43124C456380053B679 /* Wheelbarrow.mp3 */; };
+		70E468A524A8D0E2008C8FFB /* TestSolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */; };
+		70E5E8BE24BDE358002B2032 /* Saucer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AA24BDE355002B2032 /* Saucer.mp3 */; };
+		70E5E8BF24BDE358002B2032 /* Skimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */; };
+		70E5E8C024BDE358002B2032 /* Rolling Pin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */; };
+		70E5E8C124BDE358002B2032 /* Strainer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AD24BDE356002B2032 /* Strainer.mp3 */; };
+		70E5E8C224BDE358002B2032 /* Pan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AE24BDE356002B2032 /* Pan.mp3 */; };
+		70E5E8C324BDE358002B2032 /* Cauldron.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */; };
+		70E5E8C424BDE358002B2032 /* Glass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B024BDE356002B2032 /* Glass.mp3 */; };
+		70E5E8C524BDE358002B2032 /* Grater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B124BDE356002B2032 /* Grater.mp3 */; };
+		70E5E8C624BDE358002B2032 /* Sieve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B224BDE356002B2032 /* Sieve.mp3 */; };
+		70E5E8C724BDE358002B2032 /* Cup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B324BDE357002B2032 /* Cup.mp3 */; };
+		70E5E8C824BDE358002B2032 /* Spoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B424BDE357002B2032 /* Spoon.mp3 */; };
+		70E5E8CA24BDE358002B2032 /* Plate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B624BDE357002B2032 /* Plate.mp3 */; };
+		70E5E8CB24BDE358002B2032 /* Ladle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B724BDE357002B2032 /* Ladle.mp3 */; };
+		70E5E8CC24BDE358002B2032 /* Fork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B824BDE357002B2032 /* Fork.mp3 */; };
+		70E5E8CD24BDE358002B2032 /* Rolling Pad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */; };
+		70E5E8CE24BDE358002B2032 /* Pitcher.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */; };
+		70E5E8CF24BDE358002B2032 /* Lid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BB24BDE358002B2032 /* Lid.mp3 */; };
+		70E5E8D024BDE358002B2032 /* Pressure Cooker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */; };
+		70E5E8D124BDE358002B2032 /* Bowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BD24BDE358002B2032 /* Bowl.mp3 */; };
+		70E5E8D824C0CD22002B2032 /* House.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8D624C0CD22002B2032 /* House.mp3 */; };
+		70E5E8D924C0CD22002B2032 /* Air Conditioner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8D724C0CD22002B2032 /* Air Conditioner.mp3 */; };
+		70EC9B0424C6F2D7009F8B8E /* Gardening Boots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */; };
+		70EC9B0824C6F503009F8B8E /* Axe_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */; };
+		70EC9B0A24C71408009F8B8E /* Garden Gloves_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */; };
+		70EC9B0C24C7143E009F8B8E /* Cultivator_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */; };
+		70EC9B0E24C7148E009F8B8E /* Hand Fork_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */; };
+		70EC9B1024C714B6009F8B8E /* Hose_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */; };
+		70EC9B1224C71571009F8B8E /* Prunning Saw_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */; };
+		70EC9B1424C7158F009F8B8E /* Wheelbarrow_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */; };
+		70EC9B1624C715B8009F8B8E /* Rake_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */; };
+		70EC9B1824C715E6009F8B8E /* Shovel_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */; };
+		70EC9B1A24C71612009F8B8E /* Gardening Boots_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */; };
+		70EC9B1F24C71694009F8B8E /* Trowel_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */; };
+		70EC9B2024C71694009F8B8E /* Spade_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */; };
+		70EC9B3524C719C7009F8B8E /* Plate_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */; };
+		70EC9B3624C719C7009F8B8E /* Bowl_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */; };
+		70EC9B3724C719C7009F8B8E /* Saucer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */; };
+		70EC9B3824C719C7009F8B8E /* Sieve_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */; };
+		70EC9B3924C719C7009F8B8E /* Grater_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */; };
+		70EC9B3A24C719C7009F8B8E /* Rolling Pad_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */; };
+		70EC9B3B24C719C7009F8B8E /* Ladle_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */; };
+		70EC9B3C24C719C7009F8B8E /* Spoon_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */; };
+		70EC9B3D24C719C7009F8B8E /* Teapot_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */; };
+		70EC9B3E24C719C7009F8B8E /* Lid_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */; };
+		70EC9B3F24C719C7009F8B8E /* Glass_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */; };
+		70EC9B4024C719C7009F8B8E /* Fork_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */; };
+		70EC9B4124C719C7009F8B8E /* Skimmer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */; };
+		70EC9B4224C719C7009F8B8E /* Pressure Cooker_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */; };
+		70EC9B4324C719C7009F8B8E /* Strainer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */; };
+		70EC9B4424C719C7009F8B8E /* Cauldron_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */; };
+		70EC9B4524C719C7009F8B8E /* Pan_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */; };
+		70EC9B4624C719C7009F8B8E /* Pitcher_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */; };
+		70EC9B4724C719C7009F8B8E /* Rolling Pin_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */; };
+		70EC9B4824C719C7009F8B8E /* Cup_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */; };
+		70EC9B5724C71C01009F8B8E /* Classroom_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */; };
+		70EC9B5824C71C01009F8B8E /* Computer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */; };
+		70EC9B5924C71C01009F8B8E /* School Bag_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */; };
+		70EC9B5A24C71C01009F8B8E /* Playground_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */; };
+		70EC9B5B24C71C01009F8B8E /* Book_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */; };
+		70EC9B5C24C71C01009F8B8E /* Pencil_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */; };
+		70EC9B5D24C71C01009F8B8E /* Bench_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */; };
+		70EC9B5E24C71C01009F8B8E /* School Uniform_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */; };
+		70EC9B5F24C71C01009F8B8E /* Map_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */; };
+		70EC9B6024C71C01009F8B8E /* Notebook_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */; };
+		70EC9B6124C71C01009F8B8E /* White Board_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */; };
+		70EC9B6224C71C01009F8B8E /* Electric Bell_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */; };
+		70EC9B6324C71C01009F8B8E /* Library_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */; };
+		70EC9B6424C71C01009F8B8E /* Pen_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */; };
+		70EC9B7F24C72086009F8B8E /* Curtain_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6524C72081009F8B8E /* Curtain_Question.mp3 */; };
+		70EC9B8024C72086009F8B8E /* Wardrobe_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6624C72081009F8B8E /* Wardrobe_Question.mp3 */; };
+		70EC9B8124C72086009F8B8E /* House_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6724C72081009F8B8E /* House_Question.mp3 */; };
+		70EC9B8224C72086009F8B8E /* Corridor_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6824C72082009F8B8E /* Corridor_Question.mp3 */; };
+		70EC9B8424C72086009F8B8E /* Stool_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6A24C72082009F8B8E /* Stool_Question.mp3 */; };
+		70EC9B8524C72086009F8B8E /* Chair_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6B24C72082009F8B8E /* Chair_Question.mp3 */; };
+		70EC9B8624C72086009F8B8E /* Air Conditioner_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6C24C72082009F8B8E /* Air Conditioner_Question.mp3 */; };
+		70EC9B8724C72086009F8B8E /* Sofa_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6D24C72083009F8B8E /* Sofa_Question.mp3 */; };
+		70EC9B8824C72086009F8B8E /* Gate_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6E24C72083009F8B8E /* Gate_Question.mp3 */; };
+		70EC9B8924C72086009F8B8E /* Window_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6F24C72083009F8B8E /* Window_Question.mp3 */; };
+		70EC9B8A24C72086009F8B8E /* Broom_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7024C72083009F8B8E /* Broom_Question.mp3 */; };
+		70EC9B8B24C72086009F8B8E /* Kitchen_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7124C72083009F8B8E /* Kitchen_Question.mp3 */; };
+		70EC9B8C24C72086009F8B8E /* Ladder_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7224C72083009F8B8E /* Ladder_Question.mp3 */; };
+		70EC9B8E24C72086009F8B8E /* Staircase_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7424C72084009F8B8E /* Staircase_Question.mp3 */; };
+		70EC9B8F24C72086009F8B8E /* Bed_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7524C72084009F8B8E /* Bed_Question.mp3 */; };
+		70EC9B9024C72086009F8B8E /* Mirror_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7624C72084009F8B8E /* Mirror_Question.mp3 */; };
+		70EC9B9124C72086009F8B8E /* Swing_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7724C72084009F8B8E /* Swing_Question.mp3 */; };
+		70EC9B9224C72086009F8B8E /* Building_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7824C72084009F8B8E /* Building_Question.mp3 */; };
+		70EC9B9324C72086009F8B8E /* Door_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7924C72085009F8B8E /* Door_Question.mp3 */; };
+		70EC9B9424C72086009F8B8E /* Room_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7A24C72085009F8B8E /* Room_Question.mp3 */; };
+		70EC9B9524C72086009F8B8E /* Bathroom_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7B24C72085009F8B8E /* Bathroom_Question.mp3 */; };
+		70EC9B9624C72086009F8B8E /* Telephone_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7C24C72085009F8B8E /* Telephone_Question.mp3 */; };
+		70EC9B9724C72086009F8B8E /* Fan_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7D24C72085009F8B8E /* Fan_Question.mp3 */; };
+		70EC9B9824C72086009F8B8E /* Dustbin_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7E24C72086009F8B8E /* Dustbin_Question.mp3 */; };
+		70EC9B9A24C722F1009F8B8E /* Table_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B9924C722F1009F8B8E /* Table_Question.mp3 */; };
+		70EC9B9C24C75231009F8B8E /* Door Mat_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B9B24C75230009F8B8E /* Door Mat_Question.mp3 */; };
+		70EC9B9E24C7567B009F8B8E /* Hedge Shears_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */; };
+		70EC9BA224C758E5009F8B8E /* Watering Can_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */; };
+		70F9023D24AF88A500A3AA12 /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9023B24AF88A400A3AA12 /* No.mp3 */; };
+		70F9024124AF88AE00A3AA12 /* GreatJob.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9023F24AF88AE00A3AA12 /* GreatJob.mp3 */; };
+		70F9024224AF88AE00A3AA12 /* Excellent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9024024AF88AE00A3AA12 /* Excellent.mp3 */; };
+		70F9024424AF88B900A3AA12 /* WellDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9024324AF88B900A3AA12 /* WellDone.mp3 */; };
+		70F9024624AFAF5C00A3AA12 /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9024524AFAF5C00A3AA12 /* Wrong.mp3 */; };
+		70FF090624962D9B002861AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF090524962D9B002861AE /* AppDelegate.swift */; };
+		70FF090824962D9B002861AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF090724962D9B002861AE /* SceneDelegate.swift */; };
+		70FF090A24962D9B002861AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF090924962D9B002861AE /* HomeViewController.swift */; };
+		70FF090F24962DB5002861AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FF090E24962DB5002861AE /* Assets.xcassets */; };
+		70FF091224962DB5002861AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FF091024962DB5002861AE /* LaunchScreen.storyboard */; };
+		70FF091D24962DB5002861AE /* Kids_LearnWithFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF091C24962DB5002861AE /* Kids_LearnWithFunTests.swift */; };
+		70FF092824962DB5002861AE /* Kids_LearnWithFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF092724962DB5002861AE /* Kids_LearnWithFunUITests.swift */; };
+		70FF093724965879002861AE /* GIFSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF093624965879002861AE /* GIFSwift.swift */; };
+		70FF093C24966856002861AE /* UIImageviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF093B24966856002861AE /* UIImageviewExtension.swift */; };
+		7A798BFFB375032A07CBDC6C /* Pods_Kids_LearnWithFun3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AB79A440611F62C55ABDB /* Pods_Kids_LearnWithFun3Tests.framework */; };
+		8257287D66FEC0D0A62AB5F8 /* Pods_Kids_LearnWithFun3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE86477892E8A57B03292C3C /* Pods_Kids_LearnWithFun3.framework */; };
+		D59452DB64A4F2184662FE6E /* Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3693C3A2F1759AE8BF2C339 /* Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70FF091924962DB5002861AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FF08FA24962D9B002861AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FF090124962D9B002861AE;
+			remoteInfo = "Kids-LearnWithFun";
+		};
+		70FF092424962DB5002861AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70FF08FA24962D9B002861AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FF090124962D9B002861AE;
+			remoteInfo = "Kids-LearnWithFun";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FECAC5356E391BB01986015 /* Pods-Kids-LearnWithFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun/Pods-Kids-LearnWithFun.debug.xcconfig"; sourceTree = "<group>"; };
+		181DD4BD54E469D2DE8B3CC0 /* Pods-Kids-LearnWithFun3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3/Pods-Kids-LearnWithFun3.release.xcconfig"; sourceTree = "<group>"; };
+		1E8CF5BF6D0183542BF019CE /* Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests/Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6D826C0F5FEBC5E32F5CFC /* Pods-Kids-LearnWithFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFunTests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFunTests/Pods-Kids-LearnWithFunTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C185180F08FBD11D859BD88 /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		330855B7235C70D81BA9C8BA /* Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests/Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		338EA9AA3E0F019D08BF8FFF /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D772565661EA2EAD28647AF /* Pods-Kids-LearnWithFun3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3Tests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3Tests/Pods-Kids-LearnWithFun3Tests.release.xcconfig"; sourceTree = "<group>"; };
+		46A391F65638EECE328AC065 /* Pods-Kids-LearnWithFun2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2/Pods-Kids-LearnWithFun2.release.xcconfig"; sourceTree = "<group>"; };
+		506C3AC2C26BDD790042AD8E /* Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests/Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5221C20743489DDA28B464F5 /* Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests/Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		56AB9351157D2055122A3784 /* Pods-Kids-LearnWithFun2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2Tests/Pods-Kids-LearnWithFun2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		65342E7D3BC59C2DB82D9332 /* Pods-Kids-LearnWithFun3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3Tests/Pods-Kids-LearnWithFun3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		695C26B3FA5688C6B7FC4895 /* Pods-Kids-LearnWithFun2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2Tests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2Tests/Pods-Kids-LearnWithFun2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		70013AD024CDAE8800CE1AFD /* Kitchen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Kitchen.gif; sourceTree = "<group>"; };
+		70013AD224CDAFDC00CE1AFD /* House.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = House.gif; sourceTree = "<group>"; };
+		70013AD624CDB97600CE1AFD /* SchoolGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SchoolGif.gif; sourceTree = "<group>"; };
+		70013AD824CDE4AC00CE1AFD /* Teapot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Teapot.mp3; path = ../../../../../../../Downloads/Teapot.mp3; sourceTree = "<group>"; };
+		70013ADA24CDE61900CE1AFD /* Bubble.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bubble.gif; sourceTree = "<group>"; };
+		700CDCC324CB27E5004C8615 /* Gardening.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Gardening.gif; sourceTree = "<group>"; };
+		700CDCCB24CB5CE5004C8615 /* Door Mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Door Mat.mp3"; sourceTree = "<group>"; };
+		700CDCCD24CB5D3B004C8615 /* Cooler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cooler.mp3; sourceTree = "<group>"; };
+		700CDCCF24CB5E88004C8615 /* Air Cooler_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Cooler_Question.mp3"; sourceTree = "<group>"; };
+		700CDCD124CB5E90004C8615 /* Air Cooler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Cooler.mp3"; sourceTree = "<group>"; };
+		7017A9E124BB40FD00C46A97 /* Ladder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladder.mp3; sourceTree = "<group>"; };
+		7017A9E224BB40FD00C46A97 /* Building.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Building.mp3; sourceTree = "<group>"; };
+		7017A9E324BB40FD00C46A97 /* Room.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Room.mp3; sourceTree = "<group>"; };
+		7017A9E424BB40FD00C46A97 /* Dustbin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dustbin.mp3; sourceTree = "<group>"; };
+		7017A9E524BB40FE00C46A97 /* Stool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Stool.mp3; sourceTree = "<group>"; };
+		7017A9E624BB40FE00C46A97 /* Door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Door.mp3; sourceTree = "<group>"; };
+		7017A9E724BB40FE00C46A97 /* Fan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fan.mp3; sourceTree = "<group>"; };
+		7017A9E824BB40FE00C46A97 /* Bathroom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bathroom.mp3; sourceTree = "<group>"; };
+		7017A9E924BB40FE00C46A97 /* Bed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bed.mp3; sourceTree = "<group>"; };
+		7017A9EA24BB40FE00C46A97 /* Sofa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sofa.mp3; sourceTree = "<group>"; };
+		7017A9EB24BB40FF00C46A97 /* Curtain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Curtain.mp3; sourceTree = "<group>"; };
+		7017A9EC24BB40FF00C46A97 /* Wardrobe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wardrobe.mp3; sourceTree = "<group>"; };
+		7017A9ED24BB40FF00C46A97 /* Gate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gate.mp3; sourceTree = "<group>"; };
+		7017A9EE24BB40FF00C46A97 /* Staircase.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Staircase.mp3; sourceTree = "<group>"; };
+		7017A9EF24BB40FF00C46A97 /* Chair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chair.mp3; sourceTree = "<group>"; };
+		7017A9F024BB40FF00C46A97 /* Kitchen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kitchen.mp3; sourceTree = "<group>"; };
+		7017A9F124BB40FF00C46A97 /* Telephone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Telephone.mp3; sourceTree = "<group>"; };
+		7017A9F224BB410000C46A97 /* Swing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Swing.mp3; sourceTree = "<group>"; };
+		7017A9F324BB410000C46A97 /* Mirror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mirror.mp3; sourceTree = "<group>"; };
+		7017A9F424BB410000C46A97 /* Corridor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Corridor.mp3; sourceTree = "<group>"; };
+		7017A9F524BB410000C46A97 /* Table.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Table.mp3; sourceTree = "<group>"; };
+		7017A9F724BB410000C46A97 /* Mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mat.mp3; sourceTree = "<group>"; };
+		7017A9F824BB410100C46A97 /* Broom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Broom.mp3; sourceTree = "<group>"; };
+		7017A9F924BB410100C46A97 /* Window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Window.mp3; sourceTree = "<group>"; };
+		7017AA1624BB928000C46A97 /* Pencil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pencil.mp3; sourceTree = "<group>"; };
+		7017AA1724BB928000C46A97 /* Playground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Playground.mp3; sourceTree = "<group>"; };
+		7017AA1824BB928000C46A97 /* White Board.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White Board.mp3"; sourceTree = "<group>"; };
+		7017AA1924BB928000C46A97 /* School Bag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Bag.mp3"; sourceTree = "<group>"; };
+		7017AA1A24BB928100C46A97 /* Computer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Computer.mp3; sourceTree = "<group>"; };
+		7017AA1B24BB928100C46A97 /* Classroom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Classroom.mp3; sourceTree = "<group>"; };
+		7017AA1C24BB928100C46A97 /* Book.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Book.mp3; sourceTree = "<group>"; };
+		7017AA1D24BB928100C46A97 /* Library.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Library.mp3; sourceTree = "<group>"; };
+		7017AA1E24BB928100C46A97 /* Map.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Map.mp3; sourceTree = "<group>"; };
+		7017AA1F24BB928100C46A97 /* Notebook.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Notebook.mp3; sourceTree = "<group>"; };
+		7017AA2024BB928100C46A97 /* Electric Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electric Bell.mp3"; sourceTree = "<group>"; };
+		7017AA2124BB928200C46A97 /* Pen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pen.mp3; sourceTree = "<group>"; };
+		7017AA2E24BB92E800C46A97 /* Bench.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bench.mp3; sourceTree = "<group>"; };
+		7017AA3024BB98F500C46A97 /* School Uniform.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Uniform.mp3"; sourceTree = "<group>"; };
+		701EF78024A294C5006C0A36 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		70270FDA24A369A900EB8DAB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		70277DD124A4B59100072D57 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		7027932924CCAED700A863FB /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
+		70329EC824C608E300E00095 /* Watering Can.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Watering Can.mp3"; sourceTree = "<group>"; };
+		70631FEA249776AB00DAE930 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		70631FF12497F11B00DAE930 /* PictureCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionCell.swift; sourceTree = "<group>"; };
+		70631FF22497F11B00DAE930 /* PictureCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionCell.xib; sourceTree = "<group>"; };
+		7068EFCE24AB4C6900B448C3 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		7068EFD224AB5DCE00B448C3 /* TestSolveCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSolveCollectionCell.swift; sourceTree = "<group>"; };
+		7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSolveCollectionCell.xib; sourceTree = "<group>"; };
+		707ECA21249CB3E10024D06C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiCollectionViewExtension.swift; sourceTree = "<group>"; };
+		70E3B41E24C4536F0053B679 /* Axe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Axe.mp3; sourceTree = "<group>"; };
+		70E3B41F24C4536F0053B679 /* Cultivator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cultivator.mp3; sourceTree = "<group>"; };
+		70E3B42024C4536F0053B679 /* Hand Fork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hand Fork.mp3"; sourceTree = "<group>"; };
+		70E3B42124C4536F0053B679 /* Shovel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shovel.mp3; sourceTree = "<group>"; };
+		70E3B42624C453CE0053B679 /* Spade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spade.mp3; sourceTree = "<group>"; };
+		70E3B42724C453CE0053B679 /* Trowel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trowel.mp3; sourceTree = "<group>"; };
+		70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hedge Shears.mp3"; sourceTree = "<group>"; };
+		70E3B42B24C4556A0053B679 /* Hose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hose.mp3; sourceTree = "<group>"; };
+		70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Prunning Saw.mp3"; sourceTree = "<group>"; };
+		70E3B43024C456370053B679 /* Garden Gloves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Garden Gloves.mp3"; sourceTree = "<group>"; };
+		70E3B43124C456380053B679 /* Wheelbarrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wheelbarrow.mp3; sourceTree = "<group>"; };
+		70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSolveViewController.swift; sourceTree = "<group>"; };
+		70E5E8AA24BDE355002B2032 /* Saucer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Saucer.mp3; sourceTree = "<group>"; };
+		70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Skimmer.mp3; sourceTree = "<group>"; };
+		70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pin.mp3"; sourceTree = "<group>"; };
+		70E5E8AD24BDE356002B2032 /* Strainer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Strainer.mp3; sourceTree = "<group>"; };
+		70E5E8AE24BDE356002B2032 /* Pan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pan.mp3; sourceTree = "<group>"; };
+		70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cauldron.mp3; sourceTree = "<group>"; };
+		70E5E8B024BDE356002B2032 /* Glass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Glass.mp3; sourceTree = "<group>"; };
+		70E5E8B124BDE356002B2032 /* Grater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grater.mp3; sourceTree = "<group>"; };
+		70E5E8B224BDE356002B2032 /* Sieve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sieve.mp3; sourceTree = "<group>"; };
+		70E5E8B324BDE357002B2032 /* Cup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cup.mp3; sourceTree = "<group>"; };
+		70E5E8B424BDE357002B2032 /* Spoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spoon.mp3; sourceTree = "<group>"; };
+		70E5E8B624BDE357002B2032 /* Plate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Plate.mp3; sourceTree = "<group>"; };
+		70E5E8B724BDE357002B2032 /* Ladle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladle.mp3; sourceTree = "<group>"; };
+		70E5E8B824BDE357002B2032 /* Fork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fork.mp3; sourceTree = "<group>"; };
+		70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pad.mp3"; sourceTree = "<group>"; };
+		70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pitcher.mp3; sourceTree = "<group>"; };
+		70E5E8BB24BDE358002B2032 /* Lid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lid.mp3; sourceTree = "<group>"; };
+		70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pressure Cooker.mp3"; sourceTree = "<group>"; };
+		70E5E8BD24BDE358002B2032 /* Bowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bowl.mp3; sourceTree = "<group>"; };
+		70E5E8D624C0CD22002B2032 /* House.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = House.mp3; sourceTree = "<group>"; };
+		70E5E8D724C0CD22002B2032 /* Air Conditioner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Conditioner.mp3"; sourceTree = "<group>"; };
+		70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gardening Boots.mp3"; sourceTree = "<group>"; };
+		70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Axe_Question.mp3; sourceTree = "<group>"; };
+		70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Garden Gloves_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cultivator_Question.mp3; sourceTree = "<group>"; };
+		70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hand Fork_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hose_Question.mp3; sourceTree = "<group>"; };
+		70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Prunning Saw_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wheelbarrow_Question.mp3; sourceTree = "<group>"; };
+		70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rake_Question.mp3; sourceTree = "<group>"; };
+		70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shovel_Question.mp3; sourceTree = "<group>"; };
+		70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gardening Boots_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trowel_Question.mp3; sourceTree = "<group>"; };
+		70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spade_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Plate_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bowl_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Saucer_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sieve_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grater_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pad_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladle_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spoon_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Teapot_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lid_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Glass_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fork_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Skimmer_Question.mp3; sourceTree = "<group>"; };
+		70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pressure Cooker_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Strainer_Question.mp3; sourceTree = "<group>"; };
+		70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cauldron_Question.mp3; sourceTree = "<group>"; };
+		70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pan_Question.mp3; sourceTree = "<group>"; };
+		70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pitcher_Question.mp3; sourceTree = "<group>"; };
+		70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pin_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cup_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Classroom_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Computer_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Bag_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Playground_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Book_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pencil_Question.mp3; sourceTree = "<group>"; };
+		70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bench_Question.mp3; sourceTree = "<group>"; };
+		70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Uniform_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Map_Question.mp3; sourceTree = "<group>"; };
+		70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Notebook_Question.mp3; sourceTree = "<group>"; };
+		70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White Board_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electric Bell_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Library_Question.mp3; sourceTree = "<group>"; };
+		70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pen_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6524C72081009F8B8E /* Curtain_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Curtain_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6624C72081009F8B8E /* Wardrobe_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wardrobe_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6724C72081009F8B8E /* House_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = House_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6824C72082009F8B8E /* Corridor_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Corridor_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6A24C72082009F8B8E /* Stool_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Stool_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6B24C72082009F8B8E /* Chair_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chair_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6C24C72082009F8B8E /* Air Conditioner_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Conditioner_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B6D24C72083009F8B8E /* Sofa_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sofa_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6E24C72083009F8B8E /* Gate_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gate_Question.mp3; sourceTree = "<group>"; };
+		70EC9B6F24C72083009F8B8E /* Window_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Window_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7024C72083009F8B8E /* Broom_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Broom_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7124C72083009F8B8E /* Kitchen_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kitchen_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7224C72083009F8B8E /* Ladder_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladder_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7424C72084009F8B8E /* Staircase_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Staircase_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7524C72084009F8B8E /* Bed_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bed_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7624C72084009F8B8E /* Mirror_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mirror_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7724C72084009F8B8E /* Swing_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Swing_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7824C72084009F8B8E /* Building_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Building_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7924C72085009F8B8E /* Door_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Door_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7A24C72085009F8B8E /* Room_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Room_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7B24C72085009F8B8E /* Bathroom_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bathroom_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7C24C72085009F8B8E /* Telephone_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Telephone_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7D24C72085009F8B8E /* Fan_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fan_Question.mp3; sourceTree = "<group>"; };
+		70EC9B7E24C72086009F8B8E /* Dustbin_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dustbin_Question.mp3; sourceTree = "<group>"; };
+		70EC9B9924C722F1009F8B8E /* Table_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Table_Question.mp3; path = ../../../../../../../Downloads/Table_Question.mp3; sourceTree = "<group>"; };
+		70EC9B9B24C75230009F8B8E /* Door Mat_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Door Mat_Question.mp3"; sourceTree = "<group>"; };
+		70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hedge Shears_Question.mp3"; sourceTree = "<group>"; };
+		70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Watering Can_Question.mp3"; sourceTree = "<group>"; };
+		70F9023B24AF88A400A3AA12 /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = No.mp3; sourceTree = "<group>"; };
+		70F9023F24AF88AE00A3AA12 /* GreatJob.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GreatJob.mp3; sourceTree = "<group>"; };
+		70F9024024AF88AE00A3AA12 /* Excellent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Excellent.mp3; sourceTree = "<group>"; };
+		70F9024324AF88B900A3AA12 /* WellDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WellDone.mp3; sourceTree = "<group>"; };
+		70F9024524AFAF5C00A3AA12 /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong.mp3; sourceTree = "<group>"; };
+		70FF090224962D9B002861AE /* Kids-LearnWithFun3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids-LearnWithFun3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FF090524962D9B002861AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70FF090724962D9B002861AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70FF090924962D9B002861AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		70FF090C24962D9B002861AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70FF090E24962DB5002861AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FF091124962DB5002861AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70FF091324962DB5002861AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FF091824962DB5002861AE /* Kids-LearnWithFun3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids-LearnWithFun3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FF091C24962DB5002861AE /* Kids_LearnWithFunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_LearnWithFunTests.swift; sourceTree = "<group>"; };
+		70FF091E24962DB5002861AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FF092324962DB5002861AE /* Kids-LearnWithFun3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids-LearnWithFun3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FF092724962DB5002861AE /* Kids_LearnWithFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_LearnWithFunUITests.swift; sourceTree = "<group>"; };
+		70FF092924962DB5002861AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FF093624965879002861AE /* GIFSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFSwift.swift; sourceTree = "<group>"; };
+		70FF093B24966856002861AE /* UIImageviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageviewExtension.swift; sourceTree = "<group>"; };
+		8977875AE3E6E097D3D020EC /* Pods-Kids-LearnWithFun1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1Tests/Pods-Kids-LearnWithFun1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B4AB79A440611F62C55ABDB /* Pods_Kids_LearnWithFun3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kids_LearnWithFun3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3BEF9F8B28EAF75AE67232 /* Pods-Kids-LearnWithFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun/Pods-Kids-LearnWithFun.release.xcconfig"; sourceTree = "<group>"; };
+		9EA9145E6BC924594E5B9FB6 /* Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests/Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		B68E69FBE7D10264588481E7 /* Pods-Kids-LearnWithFun2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2/Pods-Kids-LearnWithFun2.debug.xcconfig"; sourceTree = "<group>"; };
+		BE86477892E8A57B03292C3C /* Pods_Kids_LearnWithFun3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kids_LearnWithFun3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33D639EEF0C79E3BC87916E /* Pods-Kids-LearnWithFun1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1/Pods-Kids-LearnWithFun1.debug.xcconfig"; sourceTree = "<group>"; };
+		C3693C3A2F1759AE8BF2C339 /* Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D729217EDFF4CD2D8605F6C7 /* Pods-Kids-LearnWithFun1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1Tests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1Tests/Pods-Kids-LearnWithFun1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E4575C414289F58CDB1A657A /* Pods-Kids-LearnWithFun3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3/Pods-Kids-LearnWithFun3.debug.xcconfig"; sourceTree = "<group>"; };
+		E4C0226CB1A9572B0CB846CA /* Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests/Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F276F17DD9108EA06D006AE5 /* Pods-Kids-LearnWithFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFunTests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFunTests/Pods-Kids-LearnWithFunTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD6B4C9B26C8687A4FBFC3CF /* Pods-Kids-LearnWithFun1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun1.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun1/Pods-Kids-LearnWithFun1.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70FF08FF24962D9B002861AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8257287D66FEC0D0A62AB5F8 /* Pods_Kids_LearnWithFun3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF091524962DB5002861AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A798BFFB375032A07CBDC6C /* Pods_Kids_LearnWithFun3Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF092024962DB5002861AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59452DB64A4F2184662FE6E /* Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038CEF8D001E6A16FE323329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE86477892E8A57B03292C3C /* Pods_Kids_LearnWithFun3.framework */,
+				C3693C3A2F1759AE8BF2C339 /* Pods_Kids_LearnWithFun3_Kids_LearnWithFun3UITests.framework */,
+				8B4AB79A440611F62C55ABDB /* Pods_Kids_LearnWithFun3Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		700D416C249E980A00AA3D1C /* SoundFile */ = {
+			isa = PBXGroup;
+			children = (
+				70E3B41D24C453620053B679 /* Implements */,
+				70E5E8A724BDE2F8002B2032 /* KitchenUtensils */,
+				7017AA1324BB451700C46A97 /* SchoolSound */,
+				70F9023B24AF88A400A3AA12 /* No.mp3 */,
+				70F9024324AF88B900A3AA12 /* WellDone.mp3 */,
+				70F9024524AFAF5C00A3AA12 /* Wrong.mp3 */,
+				70F9024024AF88AE00A3AA12 /* Excellent.mp3 */,
+				70F9023F24AF88AE00A3AA12 /* GreatJob.mp3 */,
+				700D416D249E981400AA3D1C /* HouseHoldThingsSound */,
+			);
+			path = SoundFile;
+			sourceTree = "<group>";
+		};
+		700D416D249E981400AA3D1C /* HouseHoldThingsSound */ = {
+			isa = PBXGroup;
+			children = (
+				7017A9E024BB40D400C46A97 /* HouseHoldThings_Name */,
+				701D4D4524B1DA6D00E642A6 /* HouseHoldThings_Question */,
+			);
+			path = HouseHoldThingsSound;
+			sourceTree = "<group>";
+		};
+		7017A9E024BB40D400C46A97 /* HouseHoldThings_Name */ = {
+			isa = PBXGroup;
+			children = (
+				7017A9E824BB40FE00C46A97 /* Bathroom.mp3 */,
+				7017A9E924BB40FE00C46A97 /* Bed.mp3 */,
+				7017A9F824BB410100C46A97 /* Broom.mp3 */,
+				7017A9E224BB40FD00C46A97 /* Building.mp3 */,
+				7017A9EF24BB40FF00C46A97 /* Chair.mp3 */,
+				7017A9F424BB410000C46A97 /* Corridor.mp3 */,
+				7017A9EB24BB40FF00C46A97 /* Curtain.mp3 */,
+				7017A9E624BB40FE00C46A97 /* Door.mp3 */,
+				7017A9E424BB40FD00C46A97 /* Dustbin.mp3 */,
+				7017A9E724BB40FE00C46A97 /* Fan.mp3 */,
+				7017A9ED24BB40FF00C46A97 /* Gate.mp3 */,
+				7017A9F024BB40FF00C46A97 /* Kitchen.mp3 */,
+				7017A9E124BB40FD00C46A97 /* Ladder.mp3 */,
+				70E5E8D724C0CD22002B2032 /* Air Conditioner.mp3 */,
+				70E5E8D624C0CD22002B2032 /* House.mp3 */,
+				700CDCCD24CB5D3B004C8615 /* Cooler.mp3 */,
+				7017A9F724BB410000C46A97 /* Mat.mp3 */,
+				700CDCCB24CB5CE5004C8615 /* Door Mat.mp3 */,
+				7017A9F324BB410000C46A97 /* Mirror.mp3 */,
+				7017A9E324BB40FD00C46A97 /* Room.mp3 */,
+				7017A9EA24BB40FE00C46A97 /* Sofa.mp3 */,
+				7017A9EE24BB40FF00C46A97 /* Staircase.mp3 */,
+				7017A9E524BB40FE00C46A97 /* Stool.mp3 */,
+				7017A9F224BB410000C46A97 /* Swing.mp3 */,
+				7017A9F524BB410000C46A97 /* Table.mp3 */,
+				700CDCD124CB5E90004C8615 /* Air Cooler.mp3 */,
+				7017A9F124BB40FF00C46A97 /* Telephone.mp3 */,
+				7017A9EC24BB40FF00C46A97 /* Wardrobe.mp3 */,
+				7017A9F924BB410100C46A97 /* Window.mp3 */,
+			);
+			path = HouseHoldThings_Name;
+			sourceTree = "<group>";
+		};
+		7017AA1324BB451700C46A97 /* SchoolSound */ = {
+			isa = PBXGroup;
+			children = (
+				7017AA1524BB453400C46A97 /* School_Name */,
+				7017AA1424BB452600C46A97 /* School_Question */,
+			);
+			path = SchoolSound;
+			sourceTree = "<group>";
+		};
+		7017AA1424BB452600C46A97 /* School_Question */ = {
+			isa = PBXGroup;
+			children = (
+				70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */,
+				70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */,
+				70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */,
+				70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */,
+				70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */,
+				70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */,
+				70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */,
+				70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */,
+				70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */,
+				70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */,
+				70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */,
+				70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */,
+				70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */,
+				70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */,
+			);
+			path = School_Question;
+			sourceTree = "<group>";
+		};
+		7017AA1524BB453400C46A97 /* School_Name */ = {
+			isa = PBXGroup;
+			children = (
+				7017AA1C24BB928100C46A97 /* Book.mp3 */,
+				7017AA1B24BB928100C46A97 /* Classroom.mp3 */,
+				7017AA1A24BB928100C46A97 /* Computer.mp3 */,
+				7017AA2024BB928100C46A97 /* Electric Bell.mp3 */,
+				7017AA3024BB98F500C46A97 /* School Uniform.mp3 */,
+				7017AA1D24BB928100C46A97 /* Library.mp3 */,
+				7017AA1E24BB928100C46A97 /* Map.mp3 */,
+				7017AA1F24BB928100C46A97 /* Notebook.mp3 */,
+				7017AA2124BB928200C46A97 /* Pen.mp3 */,
+				7017AA1624BB928000C46A97 /* Pencil.mp3 */,
+				7017AA2E24BB92E800C46A97 /* Bench.mp3 */,
+				7017AA1724BB928000C46A97 /* Playground.mp3 */,
+				7017AA1924BB928000C46A97 /* School Bag.mp3 */,
+				7017AA1824BB928000C46A97 /* White Board.mp3 */,
+			);
+			path = School_Name;
+			sourceTree = "<group>";
+		};
+		701D4D4524B1DA6D00E642A6 /* HouseHoldThings_Question */ = {
+			isa = PBXGroup;
+			children = (
+				70EC9B6C24C72082009F8B8E /* Air Conditioner_Question.mp3 */,
+				700CDCCF24CB5E88004C8615 /* Air Cooler_Question.mp3 */,
+				70EC9B7B24C72085009F8B8E /* Bathroom_Question.mp3 */,
+				70EC9B7524C72084009F8B8E /* Bed_Question.mp3 */,
+				70EC9B7024C72083009F8B8E /* Broom_Question.mp3 */,
+				70EC9B7824C72084009F8B8E /* Building_Question.mp3 */,
+				70EC9B6B24C72082009F8B8E /* Chair_Question.mp3 */,
+				70EC9B6824C72082009F8B8E /* Corridor_Question.mp3 */,
+				70EC9B6524C72081009F8B8E /* Curtain_Question.mp3 */,
+				70EC9B7924C72085009F8B8E /* Door_Question.mp3 */,
+				70EC9B7E24C72086009F8B8E /* Dustbin_Question.mp3 */,
+				70EC9B7D24C72085009F8B8E /* Fan_Question.mp3 */,
+				70EC9B6E24C72083009F8B8E /* Gate_Question.mp3 */,
+				70EC9B6724C72081009F8B8E /* House_Question.mp3 */,
+				70EC9B7124C72083009F8B8E /* Kitchen_Question.mp3 */,
+				70EC9B9924C722F1009F8B8E /* Table_Question.mp3 */,
+				70EC9B7224C72083009F8B8E /* Ladder_Question.mp3 */,
+				70EC9B7624C72084009F8B8E /* Mirror_Question.mp3 */,
+				70EC9B7A24C72085009F8B8E /* Room_Question.mp3 */,
+				70EC9B9B24C75230009F8B8E /* Door Mat_Question.mp3 */,
+				70EC9B6D24C72083009F8B8E /* Sofa_Question.mp3 */,
+				70EC9B7424C72084009F8B8E /* Staircase_Question.mp3 */,
+				70EC9B6A24C72082009F8B8E /* Stool_Question.mp3 */,
+				70EC9B7724C72084009F8B8E /* Swing_Question.mp3 */,
+				70EC9B7C24C72085009F8B8E /* Telephone_Question.mp3 */,
+				70EC9B6624C72081009F8B8E /* Wardrobe_Question.mp3 */,
+				70EC9B6F24C72083009F8B8E /* Window_Question.mp3 */,
+			);
+			path = HouseHoldThings_Question;
+			sourceTree = "<group>";
+		};
+		70270FD924A34F0300EB8DAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70FF090924962D9B002861AE /* HomeViewController.swift */,
+				70631FEA249776AB00DAE930 /* ImagesCollectionViewController.swift */,
+				70270FDA24A369A900EB8DAB /* TestViewController.swift */,
+				70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		70631FEE2497ED5100DAE930 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				70631FF12497F11B00DAE930 /* PictureCollectionCell.swift */,
+				70631FF22497F11B00DAE930 /* PictureCollectionCell.xib */,
+				7068EFD224AB5DCE00B448C3 /* TestSolveCollectionCell.swift */,
+				7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		70E3B41D24C453620053B679 /* Implements */ = {
+			isa = PBXGroup;
+			children = (
+				70EC9B0624C6F4AD009F8B8E /* Implements_Question */,
+				70EC9B0524C6F49E009F8B8E /* Implements_Name */,
+			);
+			path = Implements;
+			sourceTree = "<group>";
+		};
+		70E5E8A724BDE2F8002B2032 /* KitchenUtensils */ = {
+			isa = PBXGroup;
+			children = (
+				70E5E8A924BDE339002B2032 /* KitchenUtensils_Question */,
+				70E5E8A824BDE331002B2032 /* KitchenUtensils_Name */,
+			);
+			path = KitchenUtensils;
+			sourceTree = "<group>";
+		};
+		70E5E8A824BDE331002B2032 /* KitchenUtensils_Name */ = {
+			isa = PBXGroup;
+			children = (
+				70E5E8BD24BDE358002B2032 /* Bowl.mp3 */,
+				70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */,
+				70E5E8B324BDE357002B2032 /* Cup.mp3 */,
+				70E5E8B824BDE357002B2032 /* Fork.mp3 */,
+				70E5E8B024BDE356002B2032 /* Glass.mp3 */,
+				70E5E8B124BDE356002B2032 /* Grater.mp3 */,
+				70E5E8B724BDE357002B2032 /* Ladle.mp3 */,
+				70E5E8BB24BDE358002B2032 /* Lid.mp3 */,
+				70E5E8AE24BDE356002B2032 /* Pan.mp3 */,
+				70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */,
+				70E5E8B624BDE357002B2032 /* Plate.mp3 */,
+				70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */,
+				70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */,
+				70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */,
+				70E5E8AA24BDE355002B2032 /* Saucer.mp3 */,
+				70013AD824CDE4AC00CE1AFD /* Teapot.mp3 */,
+				70E5E8B224BDE356002B2032 /* Sieve.mp3 */,
+				70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */,
+				70E5E8B424BDE357002B2032 /* Spoon.mp3 */,
+				70E5E8AD24BDE356002B2032 /* Strainer.mp3 */,
+			);
+			path = KitchenUtensils_Name;
+			sourceTree = "<group>";
+		};
+		70E5E8A924BDE339002B2032 /* KitchenUtensils_Question */ = {
+			isa = PBXGroup;
+			children = (
+				70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */,
+				70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */,
+				70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */,
+				70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */,
+				70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */,
+				70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */,
+				70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */,
+				70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */,
+				70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */,
+				70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */,
+				70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */,
+				70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */,
+				70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */,
+				70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */,
+				70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */,
+				70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */,
+				70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */,
+				70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */,
+				70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */,
+				70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */,
+			);
+			path = KitchenUtensils_Question;
+			sourceTree = "<group>";
+		};
+		70EC9B0524C6F49E009F8B8E /* Implements_Name */ = {
+			isa = PBXGroup;
+			children = (
+				70E3B41E24C4536F0053B679 /* Axe.mp3 */,
+				70E3B41F24C4536F0053B679 /* Cultivator.mp3 */,
+				70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */,
+				70E3B42B24C4556A0053B679 /* Hose.mp3 */,
+				70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */,
+				70E3B43024C456370053B679 /* Garden Gloves.mp3 */,
+				70E3B43124C456380053B679 /* Wheelbarrow.mp3 */,
+				70329EC824C608E300E00095 /* Watering Can.mp3 */,
+				70E3B42624C453CE0053B679 /* Spade.mp3 */,
+				70E3B42724C453CE0053B679 /* Trowel.mp3 */,
+				70E3B42024C4536F0053B679 /* Hand Fork.mp3 */,
+				70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */,
+				70E3B42124C4536F0053B679 /* Shovel.mp3 */,
+			);
+			path = Implements_Name;
+			sourceTree = "<group>";
+		};
+		70EC9B0624C6F4AD009F8B8E /* Implements_Question */ = {
+			isa = PBXGroup;
+			children = (
+				70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */,
+				70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */,
+				70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */,
+				70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */,
+				70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */,
+				70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */,
+				70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */,
+				70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */,
+				70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */,
+				70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */,
+				70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */,
+				70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */,
+				70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */,
+				70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */,
+			);
+			path = Implements_Question;
+			sourceTree = "<group>";
+		};
+		70FF08F924962D9B002861AE = {
+			isa = PBXGroup;
+			children = (
+				70FF090424962D9B002861AE /* Kids-LearnWithFun3 */,
+				70FF091B24962DB5002861AE /* Kids-LearnWithFunTests */,
+				70FF092624962DB5002861AE /* Kids-LearnWithFunUITests */,
+				70FF090324962D9B002861AE /* Products */,
+				DF1EE3988B9B9140F9599561 /* Pods */,
+				038CEF8D001E6A16FE323329 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70FF090324962D9B002861AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70FF090224962D9B002861AE /* Kids-LearnWithFun3.app */,
+				70FF091824962DB5002861AE /* Kids-LearnWithFun3Tests.xctest */,
+				70FF092324962DB5002861AE /* Kids-LearnWithFun3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70FF090424962D9B002861AE /* Kids-LearnWithFun3 */ = {
+			isa = PBXGroup;
+			children = (
+				70270FD924A34F0300EB8DAB /* ViewController */,
+				700D416C249E980A00AA3D1C /* SoundFile */,
+				70631FEE2497ED5100DAE930 /* CollectionCell */,
+				70FF093A2496682F002861AE /* Extension */,
+				70FF09352496450E002861AE /* Third Party */,
+				70FF090524962D9B002861AE /* AppDelegate.swift */,
+				70FF090724962D9B002861AE /* SceneDelegate.swift */,
+				70FF090B24962D9B002861AE /* Main.storyboard */,
+				70FF090E24962DB5002861AE /* Assets.xcassets */,
+				70FF091024962DB5002861AE /* LaunchScreen.storyboard */,
+				70FF091324962DB5002861AE /* Info.plist */,
+			);
+			path = "Kids-LearnWithFun3";
+			sourceTree = "<group>";
+		};
+		70FF091B24962DB5002861AE /* Kids-LearnWithFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				70FF091C24962DB5002861AE /* Kids_LearnWithFunTests.swift */,
+				70FF091E24962DB5002861AE /* Info.plist */,
+			);
+			path = "Kids-LearnWithFunTests";
+			sourceTree = "<group>";
+		};
+		70FF092624962DB5002861AE /* Kids-LearnWithFunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70FF092724962DB5002861AE /* Kids_LearnWithFunUITests.swift */,
+				70FF092924962DB5002861AE /* Info.plist */,
+			);
+			path = "Kids-LearnWithFunUITests";
+			sourceTree = "<group>";
+		};
+		70FF09352496450E002861AE /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				7027932924CCAED700A863FB /* BackgroundMusic.mp3 */,
+				70013ADA24CDE61900CE1AFD /* Bubble.gif */,
+				70013AD024CDAE8800CE1AFD /* Kitchen.gif */,
+				70013AD224CDAFDC00CE1AFD /* House.gif */,
+				70013AD624CDB97600CE1AFD /* SchoolGif.gif */,
+				700CDCC324CB27E5004C8615 /* Gardening.gif */,
+				70FF093624965879002861AE /* GIFSwift.swift */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		70FF093A2496682F002861AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				70FF093B24966856002861AE /* UIImageviewExtension.swift */,
+				70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */,
+				709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */,
+				707ECA21249CB3E10024D06C /* UIViewExtension.swift */,
+				701EF78024A294C5006C0A36 /* UIExtension.swift */,
+				70277DD124A4B59100072D57 /* UILabelExtension.swift */,
+				7068EFCE24AB4C6900B448C3 /* AppConstant.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DF1EE3988B9B9140F9599561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FECAC5356E391BB01986015 /* Pods-Kids-LearnWithFun.debug.xcconfig */,
+				8D3BEF9F8B28EAF75AE67232 /* Pods-Kids-LearnWithFun.release.xcconfig */,
+				330855B7235C70D81BA9C8BA /* Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.debug.xcconfig */,
+				506C3AC2C26BDD790042AD8E /* Pods-Kids-LearnWithFun-Kids-LearnWithFunUITests.release.xcconfig */,
+				F276F17DD9108EA06D006AE5 /* Pods-Kids-LearnWithFunTests.debug.xcconfig */,
+				2B6D826C0F5FEBC5E32F5CFC /* Pods-Kids-LearnWithFunTests.release.xcconfig */,
+				C33D639EEF0C79E3BC87916E /* Pods-Kids-LearnWithFun1.debug.xcconfig */,
+				FD6B4C9B26C8687A4FBFC3CF /* Pods-Kids-LearnWithFun1.release.xcconfig */,
+				E4C0226CB1A9572B0CB846CA /* Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.debug.xcconfig */,
+				9EA9145E6BC924594E5B9FB6 /* Pods-Kids-LearnWithFun1-Kids-LearnWithFun1UITests.release.xcconfig */,
+				8977875AE3E6E097D3D020EC /* Pods-Kids-LearnWithFun1Tests.debug.xcconfig */,
+				D729217EDFF4CD2D8605F6C7 /* Pods-Kids-LearnWithFun1Tests.release.xcconfig */,
+				B68E69FBE7D10264588481E7 /* Pods-Kids-LearnWithFun2.debug.xcconfig */,
+				46A391F65638EECE328AC065 /* Pods-Kids-LearnWithFun2.release.xcconfig */,
+				1E8CF5BF6D0183542BF019CE /* Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.debug.xcconfig */,
+				5221C20743489DDA28B464F5 /* Pods-Kids-LearnWithFun2-Kids-LearnWithFun2UITests.release.xcconfig */,
+				56AB9351157D2055122A3784 /* Pods-Kids-LearnWithFun2Tests.debug.xcconfig */,
+				695C26B3FA5688C6B7FC4895 /* Pods-Kids-LearnWithFun2Tests.release.xcconfig */,
+				E4575C414289F58CDB1A657A /* Pods-Kids-LearnWithFun3.debug.xcconfig */,
+				181DD4BD54E469D2DE8B3CC0 /* Pods-Kids-LearnWithFun3.release.xcconfig */,
+				2C185180F08FBD11D859BD88 /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.debug.xcconfig */,
+				338EA9AA3E0F019D08BF8FFF /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.release.xcconfig */,
+				65342E7D3BC59C2DB82D9332 /* Pods-Kids-LearnWithFun3Tests.debug.xcconfig */,
+				3D772565661EA2EAD28647AF /* Pods-Kids-LearnWithFun3Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70FF090124962D9B002861AE /* Kids-LearnWithFun3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FF092C24962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3" */;
+			buildPhases = (
+				E2715DBA7F41857E793BD4CD /* [CP] Check Pods Manifest.lock */,
+				70FF08FE24962D9B002861AE /* Sources */,
+				70FF08FF24962D9B002861AE /* Frameworks */,
+				70FF090024962D9B002861AE /* Resources */,
+				ACC0192A4E246B95DF3277E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kids-LearnWithFun3";
+			productName = "Kids-LearnWithFun";
+			productReference = 70FF090224962D9B002861AE /* Kids-LearnWithFun3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70FF091724962DB5002861AE /* Kids-LearnWithFun3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FF092F24962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3Tests" */;
+			buildPhases = (
+				1C1A386C9531831038297636 /* [CP] Check Pods Manifest.lock */,
+				70FF091424962DB5002861AE /* Sources */,
+				70FF091524962DB5002861AE /* Frameworks */,
+				70FF091624962DB5002861AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FF091A24962DB5002861AE /* PBXTargetDependency */,
+			);
+			name = "Kids-LearnWithFun3Tests";
+			productName = "Kids-LearnWithFunTests";
+			productReference = 70FF091824962DB5002861AE /* Kids-LearnWithFun3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70FF092224962DB5002861AE /* Kids-LearnWithFun3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FF093224962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3UITests" */;
+			buildPhases = (
+				FFEF53499C4693559D60728B /* [CP] Check Pods Manifest.lock */,
+				70FF091F24962DB5002861AE /* Sources */,
+				70FF092024962DB5002861AE /* Frameworks */,
+				70FF092124962DB5002861AE /* Resources */,
+				2BC076A4C7D2864897CBA259 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70FF092524962DB5002861AE /* PBXTargetDependency */,
+			);
+			name = "Kids-LearnWithFun3UITests";
+			productName = "Kids-LearnWithFunUITests";
+			productReference = 70FF092324962DB5002861AE /* Kids-LearnWithFun3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70FF08FA24962D9B002861AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "sheetal shinde";
+				TargetAttributes = {
+					70FF090124962D9B002861AE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					70FF091724962DB5002861AE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 70FF090124962D9B002861AE;
+					};
+					70FF092224962DB5002861AE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 70FF090124962D9B002861AE;
+					};
+				};
+			};
+			buildConfigurationList = 70FF08FD24962D9B002861AE /* Build configuration list for PBXProject "Kids-LearnWithFun3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70FF08F924962D9B002861AE;
+			productRefGroup = 70FF090324962D9B002861AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70FF090124962D9B002861AE /* Kids-LearnWithFun3 */,
+				70FF091724962DB5002861AE /* Kids-LearnWithFun3Tests */,
+				70FF092224962DB5002861AE /* Kids-LearnWithFun3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70FF090024962D9B002861AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700CDCCC24CB5CE5004C8615 /* Door Mat.mp3 in Resources */,
+				70EC9B8824C72086009F8B8E /* Gate_Question.mp3 in Resources */,
+				70EC9BA224C758E5009F8B8E /* Watering Can_Question.mp3 in Resources */,
+				70E3B42824C453CE0053B679 /* Spade.mp3 in Resources */,
+				70EC9B8024C72086009F8B8E /* Wardrobe_Question.mp3 in Resources */,
+				70E3B42D24C4556A0053B679 /* Hedge Shears.mp3 in Resources */,
+				70EC9B9424C72086009F8B8E /* Room_Question.mp3 in Resources */,
+				7017AA2524BB928200C46A97 /* School Bag.mp3 in Resources */,
+				70013ADB24CDE61900CE1AFD /* Bubble.gif in Resources */,
+				70EC9B3B24C719C7009F8B8E /* Ladle_Question.mp3 in Resources */,
+				70EC9B5C24C71C01009F8B8E /* Pencil_Question.mp3 in Resources */,
+				70EC9B0824C6F503009F8B8E /* Axe_Question.mp3 in Resources */,
+				70EC9B6024C71C01009F8B8E /* Notebook_Question.mp3 in Resources */,
+				7068EFD524AB5DCE00B448C3 /* TestSolveCollectionCell.xib in Resources */,
+				70E5E8CF24BDE358002B2032 /* Lid.mp3 in Resources */,
+				7017AA2224BB928200C46A97 /* Pencil.mp3 in Resources */,
+				70EC9B1A24C71612009F8B8E /* Gardening Boots_Question.mp3 in Resources */,
+				70EC9B4424C719C7009F8B8E /* Cauldron_Question.mp3 in Resources */,
+				7017AA2A24BB928200C46A97 /* Map.mp3 in Resources */,
+				70EC9B1824C715E6009F8B8E /* Shovel_Question.mp3 in Resources */,
+				70EC9B9724C72086009F8B8E /* Fan_Question.mp3 in Resources */,
+				70E5E8D124BDE358002B2032 /* Bowl.mp3 in Resources */,
+				70EC9B2024C71694009F8B8E /* Spade_Question.mp3 in Resources */,
+				70E3B42224C4536F0053B679 /* Axe.mp3 in Resources */,
+				70EC9B9824C72086009F8B8E /* Dustbin_Question.mp3 in Resources */,
+				70EC9B1F24C71694009F8B8E /* Trowel_Question.mp3 in Resources */,
+				70EC9B0A24C71408009F8B8E /* Garden Gloves_Question.mp3 in Resources */,
+				70EC9B3C24C719C7009F8B8E /* Spoon_Question.mp3 in Resources */,
+				70E5E8CE24BDE358002B2032 /* Pitcher.mp3 in Resources */,
+				70EC9B8E24C72086009F8B8E /* Staircase_Question.mp3 in Resources */,
+				70EC9B8224C72086009F8B8E /* Corridor_Question.mp3 in Resources */,
+				7017A9FD24BB410100C46A97 /* Dustbin.mp3 in Resources */,
+				7017AA0824BB410100C46A97 /* Chair.mp3 in Resources */,
+				7017AA0924BB410100C46A97 /* Kitchen.mp3 in Resources */,
+				7017AA0D24BB410100C46A97 /* Corridor.mp3 in Resources */,
+				70FF091224962DB5002861AE /* LaunchScreen.storyboard in Resources */,
+				70EC9B9E24C7567B009F8B8E /* Hedge Shears_Question.mp3 in Resources */,
+				70EC9B5F24C71C01009F8B8E /* Map_Question.mp3 in Resources */,
+				7017AA0324BB410100C46A97 /* Sofa.mp3 in Resources */,
+				70E3B42924C453CE0053B679 /* Trowel.mp3 in Resources */,
+				70F9024624AFAF5C00A3AA12 /* Wrong.mp3 in Resources */,
+				70013AD324CDAFDC00CE1AFD /* House.gif in Resources */,
+				7017AA0424BB410100C46A97 /* Curtain.mp3 in Resources */,
+				70F9024124AF88AE00A3AA12 /* GreatJob.mp3 in Resources */,
+				70EC9B8B24C72086009F8B8E /* Kitchen_Question.mp3 in Resources */,
+				700CDCD224CB5E90004C8615 /* Air Cooler.mp3 in Resources */,
+				70AF537924A0CCCF00AD4794 /* Main.storyboard in Resources */,
+				70EC9B3924C719C7009F8B8E /* Grater_Question.mp3 in Resources */,
+				70EC9B1424C7158F009F8B8E /* Wheelbarrow_Question.mp3 in Resources */,
+				70EC9B8F24C72086009F8B8E /* Bed_Question.mp3 in Resources */,
+				70E5E8C024BDE358002B2032 /* Rolling Pin.mp3 in Resources */,
+				70631FF42497F11B00DAE930 /* PictureCollectionCell.xib in Resources */,
+				7017AA2C24BB928200C46A97 /* Electric Bell.mp3 in Resources */,
+				70E5E8C424BDE358002B2032 /* Glass.mp3 in Resources */,
+				7017AA0B24BB410100C46A97 /* Swing.mp3 in Resources */,
+				70E5E8D924C0CD22002B2032 /* Air Conditioner.mp3 in Resources */,
+				70E5E8CD24BDE358002B2032 /* Rolling Pad.mp3 in Resources */,
+				70E5E8CA24BDE358002B2032 /* Plate.mp3 in Resources */,
+				7017AA0C24BB410100C46A97 /* Mirror.mp3 in Resources */,
+				70EC9B0E24C7148E009F8B8E /* Hand Fork_Question.mp3 in Resources */,
+				7017AA0124BB410100C46A97 /* Bathroom.mp3 in Resources */,
+				7017AA0A24BB410100C46A97 /* Telephone.mp3 in Resources */,
+				70EC9B9324C72086009F8B8E /* Door_Question.mp3 in Resources */,
+				70EC9B4024C719C7009F8B8E /* Fork_Question.mp3 in Resources */,
+				70F9023D24AF88A500A3AA12 /* No.mp3 in Resources */,
+				70013AD124CDAE8800CE1AFD /* Kitchen.gif in Resources */,
+				70EC9B4124C719C7009F8B8E /* Skimmer_Question.mp3 in Resources */,
+				70E5E8C824BDE358002B2032 /* Spoon.mp3 in Resources */,
+				7017AA0624BB410100C46A97 /* Gate.mp3 in Resources */,
+				70EC9B5B24C71C01009F8B8E /* Book_Question.mp3 in Resources */,
+				7017AA2624BB928200C46A97 /* Computer.mp3 in Resources */,
+				70EC9B8124C72086009F8B8E /* House_Question.mp3 in Resources */,
+				70EC9B3F24C719C7009F8B8E /* Glass_Question.mp3 in Resources */,
+				70EC9B4324C719C7009F8B8E /* Strainer_Question.mp3 in Resources */,
+				70E5E8BF24BDE358002B2032 /* Skimmer.mp3 in Resources */,
+				70E3B42F24C4556A0053B679 /* Prunning Saw.mp3 in Resources */,
+				70EC9B1624C715B8009F8B8E /* Rake_Question.mp3 in Resources */,
+				70EC9B3E24C719C7009F8B8E /* Lid_Question.mp3 in Resources */,
+				70E5E8BE24BDE358002B2032 /* Saucer.mp3 in Resources */,
+				70EC9B5724C71C01009F8B8E /* Classroom_Question.mp3 in Resources */,
+				70EC9B6224C71C01009F8B8E /* Electric Bell_Question.mp3 in Resources */,
+				70EC9B3524C719C7009F8B8E /* Plate_Question.mp3 in Resources */,
+				70EC9B9024C72086009F8B8E /* Mirror_Question.mp3 in Resources */,
+				70EC9B7F24C72086009F8B8E /* Curtain_Question.mp3 in Resources */,
+				70E5E8C624BDE358002B2032 /* Sieve.mp3 in Resources */,
+				7017A9FE24BB410100C46A97 /* Stool.mp3 in Resources */,
+				7017AA0024BB410100C46A97 /* Fan.mp3 in Resources */,
+				70EC9B3824C719C7009F8B8E /* Sieve_Question.mp3 in Resources */,
+				70EC9B3A24C719C7009F8B8E /* Rolling Pad_Question.mp3 in Resources */,
+				700CDCD024CB5E88004C8615 /* Air Cooler_Question.mp3 in Resources */,
+				7017AA2724BB928200C46A97 /* Classroom.mp3 in Resources */,
+				70EC9B5D24C71C01009F8B8E /* Bench_Question.mp3 in Resources */,
+				70EC9B8424C72086009F8B8E /* Stool_Question.mp3 in Resources */,
+				70EC9B3724C719C7009F8B8E /* Saucer_Question.mp3 in Resources */,
+				7017AA2824BB928200C46A97 /* Book.mp3 in Resources */,
+				7027932A24CCAED700A863FB /* BackgroundMusic.mp3 in Resources */,
+				70EC9B1024C714B6009F8B8E /* Hose_Question.mp3 in Resources */,
+				70EC9B9624C72086009F8B8E /* Telephone_Question.mp3 in Resources */,
+				70EC9B1224C71571009F8B8E /* Prunning Saw_Question.mp3 in Resources */,
+				7017AA1224BB410100C46A97 /* Window.mp3 in Resources */,
+				70EC9B4624C719C7009F8B8E /* Pitcher_Question.mp3 in Resources */,
+				70E5E8C224BDE358002B2032 /* Pan.mp3 in Resources */,
+				70E3B42524C4536F0053B679 /* Shovel.mp3 in Resources */,
+				700CDCC424CB27E5004C8615 /* Gardening.gif in Resources */,
+				7017AA0224BB410100C46A97 /* Bed.mp3 in Resources */,
+				70E3B42324C4536F0053B679 /* Cultivator.mp3 in Resources */,
+				7017AA3124BB98F500C46A97 /* School Uniform.mp3 in Resources */,
+				70EC9B8624C72086009F8B8E /* Air Conditioner_Question.mp3 in Resources */,
+				70329EC924C608E300E00095 /* Watering Can.mp3 in Resources */,
+				70EC9B9C24C75231009F8B8E /* Door Mat_Question.mp3 in Resources */,
+				70EC9B5A24C71C01009F8B8E /* Playground_Question.mp3 in Resources */,
+				70EC9B5924C71C01009F8B8E /* School Bag_Question.mp3 in Resources */,
+				70E3B43224C456380053B679 /* Garden Gloves.mp3 in Resources */,
+				70E5E8C124BDE358002B2032 /* Strainer.mp3 in Resources */,
+				70E3B42424C4536F0053B679 /* Hand Fork.mp3 in Resources */,
+				70EC9B9124C72086009F8B8E /* Swing_Question.mp3 in Resources */,
+				7017AA2924BB928200C46A97 /* Library.mp3 in Resources */,
+				70EC9B5E24C71C01009F8B8E /* School Uniform_Question.mp3 in Resources */,
+				7017A9FB24BB410100C46A97 /* Building.mp3 in Resources */,
+				70EC9B8C24C72086009F8B8E /* Ladder_Question.mp3 in Resources */,
+				70EC9B4824C719C7009F8B8E /* Cup_Question.mp3 in Resources */,
+				70EC9B4224C719C7009F8B8E /* Pressure Cooker_Question.mp3 in Resources */,
+				70EC9B3D24C719C7009F8B8E /* Teapot_Question.mp3 in Resources */,
+				7017AA1124BB410100C46A97 /* Broom.mp3 in Resources */,
+				7017A9FA24BB410100C46A97 /* Ladder.mp3 in Resources */,
+				7017A9FF24BB410100C46A97 /* Door.mp3 in Resources */,
+				70EC9B6424C71C01009F8B8E /* Pen_Question.mp3 in Resources */,
+				70EC9B4724C719C7009F8B8E /* Rolling Pin_Question.mp3 in Resources */,
+				70EC9B6324C71C01009F8B8E /* Library_Question.mp3 in Resources */,
+				70E5E8D824C0CD22002B2032 /* House.mp3 in Resources */,
+				70FF090F24962DB5002861AE /* Assets.xcassets in Resources */,
+				7017AA2324BB928200C46A97 /* Playground.mp3 in Resources */,
+				70E5E8CB24BDE358002B2032 /* Ladle.mp3 in Resources */,
+				7017AA2F24BB92E800C46A97 /* Bench.mp3 in Resources */,
+				70EC9B9524C72086009F8B8E /* Bathroom_Question.mp3 in Resources */,
+				7017AA2424BB928200C46A97 /* White Board.mp3 in Resources */,
+				70E3B43324C456380053B679 /* Wheelbarrow.mp3 in Resources */,
+				70F9024224AF88AE00A3AA12 /* Excellent.mp3 in Resources */,
+				70013AD924CDE4AC00CE1AFD /* Teapot.mp3 in Resources */,
+				70EC9B8924C72086009F8B8E /* Window_Question.mp3 in Resources */,
+				70E5E8CC24BDE358002B2032 /* Fork.mp3 in Resources */,
+				70F9024424AF88B900A3AA12 /* WellDone.mp3 in Resources */,
+				7017AA2D24BB928200C46A97 /* Pen.mp3 in Resources */,
+				70EC9B4524C719C7009F8B8E /* Pan_Question.mp3 in Resources */,
+				70E5E8C324BDE358002B2032 /* Cauldron.mp3 in Resources */,
+				7017AA0724BB410100C46A97 /* Staircase.mp3 in Resources */,
+				70E5E8D024BDE358002B2032 /* Pressure Cooker.mp3 in Resources */,
+				70EC9B8724C72086009F8B8E /* Sofa_Question.mp3 in Resources */,
+				70EC9B8524C72086009F8B8E /* Chair_Question.mp3 in Resources */,
+				7017AA1024BB410100C46A97 /* Mat.mp3 in Resources */,
+				7017AA0E24BB410100C46A97 /* Table.mp3 in Resources */,
+				70E5E8C724BDE358002B2032 /* Cup.mp3 in Resources */,
+				70EC9B6124C71C01009F8B8E /* White Board_Question.mp3 in Resources */,
+				70EC9B3624C719C7009F8B8E /* Bowl_Question.mp3 in Resources */,
+				7017AA0524BB410100C46A97 /* Wardrobe.mp3 in Resources */,
+				70E5E8C524BDE358002B2032 /* Grater.mp3 in Resources */,
+				70EC9B8A24C72086009F8B8E /* Broom_Question.mp3 in Resources */,
+				70EC9B9A24C722F1009F8B8E /* Table_Question.mp3 in Resources */,
+				70EC9B0C24C7143E009F8B8E /* Cultivator_Question.mp3 in Resources */,
+				70EC9B5824C71C01009F8B8E /* Computer_Question.mp3 in Resources */,
+				70EC9B9224C72086009F8B8E /* Building_Question.mp3 in Resources */,
+				70E3B42E24C4556A0053B679 /* Hose.mp3 in Resources */,
+				70EC9B0424C6F2D7009F8B8E /* Gardening Boots.mp3 in Resources */,
+				7017A9FC24BB410100C46A97 /* Room.mp3 in Resources */,
+				7017AA2B24BB928200C46A97 /* Notebook.mp3 in Resources */,
+				70013AD724CDB97600CE1AFD /* SchoolGif.gif in Resources */,
+				700CDCCE24CB5D3B004C8615 /* Cooler.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF091624962DB5002861AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF092124962DB5002861AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C1A386C9531831038297636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kids-LearnWithFun3Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC076A4C7D2864897CBA259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACC0192A4E246B95DF3277E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3/Pods-Kids-LearnWithFun3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3/Pods-Kids-LearnWithFun3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kids-LearnWithFun3/Pods-Kids-LearnWithFun3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2715DBA7F41857E793BD4CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kids-LearnWithFun3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFEF53499C4693559D60728B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70FF08FE24962D9B002861AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707ECA22249CB3E10024D06C /* UIViewExtension.swift in Sources */,
+				70FF093724965879002861AE /* GIFSwift.swift in Sources */,
+				70FF093C24966856002861AE /* UIImageviewExtension.swift in Sources */,
+				70FF090A24962D9B002861AE /* HomeViewController.swift in Sources */,
+				70FF090624962D9B002861AE /* AppDelegate.swift in Sources */,
+				70631FED2497AA3000DAE930 /* UIButtonExtension.swift in Sources */,
+				7068EFCF24AB4C6900B448C3 /* AppConstant.swift in Sources */,
+				70E468A524A8D0E2008C8FFB /* TestSolveViewController.swift in Sources */,
+				709D3379249B712B002B1114 /* UiCollectionViewExtension.swift in Sources */,
+				70631FEB249776AB00DAE930 /* ImagesCollectionViewController.swift in Sources */,
+				70631FF32497F11B00DAE930 /* PictureCollectionCell.swift in Sources */,
+				701EF78124A294C5006C0A36 /* UIExtension.swift in Sources */,
+				70270FDB24A369A900EB8DAB /* TestViewController.swift in Sources */,
+				7068EFD424AB5DCE00B448C3 /* TestSolveCollectionCell.swift in Sources */,
+				70FF090824962D9B002861AE /* SceneDelegate.swift in Sources */,
+				70277DD224A4B59100072D57 /* UILabelExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF091424962DB5002861AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FF091D24962DB5002861AE /* Kids_LearnWithFunTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FF091F24962DB5002861AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FF092824962DB5002861AE /* Kids_LearnWithFunUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70FF091A24962DB5002861AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FF090124962D9B002861AE /* Kids-LearnWithFun3 */;
+			targetProxy = 70FF091924962DB5002861AE /* PBXContainerItemProxy */;
+		};
+		70FF092524962DB5002861AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FF090124962D9B002861AE /* Kids-LearnWithFun3 */;
+			targetProxy = 70FF092424962DB5002861AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70FF090B24962D9B002861AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70FF090C24962D9B002861AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70FF091024962DB5002861AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70FF091124962DB5002861AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70FF092A24962DB5002861AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70FF092B24962DB5002861AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70FF092D24962DB5002861AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4575C414289F58CDB1A657A /* Pods-Kids-LearnWithFun3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9C32R6P4U;
+				INFOPLIST_FILE = "Kids-LearnWithFun3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFun";
+				PRODUCT_NAME = "Kids-LearnWithFun3";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70FF092E24962DB5002861AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181DD4BD54E469D2DE8B3CC0 /* Pods-Kids-LearnWithFun3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9C32R6P4U;
+				INFOPLIST_FILE = "Kids-LearnWithFun3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFun";
+				PRODUCT_NAME = "Kids-LearnWithFun3";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70FF093024962DB5002861AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65342E7D3BC59C2DB82D9332 /* Pods-Kids-LearnWithFun3Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids-LearnWithFunTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFunTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids-LearnWithFun2.app/Kids-LearnWithFun1";
+			};
+			name = Debug;
+		};
+		70FF093124962DB5002861AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D772565661EA2EAD28647AF /* Pods-Kids-LearnWithFun3Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids-LearnWithFunTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFunTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids-LearnWithFun2.app/Kids-LearnWithFun1";
+			};
+			name = Release;
+		};
+		70FF093324962DB5002861AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C185180F08FBD11D859BD88 /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids-LearnWithFunUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFunUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kids-LearnWithFun";
+			};
+			name = Debug;
+		};
+		70FF093424962DB5002861AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338EA9AA3E0F019D08BF8FFF /* Pods-Kids-LearnWithFun3-Kids-LearnWithFun3UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Kids-LearnWithFunUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheetal.Kids-LearnWithFunUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kids-LearnWithFun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70FF08FD24962D9B002861AE /* Build configuration list for PBXProject "Kids-LearnWithFun3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FF092A24962DB5002861AE /* Debug */,
+				70FF092B24962DB5002861AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FF092C24962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FF092D24962DB5002861AE /* Debug */,
+				70FF092E24962DB5002861AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FF092F24962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FF093024962DB5002861AE /* Debug */,
+				70FF093124962DB5002861AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FF093224962DB5002861AE /* Build configuration list for PBXNativeTarget "Kids-LearnWithFun3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FF093324962DB5002861AE /* Debug */,
+				70FF093424962DB5002861AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70FF08FA24962D9B002861AE /* Project object */;
+}
