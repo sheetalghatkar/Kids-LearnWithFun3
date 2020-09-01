@@ -57,23 +57,27 @@ class CommanArray {
     static var vegetablesNameArray: [String] = ["Onion","Potato",
                                                      "Spinach","Pumpkin","Raddish","Spring Onion","Tomato","Green Chilli","Garlic","Brinjal","Green Peas","Ginger","Lady Finger","Fenugreek Leaves","Cucumber","Coriander","Cauliflower","Curry Leaves","Carrot","Cabbage","Beetroot"]
     //------------------------------------------------------------------------
-    static var gardeningImageArray: [UIImage] = [
-        UIImage(named: "Axe.png")!,
-        UIImage(named: "Cultivator.png")!,
-        UIImage(named: "Garden Gloves.png")!,
-        UIImage(named: "Hand Fork.png")!,
-        UIImage(named: "Hedge Shears.png")!,
-        UIImage(named: "Hose.png")!,
-        UIImage(named: "Prunning Saw.png")!,
-        UIImage(named: "Shovel.png")!,
-        UIImage(named: "Spade.png")!,
-        UIImage(named: "Trowel.png")!,
-        UIImage(named: "Wheelbarrow.png")!,
-        UIImage(named: "Watering Can.png")!,
-        UIImage(named: "Gardening Boots.png")!
+    static var grainsImageArray: [UIImage] = [
+        UIImage(named: "Wheat.png")!,
+        UIImage(named: "Rice.png")!,
+        UIImage(named: "Pearl Millet.png")!,
+        UIImage(named: "Sorghum Millet.png")!,
+        UIImage(named: "Bengal Gram Lentil.png")!,
+        UIImage(named: "Brown Lentil.png")!,
+        UIImage(named: "Red Lentil.png")!,
+        UIImage(named: "Cowpea Seeds.png")!,
+        UIImage(named: "Sesame.png")!,
+        UIImage(named: "Mung Bean.png")!,
+        UIImage(named: "Oats.png")!,
+        UIImage(named: "Soya Chunks.png")!,
+        UIImage(named: "Sago.png")!,
+        UIImage(named: "Kidney Beans.png")!,
+        UIImage(named: "Black Chickpeas.png")!,
+        UIImage(named: "White Chickpeas.png")!,
+        UIImage(named: "Foxnuts.png")!
     ]
-    static var gardeningNameArray: [String] = ["Axe",
-        "Cultivator","Garden Gloves","Hand Fork","Hedge Shears","Hose","Prunning Saw","Shovel","Spade","Trowel","Wheelbarrow","Watering Can","Gardening Boots"]
+    static var grainsNameArray: [String] = ["Wheat",
+        "Rice","Pearl Millet","Sorghum Millet","Bengal Gram Lentil","Brown Lentil","Red Lentil","Cowpea Seeds","Sesame","Mung Beans","Oats","Soya Chunks","Sago","Kidney Beans","Black Chickpeas","White Chickpeas","Foxnuts"]
     //------------------------------------------------------------------------
     static var schoolImageArray: [UIImage] = [
         UIImage(named: "Classroom.png")!,

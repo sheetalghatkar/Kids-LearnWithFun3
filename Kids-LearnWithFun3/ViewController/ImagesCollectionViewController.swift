@@ -77,7 +77,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Brinjal")
             self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Tomato")
         } else if getTabNumber == 2 {
-            self.imgViewBgGarden.image  = UIImage.gifImageWithName("Gardening")
+            self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Grain")
+            self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Corn")
         } else if getTabNumber == 3 {
             self.imgViewBgKitchen.image  = UIImage.gifImageWithName("SchoolGif")
         }

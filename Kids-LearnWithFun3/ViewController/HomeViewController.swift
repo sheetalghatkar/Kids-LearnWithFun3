@@ -123,8 +123,8 @@ class HomeViewController: UIViewController {
             setPictureVC.getTabNumber = 1
         }
         else if tapGestureRecognizer.view?.tag == 3 {
-            setPictureVC.imageArray = CommanArray.gardeningImageArray
-            setPictureVC.imageNameArray = CommanArray.gardeningNameArray
+            setPictureVC.imageArray = CommanArray.grainsImageArray
+            setPictureVC.imageNameArray = CommanArray.grainsNameArray
             setPictureVC.getTabNumber = 2
         }
         else if tapGestureRecognizer.view?.tag == 4 {
