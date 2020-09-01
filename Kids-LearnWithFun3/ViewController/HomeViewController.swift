@@ -113,13 +113,13 @@ class HomeViewController: UIViewController {
     {
         let setPictureVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImagesCollectionViewController") as! ImagesCollectionViewController
         if tapGestureRecognizer.view?.tag == 1 {
-            setPictureVC.imageArray = CommanArray.houseHoldThingsImageArray
-            setPictureVC.imageNameArray = CommanArray.houseHoldThingsNameArray
+            setPictureVC.imageArray = CommanArray.fruitsImageArray
+            setPictureVC.imageNameArray = CommanArray.fruitsNameArray
             setPictureVC.getTabNumber = 0
         }
         else if tapGestureRecognizer.view?.tag == 2 {
-            setPictureVC.imageArray = CommanArray.kitchenUtensilsImageArray
-            setPictureVC.imageNameArray = CommanArray.kitchenUtensilsNameArray
+            setPictureVC.imageArray = CommanArray.vegetablesImageArray
+            setPictureVC.imageNameArray = CommanArray.vegetablesNameArray
             setPictureVC.getTabNumber = 1
         }
         else if tapGestureRecognizer.view?.tag == 3 {

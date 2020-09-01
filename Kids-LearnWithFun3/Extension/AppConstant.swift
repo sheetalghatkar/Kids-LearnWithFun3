@@ -10,59 +10,52 @@ import Foundation
 import UIKit
 
 class CommanArray {
-    static var houseHoldThingsImageArray: [UIImage] = [
-        UIImage(named: "Room.png")!,
-        UIImage(named: "Door.png")!,
-        UIImage(named: "Gate.png")!,
-        UIImage(named: "Kitchen.png")!,
-        UIImage(named: "Bathroom.png")!,
-        UIImage(named: "Staircase.png")!,
-        UIImage(named: "Corridor.png")!,
-        UIImage(named: "Window.png")!,
-        UIImage(named: "Bed.png")!,
-        UIImage(named: "Sofa.png")!,
-        UIImage(named: "Curtain.png")!,
-        UIImage(named: "Table.png")!,
-        UIImage(named: "Stool.png")!,
-        UIImage(named: "Chair.png")!,
-        UIImage(named: "Wardrobe.png")!,
-        UIImage(named: "Swing.png")!,
-        UIImage(named: "Air Cooler.png")!,
-        UIImage(named: "Fan.png")!,
-        UIImage(named: "Air Conditioner.png")!,
-        UIImage(named: "Door Mat.png")!,
-        UIImage(named: "Ladder.png")!,
-        UIImage(named: "Mirror.png")!,
-        UIImage(named: "Broom.png")!,
-        UIImage(named: "Dustbin.png")!,
-        UIImage(named: "Telephone.png")!
+    static var fruitsImageArray: [UIImage] = [
+        UIImage(named: "Mango.png")!,
+        UIImage(named: "Custard Apple.png")!,
+        UIImage(named: "Grapes.png")!,
+        UIImage(named: "Apple.png")!,
+        UIImage(named: "Guava.png")!,
+        UIImage(named: "Kivi.png")!,
+        UIImage(named: "Orange.png")!,
+        UIImage(named: "Papaya.png")!,
+        UIImage(named: "Pineapple.png")!,
+        UIImage(named: "Strawberry.png")!,
+        UIImage(named: "Pomegranate.png")!,
+        UIImage(named: "Watermelon.png")!,
+        UIImage(named: "Jackfruit.png")!,
+        UIImage(named: "Banana.png")!,
+        UIImage(named: "Chickoo.png")!,
+        UIImage(named: "Pear.png")!,
+        UIImage(named: "Muskmelon.png")!
     ]
-    static var houseHoldThingsNameArray: [String] = ["Room","Door","Gate","Kitchen","Bathroom","Staircase","Corridor","Window","Bed","Sofa","Curtain","Table","Stool","Chair","Wardrobe","Swing","Air Cooler","Fan","Air Conditioner","Door Mat","Ladder","Mirror","Broom","Dustbin","Telephone"]
+    static var fruitsNameArray: [String] = ["Mango","Custard Apple","Grapes","Apple","Guava","Kivi","Orange","Papaya","Pineapple","Strawberry","Pomegranate","Watermelon","Jackfruit","Banana","Chickoo","Pear","Muskmelon"]
     //------------------------------------------------------------------------
-    static var kitchenUtensilsImageArray: [UIImage] = [
-        UIImage(named: "Pan.png")!,
-        UIImage(named: "Pitcher.png")!,
-        UIImage(named: "Pressure Cooker.png")!,
-        UIImage(named: "Plate.png")!,
-        UIImage(named: "Glass.png")!,
-        UIImage(named: "Cauldron.png")!,
-        UIImage(named: "Lid.png")!,
-        UIImage(named: "Cup.png")!,
-        UIImage(named: "Saucer.png")!,
-        UIImage(named: "Teapot.png")!,
-        UIImage(named: "Spoon.png")!,
-        UIImage(named: "Fork.png")!,
-        UIImage(named: "Sieve.png")!,
-        UIImage(named: "Strainer.png")!,
-        UIImage(named: "Rolling Pad.png")!,
-        UIImage(named: "Rolling Pin.png")!,
-        UIImage(named: "Skimmer.png")!,
-        UIImage(named: "Ladle.png")!,
-        UIImage(named: "Grater.png")!,
-        UIImage(named: "Bowl.png")!
+    static var vegetablesImageArray: [UIImage] = [
+        UIImage(named: "Onion.png")!,
+        UIImage(named: "Potato.png")!,
+        UIImage(named: "Spinach.png")!,
+        UIImage(named: "Pumpkin.png")!,
+        UIImage(named: "Raddish.png")!,
+        UIImage(named: "Spring Onion.png")!,
+        UIImage(named: "Tomato.png")!,
+        UIImage(named: "Green Chilli.png")!,
+        UIImage(named: "Garlic.png")!,
+        UIImage(named: "Brinjal.png")!,
+        UIImage(named: "Green Peas.png")!,
+        UIImage(named: "Ginger.png")!,
+        UIImage(named: "Lady Finger.png")!,
+        UIImage(named: "Fenugreek Leaves.png")!,
+        UIImage(named: "Cucumber.png")!,
+        UIImage(named: "Coriander.png")!,
+        UIImage(named: "Cauliflower.png")!,
+        UIImage(named: "Curry Leaves.png")!,
+        UIImage(named: "Carrot.png")!,
+        UIImage(named: "Cabbage.png")!,
+        UIImage(named: "Beetroot.png")!
     ]
-    static var kitchenUtensilsNameArray: [String] = ["Pan","Pitcher",
-                                                     "Pressure Cooker","Plate","Glass","Cauldron","Lid","Cup","Saucer","Teapot","Spoon","Fork","Sieve","Strainer","Rolling Pad","Rolling Pin","Skimmer","Ladle","Grater","Bowl"]
+    static var vegetablesNameArray: [String] = ["Onion","Potato",
+                                                     "Spinach","Pumpkin","Raddish","Spring Onion","Tomato","Green Chilli","Garlic","Brinjal","Green Peas","Ginger","Lady Finger","Fenugreek Leaves","Cucumber","Coriander","Cauliflower","Curry Leaves","Carrot","Cabbage","Beetroot"]
     //------------------------------------------------------------------------
     static var gardeningImageArray: [UIImage] = [
         UIImage(named: "Axe.png")!,

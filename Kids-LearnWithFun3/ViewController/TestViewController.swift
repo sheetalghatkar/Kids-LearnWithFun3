@@ -43,231 +43,241 @@ class TestViewController: UIViewController {
     {
         let setTestSolveVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TestSolveViewController") as! TestSolveViewController
         if tapGestureRecognizer.view?.tag == 1 {
+                    let solveTestArray = [[
+                        CommanArray.fruitsNameArray[2]+"-"+"0",
+                        CommanArray.fruitsNameArray[10]+"-"+"0",
+                        CommanArray.fruitsNameArray[0]+"-"+"1",
+                        CommanArray.fruitsNameArray[16]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[3]+"-"+"0",
+                         CommanArray.fruitsNameArray[1]+"-"+"1",
+                         CommanArray.fruitsNameArray[5]+"-"+"0",
+                         CommanArray.fruitsNameArray[11]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[2]+"-"+"1",
+                         CommanArray.fruitsNameArray[0]+"-"+"0",
+                         CommanArray.fruitsNameArray[7]+"-"+"0",
+                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[9]+"-"+"0",
+                         CommanArray.fruitsNameArray[16]+"-"+"0",
+                         CommanArray.fruitsNameArray[15]+"-"+"0",
+                         CommanArray.fruitsNameArray[3]+"-"+"1"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[8]+"-"+"0",
+                         CommanArray.fruitsNameArray[4]+"-"+"1",
+                         CommanArray.fruitsNameArray[15]+"-"+"0",
+                         CommanArray.fruitsNameArray[14]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[3]+"-"+"0",
+                         CommanArray.fruitsNameArray[1]+"-"+"0",
+                         CommanArray.fruitsNameArray[5]+"-"+"1",
+                         CommanArray.fruitsNameArray[6]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[0]+"-"+"0",
+                         CommanArray.fruitsNameArray[6]+"-"+"1",
+                         CommanArray.fruitsNameArray[13]+"-"+"0",
+                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                    ],
+                    [
+                         CommanArray.fruitsNameArray[11]+"-"+"0",
+                         CommanArray.fruitsNameArray[4]+"-"+"0",
+                         CommanArray.fruitsNameArray[7]+"-"+"1",
+                         CommanArray.fruitsNameArray[16]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[3]+"-"+"0",
+                         CommanArray.fruitsNameArray[1]+"-"+"0",
+                         CommanArray.fruitsNameArray[5]+"-"+"0",
+                         CommanArray.fruitsNameArray[8]+"-"+"1"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[0]+"-"+"0",
+                         CommanArray.fruitsNameArray[9]+"-"+"1",
+                         CommanArray.fruitsNameArray[7]+"-"+"0",
+                         CommanArray.fruitsNameArray[13]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[3]+"-"+"0",
+                         CommanArray.fruitsNameArray[10]+"-"+"1",
+                         CommanArray.fruitsNameArray[14]+"-"+"0",
+                         CommanArray.fruitsNameArray[6]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[11]+"-"+"1",
+                         CommanArray.fruitsNameArray[4]+"-"+"0",
+                         CommanArray.fruitsNameArray[0]+"-"+"0",
+                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[1]+"-"+"0",
+                         CommanArray.fruitsNameArray[8]+"-"+"0",
+                         CommanArray.fruitsNameArray[12]+"-"+"1",
+                         CommanArray.fruitsNameArray[15]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[2]+"-"+"0",
+                         CommanArray.fruitsNameArray[13]+"-"+"1",
+                         CommanArray.fruitsNameArray[5]+"-"+"0",
+                         CommanArray.fruitsNameArray[4]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[14]+"-"+"1",
+                         CommanArray.fruitsNameArray[8]+"-"+"0",
+                         CommanArray.fruitsNameArray[3]+"-"+"0",
+                         CommanArray.fruitsNameArray[7]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[0]+"-"+"0",
+                         CommanArray.fruitsNameArray[2]+"-"+"0",
+                         CommanArray.fruitsNameArray[15]+"-"+"1",
+                         CommanArray.fruitsNameArray[9]+"-"+"0"
+                     ],
+                     [
+                         CommanArray.fruitsNameArray[6]+"-"+"0",
+                         CommanArray.fruitsNameArray[9]+"-"+"0",
+                         CommanArray.fruitsNameArray[1]+"-"+"0",
+                         CommanArray.fruitsNameArray[16]+"-"+"1"
+                     ]]
+            setTestSolveVC.showOptionsArray = solveTestArray
+            setTestSolveVC.getImageNameArray = CommanArray.fruitsNameArray
+        }
+        else if tapGestureRecognizer.view?.tag == 2 {
             let solveTestArray = [[
-                      CommanArray.houseHoldThingsNameArray[16]+"-"+"0",
-                      CommanArray.houseHoldThingsNameArray[10]+"-"+"0",
-                      CommanArray.houseHoldThingsNameArray[0]+"-"+"1",
-                      CommanArray.houseHoldThingsNameArray[7]+"-"+"0"
+                      CommanArray.vegetablesNameArray[16]+"-"+"0",
+                      CommanArray.vegetablesNameArray[10]+"-"+"0",
+                      CommanArray.vegetablesNameArray[0]+"-"+"1",
+                      CommanArray.vegetablesNameArray[18]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[3]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[1]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[18]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[16]+"-"+"0"
+                       CommanArray.vegetablesNameArray[3]+"-"+"0",
+                       CommanArray.vegetablesNameArray[1]+"-"+"1",
+                       CommanArray.vegetablesNameArray[20]+"-"+"0",
+                       CommanArray.vegetablesNameArray[16]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[2]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[0]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[7]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[10]+"-"+"0"
+                       CommanArray.vegetablesNameArray[2]+"-"+"1",
+                       CommanArray.vegetablesNameArray[9]+"-"+"0",
+                       CommanArray.vegetablesNameArray[7]+"-"+"0",
+                       CommanArray.vegetablesNameArray[10]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[12]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[17]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[15]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[3]+"-"+"1"
+                       CommanArray.vegetablesNameArray[12]+"-"+"0",
+                       CommanArray.vegetablesNameArray[17]+"-"+"0",
+                       CommanArray.vegetablesNameArray[15]+"-"+"0",
+                       CommanArray.vegetablesNameArray[3]+"-"+"1"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[8]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[4]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[7]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[14]+"-"+"0"
+                       CommanArray.vegetablesNameArray[8]+"-"+"0",
+                       CommanArray.vegetablesNameArray[4]+"-"+"1",
+                       CommanArray.vegetablesNameArray[18]+"-"+"0",
+                       CommanArray.vegetablesNameArray[14]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[16]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[1]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[5]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[19]+"-"+"0"
+                       CommanArray.vegetablesNameArray[16]+"-"+"0",
+                       CommanArray.vegetablesNameArray[1]+"-"+"0",
+                       CommanArray.vegetablesNameArray[5]+"-"+"1",
+                       CommanArray.vegetablesNameArray[19]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[24]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[6]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[13]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[10]+"-"+"0"
+                       CommanArray.vegetablesNameArray[9]+"-"+"0",
+                       CommanArray.vegetablesNameArray[6]+"-"+"1",
+                       CommanArray.vegetablesNameArray[13]+"-"+"0",
+                       CommanArray.vegetablesNameArray[10]+"-"+"0"
                   ],
                   [
-                       CommanArray.houseHoldThingsNameArray[23]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[4]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[7]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[21]+"-"+"0"
+                       CommanArray.vegetablesNameArray[11]+"-"+"0",
+                       CommanArray.vegetablesNameArray[4]+"-"+"0",
+                       CommanArray.vegetablesNameArray[7]+"-"+"1",
+                       CommanArray.vegetablesNameArray[0]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[3]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[14]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[5]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[8]+"-"+"1"
+                       CommanArray.vegetablesNameArray[3]+"-"+"0",
+                       CommanArray.vegetablesNameArray[14]+"-"+"0",
+                       CommanArray.vegetablesNameArray[5]+"-"+"0",
+                       CommanArray.vegetablesNameArray[8]+"-"+"1"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[17]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[9]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[7]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[13]+"-"+"0"
+                       CommanArray.vegetablesNameArray[6]+"-"+"0",
+                       CommanArray.vegetablesNameArray[9]+"-"+"1",
+                       CommanArray.vegetablesNameArray[1]+"-"+"0",
+                       CommanArray.vegetablesNameArray[13]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[20]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[10]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[11]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[21]+"-"+"0"
+                       CommanArray.vegetablesNameArray[15]+"-"+"0",
+                       CommanArray.vegetablesNameArray[10]+"-"+"1",
+                       CommanArray.vegetablesNameArray[11]+"-"+"0",
+                       CommanArray.vegetablesNameArray[17]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[11]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[18]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[0]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[22]+"-"+"0"
+                       CommanArray.vegetablesNameArray[11]+"-"+"1",
+                       CommanArray.vegetablesNameArray[18]+"-"+"0",
+                       CommanArray.vegetablesNameArray[0]+"-"+"0",
+                       CommanArray.vegetablesNameArray[6]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[1]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[20]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[12]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[19]+"-"+"0"
+                       CommanArray.vegetablesNameArray[1]+"-"+"0",
+                       CommanArray.vegetablesNameArray[20]+"-"+"0",
+                       CommanArray.vegetablesNameArray[12]+"-"+"1",
+                       CommanArray.vegetablesNameArray[19]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[2]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[13]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[5]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[4]+"-"+"0"
+                       CommanArray.vegetablesNameArray[2]+"-"+"0",
+                       CommanArray.vegetablesNameArray[13]+"-"+"1",
+                       CommanArray.vegetablesNameArray[5]+"-"+"0",
+                       CommanArray.vegetablesNameArray[4]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[14]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[23]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[3]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[7]+"-"+"0"
+                       CommanArray.vegetablesNameArray[14]+"-"+"1",
+                       CommanArray.vegetablesNameArray[18]+"-"+"0",
+                       CommanArray.vegetablesNameArray[3]+"-"+"0",
+                       CommanArray.vegetablesNameArray[7]+"-"+"0"
                    ],
                    [
-                       CommanArray.houseHoldThingsNameArray[0]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[2]+"-"+"0",
-                       CommanArray.houseHoldThingsNameArray[15]+"-"+"1",
-                       CommanArray.houseHoldThingsNameArray[9]+"-"+"0"
+                       CommanArray.vegetablesNameArray[0]+"-"+"0",
+                       CommanArray.vegetablesNameArray[20]+"-"+"0",
+                       CommanArray.vegetablesNameArray[15]+"-"+"1",
+                       CommanArray.vegetablesNameArray[9]+"-"+"0"
                    ],
                    [
-                        CommanArray.houseHoldThingsNameArray[16]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[2]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[6]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[21]+"-"+"0"
+                        CommanArray.vegetablesNameArray[16]+"-"+"1",
+                        CommanArray.vegetablesNameArray[1]+"-"+"0",
+                        CommanArray.vegetablesNameArray[6]+"-"+"0",
+                        CommanArray.vegetablesNameArray[4]+"-"+"0"
                    ],
                    [
-                        CommanArray.houseHoldThingsNameArray[23]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[8]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[5]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[17]+"-"+"1"
+                        CommanArray.vegetablesNameArray[12]+"-"+"0",
+                        CommanArray.vegetablesNameArray[8]+"-"+"0",
+                        CommanArray.vegetablesNameArray[5]+"-"+"0",
+                        CommanArray.vegetablesNameArray[17]+"-"+"1"
                     ],
                     [
-                        CommanArray.houseHoldThingsNameArray[13]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[18]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[22]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[7]+"-"+"0"
+                        CommanArray.vegetablesNameArray[13]+"-"+"0",
+                        CommanArray.vegetablesNameArray[18]+"-"+"1",
+                        CommanArray.vegetablesNameArray[2]+"-"+"0",
+                        CommanArray.vegetablesNameArray[7]+"-"+"0"
                     ],
                     [
-                        CommanArray.houseHoldThingsNameArray[19]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[1]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[11]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[24]+"-"+"0"
+                        CommanArray.vegetablesNameArray[19]+"-"+"1",
+                        CommanArray.vegetablesNameArray[1]+"-"+"0",
+                        CommanArray.vegetablesNameArray[11]+"-"+"0",
+                        CommanArray.vegetablesNameArray[0]+"-"+"0"
                     ],
                     [
-                        CommanArray.houseHoldThingsNameArray[3]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[12]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[20]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[9]+"-"+"0"
-                    ],
-                    [
-                        CommanArray.houseHoldThingsNameArray[10]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[19]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[0]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[21]+"-"+"1"
-                    ],
-                    [
-                        CommanArray.houseHoldThingsNameArray[3]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[22]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[8]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[17]+"-"+"0"
-                    ],
-                    [
-                        CommanArray.houseHoldThingsNameArray[20]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[6]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[23]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[18]+"-"+"0"
-                    ],
-                    [
-                        CommanArray.houseHoldThingsNameArray[24]+"-"+"1",
-                        CommanArray.houseHoldThingsNameArray[0]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[4]+"-"+"0",
-                        CommanArray.houseHoldThingsNameArray[14]+"-"+"0"
+                        CommanArray.vegetablesNameArray[3]+"-"+"0",
+                        CommanArray.vegetablesNameArray[12]+"-"+"0",
+                        CommanArray.vegetablesNameArray[20]+"-"+"1",
+                        CommanArray.vegetablesNameArray[9]+"-"+"0"
                     ]
             ]
             setTestSolveVC.showOptionsArray = solveTestArray
-            setTestSolveVC.getImageNameArray = CommanArray.houseHoldThingsNameArray
-        }
-        else if tapGestureRecognizer.view?.tag == 2 {
-            let solveTestArray = [
-                  [
-                     CommanArray.kitchenUtensilsNameArray[2]+"-"+"0",
-                     CommanArray.kitchenUtensilsNameArray[9]+"-"+"0",
-                     CommanArray.kitchenUtensilsNameArray[0]+"-"+"1",
-                     CommanArray.kitchenUtensilsNameArray[7]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[3]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[1]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[5]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[4]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[2]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[8]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[7]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[10]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[9]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[1]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[5]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[3]+"-"+"1"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[8]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[4]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[7]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[0]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[3]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[1]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[5]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[6]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[0]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[6]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[2]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[10]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[1]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[4]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[7]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[9]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[6]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[10]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[5]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[8]+"-"+"1"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[0]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[9]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[2]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[3]+"-"+"0"
-                  ],
-                  [
-                      CommanArray.kitchenUtensilsNameArray[4]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[10]+"-"+"1",
-                      CommanArray.kitchenUtensilsNameArray[1]+"-"+"0",
-                      CommanArray.kitchenUtensilsNameArray[6]+"-"+"0"
-                  ]
-            ]
-            setTestSolveVC.showOptionsArray = solveTestArray
-            setTestSolveVC.getImageNameArray = CommanArray.kitchenUtensilsNameArray
+            setTestSolveVC.getImageNameArray = CommanArray.vegetablesNameArray
         }
         else if tapGestureRecognizer.view?.tag == 3 {
             let solveTestArray = [
@@ -284,7 +294,7 @@ class TestViewController: UIViewController {
                    CommanArray.gardeningNameArray[9]+"-"+"0"
                 ],
                 [
-                   CommanArray.gardeningNameArray[2]+"-"+"1",
+                   CommanArray.gardeningNameArray[19]+"-"+"1",
                    CommanArray.gardeningNameArray[12]+"-"+"0",
                    CommanArray.gardeningNameArray[7]+"-"+"0",
                    CommanArray.gardeningNameArray[10]+"-"+"0"

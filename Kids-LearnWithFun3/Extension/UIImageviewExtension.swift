@@ -59,7 +59,7 @@ import UIKit
             self.clipsToBounds = true
           //  self.layer.cornerRadius = (self.frame.width + self.frame.height) / 4
             self.layer.masksToBounds = true
-            print("Inside Learn wth fun:",self.frame.width, self.frame.height )
+           // print("Inside Learn wth fun:",self.frame.width, self.frame.height )
             self.layer.cornerRadius = self.frame.width  / 2
         } else {
             self.layer.cornerRadius = 0

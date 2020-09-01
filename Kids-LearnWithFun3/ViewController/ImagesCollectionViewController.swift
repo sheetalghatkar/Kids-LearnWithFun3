@@ -19,7 +19,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var lblCard: UILabel!
     @IBOutlet weak var viewCollectionContainer: UIView!
     @IBOutlet weak var btnSound: UIButton!
-    @IBOutlet weak var imgViewBgHouse: UIImageView!
+    @IBOutlet weak var imgViewBgVegetable1: UIImageView!
+    @IBOutlet weak var imgViewBgVegetable2: UIImageView!
     @IBOutlet weak var imgViewBgKitchen: UIImageView!
     @IBOutlet weak var imgViewBgGarden: UIImageView!
     @IBOutlet weak var imgViewBgSchool: UIImageView!
@@ -64,16 +65,17 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         layout.minimumLineSpacing = 0
         collectionViewCard!.collectionViewLayout = layout
         self.lblCard.text = imageNameArray[0]
-        playSound(getSound : self.imageNameArray[0])
+      //  playSound(getSound : self.imageNameArray[0])
         
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         if getTabNumber == 0 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("House")
+            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("Apple")
         } else if getTabNumber == 1 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("Kitchen")
+            self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Brinjal")
+            self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Tomato")
         } else if getTabNumber == 2 {
             self.imgViewBgGarden.image  = UIImage.gifImageWithName("Gardening")
         } else if getTabNumber == 3 {
@@ -183,7 +185,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.btnForward.isHidden = false
             self.btnBackward.isHidden = false
         }
-        playSound(getSound : self.imageNameArray[nextItem.row])
+        //playSound(getSound : self.imageNameArray[nextItem.row])
     }
 
     @IBAction func funcBackwardBtnClick(_ sender: Any)
@@ -203,7 +205,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.btnBackward.isHidden = false
             self.btnForward.isHidden = false
         }
-        playSound(getSound : self.imageNameArray[nextItem.row])
+       // playSound(getSound : self.imageNameArray[nextItem.row])
     }
     
     func scrollToNearestVisibleCollectionViewCell() {
@@ -236,7 +238,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
                 self.btnBackward.isHidden = false
             }
         }
-        playSound(getSound : imageNameArray[closestCellIndex])
+        //playSound(getSound : imageNameArray[closestCellIndex])
     }
     
     func playSound(getSound : String) {

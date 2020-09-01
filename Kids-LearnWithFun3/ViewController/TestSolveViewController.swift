@@ -44,7 +44,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         layout.minimumLineSpacing = 0
         collectionViewCard!.collectionViewLayout = layout
         self.lblQuestion.text = getImageNameArray[0]
-        playSound(getSound : getImageNameArray[0]+"_Question")
+       // playSound(getSound : getImageNameArray[0]+"_Question")
     }
     // MARK: - User defined Functions
     
@@ -100,7 +100,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if nextItem.row < showOptionsArray.count {
                 self.collectionViewCard.scrollToItem(at: nextItem, at: .left, animated: true)
                 self.lblQuestion.text = getImageNameArray[nextItem.row]
-                playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
+              //  playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
             }
             if nextItem.row == self.showOptionsArray.count - 1 {
                 self.btnForward.isHidden = true
@@ -125,7 +125,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         if nextItem.row < showOptionsArray.count && nextItem.row >= 0{
             self.collectionViewCard.scrollToItem(at: nextItem, at: .right, animated: true)
             self.lblQuestion.text = getImageNameArray[nextItem.row]
-            playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
+           // playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
         }
         if nextItem.row == 0 {
             self.btnBackward.isHidden = true
@@ -174,7 +174,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if let cell = self.collectionViewCard .cellForItem(at: indexPath) as? TestSolveCollectionCell {
                     cell.hideSignOnImageView()
             }
-            playSound(getSound : getImageNameArray[closestCellIndex]+"_Question")
+            //playSound(getSound : getImageNameArray[closestCellIndex]+"_Question")
         }
     }
 
