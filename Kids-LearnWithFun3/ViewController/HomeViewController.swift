@@ -115,21 +115,25 @@ class HomeViewController: UIViewController {
         if tapGestureRecognizer.view?.tag == 1 {
             setPictureVC.imageArray = CommanArray.fruitsImageArray
             setPictureVC.imageNameArray = CommanArray.fruitsNameArray
+            setPictureVC.stringTitle = "Fruits"
             setPictureVC.getTabNumber = 0
         }
         else if tapGestureRecognizer.view?.tag == 2 {
             setPictureVC.imageArray = CommanArray.vegetablesImageArray
             setPictureVC.imageNameArray = CommanArray.vegetablesNameArray
+            setPictureVC.stringTitle = "Vegetables"
             setPictureVC.getTabNumber = 1
         }
         else if tapGestureRecognizer.view?.tag == 3 {
             setPictureVC.imageArray = CommanArray.grainsImageArray
             setPictureVC.imageNameArray = CommanArray.grainsNameArray
+            setPictureVC.stringTitle = "Grains & Cereals"
             setPictureVC.getTabNumber = 2
         }
         else if tapGestureRecognizer.view?.tag == 4 {
-            setPictureVC.imageArray = CommanArray.schoolImageArray
-            setPictureVC.imageNameArray = CommanArray.schoolNameArray
+            setPictureVC.imageArray = CommanArray.spicesImageArray
+            setPictureVC.imageNameArray = CommanArray.spicesNameArray
+            setPictureVC.stringTitle = "Spices"
             setPictureVC.getTabNumber = 3
         }
         self.navigationController?.pushViewController(setPictureVC, animated: true)

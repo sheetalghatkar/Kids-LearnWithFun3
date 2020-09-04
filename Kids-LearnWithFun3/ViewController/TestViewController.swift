@@ -281,207 +281,212 @@ class TestViewController: UIViewController {
         }
         else if tapGestureRecognizer.view?.tag == 3 {
                     let solveTestArray = [[
-                        CommanArray.fruitsNameArray[2]+"-"+"0",
-                        CommanArray.fruitsNameArray[10]+"-"+"0",
-                        CommanArray.fruitsNameArray[0]+"-"+"1",
-                        CommanArray.fruitsNameArray[16]+"-"+"0"
+                        CommanArray.grainsNameArray[2]+"-"+"0",
+                        CommanArray.grainsNameArray[10]+"-"+"0",
+                        CommanArray.grainsNameArray[0]+"-"+"1",
+                        CommanArray.grainsNameArray[16]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[3]+"-"+"0",
-                         CommanArray.fruitsNameArray[1]+"-"+"1",
-                         CommanArray.fruitsNameArray[5]+"-"+"0",
-                         CommanArray.fruitsNameArray[11]+"-"+"0"
+                         CommanArray.grainsNameArray[3]+"-"+"0",
+                         CommanArray.grainsNameArray[1]+"-"+"1",
+                         CommanArray.grainsNameArray[5]+"-"+"0",
+                         CommanArray.grainsNameArray[11]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[2]+"-"+"1",
-                         CommanArray.fruitsNameArray[0]+"-"+"0",
-                         CommanArray.fruitsNameArray[7]+"-"+"0",
-                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                         CommanArray.grainsNameArray[2]+"-"+"1",
+                         CommanArray.grainsNameArray[0]+"-"+"0",
+                         CommanArray.grainsNameArray[7]+"-"+"0",
+                         CommanArray.grainsNameArray[10]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[9]+"-"+"0",
-                         CommanArray.fruitsNameArray[16]+"-"+"0",
-                         CommanArray.fruitsNameArray[15]+"-"+"0",
-                         CommanArray.fruitsNameArray[3]+"-"+"1"
+                         CommanArray.grainsNameArray[9]+"-"+"0",
+                         CommanArray.grainsNameArray[16]+"-"+"0",
+                         CommanArray.grainsNameArray[15]+"-"+"0",
+                         CommanArray.grainsNameArray[3]+"-"+"1"
                     ],
                     [
-                         CommanArray.fruitsNameArray[8]+"-"+"0",
-                         CommanArray.fruitsNameArray[4]+"-"+"1",
-                         CommanArray.fruitsNameArray[15]+"-"+"0",
-                         CommanArray.fruitsNameArray[14]+"-"+"0"
+                         CommanArray.grainsNameArray[8]+"-"+"0",
+                         CommanArray.grainsNameArray[4]+"-"+"1",
+                         CommanArray.grainsNameArray[15]+"-"+"0",
+                         CommanArray.grainsNameArray[14]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[3]+"-"+"0",
-                         CommanArray.fruitsNameArray[1]+"-"+"0",
-                         CommanArray.fruitsNameArray[5]+"-"+"1",
-                         CommanArray.fruitsNameArray[6]+"-"+"0"
+                         CommanArray.grainsNameArray[3]+"-"+"0",
+                         CommanArray.grainsNameArray[1]+"-"+"0",
+                         CommanArray.grainsNameArray[5]+"-"+"1",
+                         CommanArray.grainsNameArray[6]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[0]+"-"+"0",
-                         CommanArray.fruitsNameArray[6]+"-"+"1",
-                         CommanArray.fruitsNameArray[13]+"-"+"0",
-                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                         CommanArray.grainsNameArray[0]+"-"+"0",
+                         CommanArray.grainsNameArray[6]+"-"+"1",
+                         CommanArray.grainsNameArray[13]+"-"+"0",
+                         CommanArray.grainsNameArray[10]+"-"+"0"
                     ],
                     [
-                         CommanArray.fruitsNameArray[11]+"-"+"0",
-                         CommanArray.fruitsNameArray[4]+"-"+"0",
-                         CommanArray.fruitsNameArray[7]+"-"+"1",
-                         CommanArray.fruitsNameArray[16]+"-"+"0"
+                         CommanArray.grainsNameArray[11]+"-"+"0",
+                         CommanArray.grainsNameArray[4]+"-"+"0",
+                         CommanArray.grainsNameArray[7]+"-"+"1",
+                         CommanArray.grainsNameArray[16]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[3]+"-"+"0",
-                         CommanArray.fruitsNameArray[1]+"-"+"0",
-                         CommanArray.fruitsNameArray[5]+"-"+"0",
-                         CommanArray.fruitsNameArray[8]+"-"+"1"
+                         CommanArray.grainsNameArray[3]+"-"+"0",
+                         CommanArray.grainsNameArray[1]+"-"+"0",
+                         CommanArray.grainsNameArray[5]+"-"+"0",
+                         CommanArray.grainsNameArray[8]+"-"+"1"
                      ],
                      [
-                         CommanArray.fruitsNameArray[0]+"-"+"0",
-                         CommanArray.fruitsNameArray[9]+"-"+"1",
-                         CommanArray.fruitsNameArray[7]+"-"+"0",
-                         CommanArray.fruitsNameArray[13]+"-"+"0"
+                         CommanArray.grainsNameArray[0]+"-"+"0",
+                         CommanArray.grainsNameArray[9]+"-"+"1",
+                         CommanArray.grainsNameArray[7]+"-"+"0",
+                         CommanArray.grainsNameArray[13]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[3]+"-"+"0",
-                         CommanArray.fruitsNameArray[10]+"-"+"1",
-                         CommanArray.fruitsNameArray[14]+"-"+"0",
-                         CommanArray.fruitsNameArray[6]+"-"+"0"
+                         CommanArray.grainsNameArray[3]+"-"+"0",
+                         CommanArray.grainsNameArray[10]+"-"+"1",
+                         CommanArray.grainsNameArray[14]+"-"+"0",
+                         CommanArray.grainsNameArray[6]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[11]+"-"+"1",
-                         CommanArray.fruitsNameArray[4]+"-"+"0",
-                         CommanArray.fruitsNameArray[0]+"-"+"0",
-                         CommanArray.fruitsNameArray[10]+"-"+"0"
+                         CommanArray.grainsNameArray[11]+"-"+"1",
+                         CommanArray.grainsNameArray[4]+"-"+"0",
+                         CommanArray.grainsNameArray[0]+"-"+"0",
+                         CommanArray.grainsNameArray[10]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[1]+"-"+"0",
-                         CommanArray.fruitsNameArray[8]+"-"+"0",
-                         CommanArray.fruitsNameArray[12]+"-"+"1",
-                         CommanArray.fruitsNameArray[15]+"-"+"0"
+                         CommanArray.grainsNameArray[1]+"-"+"0",
+                         CommanArray.grainsNameArray[8]+"-"+"0",
+                         CommanArray.grainsNameArray[12]+"-"+"1",
+                         CommanArray.grainsNameArray[15]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[2]+"-"+"0",
-                         CommanArray.fruitsNameArray[13]+"-"+"1",
-                         CommanArray.fruitsNameArray[5]+"-"+"0",
-                         CommanArray.fruitsNameArray[4]+"-"+"0"
+                         CommanArray.grainsNameArray[2]+"-"+"0",
+                         CommanArray.grainsNameArray[13]+"-"+"1",
+                         CommanArray.grainsNameArray[5]+"-"+"0",
+                         CommanArray.grainsNameArray[4]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[14]+"-"+"1",
-                         CommanArray.fruitsNameArray[8]+"-"+"0",
-                         CommanArray.fruitsNameArray[3]+"-"+"0",
-                         CommanArray.fruitsNameArray[7]+"-"+"0"
+                         CommanArray.grainsNameArray[14]+"-"+"1",
+                         CommanArray.grainsNameArray[8]+"-"+"0",
+                         CommanArray.grainsNameArray[3]+"-"+"0",
+                         CommanArray.grainsNameArray[7]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[0]+"-"+"0",
-                         CommanArray.fruitsNameArray[2]+"-"+"0",
-                         CommanArray.fruitsNameArray[15]+"-"+"1",
-                         CommanArray.fruitsNameArray[9]+"-"+"0"
+                         CommanArray.grainsNameArray[0]+"-"+"0",
+                         CommanArray.grainsNameArray[2]+"-"+"0",
+                         CommanArray.grainsNameArray[15]+"-"+"1",
+                         CommanArray.grainsNameArray[9]+"-"+"0"
                      ],
                      [
-                         CommanArray.fruitsNameArray[6]+"-"+"0",
-                         CommanArray.fruitsNameArray[9]+"-"+"0",
-                         CommanArray.fruitsNameArray[1]+"-"+"0",
-                         CommanArray.fruitsNameArray[16]+"-"+"1"
+                         CommanArray.grainsNameArray[6]+"-"+"0",
+                         CommanArray.grainsNameArray[9]+"-"+"0",
+                         CommanArray.grainsNameArray[1]+"-"+"0",
+                         CommanArray.grainsNameArray[16]+"-"+"1"
                      ]]
             setTestSolveVC.showOptionsArray = solveTestArray
-            setTestSolveVC.getImageNameArray = CommanArray.fruitsNameArray
+            setTestSolveVC.getImageNameArray = CommanArray.grainsNameArray
         }
         else if tapGestureRecognizer.view?.tag == 4 {
-            let solveTestArray = [[
-                    CommanArray.schoolNameArray[2]+"-"+"0",
-                    CommanArray.schoolNameArray[10]+"-"+"0",
-                    CommanArray.schoolNameArray[0]+"-"+"1",
-                    CommanArray.schoolNameArray[13]+"-"+"0"
+                let solveTestArray = [[
+                       CommanArray.spicesNameArray[14]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0",
+                       CommanArray.spicesNameArray[0]+"-"+"1",
+                       CommanArray.spicesNameArray[13]+"-"+"0"
                 ],
-               [
-                       CommanArray.schoolNameArray[11]+"-"+"0",
-                       CommanArray.schoolNameArray[1]+"-"+"1",
-                       CommanArray.schoolNameArray[12]+"-"+"0",
-                       CommanArray.schoolNameArray[9]+"-"+"0"
-                   ],
-                 [
-                       CommanArray.schoolNameArray[2]+"-"+"1",
-                       CommanArray.schoolNameArray[0]+"-"+"0",
-                       CommanArray.schoolNameArray[7]+"-"+"0",
-                       CommanArray.schoolNameArray[10]+"-"+"0"
-                   ],
-                 [
-                       CommanArray.schoolNameArray[13]+"-"+"0",
-                       CommanArray.schoolNameArray[6]+"-"+"0",
-                       CommanArray.schoolNameArray[5]+"-"+"0",
-                       CommanArray.schoolNameArray[3]+"-"+"1"
-                   ],
                 [
-                       CommanArray.schoolNameArray[8]+"-"+"0",
-                       CommanArray.schoolNameArray[4]+"-"+"1",
-                       CommanArray.schoolNameArray[7]+"-"+"0",
-                       CommanArray.schoolNameArray[2]+"-"+"0"
-                   ],
+                       CommanArray.spicesNameArray[11]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"1",
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                ],
                 [
-                       CommanArray.schoolNameArray[3]+"-"+"0",
-                       CommanArray.schoolNameArray[1]+"-"+"0",
-                       CommanArray.schoolNameArray[5]+"-"+"1",
-                       CommanArray.schoolNameArray[11]+"-"+"0"
-                   ],
-                [
-                       CommanArray.schoolNameArray[0]+"-"+"0",
-                       CommanArray.schoolNameArray[6]+"-"+"1",
-                       CommanArray.schoolNameArray[12]+"-"+"0",
-                       CommanArray.schoolNameArray[10]+"-"+"0"
-                   ],
+                       CommanArray.spicesNameArray[2]+"-"+"1",
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[7]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                 ],
                  [
-                       CommanArray.schoolNameArray[11]+"-"+"0",
-                       CommanArray.schoolNameArray[4]+"-"+"0",
-                       CommanArray.schoolNameArray[7]+"-"+"1",
-                       CommanArray.schoolNameArray[9]+"-"+"0"
-                   ],
-                [
-                       CommanArray.schoolNameArray[3]+"-"+"0",
-                       CommanArray.schoolNameArray[6]+"-"+"0",
-                       CommanArray.schoolNameArray[5]+"-"+"0",
-                       CommanArray.schoolNameArray[8]+"-"+"1"
-                   ],
+                       CommanArray.spicesNameArray[13]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[3]+"-"+"1"
+                 ],
                  [
-                       CommanArray.schoolNameArray[12]+"-"+"0",
-                       CommanArray.schoolNameArray[9]+"-"+"1",
-                       CommanArray.schoolNameArray[13]+"-"+"0",
-                       CommanArray.schoolNameArray[2]+"-"+"0"
-                   ],
+                       CommanArray.spicesNameArray[8]+"-"+"0",
+                       CommanArray.spicesNameArray[4]+"-"+"1",
+                       CommanArray.spicesNameArray[7]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0"
+                 ],
                  [
-                       CommanArray.schoolNameArray[6]+"-"+"0",
-                       CommanArray.schoolNameArray[10]+"-"+"1",
-                       CommanArray.schoolNameArray[4]+"-"+"0",
-                       CommanArray.schoolNameArray[1]+"-"+"0"
-                   ],
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"1",
+                       CommanArray.spicesNameArray[11]+"-"+"0"
+                 ],
                  [
-                       CommanArray.schoolNameArray[11]+"-"+"1",
-                       CommanArray.schoolNameArray[5]+"-"+"0",
-                       CommanArray.schoolNameArray[0]+"-"+"0",
-                       CommanArray.schoolNameArray[8]+"-"+"0"
-                   ],
-                [
-                       CommanArray.schoolNameArray[1]+"-"+"0",
-                       CommanArray.schoolNameArray[8]+"-"+"0",
-                       CommanArray.schoolNameArray[12]+"-"+"1",
-                       CommanArray.schoolNameArray[7]+"-"+"0"
-                   ],
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"1",
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                 ],
                  [
-                       CommanArray.schoolNameArray[3]+"-"+"0",
-                       CommanArray.schoolNameArray[13]+"-"+"1",
-                       CommanArray.schoolNameArray[4]+"-"+"0",
-                       CommanArray.schoolNameArray[9]+"-"+"0"
-                   ]]
-            
+                       CommanArray.spicesNameArray[14]+"-"+"0",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[7]+"-"+"1",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"1"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"1",
+                       CommanArray.spicesNameArray[13]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"1",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"0"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[11]+"-"+"1",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"0"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[1]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"0",
+                       CommanArray.spicesNameArray[12]+"-"+"1",
+                       CommanArray.spicesNameArray[7]+"-"+"0"
+                   ],
+                   [
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[13]+"-"+"1",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                   ],
+                   [
+                       CommanArray.spicesNameArray[14]+"-"+"1",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                  ]]
             setTestSolveVC.showOptionsArray = solveTestArray
-            setTestSolveVC.getImageNameArray = CommanArray.schoolNameArray
+            setTestSolveVC.getImageNameArray = CommanArray.spicesNameArray
         }
         self.navigationController?.pushViewController(setTestSolveVC, animated: true)
     }
     // MARK: - User defined Functions
         @IBAction func funcGoToTestHome(_ sender: Any) {
-          //  interstitial = createAndLoadInterstitial()
-        navigationController?.popViewController(animated: true)
+            interstitial = createAndLoadInterstitial()
+            //navigationController?.popViewController(animated: true)
         }
-
+ 
     private func createAndLoadInterstitial() -> GADInterstitial? {
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-8501671653071605/2568258533")
 

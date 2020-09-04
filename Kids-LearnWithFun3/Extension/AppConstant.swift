@@ -66,7 +66,6 @@ class CommanArray {
         UIImage(named: "Brown Lentil.png")!,
         UIImage(named: "Red Lentil.png")!,
         UIImage(named: "Cowpea Seeds.png")!,
-        UIImage(named: "Sesame.png")!,
         UIImage(named: "Mung Bean.png")!,
         UIImage(named: "Oats.png")!,
         UIImage(named: "Soya Chunks.png")!,
@@ -74,28 +73,33 @@ class CommanArray {
         UIImage(named: "Kidney Beans.png")!,
         UIImage(named: "Black Chickpeas.png")!,
         UIImage(named: "White Chickpeas.png")!,
-        UIImage(named: "Foxnuts.png")!
+        UIImage(named: "Foxnuts.png")!,
+        UIImage(named: "Corn.png")!
     ]
     static var grainsNameArray: [String] = ["Wheat",
-        "Rice","Pearl Millet","Sorghum Millet","Bengal Gram Lentil","Brown Lentil","Red Lentil","Cowpea Seeds","Sesame","Mung Beans","Oats","Soya Chunks","Sago","Kidney Beans","Black Chickpeas","White Chickpeas","Foxnuts"]
+        "Rice","Pearl Millet","Sorghum Millet","Bengal Gram Lentil","Brown Lentil","Red Lentil","Cowpea Seeds","Mung Beans","Oats","Soya Chunks","Sago","Kidney Beans","Black Chickpeas","White Chickpeas","Foxnuts","Corn"]
     //------------------------------------------------------------------------
-    static var schoolImageArray: [UIImage] = [
-        UIImage(named: "Classroom.png")!,
-        UIImage(named: "Library.png")!,
-        UIImage(named: "Playground.png")!,
-        UIImage(named: "White Board.png")!,
-        UIImage(named: "Bench.png")!,
-        UIImage(named: "Electric Bell.png")!,
-        UIImage(named: "School Bag.png")!,
-        UIImage(named: "School Uniform.png")!,
-        UIImage(named: "Book.png")!,
-        UIImage(named: "Notebook.png")!,
-        UIImage(named: "Computer.png")!,
-        UIImage(named: "Map.png")!,
-        UIImage(named: "Pen.png")!,
-        UIImage(named: "Pencil.png")!
+    static var spicesImageArray: [UIImage] = [
+        UIImage(named: "Cumin.png")!,
+        UIImage(named: "Turmeric Powder.png")!,
+        UIImage(named: "Red Chilli Powder.png")!,
+        UIImage(named: "Asafoetida.png")!,
+        UIImage(named: "Cinnamon.png")!,
+        UIImage(named: "Cloves.png")!,
+        UIImage(named: "Black Stone Flower.png")!,
+        UIImage(named: "Bay Leaves.png")!,
+        UIImage(named: "Black Pepper.png")!,
+        UIImage(named: "Cardamom.png")!,
+        UIImage(named: "Mustard Seeds.png")!,
+        UIImage(named: "Carom Seeds.png")!,
+        UIImage(named: "Coriander Seeds.png")!,
+        UIImage(named: "Nutmeg.png")!,
+        UIImage(named: "Star Anise.png")!,
+        UIImage(named: "Sesame.png")!,
+        UIImage(named: "Saffron.png")!,
+        
     ]
-    static var schoolNameArray: [String] = ["Classroom","Library","Playground","White Board","Bench","Electric Bell","School Bag","School Uniform","Book","Notebook", "Computer","Map","Pen","Pencil"]
+    static var spicesNameArray: [String] = ["Cumin","Turmeric Powder","Red Chilli Powder","Asafoetida","Cinnamon","Cloves","Black Stone Flower","Bay Leaves","Black Pepper","Cardamom","Mustard Seeds","Carom Seeds", "Coriander Seeds","Nutmeg","Star Anise","Sesame", "Saffron"]
     //------------------------------------------------------------------------
     static var status_Sign_Array = [
         UIImage(named: "Wrong-Sign.png")!,

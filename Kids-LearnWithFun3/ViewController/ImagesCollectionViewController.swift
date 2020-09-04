@@ -17,13 +17,12 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var btnForward: UIButton!
     @IBOutlet weak var btnBackward: UIButton!
     @IBOutlet weak var lblCard: UILabel!
+    @IBOutlet weak var lblPageTitle: UILabel!
     @IBOutlet weak var viewCollectionContainer: UIView!
     @IBOutlet weak var btnSound: UIButton!
     @IBOutlet weak var imgViewBgVegetable1: UIImageView!
     @IBOutlet weak var imgViewBgVegetable2: UIImageView!
-    @IBOutlet weak var imgViewBgKitchen: UIImageView!
-    @IBOutlet weak var imgViewBgGarden: UIImageView!
-    @IBOutlet weak var imgViewBgSchool: UIImageView!
+    @IBOutlet weak var imgViewBgSpices: UIImageView!
 
     
     var player = AVAudioPlayer()
@@ -34,7 +33,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     var interstitial: GADInterstitial?
     //var soundStatus:Bool = false
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
-
+    var stringTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +64,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         layout.minimumLineSpacing = 0
         collectionViewCard!.collectionViewLayout = layout
         self.lblCard.text = imageNameArray[0]
+        self.lblPageTitle.text = stringTitle
       //  playSound(getSound : self.imageNameArray[0])
         
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
@@ -72,7 +72,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         if getTabNumber == 0 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("Apple")
+            self.imgViewBgSpices.image  = UIImage.gifImageWithName("Apple")
         } else if getTabNumber == 1 {
             self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Brinjal")
             self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Tomato")
@@ -80,7 +80,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Grain")
             self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Corn")
         } else if getTabNumber == 3 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("SchoolGif")
+            self.imgViewBgSpices.image  = UIImage.gifImageWithName("Chilli")
         }
 
        // bannerView.load(GADRequest())
@@ -165,8 +165,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
     @IBAction func funcGoToHome(_ sender: Any) {
-       // interstitial = createAndLoadInterstitial()
-        navigationController?.popViewController(animated: true)
+        interstitial = createAndLoadInterstitial()
+     //   navigationController?.popViewController(animated: true)
     }
     
     @IBAction func funcForwardBtnClick(_ sender: Any)

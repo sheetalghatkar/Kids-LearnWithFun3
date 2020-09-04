@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70013AD724CDB97600CE1AFD /* SchoolGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70013AD624CDB97600CE1AFD /* SchoolGif.gif */; };
+		7007B09024FFABE900BB644E /* Chilli.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7007B08F24FFABE800BB644E /* Chilli.gif */; };
 		700CDCCC24CB5CE5004C8615 /* Door Mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCB24CB5CE5004C8615 /* Door Mat.mp3 */; };
 		700CDCCE24CB5D3B004C8615 /* Cooler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCD24CB5D3B004C8615 /* Cooler.mp3 */; };
 		700CDCD024CB5E88004C8615 /* Air Cooler_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 700CDCCF24CB5E88004C8615 /* Air Cooler_Question.mp3 */; };
@@ -36,25 +37,10 @@
 		7017AA1024BB410100C46A97 /* Mat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F724BB410000C46A97 /* Mat.mp3 */; };
 		7017AA1124BB410100C46A97 /* Broom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F824BB410100C46A97 /* Broom.mp3 */; };
 		7017AA1224BB410100C46A97 /* Window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017A9F924BB410100C46A97 /* Window.mp3 */; };
-		7017AA2224BB928200C46A97 /* Pencil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1624BB928000C46A97 /* Pencil.mp3 */; };
-		7017AA2324BB928200C46A97 /* Playground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1724BB928000C46A97 /* Playground.mp3 */; };
-		7017AA2424BB928200C46A97 /* White Board.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1824BB928000C46A97 /* White Board.mp3 */; };
-		7017AA2524BB928200C46A97 /* School Bag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1924BB928000C46A97 /* School Bag.mp3 */; };
-		7017AA2624BB928200C46A97 /* Computer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1A24BB928100C46A97 /* Computer.mp3 */; };
-		7017AA2724BB928200C46A97 /* Classroom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1B24BB928100C46A97 /* Classroom.mp3 */; };
-		7017AA2824BB928200C46A97 /* Book.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1C24BB928100C46A97 /* Book.mp3 */; };
-		7017AA2924BB928200C46A97 /* Library.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1D24BB928100C46A97 /* Library.mp3 */; };
-		7017AA2A24BB928200C46A97 /* Map.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1E24BB928100C46A97 /* Map.mp3 */; };
-		7017AA2B24BB928200C46A97 /* Notebook.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA1F24BB928100C46A97 /* Notebook.mp3 */; };
-		7017AA2C24BB928200C46A97 /* Electric Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2024BB928100C46A97 /* Electric Bell.mp3 */; };
-		7017AA2D24BB928200C46A97 /* Pen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2124BB928200C46A97 /* Pen.mp3 */; };
-		7017AA2F24BB92E800C46A97 /* Bench.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA2E24BB92E800C46A97 /* Bench.mp3 */; };
-		7017AA3124BB98F500C46A97 /* School Uniform.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7017AA3024BB98F500C46A97 /* School Uniform.mp3 */; };
 		701EF78124A294C5006C0A36 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701EF78024A294C5006C0A36 /* UIExtension.swift */; };
 		70270FDB24A369A900EB8DAB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70270FDA24A369A900EB8DAB /* TestViewController.swift */; };
 		70277DD224A4B59100072D57 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70277DD124A4B59100072D57 /* UILabelExtension.swift */; };
 		7027932A24CCAED700A863FB /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7027932924CCAED700A863FB /* BackgroundMusic.mp3 */; };
-		70329EC924C608E300E00095 /* Watering Can.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70329EC824C608E300E00095 /* Watering Can.mp3 */; };
 		70631FEB249776AB00DAE930 /* ImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FEA249776AB00DAE930 /* ImagesCollectionViewController.swift */; };
 		70631FED2497AA3000DAE930 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */; };
 		70631FF32497F11B00DAE930 /* PictureCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70631FF12497F11B00DAE930 /* PictureCollectionCell.swift */; };
@@ -71,86 +57,9 @@
 		70DBD6D224FE4DCD000AAA10 /* Tomato.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70DBD6D124FE4DCC000AAA10 /* Tomato.gif */; };
 		70DBD6D524FE68C3000AAA10 /* Corn.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70DBD6D324FE68C3000AAA10 /* Corn.gif */; };
 		70DBD6D624FE68C3000AAA10 /* Grain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70DBD6D424FE68C3000AAA10 /* Grain.gif */; };
-		70E3B42224C4536F0053B679 /* Axe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B41E24C4536F0053B679 /* Axe.mp3 */; };
-		70E3B42324C4536F0053B679 /* Cultivator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B41F24C4536F0053B679 /* Cultivator.mp3 */; };
-		70E3B42424C4536F0053B679 /* Hand Fork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42024C4536F0053B679 /* Hand Fork.mp3 */; };
-		70E3B42524C4536F0053B679 /* Shovel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42124C4536F0053B679 /* Shovel.mp3 */; };
-		70E3B42824C453CE0053B679 /* Spade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42624C453CE0053B679 /* Spade.mp3 */; };
-		70E3B42924C453CE0053B679 /* Trowel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42724C453CE0053B679 /* Trowel.mp3 */; };
-		70E3B42D24C4556A0053B679 /* Hedge Shears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */; };
-		70E3B42E24C4556A0053B679 /* Hose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42B24C4556A0053B679 /* Hose.mp3 */; };
-		70E3B42F24C4556A0053B679 /* Prunning Saw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */; };
-		70E3B43224C456380053B679 /* Garden Gloves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B43024C456370053B679 /* Garden Gloves.mp3 */; };
-		70E3B43324C456380053B679 /* Wheelbarrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3B43124C456380053B679 /* Wheelbarrow.mp3 */; };
 		70E468A524A8D0E2008C8FFB /* TestSolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */; };
-		70E5E8BE24BDE358002B2032 /* Saucer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AA24BDE355002B2032 /* Saucer.mp3 */; };
-		70E5E8BF24BDE358002B2032 /* Skimmer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */; };
-		70E5E8C024BDE358002B2032 /* Rolling Pin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */; };
-		70E5E8C124BDE358002B2032 /* Strainer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AD24BDE356002B2032 /* Strainer.mp3 */; };
-		70E5E8C224BDE358002B2032 /* Pan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AE24BDE356002B2032 /* Pan.mp3 */; };
-		70E5E8C324BDE358002B2032 /* Cauldron.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */; };
-		70E5E8C424BDE358002B2032 /* Glass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B024BDE356002B2032 /* Glass.mp3 */; };
-		70E5E8C524BDE358002B2032 /* Grater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B124BDE356002B2032 /* Grater.mp3 */; };
-		70E5E8C624BDE358002B2032 /* Sieve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B224BDE356002B2032 /* Sieve.mp3 */; };
-		70E5E8C724BDE358002B2032 /* Cup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B324BDE357002B2032 /* Cup.mp3 */; };
-		70E5E8C824BDE358002B2032 /* Spoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B424BDE357002B2032 /* Spoon.mp3 */; };
-		70E5E8CA24BDE358002B2032 /* Plate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B624BDE357002B2032 /* Plate.mp3 */; };
-		70E5E8CB24BDE358002B2032 /* Ladle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B724BDE357002B2032 /* Ladle.mp3 */; };
-		70E5E8CC24BDE358002B2032 /* Fork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B824BDE357002B2032 /* Fork.mp3 */; };
-		70E5E8CD24BDE358002B2032 /* Rolling Pad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */; };
-		70E5E8CE24BDE358002B2032 /* Pitcher.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */; };
-		70E5E8CF24BDE358002B2032 /* Lid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BB24BDE358002B2032 /* Lid.mp3 */; };
-		70E5E8D024BDE358002B2032 /* Pressure Cooker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */; };
-		70E5E8D124BDE358002B2032 /* Bowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8BD24BDE358002B2032 /* Bowl.mp3 */; };
 		70E5E8D824C0CD22002B2032 /* House.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8D624C0CD22002B2032 /* House.mp3 */; };
 		70E5E8D924C0CD22002B2032 /* Air Conditioner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E5E8D724C0CD22002B2032 /* Air Conditioner.mp3 */; };
-		70EC9B0424C6F2D7009F8B8E /* Gardening Boots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */; };
-		70EC9B0824C6F503009F8B8E /* Axe_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */; };
-		70EC9B0A24C71408009F8B8E /* Garden Gloves_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */; };
-		70EC9B0C24C7143E009F8B8E /* Cultivator_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */; };
-		70EC9B0E24C7148E009F8B8E /* Hand Fork_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */; };
-		70EC9B1024C714B6009F8B8E /* Hose_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */; };
-		70EC9B1224C71571009F8B8E /* Prunning Saw_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */; };
-		70EC9B1424C7158F009F8B8E /* Wheelbarrow_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */; };
-		70EC9B1624C715B8009F8B8E /* Rake_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */; };
-		70EC9B1824C715E6009F8B8E /* Shovel_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */; };
-		70EC9B1A24C71612009F8B8E /* Gardening Boots_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */; };
-		70EC9B1F24C71694009F8B8E /* Trowel_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */; };
-		70EC9B2024C71694009F8B8E /* Spade_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */; };
-		70EC9B3524C719C7009F8B8E /* Plate_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */; };
-		70EC9B3624C719C7009F8B8E /* Bowl_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */; };
-		70EC9B3724C719C7009F8B8E /* Saucer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */; };
-		70EC9B3824C719C7009F8B8E /* Sieve_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */; };
-		70EC9B3924C719C7009F8B8E /* Grater_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */; };
-		70EC9B3A24C719C7009F8B8E /* Rolling Pad_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */; };
-		70EC9B3B24C719C7009F8B8E /* Ladle_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */; };
-		70EC9B3C24C719C7009F8B8E /* Spoon_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */; };
-		70EC9B3D24C719C7009F8B8E /* Teapot_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */; };
-		70EC9B3E24C719C7009F8B8E /* Lid_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */; };
-		70EC9B3F24C719C7009F8B8E /* Glass_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */; };
-		70EC9B4024C719C7009F8B8E /* Fork_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */; };
-		70EC9B4124C719C7009F8B8E /* Skimmer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */; };
-		70EC9B4224C719C7009F8B8E /* Pressure Cooker_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */; };
-		70EC9B4324C719C7009F8B8E /* Strainer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */; };
-		70EC9B4424C719C7009F8B8E /* Cauldron_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */; };
-		70EC9B4524C719C7009F8B8E /* Pan_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */; };
-		70EC9B4624C719C7009F8B8E /* Pitcher_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */; };
-		70EC9B4724C719C7009F8B8E /* Rolling Pin_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */; };
-		70EC9B4824C719C7009F8B8E /* Cup_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */; };
-		70EC9B5724C71C01009F8B8E /* Classroom_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */; };
-		70EC9B5824C71C01009F8B8E /* Computer_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */; };
-		70EC9B5924C71C01009F8B8E /* School Bag_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */; };
-		70EC9B5A24C71C01009F8B8E /* Playground_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */; };
-		70EC9B5B24C71C01009F8B8E /* Book_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */; };
-		70EC9B5C24C71C01009F8B8E /* Pencil_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */; };
-		70EC9B5D24C71C01009F8B8E /* Bench_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */; };
-		70EC9B5E24C71C01009F8B8E /* School Uniform_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */; };
-		70EC9B5F24C71C01009F8B8E /* Map_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */; };
-		70EC9B6024C71C01009F8B8E /* Notebook_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */; };
-		70EC9B6124C71C01009F8B8E /* White Board_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */; };
-		70EC9B6224C71C01009F8B8E /* Electric Bell_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */; };
-		70EC9B6324C71C01009F8B8E /* Library_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */; };
-		70EC9B6424C71C01009F8B8E /* Pen_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */; };
 		70EC9B7F24C72086009F8B8E /* Curtain_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6524C72081009F8B8E /* Curtain_Question.mp3 */; };
 		70EC9B8024C72086009F8B8E /* Wardrobe_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6624C72081009F8B8E /* Wardrobe_Question.mp3 */; };
 		70EC9B8124C72086009F8B8E /* House_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B6724C72081009F8B8E /* House_Question.mp3 */; };
@@ -176,8 +85,6 @@
 		70EC9B9724C72086009F8B8E /* Fan_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7D24C72085009F8B8E /* Fan_Question.mp3 */; };
 		70EC9B9824C72086009F8B8E /* Dustbin_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B7E24C72086009F8B8E /* Dustbin_Question.mp3 */; };
 		70EC9B9C24C75231009F8B8E /* Door Mat_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B9B24C75230009F8B8E /* Door Mat_Question.mp3 */; };
-		70EC9B9E24C7567B009F8B8E /* Hedge Shears_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */; };
-		70EC9BA224C758E5009F8B8E /* Watering Can_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */; };
 		70F9023D24AF88A500A3AA12 /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9023B24AF88A400A3AA12 /* No.mp3 */; };
 		70F9024124AF88AE00A3AA12 /* GreatJob.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9023F24AF88AE00A3AA12 /* GreatJob.mp3 */; };
 		70F9024224AF88AE00A3AA12 /* Excellent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70F9024024AF88AE00A3AA12 /* Excellent.mp3 */; };
@@ -230,6 +137,7 @@
 		65342E7D3BC59C2DB82D9332 /* Pods-Kids-LearnWithFun3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun3Tests.debug.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun3Tests/Pods-Kids-LearnWithFun3Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		695C26B3FA5688C6B7FC4895 /* Pods-Kids-LearnWithFun2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kids-LearnWithFun2Tests.release.xcconfig"; path = "Target Support Files/Pods-Kids-LearnWithFun2Tests/Pods-Kids-LearnWithFun2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		70013AD624CDB97600CE1AFD /* SchoolGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SchoolGif.gif; sourceTree = "<group>"; };
+		7007B08F24FFABE800BB644E /* Chilli.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Chilli.gif; sourceTree = "<group>"; };
 		700CDCCB24CB5CE5004C8615 /* Door Mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Door Mat.mp3"; sourceTree = "<group>"; };
 		700CDCCD24CB5D3B004C8615 /* Cooler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cooler.mp3; sourceTree = "<group>"; };
 		700CDCCF24CB5E88004C8615 /* Air Cooler_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Cooler_Question.mp3"; sourceTree = "<group>"; };
@@ -258,25 +166,10 @@
 		7017A9F724BB410000C46A97 /* Mat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mat.mp3; sourceTree = "<group>"; };
 		7017A9F824BB410100C46A97 /* Broom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Broom.mp3; sourceTree = "<group>"; };
 		7017A9F924BB410100C46A97 /* Window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Window.mp3; sourceTree = "<group>"; };
-		7017AA1624BB928000C46A97 /* Pencil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pencil.mp3; sourceTree = "<group>"; };
-		7017AA1724BB928000C46A97 /* Playground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Playground.mp3; sourceTree = "<group>"; };
-		7017AA1824BB928000C46A97 /* White Board.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White Board.mp3"; sourceTree = "<group>"; };
-		7017AA1924BB928000C46A97 /* School Bag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Bag.mp3"; sourceTree = "<group>"; };
-		7017AA1A24BB928100C46A97 /* Computer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Computer.mp3; sourceTree = "<group>"; };
-		7017AA1B24BB928100C46A97 /* Classroom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Classroom.mp3; sourceTree = "<group>"; };
-		7017AA1C24BB928100C46A97 /* Book.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Book.mp3; sourceTree = "<group>"; };
-		7017AA1D24BB928100C46A97 /* Library.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Library.mp3; sourceTree = "<group>"; };
-		7017AA1E24BB928100C46A97 /* Map.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Map.mp3; sourceTree = "<group>"; };
-		7017AA1F24BB928100C46A97 /* Notebook.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Notebook.mp3; sourceTree = "<group>"; };
-		7017AA2024BB928100C46A97 /* Electric Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electric Bell.mp3"; sourceTree = "<group>"; };
-		7017AA2124BB928200C46A97 /* Pen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pen.mp3; sourceTree = "<group>"; };
-		7017AA2E24BB92E800C46A97 /* Bench.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bench.mp3; sourceTree = "<group>"; };
-		7017AA3024BB98F500C46A97 /* School Uniform.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Uniform.mp3"; sourceTree = "<group>"; };
 		701EF78024A294C5006C0A36 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		70270FDA24A369A900EB8DAB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		70277DD124A4B59100072D57 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		7027932924CCAED700A863FB /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
-		70329EC824C608E300E00095 /* Watering Can.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Watering Can.mp3"; sourceTree = "<group>"; };
 		70631FEA249776AB00DAE930 /* ImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewController.swift; sourceTree = "<group>"; };
 		70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		70631FF12497F11B00DAE930 /* PictureCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionCell.swift; sourceTree = "<group>"; };
@@ -292,86 +185,9 @@
 		70DBD6D124FE4DCC000AAA10 /* Tomato.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Tomato.gif; sourceTree = "<group>"; };
 		70DBD6D324FE68C3000AAA10 /* Corn.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Corn.gif; sourceTree = "<group>"; };
 		70DBD6D424FE68C3000AAA10 /* Grain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Grain.gif; sourceTree = "<group>"; };
-		70E3B41E24C4536F0053B679 /* Axe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Axe.mp3; sourceTree = "<group>"; };
-		70E3B41F24C4536F0053B679 /* Cultivator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cultivator.mp3; sourceTree = "<group>"; };
-		70E3B42024C4536F0053B679 /* Hand Fork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hand Fork.mp3"; sourceTree = "<group>"; };
-		70E3B42124C4536F0053B679 /* Shovel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shovel.mp3; sourceTree = "<group>"; };
-		70E3B42624C453CE0053B679 /* Spade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spade.mp3; sourceTree = "<group>"; };
-		70E3B42724C453CE0053B679 /* Trowel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trowel.mp3; sourceTree = "<group>"; };
-		70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hedge Shears.mp3"; sourceTree = "<group>"; };
-		70E3B42B24C4556A0053B679 /* Hose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hose.mp3; sourceTree = "<group>"; };
-		70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Prunning Saw.mp3"; sourceTree = "<group>"; };
-		70E3B43024C456370053B679 /* Garden Gloves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Garden Gloves.mp3"; sourceTree = "<group>"; };
-		70E3B43124C456380053B679 /* Wheelbarrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wheelbarrow.mp3; sourceTree = "<group>"; };
 		70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSolveViewController.swift; sourceTree = "<group>"; };
-		70E5E8AA24BDE355002B2032 /* Saucer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Saucer.mp3; sourceTree = "<group>"; };
-		70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Skimmer.mp3; sourceTree = "<group>"; };
-		70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pin.mp3"; sourceTree = "<group>"; };
-		70E5E8AD24BDE356002B2032 /* Strainer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Strainer.mp3; sourceTree = "<group>"; };
-		70E5E8AE24BDE356002B2032 /* Pan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pan.mp3; sourceTree = "<group>"; };
-		70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cauldron.mp3; sourceTree = "<group>"; };
-		70E5E8B024BDE356002B2032 /* Glass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Glass.mp3; sourceTree = "<group>"; };
-		70E5E8B124BDE356002B2032 /* Grater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grater.mp3; sourceTree = "<group>"; };
-		70E5E8B224BDE356002B2032 /* Sieve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sieve.mp3; sourceTree = "<group>"; };
-		70E5E8B324BDE357002B2032 /* Cup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cup.mp3; sourceTree = "<group>"; };
-		70E5E8B424BDE357002B2032 /* Spoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spoon.mp3; sourceTree = "<group>"; };
-		70E5E8B624BDE357002B2032 /* Plate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Plate.mp3; sourceTree = "<group>"; };
-		70E5E8B724BDE357002B2032 /* Ladle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladle.mp3; sourceTree = "<group>"; };
-		70E5E8B824BDE357002B2032 /* Fork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fork.mp3; sourceTree = "<group>"; };
-		70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pad.mp3"; sourceTree = "<group>"; };
-		70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pitcher.mp3; sourceTree = "<group>"; };
-		70E5E8BB24BDE358002B2032 /* Lid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lid.mp3; sourceTree = "<group>"; };
-		70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pressure Cooker.mp3"; sourceTree = "<group>"; };
-		70E5E8BD24BDE358002B2032 /* Bowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bowl.mp3; sourceTree = "<group>"; };
 		70E5E8D624C0CD22002B2032 /* House.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = House.mp3; sourceTree = "<group>"; };
 		70E5E8D724C0CD22002B2032 /* Air Conditioner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Conditioner.mp3"; sourceTree = "<group>"; };
-		70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gardening Boots.mp3"; sourceTree = "<group>"; };
-		70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Axe_Question.mp3; sourceTree = "<group>"; };
-		70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Garden Gloves_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cultivator_Question.mp3; sourceTree = "<group>"; };
-		70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hand Fork_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hose_Question.mp3; sourceTree = "<group>"; };
-		70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Prunning Saw_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wheelbarrow_Question.mp3; sourceTree = "<group>"; };
-		70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rake_Question.mp3; sourceTree = "<group>"; };
-		70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shovel_Question.mp3; sourceTree = "<group>"; };
-		70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gardening Boots_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trowel_Question.mp3; sourceTree = "<group>"; };
-		70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spade_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Plate_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bowl_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Saucer_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sieve_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grater_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pad_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ladle_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spoon_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Teapot_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lid_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Glass_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fork_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Skimmer_Question.mp3; sourceTree = "<group>"; };
-		70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pressure Cooker_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Strainer_Question.mp3; sourceTree = "<group>"; };
-		70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cauldron_Question.mp3; sourceTree = "<group>"; };
-		70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pan_Question.mp3; sourceTree = "<group>"; };
-		70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pitcher_Question.mp3; sourceTree = "<group>"; };
-		70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Pin_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cup_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Classroom_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Computer_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Bag_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Playground_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Book_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pencil_Question.mp3; sourceTree = "<group>"; };
-		70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bench_Question.mp3; sourceTree = "<group>"; };
-		70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "School Uniform_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Map_Question.mp3; sourceTree = "<group>"; };
-		70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Notebook_Question.mp3; sourceTree = "<group>"; };
-		70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White Board_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electric Bell_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Library_Question.mp3; sourceTree = "<group>"; };
-		70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pen_Question.mp3; sourceTree = "<group>"; };
 		70EC9B6524C72081009F8B8E /* Curtain_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Curtain_Question.mp3; sourceTree = "<group>"; };
 		70EC9B6624C72081009F8B8E /* Wardrobe_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wardrobe_Question.mp3; sourceTree = "<group>"; };
 		70EC9B6724C72081009F8B8E /* House_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = House_Question.mp3; sourceTree = "<group>"; };
@@ -397,8 +213,6 @@
 		70EC9B7D24C72085009F8B8E /* Fan_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fan_Question.mp3; sourceTree = "<group>"; };
 		70EC9B7E24C72086009F8B8E /* Dustbin_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dustbin_Question.mp3; sourceTree = "<group>"; };
 		70EC9B9B24C75230009F8B8E /* Door Mat_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Door Mat_Question.mp3"; sourceTree = "<group>"; };
-		70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hedge Shears_Question.mp3"; sourceTree = "<group>"; };
-		70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Watering Can_Question.mp3"; sourceTree = "<group>"; };
 		70F9023B24AF88A400A3AA12 /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = No.mp3; sourceTree = "<group>"; };
 		70F9023F24AF88AE00A3AA12 /* GreatJob.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GreatJob.mp3; sourceTree = "<group>"; };
 		70F9024024AF88AE00A3AA12 /* Excellent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Excellent.mp3; sourceTree = "<group>"; };
@@ -476,9 +290,10 @@
 		700D416C249E980A00AA3D1C /* SoundFile */ = {
 			isa = PBXGroup;
 			children = (
-				70E3B41D24C453620053B679 /* Implements */,
-				70E5E8A724BDE2F8002B2032 /* KitchenUtensils */,
-				7017AA1324BB451700C46A97 /* SchoolSound */,
+				70298E0B250270F000155B9D /* GrainsSound */,
+				70298E08250270D300155B9D /* SpicesSound */,
+				70298E05250270AD00155B9D /* VegetablesSound */,
+				70298E022502705E00155B9D /* FruitsSound */,
 				70F9023B24AF88A400A3AA12 /* No.mp3 */,
 				70F9024324AF88B900A3AA12 /* WellDone.mp3 */,
 				70F9024524AFAF5C00A3AA12 /* Wrong.mp3 */,
@@ -534,57 +349,6 @@
 			path = HouseHoldThings_Name;
 			sourceTree = "<group>";
 		};
-		7017AA1324BB451700C46A97 /* SchoolSound */ = {
-			isa = PBXGroup;
-			children = (
-				7017AA1524BB453400C46A97 /* School_Name */,
-				7017AA1424BB452600C46A97 /* School_Question */,
-			);
-			path = SchoolSound;
-			sourceTree = "<group>";
-		};
-		7017AA1424BB452600C46A97 /* School_Question */ = {
-			isa = PBXGroup;
-			children = (
-				70EC9B4F24C71C00009F8B8E /* Bench_Question.mp3 */,
-				70EC9B4D24C71C00009F8B8E /* Book_Question.mp3 */,
-				70EC9B4924C71BFF009F8B8E /* Classroom_Question.mp3 */,
-				70EC9B4A24C71BFF009F8B8E /* Computer_Question.mp3 */,
-				70EC9B5424C71C01009F8B8E /* Electric Bell_Question.mp3 */,
-				70EC9B5524C71C01009F8B8E /* Library_Question.mp3 */,
-				70EC9B5124C71C00009F8B8E /* Map_Question.mp3 */,
-				70EC9B5224C71C00009F8B8E /* Notebook_Question.mp3 */,
-				70EC9B5624C71C01009F8B8E /* Pen_Question.mp3 */,
-				70EC9B4E24C71C00009F8B8E /* Pencil_Question.mp3 */,
-				70EC9B4C24C71C00009F8B8E /* Playground_Question.mp3 */,
-				70EC9B4B24C71BFF009F8B8E /* School Bag_Question.mp3 */,
-				70EC9B5024C71C00009F8B8E /* School Uniform_Question.mp3 */,
-				70EC9B5324C71C01009F8B8E /* White Board_Question.mp3 */,
-			);
-			path = School_Question;
-			sourceTree = "<group>";
-		};
-		7017AA1524BB453400C46A97 /* School_Name */ = {
-			isa = PBXGroup;
-			children = (
-				7017AA1C24BB928100C46A97 /* Book.mp3 */,
-				7017AA1B24BB928100C46A97 /* Classroom.mp3 */,
-				7017AA1A24BB928100C46A97 /* Computer.mp3 */,
-				7017AA2024BB928100C46A97 /* Electric Bell.mp3 */,
-				7017AA3024BB98F500C46A97 /* School Uniform.mp3 */,
-				7017AA1D24BB928100C46A97 /* Library.mp3 */,
-				7017AA1E24BB928100C46A97 /* Map.mp3 */,
-				7017AA1F24BB928100C46A97 /* Notebook.mp3 */,
-				7017AA2124BB928200C46A97 /* Pen.mp3 */,
-				7017AA1624BB928000C46A97 /* Pencil.mp3 */,
-				7017AA2E24BB92E800C46A97 /* Bench.mp3 */,
-				7017AA1724BB928000C46A97 /* Playground.mp3 */,
-				7017AA1924BB928000C46A97 /* School Bag.mp3 */,
-				7017AA1824BB928000C46A97 /* White Board.mp3 */,
-			);
-			path = School_Name;
-			sourceTree = "<group>";
-		};
 		701D4D4524B1DA6D00E642A6 /* HouseHoldThings_Question */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +393,98 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		70298E022502705E00155B9D /* FruitsSound */ = {
+			isa = PBXGroup;
+			children = (
+				70298E042502708400155B9D /* Fruits_Name */,
+				70298E032502707600155B9D /* Fruits_Question */,
+			);
+			path = FruitsSound;
+			sourceTree = "<group>";
+		};
+		70298E032502707600155B9D /* Fruits_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fruits_Question;
+			sourceTree = "<group>";
+		};
+		70298E042502708400155B9D /* Fruits_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fruits_Name;
+			sourceTree = "<group>";
+		};
+		70298E05250270AD00155B9D /* VegetablesSound */ = {
+			isa = PBXGroup;
+			children = (
+				70298E07250270C600155B9D /* Vegetables_Question */,
+				70298E06250270BF00155B9D /* Vegetables_Name */,
+			);
+			path = VegetablesSound;
+			sourceTree = "<group>";
+		};
+		70298E06250270BF00155B9D /* Vegetables_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Name;
+			sourceTree = "<group>";
+		};
+		70298E07250270C600155B9D /* Vegetables_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Question;
+			sourceTree = "<group>";
+		};
+		70298E08250270D300155B9D /* SpicesSound */ = {
+			isa = PBXGroup;
+			children = (
+				70298E0A250270E300155B9D /* Spices_Question */,
+				70298E09250270DC00155B9D /* Spices_Name */,
+			);
+			path = SpicesSound;
+			sourceTree = "<group>";
+		};
+		70298E09250270DC00155B9D /* Spices_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Name;
+			sourceTree = "<group>";
+		};
+		70298E0A250270E300155B9D /* Spices_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Question;
+			sourceTree = "<group>";
+		};
+		70298E0B250270F000155B9D /* GrainsSound */ = {
+			isa = PBXGroup;
+			children = (
+				70298E0D2502712F00155B9D /* Grains_Name */,
+				70298E0C2502711300155B9D /* Grains_Question */,
+			);
+			path = GrainsSound;
+			sourceTree = "<group>";
+		};
+		70298E0C2502711300155B9D /* Grains_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grains_Question;
+			sourceTree = "<group>";
+		};
+		70298E0D2502712F00155B9D /* Grains_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grains_Name;
+			sourceTree = "<group>";
+		};
 		70631FEE2497ED5100DAE930 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,118 +494,6 @@
 				7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */,
 			);
 			path = CollectionCell;
-			sourceTree = "<group>";
-		};
-		70E3B41D24C453620053B679 /* Implements */ = {
-			isa = PBXGroup;
-			children = (
-				70EC9B0624C6F4AD009F8B8E /* Implements_Question */,
-				70EC9B0524C6F49E009F8B8E /* Implements_Name */,
-			);
-			path = Implements;
-			sourceTree = "<group>";
-		};
-		70E5E8A724BDE2F8002B2032 /* KitchenUtensils */ = {
-			isa = PBXGroup;
-			children = (
-				70E5E8A924BDE339002B2032 /* KitchenUtensils_Question */,
-				70E5E8A824BDE331002B2032 /* KitchenUtensils_Name */,
-			);
-			path = KitchenUtensils;
-			sourceTree = "<group>";
-		};
-		70E5E8A824BDE331002B2032 /* KitchenUtensils_Name */ = {
-			isa = PBXGroup;
-			children = (
-				70E5E8BD24BDE358002B2032 /* Bowl.mp3 */,
-				70E5E8AF24BDE356002B2032 /* Cauldron.mp3 */,
-				70E5E8B324BDE357002B2032 /* Cup.mp3 */,
-				70E5E8B824BDE357002B2032 /* Fork.mp3 */,
-				70E5E8B024BDE356002B2032 /* Glass.mp3 */,
-				70E5E8B124BDE356002B2032 /* Grater.mp3 */,
-				70E5E8B724BDE357002B2032 /* Ladle.mp3 */,
-				70E5E8BB24BDE358002B2032 /* Lid.mp3 */,
-				70E5E8AE24BDE356002B2032 /* Pan.mp3 */,
-				70E5E8BA24BDE358002B2032 /* Pitcher.mp3 */,
-				70E5E8B624BDE357002B2032 /* Plate.mp3 */,
-				70E5E8BC24BDE358002B2032 /* Pressure Cooker.mp3 */,
-				70E5E8B924BDE357002B2032 /* Rolling Pad.mp3 */,
-				70E5E8AC24BDE356002B2032 /* Rolling Pin.mp3 */,
-				70E5E8AA24BDE355002B2032 /* Saucer.mp3 */,
-				70E5E8B224BDE356002B2032 /* Sieve.mp3 */,
-				70E5E8AB24BDE355002B2032 /* Skimmer.mp3 */,
-				70E5E8B424BDE357002B2032 /* Spoon.mp3 */,
-				70E5E8AD24BDE356002B2032 /* Strainer.mp3 */,
-			);
-			path = KitchenUtensils_Name;
-			sourceTree = "<group>";
-		};
-		70E5E8A924BDE339002B2032 /* KitchenUtensils_Question */ = {
-			isa = PBXGroup;
-			children = (
-				70EC9B2224C719C4009F8B8E /* Bowl_Question.mp3 */,
-				70EC9B3024C719C6009F8B8E /* Cauldron_Question.mp3 */,
-				70EC9B3424C719C7009F8B8E /* Cup_Question.mp3 */,
-				70EC9B2C24C719C6009F8B8E /* Fork_Question.mp3 */,
-				70EC9B2B24C719C6009F8B8E /* Glass_Question.mp3 */,
-				70EC9B2524C719C5009F8B8E /* Grater_Question.mp3 */,
-				70EC9B2724C719C5009F8B8E /* Ladle_Question.mp3 */,
-				70EC9B2A24C719C5009F8B8E /* Lid_Question.mp3 */,
-				70EC9B3124C719C6009F8B8E /* Pan_Question.mp3 */,
-				70EC9B3224C719C6009F8B8E /* Pitcher_Question.mp3 */,
-				70EC9B2124C719C4009F8B8E /* Plate_Question.mp3 */,
-				70EC9B2E24C719C6009F8B8E /* Pressure Cooker_Question.mp3 */,
-				70EC9B2624C719C5009F8B8E /* Rolling Pad_Question.mp3 */,
-				70EC9B3324C719C7009F8B8E /* Rolling Pin_Question.mp3 */,
-				70EC9B2324C719C4009F8B8E /* Saucer_Question.mp3 */,
-				70EC9B2424C719C5009F8B8E /* Sieve_Question.mp3 */,
-				70EC9B2D24C719C6009F8B8E /* Skimmer_Question.mp3 */,
-				70EC9B2824C719C5009F8B8E /* Spoon_Question.mp3 */,
-				70EC9B2F24C719C6009F8B8E /* Strainer_Question.mp3 */,
-				70EC9B2924C719C5009F8B8E /* Teapot_Question.mp3 */,
-			);
-			path = KitchenUtensils_Question;
-			sourceTree = "<group>";
-		};
-		70EC9B0524C6F49E009F8B8E /* Implements_Name */ = {
-			isa = PBXGroup;
-			children = (
-				70E3B41E24C4536F0053B679 /* Axe.mp3 */,
-				70E3B41F24C4536F0053B679 /* Cultivator.mp3 */,
-				70E3B42A24C4556A0053B679 /* Hedge Shears.mp3 */,
-				70E3B42B24C4556A0053B679 /* Hose.mp3 */,
-				70E3B42C24C4556A0053B679 /* Prunning Saw.mp3 */,
-				70E3B43024C456370053B679 /* Garden Gloves.mp3 */,
-				70E3B43124C456380053B679 /* Wheelbarrow.mp3 */,
-				70329EC824C608E300E00095 /* Watering Can.mp3 */,
-				70E3B42624C453CE0053B679 /* Spade.mp3 */,
-				70E3B42724C453CE0053B679 /* Trowel.mp3 */,
-				70E3B42024C4536F0053B679 /* Hand Fork.mp3 */,
-				70EC9B0324C6F2D7009F8B8E /* Gardening Boots.mp3 */,
-				70E3B42124C4536F0053B679 /* Shovel.mp3 */,
-			);
-			path = Implements_Name;
-			sourceTree = "<group>";
-		};
-		70EC9B0624C6F4AD009F8B8E /* Implements_Question */ = {
-			isa = PBXGroup;
-			children = (
-				70EC9B0724C6F503009F8B8E /* Axe_Question.mp3 */,
-				70EC9B1124C71571009F8B8E /* Prunning Saw_Question.mp3 */,
-				70EC9B0D24C7148E009F8B8E /* Hand Fork_Question.mp3 */,
-				70EC9B0B24C7143E009F8B8E /* Cultivator_Question.mp3 */,
-				70EC9B1324C7158F009F8B8E /* Wheelbarrow_Question.mp3 */,
-				70EC9B1E24C71694009F8B8E /* Spade_Question.mp3 */,
-				70EC9B1D24C71693009F8B8E /* Trowel_Question.mp3 */,
-				70EC9B1524C715B8009F8B8E /* Rake_Question.mp3 */,
-				70EC9B1924C71612009F8B8E /* Gardening Boots_Question.mp3 */,
-				70EC9BA124C758E5009F8B8E /* Watering Can_Question.mp3 */,
-				70EC9B0F24C714B6009F8B8E /* Hose_Question.mp3 */,
-				70EC9B9D24C7567A009F8B8E /* Hedge Shears_Question.mp3 */,
-				70EC9B1724C715E6009F8B8E /* Shovel_Question.mp3 */,
-				70EC9B0924C71408009F8B8E /* Garden Gloves_Question.mp3 */,
-			);
-			path = Implements_Question;
 			sourceTree = "<group>";
 		};
 		70FF08F924962D9B002861AE = {
@@ -816,6 +560,7 @@
 				7027932924CCAED700A863FB /* BackgroundMusic.mp3 */,
 				70D84C7924FD361A0067DE94 /* Apple.gif */,
 				70013AD624CDB97600CE1AFD /* SchoolGif.gif */,
+				7007B08F24FFABE800BB644E /* Chilli.gif */,
 				70DBD6D124FE4DCC000AAA10 /* Tomato.gif */,
 				70DBD6CF24FE45BB000AAA10 /* Vegetable.gif */,
 				70DBD6D324FE68C3000AAA10 /* Corn.gif */,
@@ -982,33 +727,12 @@
 			files = (
 				700CDCCC24CB5CE5004C8615 /* Door Mat.mp3 in Resources */,
 				70EC9B8824C72086009F8B8E /* Gate_Question.mp3 in Resources */,
-				70EC9BA224C758E5009F8B8E /* Watering Can_Question.mp3 in Resources */,
-				70E3B42824C453CE0053B679 /* Spade.mp3 in Resources */,
 				70EC9B8024C72086009F8B8E /* Wardrobe_Question.mp3 in Resources */,
-				70E3B42D24C4556A0053B679 /* Hedge Shears.mp3 in Resources */,
 				70EC9B9424C72086009F8B8E /* Room_Question.mp3 in Resources */,
-				7017AA2524BB928200C46A97 /* School Bag.mp3 in Resources */,
-				70EC9B3B24C719C7009F8B8E /* Ladle_Question.mp3 in Resources */,
-				70EC9B5C24C71C01009F8B8E /* Pencil_Question.mp3 in Resources */,
-				70EC9B0824C6F503009F8B8E /* Axe_Question.mp3 in Resources */,
-				70EC9B6024C71C01009F8B8E /* Notebook_Question.mp3 in Resources */,
 				7068EFD524AB5DCE00B448C3 /* TestSolveCollectionCell.xib in Resources */,
-				70E5E8CF24BDE358002B2032 /* Lid.mp3 in Resources */,
-				7017AA2224BB928200C46A97 /* Pencil.mp3 in Resources */,
-				70EC9B1A24C71612009F8B8E /* Gardening Boots_Question.mp3 in Resources */,
-				70EC9B4424C719C7009F8B8E /* Cauldron_Question.mp3 in Resources */,
-				7017AA2A24BB928200C46A97 /* Map.mp3 in Resources */,
-				70EC9B1824C715E6009F8B8E /* Shovel_Question.mp3 in Resources */,
 				70EC9B9724C72086009F8B8E /* Fan_Question.mp3 in Resources */,
 				70D84C7A24FD361A0067DE94 /* Apple.gif in Resources */,
-				70E5E8D124BDE358002B2032 /* Bowl.mp3 in Resources */,
-				70EC9B2024C71694009F8B8E /* Spade_Question.mp3 in Resources */,
-				70E3B42224C4536F0053B679 /* Axe.mp3 in Resources */,
 				70EC9B9824C72086009F8B8E /* Dustbin_Question.mp3 in Resources */,
-				70EC9B1F24C71694009F8B8E /* Trowel_Question.mp3 in Resources */,
-				70EC9B0A24C71408009F8B8E /* Garden Gloves_Question.mp3 in Resources */,
-				70EC9B3C24C719C7009F8B8E /* Spoon_Question.mp3 in Resources */,
-				70E5E8CE24BDE358002B2032 /* Pitcher.mp3 in Resources */,
 				70EC9B8E24C72086009F8B8E /* Staircase_Question.mp3 in Resources */,
 				70EC9B8224C72086009F8B8E /* Corridor_Question.mp3 in Resources */,
 				7017A9FD24BB410100C46A97 /* Dustbin.mp3 in Resources */,
@@ -1016,10 +740,7 @@
 				7017AA0924BB410100C46A97 /* Kitchen.mp3 in Resources */,
 				7017AA0D24BB410100C46A97 /* Corridor.mp3 in Resources */,
 				70FF091224962DB5002861AE /* LaunchScreen.storyboard in Resources */,
-				70EC9B9E24C7567B009F8B8E /* Hedge Shears_Question.mp3 in Resources */,
-				70EC9B5F24C71C01009F8B8E /* Map_Question.mp3 in Resources */,
 				7017AA0324BB410100C46A97 /* Sofa.mp3 in Resources */,
-				70E3B42924C453CE0053B679 /* Trowel.mp3 in Resources */,
 				70F9024624AFAF5C00A3AA12 /* Wrong.mp3 in Resources */,
 				70DBD6CE24FE4230000AAA10 /* Brinjal.gif in Resources */,
 				7017AA0424BB410100C46A97 /* Curtain.mp3 in Resources */,
@@ -1027,124 +748,55 @@
 				70EC9B8B24C72086009F8B8E /* Kitchen_Question.mp3 in Resources */,
 				700CDCD224CB5E90004C8615 /* Air Cooler.mp3 in Resources */,
 				70AF537924A0CCCF00AD4794 /* Main.storyboard in Resources */,
-				70EC9B3924C719C7009F8B8E /* Grater_Question.mp3 in Resources */,
-				70EC9B1424C7158F009F8B8E /* Wheelbarrow_Question.mp3 in Resources */,
 				70EC9B8F24C72086009F8B8E /* Bed_Question.mp3 in Resources */,
-				70E5E8C024BDE358002B2032 /* Rolling Pin.mp3 in Resources */,
 				70631FF42497F11B00DAE930 /* PictureCollectionCell.xib in Resources */,
-				7017AA2C24BB928200C46A97 /* Electric Bell.mp3 in Resources */,
-				70E5E8C424BDE358002B2032 /* Glass.mp3 in Resources */,
 				7017AA0B24BB410100C46A97 /* Swing.mp3 in Resources */,
 				70E5E8D924C0CD22002B2032 /* Air Conditioner.mp3 in Resources */,
-				70E5E8CD24BDE358002B2032 /* Rolling Pad.mp3 in Resources */,
-				70E5E8CA24BDE358002B2032 /* Plate.mp3 in Resources */,
 				7017AA0C24BB410100C46A97 /* Mirror.mp3 in Resources */,
-				70EC9B0E24C7148E009F8B8E /* Hand Fork_Question.mp3 in Resources */,
 				7017AA0124BB410100C46A97 /* Bathroom.mp3 in Resources */,
 				7017AA0A24BB410100C46A97 /* Telephone.mp3 in Resources */,
 				70EC9B9324C72086009F8B8E /* Door_Question.mp3 in Resources */,
-				70EC9B4024C719C7009F8B8E /* Fork_Question.mp3 in Resources */,
 				70F9023D24AF88A500A3AA12 /* No.mp3 in Resources */,
-				70EC9B4124C719C7009F8B8E /* Skimmer_Question.mp3 in Resources */,
-				70E5E8C824BDE358002B2032 /* Spoon.mp3 in Resources */,
 				7017AA0624BB410100C46A97 /* Gate.mp3 in Resources */,
-				70EC9B5B24C71C01009F8B8E /* Book_Question.mp3 in Resources */,
-				7017AA2624BB928200C46A97 /* Computer.mp3 in Resources */,
 				70EC9B8124C72086009F8B8E /* House_Question.mp3 in Resources */,
-				70EC9B3F24C719C7009F8B8E /* Glass_Question.mp3 in Resources */,
-				70EC9B4324C719C7009F8B8E /* Strainer_Question.mp3 in Resources */,
-				70E5E8BF24BDE358002B2032 /* Skimmer.mp3 in Resources */,
-				70E3B42F24C4556A0053B679 /* Prunning Saw.mp3 in Resources */,
-				70EC9B1624C715B8009F8B8E /* Rake_Question.mp3 in Resources */,
-				70EC9B3E24C719C7009F8B8E /* Lid_Question.mp3 in Resources */,
-				70E5E8BE24BDE358002B2032 /* Saucer.mp3 in Resources */,
-				70EC9B5724C71C01009F8B8E /* Classroom_Question.mp3 in Resources */,
-				70EC9B6224C71C01009F8B8E /* Electric Bell_Question.mp3 in Resources */,
-				70EC9B3524C719C7009F8B8E /* Plate_Question.mp3 in Resources */,
 				70EC9B9024C72086009F8B8E /* Mirror_Question.mp3 in Resources */,
 				70EC9B7F24C72086009F8B8E /* Curtain_Question.mp3 in Resources */,
-				70E5E8C624BDE358002B2032 /* Sieve.mp3 in Resources */,
 				7017A9FE24BB410100C46A97 /* Stool.mp3 in Resources */,
 				7017AA0024BB410100C46A97 /* Fan.mp3 in Resources */,
-				70EC9B3824C719C7009F8B8E /* Sieve_Question.mp3 in Resources */,
-				70EC9B3A24C719C7009F8B8E /* Rolling Pad_Question.mp3 in Resources */,
 				700CDCD024CB5E88004C8615 /* Air Cooler_Question.mp3 in Resources */,
-				7017AA2724BB928200C46A97 /* Classroom.mp3 in Resources */,
-				70EC9B5D24C71C01009F8B8E /* Bench_Question.mp3 in Resources */,
+				7007B09024FFABE900BB644E /* Chilli.gif in Resources */,
 				70DBD6D024FE45BB000AAA10 /* Vegetable.gif in Resources */,
 				70EC9B8424C72086009F8B8E /* Stool_Question.mp3 in Resources */,
-				70EC9B3724C719C7009F8B8E /* Saucer_Question.mp3 in Resources */,
 				70DBD6D624FE68C3000AAA10 /* Grain.gif in Resources */,
-				7017AA2824BB928200C46A97 /* Book.mp3 in Resources */,
 				7027932A24CCAED700A863FB /* BackgroundMusic.mp3 in Resources */,
-				70EC9B1024C714B6009F8B8E /* Hose_Question.mp3 in Resources */,
 				70EC9B9624C72086009F8B8E /* Telephone_Question.mp3 in Resources */,
-				70EC9B1224C71571009F8B8E /* Prunning Saw_Question.mp3 in Resources */,
 				7017AA1224BB410100C46A97 /* Window.mp3 in Resources */,
-				70EC9B4624C719C7009F8B8E /* Pitcher_Question.mp3 in Resources */,
-				70E5E8C224BDE358002B2032 /* Pan.mp3 in Resources */,
-				70E3B42524C4536F0053B679 /* Shovel.mp3 in Resources */,
 				7017AA0224BB410100C46A97 /* Bed.mp3 in Resources */,
-				70E3B42324C4536F0053B679 /* Cultivator.mp3 in Resources */,
-				7017AA3124BB98F500C46A97 /* School Uniform.mp3 in Resources */,
 				70DBD6D224FE4DCD000AAA10 /* Tomato.gif in Resources */,
 				70EC9B8624C72086009F8B8E /* Air Conditioner_Question.mp3 in Resources */,
-				70329EC924C608E300E00095 /* Watering Can.mp3 in Resources */,
 				70EC9B9C24C75231009F8B8E /* Door Mat_Question.mp3 in Resources */,
 				70DBD6D524FE68C3000AAA10 /* Corn.gif in Resources */,
-				70EC9B5A24C71C01009F8B8E /* Playground_Question.mp3 in Resources */,
-				70EC9B5924C71C01009F8B8E /* School Bag_Question.mp3 in Resources */,
-				70E3B43224C456380053B679 /* Garden Gloves.mp3 in Resources */,
-				70E5E8C124BDE358002B2032 /* Strainer.mp3 in Resources */,
-				70E3B42424C4536F0053B679 /* Hand Fork.mp3 in Resources */,
 				70EC9B9124C72086009F8B8E /* Swing_Question.mp3 in Resources */,
-				7017AA2924BB928200C46A97 /* Library.mp3 in Resources */,
-				70EC9B5E24C71C01009F8B8E /* School Uniform_Question.mp3 in Resources */,
 				7017A9FB24BB410100C46A97 /* Building.mp3 in Resources */,
 				70EC9B8C24C72086009F8B8E /* Ladder_Question.mp3 in Resources */,
-				70EC9B4824C719C7009F8B8E /* Cup_Question.mp3 in Resources */,
-				70EC9B4224C719C7009F8B8E /* Pressure Cooker_Question.mp3 in Resources */,
-				70EC9B3D24C719C7009F8B8E /* Teapot_Question.mp3 in Resources */,
 				7017AA1124BB410100C46A97 /* Broom.mp3 in Resources */,
 				7017A9FA24BB410100C46A97 /* Ladder.mp3 in Resources */,
 				7017A9FF24BB410100C46A97 /* Door.mp3 in Resources */,
-				70EC9B6424C71C01009F8B8E /* Pen_Question.mp3 in Resources */,
-				70EC9B4724C719C7009F8B8E /* Rolling Pin_Question.mp3 in Resources */,
-				70EC9B6324C71C01009F8B8E /* Library_Question.mp3 in Resources */,
 				70E5E8D824C0CD22002B2032 /* House.mp3 in Resources */,
 				70FF090F24962DB5002861AE /* Assets.xcassets in Resources */,
-				7017AA2324BB928200C46A97 /* Playground.mp3 in Resources */,
-				70E5E8CB24BDE358002B2032 /* Ladle.mp3 in Resources */,
-				7017AA2F24BB92E800C46A97 /* Bench.mp3 in Resources */,
 				70EC9B9524C72086009F8B8E /* Bathroom_Question.mp3 in Resources */,
-				7017AA2424BB928200C46A97 /* White Board.mp3 in Resources */,
-				70E3B43324C456380053B679 /* Wheelbarrow.mp3 in Resources */,
 				70F9024224AF88AE00A3AA12 /* Excellent.mp3 in Resources */,
 				70EC9B8924C72086009F8B8E /* Window_Question.mp3 in Resources */,
-				70E5E8CC24BDE358002B2032 /* Fork.mp3 in Resources */,
 				70F9024424AF88B900A3AA12 /* WellDone.mp3 in Resources */,
-				7017AA2D24BB928200C46A97 /* Pen.mp3 in Resources */,
-				70EC9B4524C719C7009F8B8E /* Pan_Question.mp3 in Resources */,
-				70E5E8C324BDE358002B2032 /* Cauldron.mp3 in Resources */,
 				7017AA0724BB410100C46A97 /* Staircase.mp3 in Resources */,
-				70E5E8D024BDE358002B2032 /* Pressure Cooker.mp3 in Resources */,
 				70EC9B8724C72086009F8B8E /* Sofa_Question.mp3 in Resources */,
 				70EC9B8524C72086009F8B8E /* Chair_Question.mp3 in Resources */,
 				7017AA1024BB410100C46A97 /* Mat.mp3 in Resources */,
 				7017AA0E24BB410100C46A97 /* Table.mp3 in Resources */,
-				70E5E8C724BDE358002B2032 /* Cup.mp3 in Resources */,
-				70EC9B6124C71C01009F8B8E /* White Board_Question.mp3 in Resources */,
-				70EC9B3624C719C7009F8B8E /* Bowl_Question.mp3 in Resources */,
 				7017AA0524BB410100C46A97 /* Wardrobe.mp3 in Resources */,
-				70E5E8C524BDE358002B2032 /* Grater.mp3 in Resources */,
 				70EC9B8A24C72086009F8B8E /* Broom_Question.mp3 in Resources */,
-				70EC9B0C24C7143E009F8B8E /* Cultivator_Question.mp3 in Resources */,
-				70EC9B5824C71C01009F8B8E /* Computer_Question.mp3 in Resources */,
 				70EC9B9224C72086009F8B8E /* Building_Question.mp3 in Resources */,
-				70E3B42E24C4556A0053B679 /* Hose.mp3 in Resources */,
-				70EC9B0424C6F2D7009F8B8E /* Gardening Boots.mp3 in Resources */,
 				7017A9FC24BB410100C46A97 /* Room.mp3 in Resources */,
-				7017AA2B24BB928200C46A97 /* Notebook.mp3 in Resources */,
 				70013AD724CDB97600CE1AFD /* SchoolGif.gif in Resources */,
 				700CDCCE24CB5D3B004C8615 /* Cooler.mp3 in Resources */,
 			);
