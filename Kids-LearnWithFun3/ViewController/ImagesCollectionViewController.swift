@@ -165,8 +165,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     }
     
     @IBAction func funcGoToHome(_ sender: Any) {
-        interstitial = createAndLoadInterstitial()
-     //   navigationController?.popViewController(animated: true)
+//        interstitial = createAndLoadInterstitial()
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func funcForwardBtnClick(_ sender: Any)

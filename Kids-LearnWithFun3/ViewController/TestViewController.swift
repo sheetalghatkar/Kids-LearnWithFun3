@@ -483,8 +483,8 @@ class TestViewController: UIViewController {
     }
     // MARK: - User defined Functions
         @IBAction func funcGoToTestHome(_ sender: Any) {
-            interstitial = createAndLoadInterstitial()
-            //navigationController?.popViewController(animated: true)
+//            interstitial = createAndLoadInterstitial()
+            navigationController?.popViewController(animated: true)
         }
  
     private func createAndLoadInterstitial() -> GADInterstitial? {
