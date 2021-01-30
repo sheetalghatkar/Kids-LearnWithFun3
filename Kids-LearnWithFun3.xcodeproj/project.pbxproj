@@ -287,13 +287,191 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F3ADF9D25C5E35300F5B8D6 /* Fruits_Name */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFAA25C5E35E00F5B8D6 /* Spices_Name */,
+				4F3ADFB025C5E35E00F5B8D6 /* Spices_Question */,
+				4F3ADFAC25C5E35E00F5B8D6 /* SpicesSound */,
+				4F3ADFAF25C5E35E00F5B8D6 /* Vegetables_Name */,
+				4F3ADFAB25C5E35E00F5B8D6 /* Vegetables_Question */,
+				4F3ADFA725C5E35E00F5B8D6 /* VegetablesSound */,
+			);
+			path = Fruits_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADF9F25C5E35300F5B8D6 /* Fruits_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fruits_Question;
+			sourceTree = "<group>";
+		};
+		4F3ADFA025C5E35300F5B8D6 /* FruitsSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADF9D25C5E35300F5B8D6 /* Fruits_Name */,
+				4F3ADF9F25C5E35300F5B8D6 /* Fruits_Question */,
+			);
+			path = FruitsSound;
+			sourceTree = "<group>";
+		};
+		4F3ADFA425C5E35300F5B8D6 /* GrainsSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFA525C5E35300F5B8D6 /* Grains_Name */,
+				4F3ADFA625C5E35300F5B8D6 /* Grains_Question */,
+			);
+			path = GrainsSound;
+			sourceTree = "<group>";
+		};
+		4F3ADFA525C5E35300F5B8D6 /* Grains_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grains_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADFA625C5E35300F5B8D6 /* Grains_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grains_Question;
+			sourceTree = "<group>";
+		};
+		4F3ADFA725C5E35E00F5B8D6 /* VegetablesSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFA825C5E35E00F5B8D6 /* Vegetables_Name */,
+				4F3ADFA925C5E35E00F5B8D6 /* Vegetables_Question */,
+			);
+			name = VegetablesSound;
+			path = "Kids-LearnWithFun3/SoundFile/VegetablesSound";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFA825C5E35E00F5B8D6 /* Vegetables_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADFA925C5E35E00F5B8D6 /* Vegetables_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Question;
+			sourceTree = "<group>";
+		};
+		4F3ADFAA25C5E35E00F5B8D6 /* Spices_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Spices_Name;
+			path = "Kids-LearnWithFun3/SoundFile/SpicesSound/Spices_Name";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFAB25C5E35E00F5B8D6 /* Vegetables_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vegetables_Question;
+			path = "Kids-LearnWithFun3/SoundFile/VegetablesSound/Vegetables_Question";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFAC25C5E35E00F5B8D6 /* SpicesSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFAD25C5E35E00F5B8D6 /* Spices_Name */,
+				4F3ADFAE25C5E35E00F5B8D6 /* Spices_Question */,
+			);
+			name = SpicesSound;
+			path = "Kids-LearnWithFun3/SoundFile/SpicesSound";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFAD25C5E35E00F5B8D6 /* Spices_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADFAE25C5E35E00F5B8D6 /* Spices_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Question;
+			sourceTree = "<group>";
+		};
+		4F3ADFAF25C5E35E00F5B8D6 /* Vegetables_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vegetables_Name;
+			path = "Kids-LearnWithFun3/SoundFile/VegetablesSound/Vegetables_Name";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFB025C5E35E00F5B8D6 /* Spices_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Spices_Question;
+			path = "Kids-LearnWithFun3/SoundFile/SpicesSound/Spices_Question";
+			sourceTree = SOURCE_ROOT;
+		};
+		4F3ADFB125C5E38900F5B8D6 /* VegetablesSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFB225C5E38900F5B8D6 /* Vegetables_Name */,
+				4F3ADFB325C5E38900F5B8D6 /* Vegetables_Question */,
+			);
+			path = VegetablesSound;
+			sourceTree = "<group>";
+		};
+		4F3ADFB225C5E38900F5B8D6 /* Vegetables_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADFB325C5E38900F5B8D6 /* Vegetables_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vegetables_Question;
+			sourceTree = "<group>";
+		};
+		4F3ADFB425C5E39000F5B8D6 /* SpicesSound */ = {
+			isa = PBXGroup;
+			children = (
+				4F3ADFB525C5E39000F5B8D6 /* Spices_Name */,
+				4F3ADFB625C5E39000F5B8D6 /* Spices_Question */,
+			);
+			path = SpicesSound;
+			sourceTree = "<group>";
+		};
+		4F3ADFB525C5E39000F5B8D6 /* Spices_Name */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Name;
+			sourceTree = "<group>";
+		};
+		4F3ADFB625C5E39000F5B8D6 /* Spices_Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spices_Question;
+			sourceTree = "<group>";
+		};
 		700D416C249E980A00AA3D1C /* SoundFile */ = {
 			isa = PBXGroup;
 			children = (
-				70298E0B250270F000155B9D /* GrainsSound */,
-				70298E08250270D300155B9D /* SpicesSound */,
-				70298E05250270AD00155B9D /* VegetablesSound */,
-				70298E022502705E00155B9D /* FruitsSound */,
+				4F3ADFB425C5E39000F5B8D6 /* SpicesSound */,
+				4F3ADFB125C5E38900F5B8D6 /* VegetablesSound */,
+				4F3ADFA025C5E35300F5B8D6 /* FruitsSound */,
+				4F3ADFA425C5E35300F5B8D6 /* GrainsSound */,
 				70F9023B24AF88A400A3AA12 /* No.mp3 */,
 				70F9024324AF88B900A3AA12 /* WellDone.mp3 */,
 				70F9024524AFAF5C00A3AA12 /* Wrong.mp3 */,
@@ -391,98 +569,6 @@
 				70E468A424A8D0E2008C8FFB /* TestSolveViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		70298E022502705E00155B9D /* FruitsSound */ = {
-			isa = PBXGroup;
-			children = (
-				70298E042502708400155B9D /* Fruits_Name */,
-				70298E032502707600155B9D /* Fruits_Question */,
-			);
-			path = FruitsSound;
-			sourceTree = "<group>";
-		};
-		70298E032502707600155B9D /* Fruits_Question */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fruits_Question;
-			sourceTree = "<group>";
-		};
-		70298E042502708400155B9D /* Fruits_Name */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fruits_Name;
-			sourceTree = "<group>";
-		};
-		70298E05250270AD00155B9D /* VegetablesSound */ = {
-			isa = PBXGroup;
-			children = (
-				70298E07250270C600155B9D /* Vegetables_Question */,
-				70298E06250270BF00155B9D /* Vegetables_Name */,
-			);
-			path = VegetablesSound;
-			sourceTree = "<group>";
-		};
-		70298E06250270BF00155B9D /* Vegetables_Name */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vegetables_Name;
-			sourceTree = "<group>";
-		};
-		70298E07250270C600155B9D /* Vegetables_Question */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vegetables_Question;
-			sourceTree = "<group>";
-		};
-		70298E08250270D300155B9D /* SpicesSound */ = {
-			isa = PBXGroup;
-			children = (
-				70298E0A250270E300155B9D /* Spices_Question */,
-				70298E09250270DC00155B9D /* Spices_Name */,
-			);
-			path = SpicesSound;
-			sourceTree = "<group>";
-		};
-		70298E09250270DC00155B9D /* Spices_Name */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Spices_Name;
-			sourceTree = "<group>";
-		};
-		70298E0A250270E300155B9D /* Spices_Question */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Spices_Question;
-			sourceTree = "<group>";
-		};
-		70298E0B250270F000155B9D /* GrainsSound */ = {
-			isa = PBXGroup;
-			children = (
-				70298E0D2502712F00155B9D /* Grains_Name */,
-				70298E0C2502711300155B9D /* Grains_Question */,
-			);
-			path = GrainsSound;
-			sourceTree = "<group>";
-		};
-		70298E0C2502711300155B9D /* Grains_Question */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grains_Question;
-			sourceTree = "<group>";
-		};
-		70298E0D2502712F00155B9D /* Grains_Name */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grains_Name;
 			sourceTree = "<group>";
 		};
 		70631FEE2497ED5100DAE930 /* CollectionCell */ = {

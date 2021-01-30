@@ -161,7 +161,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grains &amp; Celerals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An0-re-XTy" userLabel="Grains" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grains &amp; Cereals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An0-re-XTy" userLabel="Grains" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="358.5" width="150" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="9qe-Zo-sek"/>
@@ -1012,7 +1012,7 @@
             <size key="intrinsicContentSize" width="71.5" height="43.5"/>
         </designable>
         <designable name="An0-re-XTy">
-            <size key="intrinsicContentSize" width="246" height="43.5"/>
+            <size key="intrinsicContentSize" width="239.5" height="43.5"/>
         </designable>
         <designable name="E2H-lW-8J3">
             <size key="intrinsicContentSize" width="232" height="269"/>
