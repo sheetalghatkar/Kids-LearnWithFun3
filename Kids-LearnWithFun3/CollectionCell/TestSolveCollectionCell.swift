@@ -64,8 +64,10 @@ class TestSolveCollectionCell: UICollectionViewCell {
             self.imgViewCard1.alpha = 0.4
             testSolveDelegate?.playSoundForImageStatus(getSound: image1Sound)
             if isImage1Correct {
+                self.imgViewCard1.isUserInteractionEnabled = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
                     self.testSolveDelegate?.funcForwardBtnClick(self)
+                    self.imgViewCard1.isUserInteractionEnabled = true
                 }
             }
         }
@@ -74,8 +76,10 @@ class TestSolveCollectionCell: UICollectionViewCell {
             self.imgViewCard2.alpha = 0.4
             testSolveDelegate?.playSoundForImageStatus(getSound: image2Sound)
             if isImage2Correct {
+                self.imgViewCard2.isUserInteractionEnabled = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
                     self.testSolveDelegate?.funcForwardBtnClick(self)
+                    self.imgViewCard2.isUserInteractionEnabled = true
                 }
             }
         }
@@ -84,8 +88,10 @@ class TestSolveCollectionCell: UICollectionViewCell {
             self.imgViewCard3.alpha = 0.4
             testSolveDelegate?.playSoundForImageStatus(getSound: image3Sound)
             if isImage3Correct {
+                self.imgViewCard3.isUserInteractionEnabled = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
                     self.testSolveDelegate?.funcForwardBtnClick(self)
+                    self.imgViewCard3.isUserInteractionEnabled = true
                 }
             }
         }
@@ -94,8 +100,10 @@ class TestSolveCollectionCell: UICollectionViewCell {
             self.imgViewCard4.alpha = 0.4
             testSolveDelegate?.playSoundForImageStatus(getSound: image4Sound)
             if isImage4Correct {
+                self.imgViewCard4.isUserInteractionEnabled = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
                     self.testSolveDelegate?.funcForwardBtnClick(self)
+                    self.imgViewCard4.isUserInteractionEnabled = true
                 }
             }
         }

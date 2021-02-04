@@ -66,7 +66,7 @@ class CommanArray {
         UIImage(named: "Brown Lentil.png")!,
         UIImage(named: "Red Lentil.png")!,
         UIImage(named: "Cowpea Seeds.png")!,
-        UIImage(named: "Mung Bean.png")!,
+        UIImage(named: "Mung Beans.png")!,
         UIImage(named: "Oats.png")!,
         UIImage(named: "Soya Chunks.png")!,
         UIImage(named: "Sago.png")!,
@@ -105,4 +105,27 @@ class CommanArray {
         UIImage(named: "Wrong-Sign.png")!,
         UIImage(named: "Right-Sign.png")!
     ]
+    
+    static var settingBgColor = UIColor(red: (113/255), green: (200/255), blue: (92/255), alpha: 1.0)
+    static var redBorderColor = UIColor(red: (222/255), green: (50/255), blue: (36/255), alpha: 1.0)
+    static var greenBorderColor = UIColor(red: (113/255), green: (53/255), blue: (40/255), alpha: 1.0)
+    static var paymentBtnTextColor = UIColor(red: (37/255), green: (160/255), blue: (187/255), alpha: 1.0)
+    static var greenBgColor = UIColor(red: (127/255), green: (183/255), blue: (53/255), alpha: 1.0)
+
+    //Related to review and rating
+    static let app_AppStoreLink = URL(string: "https://apps.apple.com/app/id1551996699")
+    static var productId_OneTime = "com.mobiapps360.LearnNaturalFood.NonConsumable"
+    static var productId_OneTime_Price = "$3.99"
+    
+    //Related to InAppPurchase
+    static var environment = AppleReceiptValidator.VerifyReceiptURLType.production
+    static var secretKey = "81d5ad37b4954dc89fc951f7cfa22507"
+
+}
+
+extension UIDevice {
+    var hasNotch: Bool {
+        let bottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+        return bottom > 0
+    }
 }

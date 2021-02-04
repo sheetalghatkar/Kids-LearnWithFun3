@@ -15,6 +15,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var btnForward: UIButton!
     @IBOutlet weak var btnBackward: UIButton!
     @IBOutlet weak var lblQuestion: UILabel!
+    @IBOutlet weak var btnPlayAgain: UIButton!
 
     var soundStatus:Bool = false
     var solveTestArray : [String : [UIImage:Int]] = [:]
@@ -44,7 +45,10 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         layout.minimumLineSpacing = 0
         collectionViewCard!.collectionViewLayout = layout
         self.lblQuestion.text = getImageNameArray[0]
-       // playSound(getSound : getImageNameArray[0]+"_Question")
+        playSound(getSound : getImageNameArray[0]+"_Question")
+        btnPlayAgain.layer.borderWidth = 3
+        btnPlayAgain.layer.borderColor = UIColor.red.cgColor
+        btnPlayAgain.layer.cornerRadius = btnPlayAgain.frame.width/2
     }
     // MARK: - User defined Functions
     
@@ -77,7 +81,6 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     }
 
     @IBAction func funcGoToTestHome(_ sender: Any) {
-//        interstitial = createAndLoadInterstitial()
         navigationController?.popViewController(animated: true)
     }
     
@@ -106,7 +109,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
                 self.collectionViewCard.scrollToItem(at: nextItem, at: .left, animated: true)
                 self.lblQuestion.text = getImageNameArray[nextItem.row]
                 currentIndex = nextItem.row
-              //  playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
+                playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
             }
             if nextItem.row == self.showOptionsArray.count - 1 {
                 self.btnForward.isHidden = true
@@ -131,7 +134,8 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         if nextItem.row < showOptionsArray.count && nextItem.row >= 0{
             self.collectionViewCard.scrollToItem(at: nextItem, at: .right, animated: true)
             self.lblQuestion.text = getImageNameArray[nextItem.row]
-           // playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
+            currentIndex = nextItem.row
+            playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
         }
         if nextItem.row == 0 {
             self.btnBackward.isHidden = true
