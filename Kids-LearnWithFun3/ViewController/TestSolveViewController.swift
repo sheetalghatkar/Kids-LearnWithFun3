@@ -15,6 +15,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var btnForward: UIButton!
     @IBOutlet weak var btnBackward: UIButton!
     @IBOutlet weak var lblQuestion: UILabel!
+    @IBOutlet weak var btnPlayAgain: UIButton!
 
     var soundStatus:Bool = false
     var solveTestArray : [String : [UIImage:Int]] = [:]
@@ -22,7 +23,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     var getImageNameArray : [String] = []
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var player = AVAudioPlayer()
-
+    var currentIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         btnBackward.isHidden = true
@@ -45,6 +46,9 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         collectionViewCard!.collectionViewLayout = layout
         self.lblQuestion.text = getImageNameArray[0]
         playSound(getSound : getImageNameArray[0]+"_Question")
+        btnPlayAgain.layer.borderWidth = 3
+        btnPlayAgain.layer.borderColor = UIColor.red.cgColor
+        btnPlayAgain.layer.cornerRadius = btnPlayAgain.frame.width/2
     }
     // MARK: - User defined Functions
     
@@ -77,7 +81,6 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     }
 
     @IBAction func funcGoToTestHome(_ sender: Any) {
-//        interstitial = createAndLoadInterstitial()
         navigationController?.popViewController(animated: true)
     }
     
@@ -87,10 +90,15 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             player.stop()
         } else {
             btnSound.setBackgroundImage(UIImage(named: "Sound-On.png"), for: .normal)
+            playSound(getSound: getImageNameArray[currentIndex]+"_Question")
         }
         appDelegate.IS_Sound_ON = !appDelegate.IS_Sound_ON
     }
-    
+    @IBAction func funcPlayAgainClick(_ sender: Any) {
+        player.stop()
+        playSound(getSound: getImageNameArray[currentIndex]+"_Question")
+    }
+
     @IBAction func funcForwardBtnClick(_ sender: Any)
     {
         if !btnForward.isHidden {
@@ -100,6 +108,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if nextItem.row < showOptionsArray.count {
                 self.collectionViewCard.scrollToItem(at: nextItem, at: .left, animated: true)
                 self.lblQuestion.text = getImageNameArray[nextItem.row]
+                currentIndex = nextItem.row
                 playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
             }
             if nextItem.row == self.showOptionsArray.count - 1 {
@@ -125,6 +134,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         if nextItem.row < showOptionsArray.count && nextItem.row >= 0{
             self.collectionViewCard.scrollToItem(at: nextItem, at: .right, animated: true)
             self.lblQuestion.text = getImageNameArray[nextItem.row]
+            currentIndex = nextItem.row
             playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
         }
         if nextItem.row == 0 {
@@ -160,12 +170,14 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         }
         if closestCellIndex != -1 {
             self.collectionViewCard.scrollToItem(at: IndexPath(row: closestCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-          self.lblQuestion.text = getImageNameArray[closestCellIndex]
+            self.lblQuestion.text = getImageNameArray[closestCellIndex]
             if closestCellIndex == self.showOptionsArray.count - 1 {
                 self.btnForward.isHidden = true
+                self.btnBackward.isHidden = false
             }
             else if closestCellIndex == 0 {
                 self.btnBackward.isHidden = true
+                self.btnForward.isHidden = false
             } else {
                 self.btnForward.isHidden = false
                 self.btnBackward.isHidden = false
@@ -174,6 +186,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if let cell = self.collectionViewCard .cellForItem(at: indexPath) as? TestSolveCollectionCell {
                     cell.hideSignOnImageView()
             }
+            currentIndex = closestCellIndex
             playSound(getSound : getImageNameArray[closestCellIndex]+"_Question")
         }
     }

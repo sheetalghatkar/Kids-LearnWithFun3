@@ -43,7 +43,7 @@ private var _isShowShadow = false
         if self.isShowShadow {
             self.layer.shadowColor = UIColor.black.cgColor
             self.highlightedTextColor = UIColor.red
-            self.layer.shadowRadius = 3.0
+            self.layer.shadowRadius = 1.0
             self.layer.shadowOpacity = 1.0
             self.layer.shadowOffset = CGSize(width: 4, height: 4)
             self.layer.masksToBounds = false

@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import GoogleMobileAds
 
 class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,PictureCollectionCellProtocol {
     
@@ -17,24 +16,23 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var btnForward: UIButton!
     @IBOutlet weak var btnBackward: UIButton!
     @IBOutlet weak var lblCard: UILabel!
+    @IBOutlet weak var lblPageTitle: UILabel!
     @IBOutlet weak var viewCollectionContainer: UIView!
     @IBOutlet weak var btnSound: UIButton!
-    @IBOutlet weak var imgViewBgHouse: UIImageView!
-    @IBOutlet weak var imgViewBgKitchen: UIImageView!
-    @IBOutlet weak var imgViewBgGarden: UIImageView!
-    @IBOutlet weak var imgViewBgSchool: UIImageView!
+    @IBOutlet weak var imgViewBgVegetable1: UIImageView!
+    @IBOutlet weak var imgViewBgVegetable2: UIImageView!
+    @IBOutlet weak var imgViewBgSpices: UIImageView!
 
     
     var player = AVAudioPlayer()
-    var bannerView: GADBannerView!
     var getTabNumber = 0
     var imageArray : [UIImage] = []
     var imageNameArray : [String] = []
-    var interstitial: GADInterstitial?
     //var soundStatus:Bool = false
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var stringTitle = ""
+    var currentindex = 0
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnForward.layer.cornerRadius = 25.0
@@ -64,44 +62,22 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         layout.minimumLineSpacing = 0
         collectionViewCard!.collectionViewLayout = layout
         self.lblCard.text = imageNameArray[0]
+        self.lblPageTitle.text = stringTitle
         playSound(getSound : self.imageNameArray[0])
         
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
         if getTabNumber == 0 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("House")
+            self.imgViewBgSpices.image  = UIImage.gifImageWithName("Apple")
         } else if getTabNumber == 1 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("Kitchen")
+            self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Brinjal")
+            self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Tomato")
         } else if getTabNumber == 2 {
-            self.imgViewBgGarden.image  = UIImage.gifImageWithName("Gardening")
+            self.imgViewBgVegetable1.image  = UIImage.gifImageWithName("Grain")
+            self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Corn")
         } else if getTabNumber == 3 {
-            self.imgViewBgKitchen.image  = UIImage.gifImageWithName("SchoolGif")
+            self.imgViewBgSpices.image  = UIImage.gifImageWithName("Chilli")
         }
-
-       // bannerView.load(GADRequest())
     }
-    func addBannerViewToView(_ bannerView: GADBannerView) {
-      bannerView.translatesAutoresizingMaskIntoConstraints = false
-      view.addSubview(bannerView)
-      view.addConstraints(
-        [NSLayoutConstraint(item: bannerView,
-                            attribute: .bottom,
-                            relatedBy: .equal,
-                            toItem: bottomLayoutGuide,
-                            attribute: .top,
-                            multiplier: 1,
-                            constant: 0),
-         NSLayoutConstraint(item: bannerView,
-                            attribute: .centerX,
-                            relatedBy: .equal,
-                            toItem: view,
-                            attribute: .centerX,
-                            multiplier: 1,
-                            constant: 0)
-        ])
-     }
+    
 
     // MARK: - CollectionView Functions
 
@@ -150,19 +126,19 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             print ("There is an issue with this code!")
         }
     }
-    
     @IBAction func funcSound_ON_OFF(_ sender: Any) {
         if appDelegate.IS_Sound_ON {
             btnSound.setBackgroundImage(UIImage(named: "Sound-Off.png"), for: .normal)
             player.stop()
         } else {
             btnSound.setBackgroundImage(UIImage(named: "Sound-On.png"), for: .normal)
+            playSound(getSound : self.imageNameArray[currentindex])
         }
         appDelegate.IS_Sound_ON = !appDelegate.IS_Sound_ON
     }
     
+
     @IBAction func funcGoToHome(_ sender: Any) {
-       // interstitial = createAndLoadInterstitial()
         navigationController?.popViewController(animated: true)
     }
     
@@ -183,6 +159,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.btnForward.isHidden = false
             self.btnBackward.isHidden = false
         }
+        currentindex = nextItem.row
         playSound(getSound : self.imageNameArray[nextItem.row])
     }
 
@@ -203,6 +180,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.btnBackward.isHidden = false
             self.btnForward.isHidden = false
         }
+        currentindex = nextItem.row
         playSound(getSound : self.imageNameArray[nextItem.row])
     }
     
@@ -228,14 +206,17 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.lblCard.text = self.imageNameArray[closestCellIndex]
             if closestCellIndex == self.imageArray.count - 1 {
                 self.btnForward.isHidden = true
+                self.btnBackward.isHidden = false
             }
             else if closestCellIndex == 0 {
                 self.btnBackward.isHidden = true
+                self.btnForward.isHidden = false
             } else {
                 self.btnForward.isHidden = false
                 self.btnBackward.isHidden = false
             }
         }
+        currentindex = closestCellIndex
         playSound(getSound : imageNameArray[closestCellIndex])
     }
     
@@ -250,68 +231,5 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         } catch {
             print ("There is an issue with this code!")
         } 
-    }
-    private func createAndLoadInterstitial() -> GADInterstitial? {
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8501671653071605/2568258533")
-
-        guard let interstitial = interstitial else {
-            return nil
-        }
-
-        let request = GADRequest()
-        // Remove the following line before you upload the app
-        request.testDevices = ["E16216BC-AA11-4924-A93F-5011846DFFA4"]
-        interstitial.load(request)
-        interstitial.delegate = self
-
-        return interstitial
-    }
-}
-extension ImagesCollectionViewController: GADBannerViewDelegate {
-    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-      print("adViewDidReceiveAd")
-    }
-
-    /// Tells the delegate an ad request failed.
-    func adView(_ bannerView: GADBannerView,
-        didFailToReceiveAdWithError error: GADRequestError) {
-      print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
-    }
-
-    /// Tells the delegate that a full-screen view will be presented in response
-    /// to the user clicking on an ad.
-    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
-      print("adViewWillPresentScreen")
-    }
-
-    /// Tells the delegate that the full-screen view will be dismissed.
-    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
-      print("adViewWillDismissScreen")
-    }
-
-    /// Tells the delegate that the full-screen view has been dismissed.
-    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
-      print("adViewDidDismissScreen")
-    }
-
-    /// Tells the delegate that a user click will open another app (such as
-    /// the App Store), backgrounding the current app.
-    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
-      print("adViewWillLeaveApplication")
-    }
-}
-extension ImagesCollectionViewController: GADInterstitialDelegate {
-    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
-        print("Interstitial loaded successfully")
-        ad.present(fromRootViewController: self)
-        navigationController?.popViewController(animated: true)
-    }
-
-    func interstitialDidFail(toPresentScreen ad: GADInterstitial) {
-        print("Fail to receive interstitial")
-        navigationController?.popViewController(animated: true)
-    }
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
-        print("dismiss interstitial")
     }
 }
