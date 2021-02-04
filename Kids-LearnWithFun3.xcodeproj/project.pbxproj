@@ -1635,8 +1635,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1651,7 +1652,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1661,8 +1662,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1677,7 +1679,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

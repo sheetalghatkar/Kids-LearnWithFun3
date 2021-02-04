@@ -12,7 +12,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="HomeViewController" customModule="Kids_LearnWithFun3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="HomeViewController" customModule="Learn_Natural_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
                                             <constraint firstAttribute="width" constant="160" id="whY-R2-7Kg"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruits_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-n9-wRV" userLabel="ImgViewFruits" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruits_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-n9-wRV" userLabel="ImgViewFruits" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="44" y="30" width="95" height="95"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -73,7 +73,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8O-IM-5ND" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8O-IM-5ND" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="157.5" width="150" height="43.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="BSj-Ya-mMF"/>
@@ -97,7 +97,7 @@
                                         <rect key="frame" x="212.5" y="-2.5" width="160" height="160"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vegetables_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-Vu-A4f" userLabel="ImgViewVegetables" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vegetables_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-Vu-A4f" userLabel="ImgViewVegetables" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="235" y="17" width="115" height="115"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -113,7 +113,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-61-ofa" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-61-ofa" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="215" y="157.5" width="155" height="43.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="155" id="LZ6-tp-hYs"/>
@@ -133,7 +133,7 @@
                                             <constraint firstAttribute="width" secondItem="IDH-ny-YO7" secondAttribute="height" multiplier="1:1" id="dv7-xN-4rf"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grains_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cJK-ds-x0V" userLabel="ImgViewGrains" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grains_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cJK-ds-x0V" userLabel="ImgViewGrains" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="44" y="251" width="95" height="95"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -156,7 +156,7 @@
                                             <constraint firstAttribute="width" secondItem="Vzt-uf-ng2" secondAttribute="height" multiplier="1:1" id="ZBS-uS-LzV"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spices_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="reh-wu-V8d" userLabel="ImgViewSpices" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spices_HomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="reh-wu-V8d" userLabel="ImgViewSpices" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="232" y="242" width="123" height="123"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -172,7 +172,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grains" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An0-re-XTy" userLabel="Grains" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grains" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An0-re-XTy" userLabel="Grains" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="16.5" y="378.5" width="150" height="43.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="Puk-2H-LRU"/>
@@ -185,7 +185,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isShowShadow" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKu-8t-8yf" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKu-8t-8yf" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="249.5" y="378.5" width="88" height="43.5"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                         <color key="textColor" systemColor="systemGreenColor"/>
@@ -195,7 +195,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isShowShadow" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="E2H-lW-8J3" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="E2H-lW-8J3" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="129.5" y="442" width="125" height="125"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -208,7 +208,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jq-2D-84O" userLabel="Test" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jq-2D-84O" userLabel="Test" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="92" y="572" width="200" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="DGZ-Bp-q6J"/>
@@ -284,7 +284,7 @@
                                     <constraint firstAttribute="height" constant="630" id="uxz-rB-Lws"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-Dt-LFo" customClass="Floaty" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-Dt-LFo" customClass="Floaty" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="15" y="54" width="42" height="42"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -354,7 +354,7 @@
         <!--Images Collection View Controller-->
         <scene sceneID="U2n-Yq-PfX">
             <objects>
-                <viewController storyboardIdentifier="ImagesCollectionViewController" id="1hM-HW-ZOh" customClass="ImagesCollectionViewController" customModule="Kids_LearnWithFun3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagesCollectionViewController" id="1hM-HW-ZOh" customClass="ImagesCollectionViewController" customModule="Learn_Natural_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqW-V0-aWO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,7 +381,7 @@
                                     <constraint firstAttribute="height" constant="75" id="992-A5-Ob3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-3g-Euh" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-3g-Euh" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="75" y="69" width="267" height="0.0"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -423,7 +423,7 @@
                                             <outlet property="delegate" destination="1hM-HW-ZOh" id="AaM-Aa-07i"/>
                                         </connections>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-cv-tM9" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3s-cv-tM9" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="20" y="394" width="50" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -435,12 +435,21 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="funcBackwardBtnClick:" destination="1hM-HW-ZOh" eventType="touchUpInside" id="g9b-SR-WEm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlH-pm-T5X" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlH-pm-T5X" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="324" y="394" width="50" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -451,6 +460,18 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -566,7 +587,7 @@
         <!--Test Solve View Controller-->
         <scene sceneID="gbu-id-GnF">
             <objects>
-                <viewController storyboardIdentifier="TestSolveViewController" id="ZUf-gF-lCX" customClass="TestSolveViewController" customModule="Kids_LearnWithFun3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestSolveViewController" id="ZUf-gF-lCX" customClass="TestSolveViewController" customModule="Learn_Natural_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kra-sA-SsD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -644,7 +665,7 @@
                                     <constraint firstAttribute="trailing" secondItem="STg-pl-LbE" secondAttribute="trailing" constant="10" id="ob3-2o-NQC"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS7-5V-hFM" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS7-5V-hFM" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="20" y="543" width="53" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -657,13 +678,25 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="funcBackwardBtnClick:" destination="ZUf-gF-lCX" eventType="touchUpInside" id="6Cf-Ho-l1I"/>
                                     <action selector="funcBackwardBtnClick:" destination="1hM-HW-ZOh" eventType="touchUpInside" id="jM2-WO-Dj4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-he-AbX" userLabel="Btn Play Again" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-he-AbX" userLabel="Btn Play Again" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="181.5" y="544" width="51" height="51"/>
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.81960784313725488" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -699,7 +732,7 @@
                                     <action selector="funcPlayAgainClick:" destination="ZUf-gF-lCX" eventType="touchUpInside" id="Fbj-3D-OJS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBz-sN-VoN" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBz-sN-VoN" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="341" y="543" width="53" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -710,6 +743,18 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -761,7 +806,7 @@
         <!--Test View Controller-->
         <scene sceneID="1ay-sx-yrC">
             <objects>
-                <viewController storyboardIdentifier="TestViewController" id="1oa-lM-swm" customClass="TestViewController" customModule="Kids_LearnWithFun3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestViewController" id="1oa-lM-swm" customClass="TestViewController" customModule="Learn_Natural_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XzN-Ds-EMF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -813,7 +858,7 @@
                                             <constraint firstAttribute="width" constant="130" id="UaQ-1Z-Vf3"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FruitIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="gNh-Yt-CGX" userLabel="ImgViewWildAnimal" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FruitIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="gNh-Yt-CGX" userLabel="ImgViewWildAnimal" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="31.5" y="10" width="130" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -850,7 +895,7 @@
                                             <constraint firstAttribute="width" constant="200" id="c7G-hi-BUh"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VegetableIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-Uq-No3" userLabel="ImgViewPetAnimal" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VegetableIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-Uq-No3" userLabel="ImgViewPetAnimal" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="222.5" y="10" width="130" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -874,7 +919,7 @@
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrainIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-21-wnP" userLabel="ImgViewBird" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrainIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-21-wnP" userLabel="ImgViewBird" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="31.5" y="223.5" width="130" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -889,7 +934,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpicesIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="Y7v-yi-LeU" userLabel="ImgViewFlower" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpicesIcon_Test" translatesAutoresizingMaskIntoConstraints="NO" id="Y7v-yi-LeU" userLabel="ImgViewFlower" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="222.5" y="223.5" width="130" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -927,7 +972,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isShowShadow" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="sOs-RQ-CeD" userLabel="Lock1" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="sOs-RQ-CeD" userLabel="Lock1" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="121.5" y="110" width="55" height="55"/>
                                         <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -944,7 +989,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="qZo-4f-SIQ" userLabel="Lock2" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="qZo-4f-SIQ" userLabel="Lock2" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="322.5" y="110" width="55" height="55"/>
                                         <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -957,7 +1002,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-Xa-xpL" userLabel="Lock4" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-Xa-xpL" userLabel="Lock4" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="322.5" y="318.5" width="55" height="55"/>
                                         <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -970,7 +1015,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-Wi-vFg" userLabel="Lock3" customClass="RoundImageView" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-Wi-vFg" userLabel="Lock3" customClass="RoundImageView" customModule="Learn_Natural_Food" customModuleProvider="target">
                                         <rect key="frame" x="121.5" y="318.5" width="55" height="55"/>
                                         <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
