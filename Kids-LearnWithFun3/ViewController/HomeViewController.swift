@@ -25,6 +25,12 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var imgVwWild2Bottom: UIImageView!
     @IBOutlet weak var imgVwWild3Bottom: UIImageView!
     
+    @IBOutlet weak var heightBottomImg: NSLayoutConstraint!
+    @IBOutlet weak var widthIconBgImg: NSLayoutConstraint!
+    @IBOutlet weak var widthtIconImg: NSLayoutConstraint!
+    @IBOutlet weak var widthBtnHome: NSLayoutConstraint!
+    @IBOutlet weak var bottomBgScreen: NSLayoutConstraint!
+
     @IBOutlet weak var btnSound: UIButton!
     @IBOutlet weak var btnNoAds: UIButton!
     @IBOutlet weak var btnSetting: UIButton!
@@ -117,6 +123,19 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         
         addWaveBackground(to :viewtransperent)
         //-----------------------------------
+        
+        if UIScreen.main.bounds.height < 820 {
+//            heightBottomImg.constant = 380
+            widthIconBgImg.constant = 150
+            widthtIconImg.constant = 79.16
+            widthBtnHome.constant = 40
+            bottomBgScreen.constant = -50
+        }
+        
+        if UIScreen.main.bounds.height < 700 {
+            bgScreen.isHidden = true
+        }
+
     }
         
         func showPaymentScreen(){

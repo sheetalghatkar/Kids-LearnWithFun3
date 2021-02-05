@@ -9,11 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentCostController" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentCostController" customModule="Learn_Natural_Food" customModuleProvider="target">
             <connections>
                 <outlet property="btnBuy" destination="yA4-xm-Ts0" id="Rto-Uv-VxH"/>
                 <outlet property="btnHome" destination="2hb-Ww-MI3" id="ns9-do-Ghm"/>
                 <outlet property="btnRestore" destination="XAh-ma-3Tf" id="BAm-qw-uMJ"/>
+                <outlet property="heightHomeBtn" destination="La9-A3-lff" id="nga-PL-lKq"/>
                 <outlet property="lblAlredyPurchased" destination="kVY-mD-cqk" id="lBC-y5-Xzv"/>
                 <outlet property="lblCostTitle" destination="tr8-xj-Cri" id="yUF-p4-WGT"/>
                 <outlet property="lblOneTimePayment" destination="GBk-7e-ubJ" id="LVL-me-iDO"/>
@@ -64,7 +65,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4V-dd-9sK" userLabel="paymentDetailView">
                     <rect key="frame" x="52" y="127.5" width="310.5" height="155"/>
                     <subviews>
-                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E02-Ny-Yef" userLabel="emptyView" customClass="UIViewExtend" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E02-Ny-Yef" userLabel="emptyView" customClass="UIViewExtend" customModule="Learn_Natural_Food" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="310.5" height="155"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <userDefinedRuntimeAttributes>
@@ -101,7 +102,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-xm-Ts0" userLabel="btnBuy" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-xm-Ts0" userLabel="btnBuy" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                     <rect key="frame" x="117.5" y="100" width="75" height="40"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -174,7 +175,7 @@
                         <constraint firstAttribute="width" constant="200" id="LHK-pd-itG"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVY-mD-cqk" userLabel="lblAlreadyBuy" customClass="UILabelExtension" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVY-mD-cqk" userLabel="lblAlreadyBuy" customClass="UILabelExtension" customModule="Learn_Natural_Food" customModuleProvider="target">
                     <rect key="frame" x="174" y="349.5" width="66" height="37"/>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
                     <color key="textColor" systemColor="systemGreenColor"/>
@@ -183,7 +184,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isShowShadow" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-ma-3Tf" userLabel="btnRestore" customClass="RoundButton" customModule="Kids_LearnWithFun3" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-ma-3Tf" userLabel="btnRestore" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                     <rect key="frame" x="157" y="401.5" width="100" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -223,7 +224,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBx-wy-ygg">
-                    <rect key="frame" x="142.5" y="491.5" width="129" height="24.5"/>
+                    <rect key="frame" x="141.5" y="491.5" width="131" height="26.5"/>
                     <attributedString key="attributedText">
                         <fragment content="Privacy Policy">
                             <attributes>

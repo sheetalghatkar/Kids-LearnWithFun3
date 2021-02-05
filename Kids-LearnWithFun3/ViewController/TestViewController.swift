@@ -18,6 +18,8 @@ class TestViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var imgViewLock2: UIImageView!
     @IBOutlet weak var imgViewLock3: UIImageView!
     @IBOutlet weak var imgViewLock4: UIImageView!
+    @IBOutlet weak var widthLockBgImg: NSLayoutConstraint!
+    @IBOutlet weak var heightHomeImg: NSLayoutConstraint!
 
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     let defaults = UserDefaults.standard
@@ -45,6 +47,17 @@ class TestViewController: UIViewController, PayementForParentProtocol {
         
          let wildGif1 = UIImage.gifImageWithName("QA")
          self.bgAnimateimgeView.image  = wildGif1
+        
+        if UIScreen.main.bounds.height < 820 {
+            widthLockBgImg.constant = 47
+            heightHomeImg.constant = 43
+            imgViewLock2.layer.cornerRadius = widthLockBgImg.constant/2
+            imgViewLock3.layer.cornerRadius = widthLockBgImg.constant/2
+            imgViewLock4.layer.cornerRadius = widthLockBgImg.constant/2
+        }
+        if UIScreen.main.bounds.height < 700 {
+            bgAnimateimgeView.isHidden = true
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         if defaults.bool(forKey:"IsPrimeUser") {

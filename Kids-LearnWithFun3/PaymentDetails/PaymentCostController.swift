@@ -16,6 +16,7 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
     @IBOutlet weak var lblAlredyPurchased: UILabel!
     @IBOutlet weak var  widthHome: NSLayoutConstraint!
     @IBOutlet weak var btnHome: UIButton!
+    @IBOutlet weak var heightHomeBtn: NSLayoutConstraint!
     //----------------------------------------
     //New
     @IBOutlet weak var viewBgYearly: UIView!
@@ -92,6 +93,10 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.privacyLinkClicked(sender:)))
         lblPrivacyPolicy.isUserInteractionEnabled = true
         lblPrivacyPolicy.addGestureRecognizer(tap)
+        
+        if UIScreen.main.bounds.height < 820 {
+            heightHomeBtn.constant = 42
+        }
     }
     
 //    func removeViewFromApp() {

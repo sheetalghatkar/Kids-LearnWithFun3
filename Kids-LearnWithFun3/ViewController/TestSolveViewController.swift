@@ -16,6 +16,11 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     @IBOutlet weak var btnBackward: UIButton!
     @IBOutlet weak var lblQuestion: UILabel!
     @IBOutlet weak var btnPlayAgain: UIButton!
+    @IBOutlet weak var heightBottomImg: NSLayoutConstraint!
+    @IBOutlet weak var heightBckBtn: NSLayoutConstraint!
+    @IBOutlet weak var heightHomeBtn: NSLayoutConstraint!
+    @IBOutlet weak var bgScreen: UIImageView!
+    @IBOutlet weak var bottomBgScreen: NSLayoutConstraint!
 
     var soundStatus:Bool = false
     var solveTestArray : [String : [UIImage:Int]] = [:]
@@ -49,6 +54,19 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         btnPlayAgain.layer.borderWidth = 3
         btnPlayAgain.layer.borderColor = UIColor.red.cgColor
         btnPlayAgain.layer.cornerRadius = btnPlayAgain.frame.width/2
+        if UIScreen.main.bounds.height < 820 {
+            bottomBgScreen.constant = -50
+            heightBckBtn.constant = 47
+            heightHomeBtn.constant = 40
+            btnPlayAgain.layer.cornerRadius = (heightHomeBtn.constant+6)/2
+        }
+        if UIScreen.main.bounds.height < 750 {
+            bottomBgScreen.constant = -100
+        }
+
+        if UIScreen.main.bounds.height < 700 {
+            bgScreen.isHidden = true
+        }
     }
     // MARK: - User defined Functions
     

@@ -22,6 +22,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var imgViewBgVegetable1: UIImageView!
     @IBOutlet weak var imgViewBgVegetable2: UIImageView!
     @IBOutlet weak var imgViewBgSpices: UIImageView!
+    @IBOutlet weak var heightHome: NSLayoutConstraint!
+    @IBOutlet weak var heightStackView: NSLayoutConstraint!
 
     
     var player = AVAudioPlayer()
@@ -75,6 +77,10 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             self.imgViewBgVegetable2.image  = UIImage.gifImageWithName("Corn")
         } else if getTabNumber == 3 {
             self.imgViewBgSpices.image  = UIImage.gifImageWithName("Chilli")
+        }
+        if UIScreen.main.bounds.height < 820 {
+            heightHome.constant = 42
+            heightStackView.constant = 110
         }
     }
     
