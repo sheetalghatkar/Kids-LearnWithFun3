@@ -291,6 +291,17 @@
                                     <constraint firstAttribute="width" secondItem="gHr-Dt-LFo" secondAttribute="height" id="srh-2f-P46"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZE-U3-sz0">
+                                <rect key="frame" x="314" y="796" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9vg-8A-nBd"/>
+                                    <constraint firstAttribute="height" constant="100" id="Lrk-fk-8Vh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="functempButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UH9-Ul-RYg"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xD-Td-z5q">
                                 <rect key="frame" x="15" y="54" width="42" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,6 +315,7 @@
                         <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gHr-Dt-LFo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6GN-F5-gf7"/>
+                            <constraint firstAttribute="bottom" secondItem="OZE-U3-sz0" secondAttribute="bottom" id="6gg-nt-Uas"/>
                             <constraint firstItem="tbI-JC-8m4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Wo-PD-1Hw"/>
                             <constraint firstItem="2xD-Td-z5q" firstAttribute="top" secondItem="gHr-Dt-LFo" secondAttribute="top" id="AG5-H7-ZTQ"/>
                             <constraint firstAttribute="bottom" secondItem="YcB-YF-fuH" secondAttribute="bottom" id="C8f-Dr-9tU"/>
@@ -326,6 +338,7 @@
                             <constraint firstItem="gHr-Dt-LFo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hmb-sy-uBs"/>
                             <constraint firstItem="YcB-YF-fuH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lC8-Du-v08"/>
                             <constraint firstAttribute="bottom" secondItem="jiG-gc-Yzh" secondAttribute="bottom" id="mm8-j5-mgr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OZE-U3-sz0" secondAttribute="trailing" id="pSq-ps-VSt"/>
                             <constraint firstItem="jiG-gc-Yzh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sDi-rn-6KA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ebZ-X7-GUd" secondAttribute="trailing" constant="15" id="tvr-rt-c75"/>
                             <constraint firstItem="ebZ-X7-GUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="v6p-CF-nIr"/>
@@ -335,6 +348,7 @@
                     <connections>
                         <outlet property="bgScreen" destination="tbI-JC-8m4" id="o0Y-dj-nuh"/>
                         <outlet property="bottomBgScreen" destination="dU9-nI-nFe" id="pJ2-82-PAz"/>
+                        <outlet property="btnHiddenForUI" destination="OZE-U3-sz0" id="yfr-qM-ItL"/>
                         <outlet property="btnSetting" destination="2xD-Td-z5q" id="fjG-4w-Dqu"/>
                         <outlet property="btnSound" destination="52D-t5-Z4O" id="vYV-fA-YQa"/>
                         <outlet property="floaty" destination="gHr-Dt-LFo" id="Aui-6a-znX"/>
@@ -345,6 +359,7 @@
                         <outlet property="imgVwPetAnimal" destination="Hd0-Vu-A4f" id="mbG-1z-2aO"/>
                         <outlet property="imgVwTest" destination="E2H-lW-8J3" id="dkx-sq-VQv"/>
                         <outlet property="imgVwWildAnimal" destination="gjN-n9-wRV" id="jax-Ga-SeV"/>
+                        <outlet property="topFloaty" destination="hmb-sy-uBs" id="au3-GZ-Xtw"/>
                         <outlet property="viewParentSetting" destination="jiG-gc-Yzh" id="AJm-Mw-hav"/>
                         <outlet property="viewtransperent" destination="Ygz-vs-jds" id="UP3-rS-1tR"/>
                         <outlet property="widthBtnHome" destination="K54-Mk-NRJ" id="G4a-wM-M7H"/>

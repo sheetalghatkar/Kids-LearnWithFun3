@@ -113,7 +113,8 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
     }
     
     @IBAction func funcRestoreBtnClick(_ sender: Any) {
-        print("Restore clicked.")
+      print("Restore clicked.")
+      if Reachability.isConnectedToNetwork() {
         self.viewTrasperentDisabled.isHidden = false
         let appleValidator = AppleReceiptValidator(service: .sandbox, sharedSecret: CommanArray.secretKey)
         SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
@@ -148,8 +149,23 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
                 }
             case .error(let error):
                 print("Receipt verification failed: \(error)")
+                self.viewTrasperentDisabled.isHidden = true
+                let alert = UIAlertController(title: "", message: "Error occured. Error code Err01: \(error)", preferredStyle: UIAlertController.Style.alert)
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
         }
+      } else {
+        let alert = UIAlertController(title: "", message: "No Internet connection.", preferredStyle: UIAlertController.Style.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+            self.viewTrasperentDisabled.isHidden = true
+        }))
+        self.present(alert, animated: true, completion: nil)
+
+    }
     }
 }
 
@@ -157,14 +173,25 @@ extension PaymentCostController {
     func buyConsumable(){
         print("About to fetch the products");
         // We check that we are allow to make the purchase.
-        if (SKPaymentQueue.canMakePayments())
-        {
-            let productsRequest = SKProductsRequest(productIdentifiers: Set(arrayLiteral: self.selectedProductId))
-            productsRequest.delegate = self
-            productsRequest.start()
-            print("Fething Products")
-        }else{
-            print("can't make purchases");
+        if Reachability.isConnectedToNetwork() {
+            if (SKPaymentQueue.canMakePayments())
+            {
+                let productsRequest = SKProductsRequest(productIdentifiers: Set(arrayLiteral: self.selectedProductId))
+                productsRequest.delegate = self
+                productsRequest.start()
+                print("Fething Products")
+            }else{
+                print("can't make purchases");
+            }
+        } else {
+
+            let alert = UIAlertController(title: "", message: "No Internet connection.", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                self.viewTrasperentDisabled.isHidden = true
+            }))
+            self.present(alert, animated: true, completion: nil)
+
         }
     }
     

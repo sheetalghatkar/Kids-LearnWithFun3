@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SystemConfiguration
 
 class CommanArray {
     static var fruitsImageArray: [UIImage] = [
@@ -129,3 +130,35 @@ extension UIDevice {
         return bottom > 0
     }
 }
+
+class Reachability {
+/**
+ * Check if internet connection is available
+ */
+class func isConnectedToNetwork() -> Bool {
+    var status:Bool = false
+
+    let url = NSURL(string: "http://google.com")
+    let request = NSMutableURLRequest(url: url! as URL)
+    request.httpMethod = "HEAD"
+    request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
+    request.timeoutInterval = 10.0
+
+    var response:URLResponse?
+
+    do {
+        _ = try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: &response)
+    } catch (let e) {
+        print(e)
+    }
+
+    if let httpResponse = response as? HTTPURLResponse {
+        if httpResponse.statusCode == 200 {
+            status = true
+        }
+    }
+
+    return status
+  }
+}
+

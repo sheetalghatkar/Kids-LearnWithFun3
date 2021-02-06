@@ -30,19 +30,17 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var widthtIconImg: NSLayoutConstraint!
     @IBOutlet weak var widthBtnHome: NSLayoutConstraint!
     @IBOutlet weak var bottomBgScreen: NSLayoutConstraint!
+    @IBOutlet weak var topFloaty: NSLayoutConstraint!
+
 
     @IBOutlet weak var btnSound: UIButton!
     @IBOutlet weak var btnNoAds: UIButton!
     @IBOutlet weak var btnSetting: UIButton!
     @IBOutlet weak var btnCancelSubscription: UIButton!
+    @IBOutlet weak var btnHiddenForUI: UIButton!
     let rateUsImg = UIImage(named: "RateUs.png")
     let shareAppImg = UIImage(named: "ShareApp.png")
     @IBOutlet weak var floaty : Floaty!
-        {
-        didSet {
-            floaty.buttonImage = UIImage(named: "map_hashtag_gray")
-        }
-    }
     @IBOutlet weak var viewParentSetting: UIView!
     @IBOutlet weak var viewtransperent: UIView!
     let defaults = UserDefaults.standard
@@ -55,17 +53,23 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
 
     override func viewWillAppear(_ animated: Bool) {
         playBackgroundMusic()
+        self.viewtransperent.isHidden = true
+        self.viewParentSetting.isHidden = true
     }
     override func viewWillDisappear(_ animated: Bool) {
         player.stop()
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+            NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIScene.willDeactivateNotification, object: nil)
+        } else {
+            NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+        }
+
         // Do any additional setup after loading the view.
        // let wildGif1 = UIImage.gifImageWithName("Bubble")
 //        self.imgVwWild1Bottom.image  = wildGif1
-        
 
         let tapGestureRecognWildAnimal = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgVwWildAnimal.addGestureRecognizer(tapGestureRecognWildAnimal)
@@ -137,7 +141,11 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         }
 
     }
-        
+    @objc func willResignActive(_ notification: Notification) {
+        // code to execute
+        floaty.close()
+    }
+
         func showPaymentScreen(){
             paymentDetailVC?.view.frame = self.view.bounds
             paymentDetailVC?.delegatePayementForParent = self
@@ -161,8 +169,10 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         let activityViewController = UIActivityViewController(
             activityItems: [CommanArray.app_AppStoreLink!],
           applicationActivities: nil)
-
-        // 2.
+        activityViewController.completionWithItemsHandler = { (activity, success, items, error) in
+             print(success ? "SUCCESS!" : "FAILURE")
+            self.btnHiddenForUI.sendActions(for: .touchUpInside)
+        }
         self.present(activityViewController, animated: true, completion: nil)
     }
     
@@ -198,7 +208,13 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
             player.stop()
         }
     }
-
+    @IBAction func functempButton(_ sender: Any) {
+        if defaults.bool(forKey:"PauseHomeSound") {
+             btnHiddenForUI.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
+         } else {
+            btnHiddenForUI.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
+         }
+    }
     @objc func clickTransperentView(_ sender:UITapGestureRecognizer){
         self.viewtransperent.isHidden = true
         self.viewParentSetting.isHidden = true
