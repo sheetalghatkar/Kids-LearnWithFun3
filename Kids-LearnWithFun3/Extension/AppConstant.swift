@@ -119,7 +119,7 @@ class CommanArray {
     static var productId_OneTime_Price = "$3.99"
     
     //Related to InAppPurchase
-    static var environment = AppleReceiptValidator.VerifyReceiptURLType.sandbox
+    static var environment = AppleReceiptValidator.VerifyReceiptURLType.production
     static var secretKey = "81d5ad37b4954dc89fc951f7cfa22507"
 
 }
