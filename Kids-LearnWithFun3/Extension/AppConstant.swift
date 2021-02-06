@@ -119,7 +119,7 @@ class CommanArray {
     static var productId_OneTime_Price = "$3.99"
     
     //Related to InAppPurchase
-    static var environment = AppleReceiptValidator.VerifyReceiptURLType.production
+    static var environment = AppleReceiptValidator.VerifyReceiptURLType.sandbox
     static var secretKey = "81d5ad37b4954dc89fc951f7cfa22507"
 
 }
@@ -130,35 +130,32 @@ extension UIDevice {
         return bottom > 0
     }
 }
-
-class Reachability {
 /**
  * Check if internet connection is available
  */
-class func isConnectedToNetwork() -> Bool {
-    var status:Bool = false
-
-    let url = NSURL(string: "http://google.com")
-    let request = NSMutableURLRequest(url: url! as URL)
-    request.httpMethod = "HEAD"
-    request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
-    request.timeoutInterval = 10.0
-
-    var response:URLResponse?
-
-    do {
-        _ = try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: &response)
-    } catch (let e) {
-        print(e)
-    }
-
-    if let httpResponse = response as? HTTPURLResponse {
-        if httpResponse.statusCode == 200 {
-            status = true
+class Reachability {
+    class func isConnectedToNetwork() -> Bool {
+        var status:Bool = false
+        let url = NSURL(string: "http://google.com")
+        let request = NSMutableURLRequest(url: url! as URL)
+        request.httpMethod = "HEAD"
+        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
+        request.timeoutInterval = 10.0
+        var response1:URLResponse?
+        
+        let semaphore: DispatchSemaphore = DispatchSemaphore(value: 0)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
+            response1 = response
+            semaphore.signal()
         }
-    }
-
-    return status
-  }
+        task.resume()
+        semaphore.wait()
+        if let httpResponse = response1 as? HTTPURLResponse {
+            if httpResponse.statusCode == 200 {
+                status = true
+            }
+        }
+        return status
+      }
 }
 

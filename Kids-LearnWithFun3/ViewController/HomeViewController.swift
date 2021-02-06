@@ -55,6 +55,7 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         playBackgroundMusic()
         self.viewtransperent.isHidden = true
         self.viewParentSetting.isHidden = true
+        self.btnHiddenForUI.sendActions(for: .touchUpInside)
     }
     override func viewWillDisappear(_ animated: Bool) {
         player.stop()

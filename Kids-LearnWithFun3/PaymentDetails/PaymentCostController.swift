@@ -108,7 +108,6 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func funcPaymentBtnClick(_ sender: Any) {
-        self.viewTrasperentDisabled.isHidden = false
         buyConsumable()
     }
     
@@ -174,6 +173,7 @@ extension PaymentCostController {
         print("About to fetch the products");
         // We check that we are allow to make the purchase.
         if Reachability.isConnectedToNetwork() {
+            self.viewTrasperentDisabled.isHidden = false
             if (SKPaymentQueue.canMakePayments())
             {
                 let productsRequest = SKProductsRequest(productIdentifiers: Set(arrayLiteral: self.selectedProductId))
