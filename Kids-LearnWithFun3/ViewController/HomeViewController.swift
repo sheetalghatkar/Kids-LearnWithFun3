@@ -37,7 +37,6 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var btnNoAds: UIButton!
     @IBOutlet weak var btnSetting: UIButton!
     @IBOutlet weak var btnCancelSubscription: UIButton!
-    @IBOutlet weak var btnHiddenForUI: UIButton!
     let rateUsImg = UIImage(named: "RateUs.png")
     let shareAppImg = UIImage(named: "ShareApp.png")
     @IBOutlet weak var floaty : Floaty!
@@ -45,6 +44,8 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var viewtransperent: UIView!
     let defaults = UserDefaults.standard
     var paymentDetailVC : PaymentDetailViewController?
+    
+    var fromShareApp = false
 
     var player = AVAudioPlayer()
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -55,7 +56,6 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         playBackgroundMusic()
         self.viewtransperent.isHidden = true
         self.viewParentSetting.isHidden = true
-        self.btnHiddenForUI.sendActions(for: .touchUpInside)
     }
     override func viewWillDisappear(_ animated: Bool) {
         player.stop()
@@ -140,7 +140,10 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         if UIScreen.main.bounds.height < 700 {
             bgScreen.isHidden = true
         }
-
+        
+        if UIScreen.main.bounds.height == 844 {
+            bottomBgScreen.constant = -20
+        }
     }
     @objc func willResignActive(_ notification: Notification) {
         // code to execute
@@ -172,7 +175,8 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
           applicationActivities: nil)
         activityViewController.completionWithItemsHandler = { (activity, success, items, error) in
              print(success ? "SUCCESS!" : "FAILURE")
-            self.btnHiddenForUI.sendActions(for: .touchUpInside)
+            self.fromShareApp = true
+            self.btnSound.sendActions(for: .touchUpInside)
         }
         self.present(activityViewController, animated: true, completion: nil)
     }
@@ -199,23 +203,26 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     }
 
     @IBAction func funcSound_ON_OFF(_ sender: Any) {
-        if defaults.bool(forKey:"PauseHomeSound") {
-            defaults.set(false, forKey: "PauseHomeSound")
-            btnSound.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
-            player.play()
+        if fromShareApp {
+            fromShareApp = false
+            if defaults.bool(forKey:"PauseHomeSound") {
+                btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home-1.png"), for: .normal)
+            } else {
+                btnSound.setBackgroundImage(UIImage(named: "Sound-On_home-1.png"), for: .normal)
+            }
         } else {
-            defaults.set(true, forKey: "PauseHomeSound")
-            btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
-            player.stop()
+            if defaults.bool(forKey:"PauseHomeSound") {
+                defaults.set(false, forKey: "PauseHomeSound")
+                btnSound.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
+                player.play()
+            } else {
+                defaults.set(true, forKey: "PauseHomeSound")
+                btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
+                player.stop()
+            }
         }
     }
-    @IBAction func functempButton(_ sender: Any) {
-        if defaults.bool(forKey:"PauseHomeSound") {
-             btnHiddenForUI.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
-         } else {
-            btnHiddenForUI.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
-         }
-    }
+    
     @objc func clickTransperentView(_ sender:UITapGestureRecognizer){
         self.viewtransperent.isHidden = true
         self.viewParentSetting.isHidden = true

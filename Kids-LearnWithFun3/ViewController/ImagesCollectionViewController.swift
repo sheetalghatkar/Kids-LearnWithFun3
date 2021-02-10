@@ -8,9 +8,16 @@
 
 import UIKit
 import AVFoundation
+//class ImagesCollectionViewController: UIViewController{
+//
+//        override func viewDidLoad() {
+//            super.viewDidLoad()
+//        }
+//
+//}
 
 class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,PictureCollectionCellProtocol {
-    
+
     @IBOutlet weak var btnHome: UIButton!
     @IBOutlet weak var collectionViewCard: UICollectionView!
     @IBOutlet weak var btnForward: UIButton!
@@ -24,8 +31,12 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var imgViewBgSpices: UIImageView!
     @IBOutlet weak var heightHome: NSLayoutConstraint!
     @IBOutlet weak var heightStackView: NSLayoutConstraint!
+    @IBOutlet weak var imgViewLoader: UIImageView!
+    @IBOutlet weak var viewTransperent: UIView!
+    let defaults = UserDefaults.standard
+    var kidozSDK: KidozSDK?
+    var timer: Timer?
 
-    
     var player = AVAudioPlayer()
     var getTabNumber = 0
     var imageArray : [UIImage] = []
@@ -34,28 +45,47 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var stringTitle = ""
     var currentindex = 0
+    var nowInitializeInterstitial = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loaderGif = UIImage.gifImageWithName("Loading")
+        imgViewLoader.image = loaderGif
+        imgViewLoader.backgroundColor = UIColor.white
+        imgViewLoader.layer.borderWidth = 1
+        imgViewLoader.layer.borderColor = UIColor.red.cgColor
         btnForward.layer.cornerRadius = 25.0
         btnBackward.layer.cornerRadius = 25.0
         btnBackward.isHidden = true
-        
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            if Reachability.isConnectedToNetwork() {
+                self.kidozAndBannerInit()
+            } else {
+                let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                    if self.timer == nil {
+                        self.timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+
         if appDelegate.IS_Sound_ON {
             btnSound.setBackgroundImage(UIImage(named: "Sound-On.png"), for: .normal)
         } else {
             btnSound.setBackgroundImage(UIImage(named: "Sound-Off.png"), for: .normal)
         }
-        
+
         viewCollectionContainer.layer.borderWidth = 1.5
         viewCollectionContainer.layer.cornerRadius = 10.0
         viewCollectionContainer.layer.borderColor = UIColor.red.cgColor
         collectionViewCard.register(UINib(nibName: "PictureCollectionCell", bundle: nil), forCellWithReuseIdentifier: "PictureCollectionCell")
-        
+
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal //depending upon direction of collection view
         self.collectionViewCard?.setCollectionViewLayout(layout, animated: true)
-        
+
         let _: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         let width = UIScreen.main.bounds.width
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -66,7 +96,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         self.lblCard.text = imageNameArray[0]
         self.lblPageTitle.text = stringTitle
         playSound(getSound : self.imageNameArray[0])
-        
+
         if getTabNumber == 0 {
             self.imgViewBgSpices.image  = UIImage.gifImageWithName("Apple")
         } else if getTabNumber == 1 {
@@ -83,14 +113,27 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             heightStackView.constant = 110
         }
     }
-    
+
+    func kidozAndBannerInit() {
+        if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
+            kidozSDK = KidozSDK.init()
+            kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
+        } else {
+            if (((kidozSDK?.isBannerInitialized()) == nil) || !(kidozSDK!.isBannerInitialized())) {
+                kidozSDK?.initializeBanner(with: self, with: self)
+                kidozSDK?.setBannerPosition(BOTTOM_CENTER)
+            } else {
+                kidozSDK?.loadBanner()
+            }
+        }
+    }
 
     // MARK: - CollectionView Functions
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArray.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PictureCollectionCell", for: indexPath) as? PictureCollectionCell else {
             // we failed to get a PersonCell – bail out!
@@ -100,11 +143,11 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         cell.delegatePictureCollection = self
         cell.imgViewCard.image = imageArray[indexPath.row]
         cell.imgViewCard.contentMode = .scaleToFill
-        
+
         // if we're still here it means we got a PersonCell, so we can return it
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionViewCard.frame.width, height: self.collectionViewCard.frame.height)
     }
@@ -119,7 +162,13 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         }
     }
     // MARK: - User defined Functions
-    
+    @objc func alarmToLoadBannerAds(){
+        print("Inside alarmToLoadBannerAds")
+        if Reachability.isConnectedToNetwork() {
+            kidozAndBannerInit()
+        }
+    }
+
     func playSoundOnImageClick(getSound : Int ) {
         let path = Bundle.main.path(forResource: imageNameArray[getSound], ofType : "mp3")!
         let url = URL(fileURLWithPath : path)
@@ -142,12 +191,39 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         }
         appDelegate.IS_Sound_ON = !appDelegate.IS_Sound_ON
     }
-    
+
 
     @IBAction func funcGoToHome(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        stopTimer()
+        if defaults.bool(forKey:"IsPrimeUser") {
+            navigationController?.popViewController(animated: true)
+        } else {
+            self.viewTransperent.isHidden = false
+            self.imgViewLoader.isHidden = false
+            if Reachability.isConnectedToNetwork() {
+                if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
+                    kidozSDK = KidozSDK.init()
+                    kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
+                } else {
+                    if (((kidozSDK?.isInterstitialInitialized()) == nil) || !(kidozSDK!.isInterstitialInitialized())){
+                        kidozSDK?.initializeInterstitial(with: self)
+                    } else {
+                        kidozSDK?.loadInterstitial()
+                    }
+                }
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+                    self.funcHideLoader()
+                    let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                        self.navigationController?.popViewController(animated: true)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                })
+            }
+        }
     }
-    
+
     @IBAction func funcForwardBtnClick(_ sender: Any)
     {
         let visibleItems: NSArray = self.collectionViewCard.indexPathsForVisibleItems as NSArray
@@ -189,7 +265,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         currentindex = nextItem.row
         playSound(getSound : self.imageNameArray[nextItem.row])
     }
-    
+
     func scrollToNearestVisibleCollectionViewCell() {
         self.collectionViewCard.decelerationRate = UIScrollView.DecelerationRate.fast
         let visibleCenterPositionOfScrollView = Float(self.collectionViewCard.contentOffset.x + (self.collectionViewCard.bounds.size.width / 2))
@@ -225,7 +301,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         currentindex = closestCellIndex
         playSound(getSound : imageNameArray[closestCellIndex])
     }
-    
+
     func playSound(getSound : String) {
         let path = Bundle.main.path(forResource: getSound, ofType : "mp3")!
         let url = URL(fileURLWithPath : path)
@@ -236,6 +312,114 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             }
         } catch {
             print ("There is an issue with this code!")
-        } 
+        }
+    }
+
+    func funcHideLoader() {
+        self.viewTransperent.isHidden = true
+        self.imgViewLoader.isHidden = true
+    }
+
+    func stopTimer() {
+        print("Inside stopTimer")
+        if timer != nil {
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+
+
+}
+extension ImagesCollectionViewController : KDZInitDelegate {
+    func onInitSuccess() {
+        print("onInitSuccess")
+        if(((kidozSDK?.isSDKInitialized()) != nil) && (kidozSDK!.isSDKInitialized()))
+        {
+            if nowInitializeInterstitial {
+                kidozSDK?.initializeInterstitial(with: self)
+            } else {
+                kidozSDK?.initializeBanner(with: self, with: self)
+                kidozSDK?.setBannerPosition(BOTTOM_CENTER)
+            }
+        }
+    }
+    func onInitError(error : String) {
+        print("onInitError")
+    }
+}
+extension ImagesCollectionViewController: KDZBannerDelegate {
+    func bannerDidInitialize() {
+        print("bannerDidInitialize")
+        kidozSDK?.loadBanner()
+    }
+    func bannerDidClose() {
+        print("bannerDidClose")
+    }
+    func bannerDidOpen() {
+        print("bannerDidOpen")
+    }
+    func bannerIsReady() {
+        print("bannerIsReady")
+        kidozSDK?.showBanner()
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+        }
+    }
+    func bannerReturnedWithNoOffers() {
+        print("bannerReturnedWithNoOffers")
+    }
+    func bannerLoadFailed() {
+        print("bannerLoadFailed")
+    }
+    func bannerDidReciveError (_ errorMessage : String) {
+        print("bannerDidReciveError")
+    }
+    func bannerLeftApplication() {
+        stopTimer()
+        print("bannerLeftApplication")
+    }
+}
+extension ImagesCollectionViewController: KDZInterstitialDelegate {
+    func interstitialDidInitialize() {
+        print("interstitialDidInitialize")
+        kidozSDK?.loadInterstitial()
+    }
+    func interstitialDidClose(){
+        print("interstitialDidClose")
+        navigationController?.popViewController(animated: true)
+    }
+    func interstitialDidOpen(){
+        print("interstitialDidOpen")
+    }
+    func interstitialIsReady(){
+        funcHideLoader()
+        print("interstitialIsReady")
+        kidozSDK?.showInterstitial()
+    }
+    func interstitialReturnedWithNoOffers() {
+        print("interstitialReturnedWithNoOffers")
+    }
+    func interstitialDidPause() {
+        print("interstitialDidPause")
+    }
+    func interstitialDidResume() {
+        print("interstitialDidResume")
+    }
+    func interstitialLoadFailed() {
+        print("interstitialLoadFailed")
+        funcHideLoader()
+        navigationController?.popViewController(animated: true)
+    }
+
+    func interstitialDidReciveError(_ errorMessage : String) {
+        print("interstitialDidReciveError", errorMessage)
+        funcHideLoader()
+        navigationController?.popViewController(animated: true)
+    }
+    func interstitialLeftApplication() {
+        print("interstitialLeftApplication")
+        stopTimer()
+        funcHideLoader()
+        navigationController?.popViewController(animated: true)
     }
 }

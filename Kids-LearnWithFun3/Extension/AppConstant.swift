@@ -17,7 +17,7 @@ class CommanArray {
         UIImage(named: "Grapes.png")!,
         UIImage(named: "Apple.png")!,
         UIImage(named: "Guava.png")!,
-        UIImage(named: "Kivi.png")!,
+        UIImage(named: "Kiwi.png")!,
         UIImage(named: "Orange.png")!,
         UIImage(named: "Papaya.png")!,
         UIImage(named: "Pineapple.png")!,
@@ -30,7 +30,7 @@ class CommanArray {
         UIImage(named: "Pear.png")!,
         UIImage(named: "Muskmelon.png")!
     ]
-    static var fruitsNameArray: [String] = ["Mango","Custard Apple","Grapes","Apple","Guava","Kivi","Orange","Papaya","Pineapple","Strawberry","Pomegranate","Watermelon","Jackfruit","Banana","Chickoo","Pear","Muskmelon"]
+    static var fruitsNameArray: [String] = ["Mango","Custard Apple","Grapes","Apple","Guava","Kiwi","Orange","Papaya","Pineapple","Strawberry","Pomegranate","Watermelon","Jackfruit","Banana","Chickoo","Pear","Muskmelon"]
     //------------------------------------------------------------------------
     static var vegetablesImageArray: [UIImage] = [
         UIImage(named: "Onion.png")!,
@@ -121,6 +121,10 @@ class CommanArray {
     //Related to InAppPurchase
     static var environment = AppleReceiptValidator.VerifyReceiptURLType.production
     static var secretKey = "81d5ad37b4954dc89fc951f7cfa22507"
+    
+    
+    static var Kidoz_Publisher_ID: String = "14473"
+    static var Kidoz_Publisher_token: String = "HXpnS8JiAsO55xxVR97UyElgRU8KHtDJ"
 
 }
 

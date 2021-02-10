@@ -29,6 +29,7 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
     @IBOutlet weak var lblOneTimePayment: UILabel!
     @IBOutlet weak var lblOneTimePaymentPrice: UILabel!
     @IBOutlet weak var btnBuy: UIButton!
+    @IBOutlet weak var bottomBgScreen: NSLayoutConstraint!
 
     
     @IBOutlet weak var lblPrivacyPolicy: UILabel!
@@ -97,6 +98,9 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
         if UIScreen.main.bounds.height < 820 {
             heightHomeBtn.constant = 42
         }
+        if UIScreen.main.bounds.height == 844 {
+            bottomBgScreen.constant = -20
+        }
     }
     
 //    func removeViewFromApp() {
@@ -115,7 +119,7 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
       print("Restore clicked.")
       if Reachability.isConnectedToNetwork() {
         self.viewTrasperentDisabled.isHidden = false
-        let appleValidator = AppleReceiptValidator(service: .sandbox, sharedSecret: CommanArray.secretKey)
+        let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: CommanArray.secretKey)
         SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
             switch result {
             case .success(let receipt):
@@ -157,7 +161,7 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
             }
         }
       } else {
-        let alert = UIAlertController(title: "", message: "No Internet connection.", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
         // add an action (button)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
             self.viewTrasperentDisabled.isHidden = true
@@ -185,7 +189,7 @@ extension PaymentCostController {
             }
         } else {
 
-            let alert = UIAlertController(title: "", message: "No Internet connection.", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
             // add an action (button)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
                 self.viewTrasperentDisabled.isHidden = true

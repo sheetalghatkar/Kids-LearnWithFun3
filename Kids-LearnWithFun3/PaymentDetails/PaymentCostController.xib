@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentCostController" customModule="Learn_Natural_Food" customModuleProvider="target">
             <connections>
+                <outlet property="bottomBgScreen" destination="Nwh-Dj-ZDE" id="QTA-be-pBe"/>
                 <outlet property="btnBuy" destination="yA4-xm-Ts0" id="Rto-Uv-VxH"/>
                 <outlet property="btnHome" destination="2hb-Ww-MI3" id="ns9-do-Ghm"/>
                 <outlet property="btnRestore" destination="XAh-ma-3Tf" id="BAm-qw-uMJ"/>
@@ -33,13 +34,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wallpaper1" translatesAutoresizingMaskIntoConstraints="NO" id="WoQ-RT-YU5">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper1" translatesAutoresizingMaskIntoConstraints="NO" id="WoQ-RT-YU5">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallerPaper" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-nX-pCo">
-                    <rect key="frame" x="0.0" y="476" width="414" height="420"/>
+                    <rect key="frame" x="-10" y="476" width="434" height="420"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="420" id="m3o-Mc-sqD"/>
@@ -245,6 +245,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="WoQ-RT-YU5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Kw-gc-EBF"/>
                 <constraint firstItem="csJ-KQ-BIT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3tN-lI-f1K"/>
                 <constraint firstItem="kVY-mD-cqk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6nC-Dy-oUO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zBr-mT-UYg" secondAttribute="trailing" id="9mY-E0-q42"/>
@@ -260,15 +261,18 @@
                 <constraint firstItem="zBr-mT-UYg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tn8-FU-7zW"/>
                 <constraint firstItem="kVY-mD-cqk" firstAttribute="top" secondItem="csJ-KQ-BIT" secondAttribute="bottom" constant="5" id="a1f-Gh-Kvk"/>
                 <constraint firstItem="H4V-dd-9sK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d5P-EQ-NU6"/>
-                <constraint firstItem="7OS-nX-pCo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dXs-BL-qPs"/>
+                <constraint firstItem="7OS-nX-pCo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-10" id="dXs-BL-qPs"/>
                 <constraint firstItem="csJ-KQ-BIT" firstAttribute="top" secondItem="H4V-dd-9sK" secondAttribute="bottom" constant="60" id="eSe-YE-I16"/>
                 <constraint firstItem="H4V-dd-9sK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="ecv-dU-3wW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tr8-xj-Cri" secondAttribute="trailing" constant="15" id="igo-HJ-Niy"/>
-                <constraint firstItem="7OS-nX-pCo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="j2r-7u-5Fn"/>
+                <constraint firstItem="7OS-nX-pCo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="10" id="j2r-7u-5Fn"/>
+                <constraint firstAttribute="bottom" secondItem="WoQ-RT-YU5" secondAttribute="bottom" id="kfe-tz-7Xa"/>
                 <constraint firstItem="2hb-Ww-MI3" firstAttribute="centerY" secondItem="tr8-xj-Cri" secondAttribute="centerY" id="ljO-Yq-hkm"/>
                 <constraint firstItem="XAh-ma-3Tf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mce-C8-YEx"/>
                 <constraint firstItem="zBx-wy-ygg" firstAttribute="top" secondItem="XAh-ma-3Tf" secondAttribute="bottom" constant="50" id="uSa-cq-VTL"/>
                 <constraint firstItem="XAh-ma-3Tf" firstAttribute="top" secondItem="kVY-mD-cqk" secondAttribute="bottom" constant="15" id="uTn-Wx-AJ9"/>
+                <constraint firstItem="WoQ-RT-YU5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wcn-ce-Jca"/>
+                <constraint firstItem="WoQ-RT-YU5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yiy-gI-u5F"/>
             </constraints>
             <point key="canvasLocation" x="5.7971014492753632" y="49.553571428571423"/>
         </view>

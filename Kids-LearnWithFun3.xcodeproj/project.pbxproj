@@ -24,6 +24,8 @@
 		4F1BFB2325CB155900124D22 /* InAppReceiptVerificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB1425CB155900124D22 /* InAppReceiptVerificator.swift */; };
 		4F1BFB2425CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB1525CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift */; };
 		4F1BFB2525CB155900124D22 /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB1625CB155900124D22 /* AppleReceiptValidator.swift */; };
+		4F2BF55625D39B8E006B0D67 /* Loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F2BF55525D39B8E006B0D67 /* Loading.gif */; };
+		4F316E6D25D423C30017E008 /* libKidozSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F316E6C25D423C30017E008 /* libKidozSDK.a */; };
 		4F3C08F425C92175006667B3 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08EE25C92175006667B3 /* FloatyManager.swift */; };
 		4F3C08F525C92175006667B3 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08EF25C92175006667B3 /* FloatyViewController.swift */; };
 		4F3C08F625C92175006667B3 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08F025C92175006667B3 /* FloatyDelegate.swift */; };
@@ -35,7 +37,7 @@
 		4F3C090C25C99EF9006667B3 /* QA.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C090B25C99EF9006667B3 /* QA.gif */; };
 		4F4578EA25C70C4B0075A9F9 /* Pomegranate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578D925C70C4A0075A9F9 /* Pomegranate.mp3 */; };
 		4F4578EB25C70C4B0075A9F9 /* Pineapple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DA25C70C4A0075A9F9 /* Pineapple.mp3 */; };
-		4F4578EC25C70C4B0075A9F9 /* Kivi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DB25C70C4A0075A9F9 /* Kivi.mp3 */; };
+		4F4578EC25C70C4B0075A9F9 /* Kiwi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DB25C70C4A0075A9F9 /* Kiwi.mp3 */; };
 		4F4578ED25C70C4B0075A9F9 /* Grapes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DC25C70C4A0075A9F9 /* Grapes.mp3 */; };
 		4F4578EE25C70C4B0075A9F9 /* Watermelon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DD25C70C4A0075A9F9 /* Watermelon.mp3 */; };
 		4F4578EF25C70C4B0075A9F9 /* Orange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F4578DE25C70C4A0075A9F9 /* Orange.mp3 */; };
@@ -65,7 +67,7 @@
 		4F45791B25C713220075A9F9 /* Chickoo_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790A25C713220075A9F9 /* Chickoo_Question.mp3 */; };
 		4F45791C25C713220075A9F9 /* Papaya_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790B25C713220075A9F9 /* Papaya_Question.mp3 */; };
 		4F45791D25C713220075A9F9 /* Custard Apple_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790C25C713220075A9F9 /* Custard Apple_Question.mp3 */; };
-		4F45791E25C713220075A9F9 /* Kivi_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790D25C713220075A9F9 /* Kivi_Question.mp3 */; };
+		4F45791E25C713220075A9F9 /* Kiwi_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790D25C713220075A9F9 /* Kiwi_Question.mp3 */; };
 		4F45791F25C713220075A9F9 /* Muskmelon_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790E25C713220075A9F9 /* Muskmelon_Question.mp3 */; };
 		4F8761D725C7AC3500F3A610 /* Cabbage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8761C225C7AC3500F3A610 /* Cabbage.mp3 */; };
 		4F8761D825C7AC3500F3A610 /* Beetroot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8761C325C7AC3500F3A610 /* Beetroot.mp3 */; };
@@ -289,6 +291,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F18116725D13E5500647696 /* KidozSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidozSDK.h; sourceTree = "<group>"; };
+		4F18116825D13E5500647696 /* Learn Natural Food-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Learn Natural Food-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCostController.swift; sourceTree = "<group>"; };
 		4F1BFAF225CA67CB00124D22 /* PaymentCostController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCostController.xib; sourceTree = "<group>"; };
 		4F1BFB0825CB155900124D22 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 		4F1BFB1425CB155900124D22 /* InAppReceiptVerificator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptVerificator.swift; sourceTree = "<group>"; };
 		4F1BFB1525CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		4F1BFB1625CB155900124D22 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
+		4F2BF55525D39B8E006B0D67 /* Loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loading.gif; sourceTree = "<group>"; };
+		4F316E6C25D423C30017E008 /* libKidozSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKidozSDK.a; sourceTree = "<group>"; };
 		4F3C08EE25C92175006667B3 /* FloatyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyManager.swift; sourceTree = "<group>"; };
 		4F3C08EF25C92175006667B3 /* FloatyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyViewController.swift; sourceTree = "<group>"; };
 		4F3C08F025C92175006667B3 /* FloatyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyDelegate.swift; sourceTree = "<group>"; };
@@ -317,7 +323,7 @@
 		4F3C090B25C99EF9006667B3 /* QA.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QA.gif; sourceTree = "<group>"; };
 		4F4578D925C70C4A0075A9F9 /* Pomegranate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pomegranate.mp3; sourceTree = "<group>"; };
 		4F4578DA25C70C4A0075A9F9 /* Pineapple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pineapple.mp3; sourceTree = "<group>"; };
-		4F4578DB25C70C4A0075A9F9 /* Kivi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kivi.mp3; sourceTree = "<group>"; };
+		4F4578DB25C70C4A0075A9F9 /* Kiwi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kiwi.mp3; sourceTree = "<group>"; };
 		4F4578DC25C70C4A0075A9F9 /* Grapes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grapes.mp3; sourceTree = "<group>"; };
 		4F4578DD25C70C4A0075A9F9 /* Watermelon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Watermelon.mp3; sourceTree = "<group>"; };
 		4F4578DE25C70C4A0075A9F9 /* Orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Orange.mp3; sourceTree = "<group>"; };
@@ -347,7 +353,7 @@
 		4F45790A25C713220075A9F9 /* Chickoo_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chickoo_Question.mp3; sourceTree = "<group>"; };
 		4F45790B25C713220075A9F9 /* Papaya_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Papaya_Question.mp3; sourceTree = "<group>"; };
 		4F45790C25C713220075A9F9 /* Custard Apple_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Custard Apple_Question.mp3"; sourceTree = "<group>"; };
-		4F45790D25C713220075A9F9 /* Kivi_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kivi_Question.mp3; sourceTree = "<group>"; };
+		4F45790D25C713220075A9F9 /* Kiwi_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kiwi_Question.mp3; sourceTree = "<group>"; };
 		4F45790E25C713220075A9F9 /* Muskmelon_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Muskmelon_Question.mp3; sourceTree = "<group>"; };
 		4F8761C225C7AC3500F3A610 /* Cabbage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cabbage.mp3; sourceTree = "<group>"; };
 		4F8761C325C7AC3500F3A610 /* Beetroot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beetroot.mp3; sourceTree = "<group>"; };
@@ -564,6 +570,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F316E6D25D423C30017E008 /* libKidozSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +591,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F18116525D13E4900647696 /* Kidoz */ = {
+			isa = PBXGroup;
+			children = (
+				4F316E6C25D423C30017E008 /* libKidozSDK.a */,
+				4F18116725D13E5500647696 /* KidozSDK.h */,
+				4F18116825D13E5500647696 /* Learn Natural Food-Bridging-Header.h */,
+			);
+			path = Kidoz;
+			sourceTree = "<group>";
+		};
 		4F1BFB0725CB155900124D22 /* SwiftyStoreKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,7 +693,7 @@
 				4F4578DC25C70C4A0075A9F9 /* Grapes.mp3 */,
 				4F4578E925C70C4B0075A9F9 /* Guava.mp3 */,
 				4F4578DF25C70C4A0075A9F9 /* Jackfruit.mp3 */,
-				4F4578DB25C70C4A0075A9F9 /* Kivi.mp3 */,
+				4F4578DB25C70C4A0075A9F9 /* Kiwi.mp3 */,
 				4F4578E025C70C4A0075A9F9 /* Mango.mp3 */,
 				4F4578E225C70C4B0075A9F9 /* Muskmelon.mp3 */,
 				4F4578DE25C70C4A0075A9F9 /* Orange.mp3 */,
@@ -700,7 +717,7 @@
 				4F45790125C713220075A9F9 /* Grapes_Question.mp3 */,
 				4F45790925C713220075A9F9 /* Guava_Question.mp3 */,
 				4F45790225C713220075A9F9 /* Jackfruit_Question.mp3 */,
-				4F45790D25C713220075A9F9 /* Kivi_Question.mp3 */,
+				4F45790D25C713220075A9F9 /* Kiwi_Question.mp3 */,
 				4F45790025C713220075A9F9 /* Mango_Question.mp3 */,
 				4F45790E25C713220075A9F9 /* Muskmelon_Question.mp3 */,
 				4F45790625C713220075A9F9 /* Orange_Question.mp3 */,
@@ -1044,6 +1061,8 @@
 		70FF09352496450E002861AE /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				4F2BF55525D39B8E006B0D67 /* Loading.gif */,
+				4F18116525D13E4900647696 /* Kidoz */,
 				4F1BFB0725CB155900124D22 /* SwiftyStoreKit */,
 				4F3C08EA25C92166006667B3 /* Floaty */,
 				7027932924CCAED700A863FB /* BackgroundMusic.mp3 */,
@@ -1249,7 +1268,7 @@
 				4F8761E325C7AC3500F3A610 /* Lady Finger.mp3 in Resources */,
 				7017AA0B24BB410100C46A97 /* Swing.mp3 in Resources */,
 				70E5E8D924C0CD22002B2032 /* Air Conditioner.mp3 in Resources */,
-				4F4578EC25C70C4B0075A9F9 /* Kivi.mp3 in Resources */,
+				4F4578EC25C70C4B0075A9F9 /* Kiwi.mp3 in Resources */,
 				7017AA0C24BB410100C46A97 /* Mirror.mp3 in Resources */,
 				4F87621925C7F3BD00F3A610 /* Green Peas_Question.mp3 in Resources */,
 				7017AA0124BB410100C46A97 /* Bathroom.mp3 in Resources */,
@@ -1263,7 +1282,7 @@
 				4F87621425C7F3BD00F3A610 /* Tomato_Question.mp3 in Resources */,
 				4F87624A25C7FE7600F3A610 /* Foxnuts.mp3 in Resources */,
 				4F87628C25C803F300F3A610 /* Black Stone Flower.mp3 in Resources */,
-				4F45791E25C713220075A9F9 /* Kivi_Question.mp3 in Resources */,
+				4F45791E25C713220075A9F9 /* Kiwi_Question.mp3 in Resources */,
 				4F87625325C7FE7600F3A610 /* Bengal Gram Lentil_Question.mp3 in Resources */,
 				4F8761D925C7AC3500F3A610 /* Spinach.mp3 in Resources */,
 				4F8761E825C7AC3500F3A610 /* Fenugreek Leaves.mp3 in Resources */,
@@ -1310,6 +1329,7 @@
 				4F8761DC25C7AC3500F3A610 /* Pumpkin.mp3 in Resources */,
 				70DBD6D224FE4DCD000AAA10 /* Tomato.gif in Resources */,
 				4F45791125C713220075A9F9 /* Mango_Question.mp3 in Resources */,
+				4F2BF55625D39B8E006B0D67 /* Loading.gif in Resources */,
 				4F87629A25C803F300F3A610 /* Star Anise.mp3 in Resources */,
 				4F87629225C803F300F3A610 /* Cumin.mp3 in Resources */,
 				4F87628A25C803F300F3A610 /* Sesame.mp3 in Resources */,
@@ -1634,6 +1654,7 @@
 		70FF092D24962DB5002861AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -1649,11 +1670,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
+				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
 				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1677,11 +1704,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
+				);
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
 				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
