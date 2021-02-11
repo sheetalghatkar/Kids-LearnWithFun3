@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F04FA5425D52E280090F03E /* UIImageviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F04FA5325D52E280090F03E /* UIImageviewExtension.swift */; };
 		4F1BFAF325CA67CB00124D22 /* PaymentCostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */; };
 		4F1BFAF425CA67CB00124D22 /* PaymentCostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1BFAF225CA67CB00124D22 /* PaymentCostController.xib */; };
 		4F1BFB1725CB155900124D22 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB0825CB155900124D22 /* SKProduct+LocalizedPrice.swift */; };
@@ -221,7 +222,6 @@
 		7068EFD424AB5DCE00B448C3 /* TestSolveCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068EFD224AB5DCE00B448C3 /* TestSolveCollectionCell.swift */; };
 		7068EFD524AB5DCE00B448C3 /* TestSolveCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */; };
 		707ECA22249CB3E10024D06C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707ECA21249CB3E10024D06C /* UIViewExtension.swift */; };
-		709D3379249B712B002B1114 /* UiCollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */; };
 		70AF537924A0CCCF00AD4794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70FF090B24962D9B002861AE /* Main.storyboard */; };
 		70D84C7A24FD361A0067DE94 /* Apple.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70D84C7924FD361A0067DE94 /* Apple.gif */; };
 		70DBD6CE24FE4230000AAA10 /* Brinjal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70DBD6CD24FE4230000AAA10 /* Brinjal.gif */; };
@@ -270,7 +270,6 @@
 		70FF091D24962DB5002861AE /* Kids_LearnWithFunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF091C24962DB5002861AE /* Kids_LearnWithFunTests.swift */; };
 		70FF092824962DB5002861AE /* Kids_LearnWithFunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF092724962DB5002861AE /* Kids_LearnWithFunUITests.swift */; };
 		70FF093724965879002861AE /* GIFSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF093624965879002861AE /* GIFSwift.swift */; };
-		70FF093C24966856002861AE /* UIImageviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF093B24966856002861AE /* UIImageviewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +290,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F04FA5325D52E280090F03E /* UIImageviewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageviewExtension.swift; sourceTree = "<group>"; };
 		4F18116725D13E5500647696 /* KidozSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidozSDK.h; sourceTree = "<group>"; };
 		4F18116825D13E5500647696 /* Learn Natural Food-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Learn Natural Food-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCostController.swift; sourceTree = "<group>"; };
@@ -507,7 +507,6 @@
 		7068EFD224AB5DCE00B448C3 /* TestSolveCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSolveCollectionCell.swift; sourceTree = "<group>"; };
 		7068EFD324AB5DCE00B448C3 /* TestSolveCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestSolveCollectionCell.xib; sourceTree = "<group>"; };
 		707ECA21249CB3E10024D06C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiCollectionViewExtension.swift; sourceTree = "<group>"; };
 		70D84C7924FD361A0067DE94 /* Apple.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Apple.gif; sourceTree = "<group>"; };
 		70DBD6CD24FE4230000AAA10 /* Brinjal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Brinjal.gif; sourceTree = "<group>"; };
 		70DBD6CF24FE45BB000AAA10 /* Vegetable.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Vegetable.gif; sourceTree = "<group>"; };
@@ -562,7 +561,6 @@
 		70FF092724962DB5002861AE /* Kids_LearnWithFunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_LearnWithFunUITests.swift; sourceTree = "<group>"; };
 		70FF092924962DB5002861AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70FF093624965879002861AE /* GIFSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFSwift.swift; sourceTree = "<group>"; };
-		70FF093B24966856002861AE /* UIImageviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageviewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1083,10 +1081,9 @@
 		70FF093A2496682F002861AE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				70FF093B24966856002861AE /* UIImageviewExtension.swift */,
 				70631FEC2497AA3000DAE930 /* UIButtonExtension.swift */,
-				709D3378249B712B002B1114 /* UiCollectionViewExtension.swift */,
 				707ECA21249CB3E10024D06C /* UIViewExtension.swift */,
+				4F04FA5325D52E280090F03E /* UIImageviewExtension.swift */,
 				701EF78024A294C5006C0A36 /* UIExtension.swift */,
 				70277DD124A4B59100072D57 /* UILabelExtension.swift */,
 				7068EFCE24AB4C6900B448C3 /* AppConstant.swift */,
@@ -1447,17 +1444,16 @@
 				707ECA22249CB3E10024D06C /* UIViewExtension.swift in Sources */,
 				4F1BFB1725CB155900124D22 /* SKProduct+LocalizedPrice.swift in Sources */,
 				70FF093724965879002861AE /* GIFSwift.swift in Sources */,
-				70FF093C24966856002861AE /* UIImageviewExtension.swift in Sources */,
 				4F1BFB1925CB155900124D22 /* InAppReceiptRefreshRequest.swift in Sources */,
 				4F1BFB1E25CB155900124D22 /* CompleteTransactionsController.swift in Sources */,
 				70FF090A24962D9B002861AE /* HomeViewController.swift in Sources */,
 				70FF090624962D9B002861AE /* AppDelegate.swift in Sources */,
 				70631FED2497AA3000DAE930 /* UIButtonExtension.swift in Sources */,
+				4F04FA5425D52E280090F03E /* UIImageviewExtension.swift in Sources */,
 				7068EFCF24AB4C6900B448C3 /* AppConstant.swift in Sources */,
 				4F1BFB2425CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift in Sources */,
 				4F3C090125C925B9006667B3 /* PaymentDetailViewController.swift in Sources */,
 				70E468A524A8D0E2008C8FFB /* TestSolveViewController.swift in Sources */,
-				709D3379249B712B002B1114 /* UiCollectionViewExtension.swift in Sources */,
 				4F1BFB1A25CB155900124D22 /* SwiftyStoreKit+Types.swift in Sources */,
 				70631FEB249776AB00DAE930 /* ImagesCollectionViewController.swift in Sources */,
 				70631FF32497F11B00DAE930 /* PictureCollectionCell.swift in Sources */,
@@ -1656,10 +1652,12 @@
 			buildSettings = {
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
@@ -1679,7 +1677,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1690,10 +1688,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
@@ -1713,7 +1712,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

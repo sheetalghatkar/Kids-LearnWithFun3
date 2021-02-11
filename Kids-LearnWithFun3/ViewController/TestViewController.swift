@@ -27,6 +27,19 @@ class TestViewController: UIViewController, PayementForParentProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgViewLock2.layer.borderColor = UIColor.red.cgColor
+        imgViewLock2.layer.borderWidth = 2.5
+        imgViewLock2.layer.cornerRadius = imgViewLock2.frame.width / 2
+        
+        imgViewLock3.layer.borderColor = UIColor.red.cgColor
+        imgViewLock3.layer.borderWidth = 2.5
+        imgViewLock3.layer.cornerRadius = imgViewLock3.frame.width / 2
+
+        imgViewLock4.layer.borderColor = UIColor.red.cgColor
+        imgViewLock4.layer.borderWidth = 2.5
+        imgViewLock4.layer.cornerRadius = imgViewLock4.frame.width / 2
+
+
         let tapGestureRecognImgVwTest1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgVwTest1.addGestureRecognizer(tapGestureRecognImgVwTest1)
         imgVwTest1.tag = 1

@@ -19,11 +19,6 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var imgViewBg: UIImageView!
 
 
-    @IBOutlet weak var imgVwBird1Bottom: UIImageView!
-    @IBOutlet weak var imgVwBird2Bottom: UIImageView!
-    @IBOutlet weak var imgVwWild1Bottom: UIImageView!
-    @IBOutlet weak var imgVwWild2Bottom: UIImageView!
-    @IBOutlet weak var imgVwWild3Bottom: UIImageView!
     
     @IBOutlet weak var heightBottomImg: NSLayoutConstraint!
     @IBOutlet weak var widthIconBgImg: NSLayoutConstraint!
@@ -67,11 +62,11 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         } else {
             NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
         }
-
-        // Do any additional setup after loading the view.
-       // let wildGif1 = UIImage.gifImageWithName("Bubble")
-//        self.imgVwWild1Bottom.image  = wildGif1
-
+        makeRound(getImgView : imgVwWildAnimal)
+        makeRound(getImgView: imgVwPetAnimal)
+        makeRound(getImgView: imgVwBird)
+        makeRound(getImgView: imgVwFlower)
+        
         let tapGestureRecognWildAnimal = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgVwWildAnimal.addGestureRecognizer(tapGestureRecognWildAnimal)
         imgVwWildAnimal.tag = 1
@@ -145,6 +140,15 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
             bottomBgScreen.constant = -20
         }
     }
+    
+    func makeRound(getImgView : UIImageView) {
+        getImgView.clipsToBounds = true
+      //  self.layer.cornerRadius = (self.frame.width + self.frame.height) / 4
+        getImgView.layer.masksToBounds = true
+       // print("Inside Learn wth fun:",self.frame.width, self.frame.height )
+        getImgView.layer.cornerRadius = getImgView.frame.width  / 2
+    }
+
     @objc func willResignActive(_ notification: Notification) {
         // code to execute
         floaty.close()

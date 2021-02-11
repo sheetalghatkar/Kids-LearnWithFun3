@@ -30,12 +30,14 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     var getImageNameArray : [String] = []
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var player = AVAudioPlayer()
-    var currentIndex = 0
+    var currentindex = 0
     let defaults = UserDefaults.standard
     var nowInitializeInterstitial = false
-
+    var fromHomeClick = false
     var kidozSDK: KidozSDK?
     var timer: Timer?
+    var checkCurrentindex = 0
+    var clickCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,11 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
         imgViewLoader.backgroundColor = UIColor.white
         imgViewLoader.layer.borderWidth = 1
         imgViewLoader.layer.borderColor = UIColor.red.cgColor
+
+        btnPlayAgain.layer.borderColor = UIColor.red.cgColor
+        btnPlayAgain.layer.borderWidth = 3
+        btnPlayAgain.layer.cornerRadius = btnPlayAgain.frame.width / 2
+        
 
         if !(defaults.bool(forKey:"IsPrimeUser")) {
             if Reachability.isConnectedToNetwork() {
@@ -97,15 +104,49 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func kidozAndBannerInit() {
-        if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
-            kidozSDK = KidozSDK.init()
-            kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
-        } else {
-            if (((kidozSDK?.isBannerInitialized()) == nil) || !(kidozSDK!.isBannerInitialized())) {
-                kidozSDK?.initializeBanner(with: self, with: self)
-                kidozSDK?.setBannerPosition(BOTTOM_CENTER)
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
+                kidozSDK = KidozSDK.init()
+                kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
             } else {
-                kidozSDK?.loadBanner()
+                if (((kidozSDK?.isBannerInitialized()) == nil) || !(kidozSDK!.isBannerInitialized())) {
+                    kidozSDK?.initializeBanner(with: self, with: self)
+                    kidozSDK?.setBannerPosition(BOTTOM_CENTER)
+                } else {
+                    kidozSDK?.loadBanner()
+                }
+            }
+        }
+    }
+    
+    func kidozAndInterstitialInit() {
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            self.viewTransperent.isHidden = false
+            self.imgViewLoader.isHidden = false
+            if Reachability.isConnectedToNetwork() {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
+                    if !(self.imgViewLoader.isHidden) {
+                        self.funcHideLoader()
+                    }
+                })
+                if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
+                    kidozSDK = KidozSDK.init()
+                    kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
+                } else {
+                    if (((kidozSDK?.isInterstitialInitialized()) == nil) || !(kidozSDK!.isInterstitialInitialized())){
+                        kidozSDK?.initializeInterstitial(with: self)
+                    } else {
+                        kidozSDK?.loadInterstitial()
+                    }
+                }
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+                    self.funcHideLoader()
+                    let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                })
             }
         }
     }
@@ -141,12 +182,20 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
 
     @IBAction func funcGoToTestHome(_ sender: Any) {
             stopTimer()
+            fromHomeClick = true
             if defaults.bool(forKey:"IsPrimeUser") {
                 navigationController?.popViewController(animated: true)
             } else {
+                nowInitializeInterstitial = true
                 self.viewTransperent.isHidden = false
                 self.imgViewLoader.isHidden = false
                 if Reachability.isConnectedToNetwork() {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
+                        if !(self.imgViewLoader.isHidden) {
+                            self.funcHideLoader()
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                    })
                     if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
                         kidozSDK = KidozSDK.init()
                         kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
@@ -176,17 +225,26 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             player.stop()
         } else {
             btnSound.setBackgroundImage(UIImage(named: "Sound-On.png"), for: .normal)
-            playSound(getSound: getImageNameArray[currentIndex]+"_Question")
+            playSound(getSound: getImageNameArray[currentindex]+"_Question")
         }
         appDelegate.IS_Sound_ON = !appDelegate.IS_Sound_ON
     }
     @IBAction func funcPlayAgainClick(_ sender: Any) {
         player.stop()
-        playSound(getSound: getImageNameArray[currentIndex]+"_Question")
+        playSound(getSound: getImageNameArray[currentindex]+"_Question")
     }
 
     @IBAction func funcForwardBtnClick(_ sender: Any)
     {
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            clickCount = clickCount + 1
+//            print("!!!!!!!!!!!!clickCount",clickCount)
+            if clickCount >= 10 {
+                clickCount = 0
+                nowInitializeInterstitial = true
+                kidozAndInterstitialInit()
+            }
+        }
         if !btnForward.isHidden {
             let visibleItems: NSArray = self.collectionViewCard.indexPathsForVisibleItems as NSArray
             let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
@@ -194,7 +252,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if nextItem.row < showOptionsArray.count {
                 self.collectionViewCard.scrollToItem(at: nextItem, at: .left, animated: true)
                 self.lblQuestion.text = getImageNameArray[nextItem.row]
-                currentIndex = nextItem.row
+                currentindex = nextItem.row
                 playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
             }
             if nextItem.row == self.showOptionsArray.count - 1 {
@@ -205,6 +263,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
                 self.btnForward.isHidden = false
                 self.btnBackward.isHidden = false
             }
+            checkCurrentindex = currentindex
             let indexPath = IndexPath(item: nextItem.row - 1 , section: 0)
             if let cell = collectionViewCard .cellForItem(at: indexPath) as? TestSolveCollectionCell {
                 cell.hideSignOnImageView()
@@ -214,13 +273,22 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
 
     @IBAction func funcBackwardBtnClick(_ sender: Any)
     {
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            clickCount = clickCount + 1
+//            print("!!!!!!!!!!!!clickCount",clickCount)
+            if clickCount >= 10 {
+                clickCount = 0
+                nowInitializeInterstitial = true
+                kidozAndInterstitialInit()
+            }
+        }
         let visibleItems: NSArray = self.collectionViewCard.indexPathsForVisibleItems as NSArray
         let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
         let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
         if nextItem.row < showOptionsArray.count && nextItem.row >= 0{
             self.collectionViewCard.scrollToItem(at: nextItem, at: .right, animated: true)
             self.lblQuestion.text = getImageNameArray[nextItem.row]
-            currentIndex = nextItem.row
+            currentindex = nextItem.row
             playSound(getSound : getImageNameArray[nextItem.row]+"_Question")
         }
         if nextItem.row == 0 {
@@ -231,6 +299,7 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             self.btnBackward.isHidden = false
             self.btnForward.isHidden = false
         }
+        checkCurrentindex = currentindex
         let indexPath = IndexPath(item: nextItem.row + 1, section: 0);
         if let cell = collectionViewCard .cellForItem(at: indexPath) as? TestSolveCollectionCell {
                 cell.hideSignOnImageView()
@@ -272,7 +341,20 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
             if let cell = self.collectionViewCard .cellForItem(at: indexPath) as? TestSolveCollectionCell {
                     cell.hideSignOnImageView()
             }
-            currentIndex = closestCellIndex
+            currentindex = closestCellIndex
+            
+            if !(defaults.bool(forKey:"IsPrimeUser")) {
+                if checkCurrentindex != currentindex {
+                    clickCount = clickCount + 1
+//                    print("!!!!!!!!!!!!clickCount",clickCount)
+                    if clickCount >= 10 {
+                        clickCount = 0
+                        nowInitializeInterstitial = true
+                        kidozAndInterstitialInit()
+                    }
+                }
+                checkCurrentindex = currentindex
+            }
             playSound(getSound : getImageNameArray[closestCellIndex]+"_Question")
         }
     }
@@ -337,8 +419,12 @@ class TestSolveViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @objc func alarmToLoadBannerAds(){
         print("Inside alarmToLoadBannerAds")
-        if Reachability.isConnectedToNetwork() {
-            kidozAndBannerInit()
+        if !fromHomeClick {
+            if Reachability.isConnectedToNetwork() {
+                kidozAndBannerInit()
+            }
+        } else {
+            stopTimer()
         }
     }
 
@@ -399,7 +485,9 @@ extension TestSolveViewController: KDZInterstitialDelegate {
     }
     func interstitialDidClose(){
         print("interstitialDidClose")
-        navigationController?.popViewController(animated: true)
+        if fromHomeClick {
+            navigationController?.popViewController(animated: true)
+        }
     }
     func interstitialDidOpen(){
         print("interstitialDidOpen")
@@ -421,18 +509,25 @@ extension TestSolveViewController: KDZInterstitialDelegate {
     func interstitialLoadFailed() {
         print("interstitialLoadFailed")
         funcHideLoader()
-        navigationController?.popViewController(animated: true)
+        if fromHomeClick {
+            navigationController?.popViewController(animated: true)
+        }
     }
 
     func interstitialDidReciveError(_ errorMessage : String) {
         print("interstitialDidReciveError", errorMessage)
         funcHideLoader()
-        navigationController?.popViewController(animated: true)
+        if fromHomeClick {
+          navigationController?.popViewController(animated: true)
+        }
     }
+    
     func interstitialLeftApplication() {
         print("interstitialLeftApplication")
         stopTimer()
         funcHideLoader()
-        navigationController?.popViewController(animated: true)
+        if fromHomeClick {
+            navigationController?.popViewController(animated: true)
+        }
     }
 }
