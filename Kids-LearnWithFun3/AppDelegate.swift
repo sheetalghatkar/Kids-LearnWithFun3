@@ -24,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("########Suspended##########")
+        
+    }
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("########Beacome Active##########")
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+    print("called it")
+    }
 
     // MARK: UISceneSession Lifecycle
 
@@ -41,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
+    
 
 }
 

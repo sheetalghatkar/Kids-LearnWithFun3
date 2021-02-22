@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class HomeViewController: UIViewController, PayementForParentProtocol {
+class HomeViewController: UIViewController {
     @IBOutlet weak var bgScreen: UIImageView!
     @IBOutlet weak var imgVwWildAnimal: UIImageView!
     @IBOutlet weak var imgVwPetAnimal: UIImageView!
@@ -51,6 +51,7 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         playBackgroundMusic()
         self.viewtransperent.isHidden = true
         self.viewParentSetting.isHidden = true
+        showHideAdsButton()
     }
     override func viewWillDisappear(_ animated: Bool) {
         player.stop()
@@ -92,9 +93,9 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         
         
         if defaults.bool(forKey:"PauseHomeSound") {
-            btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
+            btnSound.setBackgroundImage(CommanArray.homeImgSoundOff, for: .normal)
         } else {
-            btnSound.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
+            btnSound.setBackgroundImage(CommanArray.homeImgSoundOn, for: .normal)
         }
 
         //        Timer.scheduledTimer(timeInterval: 0.7, target: self, selector: #selector(self.alarmAlertActivate), userInfo: nil, repeats: true)        viewParentSetting.backgroundColor = UIColor.black
@@ -153,51 +154,17 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
         // code to execute
         floaty.close()
     }
-
-        func showPaymentScreen(){
-            paymentDetailVC?.view.frame = self.view.bounds
-            paymentDetailVC?.delegatePayementForParent = self
-            self.view.addSubview(paymentDetailVC?.view ?? UIView())
-        }
-        
-        func appstoreRateAndReview() {
-            paymentDetailVC?.view.removeFromSuperview()
-            var components = URLComponents(url: CommanArray.app_AppStoreLink!, resolvingAgainstBaseURL: false)
-            components?.queryItems = [
-              URLQueryItem(name: "action", value: "write-review")
-            ]
-            guard let writeReviewURL = components?.url else {
-              return
-            }
-            UIApplication.shared.open(writeReviewURL)
-        }
-        
-    func shareApp() {
-        paymentDetailVC?.view.removeFromSuperview()
-        let activityViewController = UIActivityViewController(
-            activityItems: [CommanArray.app_AppStoreLink!],
-          applicationActivities: nil)
-        activityViewController.completionWithItemsHandler = { (activity, success, items, error) in
-             print(success ? "SUCCESS!" : "FAILURE")
-            self.fromShareApp = true
-            self.btnSound.sendActions(for: .touchUpInside)
-        }
-        self.present(activityViewController, animated: true, completion: nil)
-    }
-    
-    func showPaymentCostScreen() {}
-    
-    func showSubscriptionDetailScreen() {}
     func playBackgroundMusic() {
-        let path = Bundle.main.path(forResource: "BackgroundMusic", ofType : "mp3")!
+        let path = Bundle.main.path(forResource: "ClockBgMusic", ofType : "mp3")!
         let url = URL(fileURLWithPath : path)
         do {
             player = try AVAudioPlayer(contentsOf: url)
+            player.delegate = self
             if defaults.bool(forKey:"PauseHomeSound") {
-                btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
+                btnSound.setBackgroundImage(CommanArray.homeImgSoundOff, for: .normal)
                 player.stop()
             } else {
-                btnSound.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
+                btnSound.setBackgroundImage(CommanArray.homeImgSoundOn, for: .normal)
                 player.play()
             }
 
@@ -205,25 +172,50 @@ class HomeViewController: UIViewController, PayementForParentProtocol {
             print ("There is an issue with this code!")
         }
     }
-
-    @IBAction func funcSound_ON_OFF(_ sender: Any) {
-        if fromShareApp {
-            fromShareApp = false
-            if defaults.bool(forKey:"PauseHomeSound") {
-                btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home-1.png"), for: .normal)
-            } else {
-                btnSound.setBackgroundImage(UIImage(named: "Sound-On_home-1.png"), for: .normal)
+    func showHideAdsButton() {
+        if defaults.bool(forKey:"IsPrimeUser") {
+            if let _ = btnCancelSubscription, let _ = btnCancelSubscription {
+                self.btnCancelSubscription.isHidden = false
+                self.btnNoAds.isHidden = true
             }
         } else {
-            if defaults.bool(forKey:"PauseHomeSound") {
-                defaults.set(false, forKey: "PauseHomeSound")
-                btnSound.setBackgroundImage(UIImage(named: "Sound-On_home.png"), for: .normal)
-                player.play()
-            } else {
-                defaults.set(true, forKey: "PauseHomeSound")
-                btnSound.setBackgroundImage(UIImage(named: "Sound-Off_home.png"), for: .normal)
-                player.stop()
+            if let _ = btnCancelSubscription, let _ = btnCancelSubscription {
+                self.btnCancelSubscription.isHidden = true
+                self.btnNoAds.isHidden = false
             }
+        }
+    }
+
+    @IBAction func funcNoAds(_ sender: Any) {
+        paymentDetailVC = PaymentDetailViewController(nibName: "PaymentDetailViewController", bundle: nil)
+        paymentDetailVC?.showSubscriptionScreen = false
+        showPaymentScreen()
+    }
+    @IBAction func funcCancelSubscription(_ sender: Any) {
+       if btnCancelSubscription.currentImage!.pngData() == (CommanArray.imgCancelSubscription).pngData() {
+            btnCancelSubscription.setImage(CommanArray.imgCancelSubscription1, for: .normal)
+        } else {
+            btnCancelSubscription.setImage(CommanArray.imgCancelSubscription, for: .normal)
+        }
+
+        if fromShareApp {
+            fromShareApp = false
+        } else {
+            paymentDetailVC = PaymentDetailViewController(nibName: "PaymentDetailViewController", bundle: nil)
+            paymentDetailVC?.showSubscriptionScreen = true
+            showPaymentScreen()
+        }
+    }
+
+    @IBAction func funcSound_ON_OFF(_ sender: Any) {
+        if defaults.bool(forKey:"PauseHomeSound") {
+            defaults.set(false, forKey: "PauseHomeSound")
+            btnSound.setBackgroundImage(CommanArray.homeImgSoundOn, for: .normal)
+            player.play()
+        } else {
+            defaults.set(true, forKey: "PauseHomeSound")
+            btnSound.setBackgroundImage(CommanArray.homeImgSoundOff, for: .normal)
+            player.stop()
         }
     }
     
@@ -316,5 +308,57 @@ extension HomeViewController : FloatingActionButtonProtocol {
         })
         viewtransperent.isHidden = true
         viewParentSetting.isHidden = true
+    }
+}
+extension HomeViewController : PayementForParentProtocol {
+    //Delegate method implementation
+    func showPaymentCostScreen() {
+        paymentDetailVC?.view.removeFromSuperview()
+        let paymentCostVC = PaymentCostController(nibName: "PaymentCostController", bundle: nil)
+        self.navigationController?.pushViewController(paymentCostVC, animated: true)
+    }
+    
+    func showSubscriptionDetailScreen() {
+        paymentDetailVC?.view.removeFromSuperview()
+        let paymenSubscriptionVC = SubscriptionDetailsController(nibName: "SubscriptionDetailsController", bundle: nil)
+        self.navigationController?.pushViewController(paymenSubscriptionVC, animated: true)
+    }
+
+    func showPaymentScreen(){
+        paymentDetailVC?.view.frame = self.view.bounds
+        paymentDetailVC?.delegatePayementForParent = self
+        self.view.addSubview(paymentDetailVC?.view ?? UIView())
+    }
+    
+    func appstoreRateAndReview() {
+        paymentDetailVC?.view.removeFromSuperview()
+        var components = URLComponents(url: CommanArray.app_AppStoreLink!, resolvingAgainstBaseURL: false)
+        components?.queryItems = [
+          URLQueryItem(name: "action", value: "write-review")
+        ]
+        guard let writeReviewURL = components?.url else {
+          return
+        }
+        UIApplication.shared.open(writeReviewURL)
+    }
+    
+    func shareApp() {
+        paymentDetailVC?.view.removeFromSuperview()
+        let activityViewController = UIActivityViewController(
+            activityItems: [CommanArray.app_AppStoreLink!],
+          applicationActivities: nil)
+        activityViewController.completionWithItemsHandler = { (activity, success, items, error) in
+             print(success ? "SUCCESS!" : "FAILURE")
+            self.fromShareApp = true
+            self.btnCancelSubscription.sendActions(for: .touchUpInside)
+        }
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+
+}
+extension HomeViewController : AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("finished")//It is working now! printed "finished"!
+        playBackgroundMusic()
     }
 }

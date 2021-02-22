@@ -8,13 +8,7 @@
 
 import UIKit
 import AVFoundation
-//class ImagesCollectionViewController: UIViewController{
-//
-//        override func viewDidLoad() {
-//            super.viewDidLoad()
-//        }
-//
-//}
+import GoogleMobileAds
 
 class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,PictureCollectionCellProtocol {
 
@@ -31,24 +25,29 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var imgViewBgSpices: UIImageView!
     @IBOutlet weak var heightHome: NSLayoutConstraint!
     @IBOutlet weak var heightStackView: NSLayoutConstraint!
+    @IBOutlet weak var trailingTitlelable: NSLayoutConstraint!
+
     @IBOutlet weak var imgViewLoader: UIImageView!
     @IBOutlet weak var viewTransperent: UIView!
-    let defaults = UserDefaults.standard
-    var kidozSDK: KidozSDK?
+    @IBOutlet weak var btnNoAds: UIButton!
+    var interstitial: GADInterstitial?
+    var bannerView: GADBannerView!
+    var paymentDetailVC : PaymentDetailViewController?
+
     var timer: Timer?
     var clickCount = 0
+    var checkCurrentindex = 0
     var fromHomeClick = false
+    var currentindex = 0
+
+    let defaults = UserDefaults.standard
 
     var player = AVAudioPlayer()
     var getTabNumber = 0
     var imageArray : [UIImage] = []
     var imageNameArray : [String] = []
-    //var soundStatus:Bool = false
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     var stringTitle = ""
-    var currentindex = 0
-    var checkCurrentindex = 0
-    var nowInitializeInterstitial = false
 
 
     override func viewDidLoad() {
@@ -64,19 +63,7 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         viewCollectionContainer.layer.borderWidth = 1.5
         viewCollectionContainer.layer.borderColor = UIColor.red.cgColor
         viewCollectionContainer.layer.cornerRadius = 10.0
-        if !(defaults.bool(forKey:"IsPrimeUser")) {
-            if Reachability.isConnectedToNetwork() {
-                self.kidozAndBannerInit()
-            } else {
-                let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                    if self.timer == nil {
-                        self.timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
-                    }
-                }))
-                self.present(alert, animated: true, completion: nil)
-            }
-        }
+        
 
         if appDelegate.IS_Sound_ON {
             btnSound.setBackgroundImage(UIImage(named: "Sound-On.png"), for: .normal)
@@ -119,55 +106,75 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             heightHome.constant = 42
             heightStackView.constant = 110
         }
+        if !defaults.bool(forKey:"IsPrimeUser") {
+            self.trailingTitlelable.constant = 70
+        }
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+            addBannerViewToView(bannerView)
+            bannerView.adUnitID = CommanArray.Banner_AdUnitId
+            bannerView.rootViewController = self
+            bannerView.delegate = self
+            if Reachability.isConnectedToNetwork() {
+                DispatchQueue.main.async {
+                    self.bannerView.load(GADRequest())
+                }
+            } else {
+                let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                    if self.timer == nil {
+                        self.timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        stopTimer()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        if defaults.bool(forKey:"IsPrimeUser") {
+            if let _ = btnNoAds {
+                self.btnNoAds.isHidden = true
+                if bannerView != nil {
+                    bannerView.removeFromSuperview()
+                }
+            }
+        } else {
+            if let _ = btnNoAds {
+                self.btnNoAds.isHidden = false
+            }
+            if let _ = trailingTitlelable {
+                self.trailingTitlelable.constant = 70
+            }
+        }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        if !defaults.bool(forKey:"IsPrimeUser") {
+            if bannerView != nil {
+                if timer == nil {
+                    if Reachability.isConnectedToNetwork() {
+                        DispatchQueue.main.async {
+                            self.bannerView.load(GADRequest())
+                        }
+                    } else {
+                        let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                            if self.timer == nil {
+                                self.timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                            }
+                        }))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
     }
     
-
-    func kidozAndBannerInit() {
-        if !(defaults.bool(forKey:"IsPrimeUser")) {
-            if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
-                kidozSDK = KidozSDK.init()
-                kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
-            } else {
-                if (((kidozSDK?.isBannerInitialized()) == nil) || !(kidozSDK!.isBannerInitialized())) {
-                    kidozSDK?.initializeBanner(with: self, with: self)
-                    kidozSDK?.setBannerPosition(BOTTOM_CENTER)
-                } else {
-                    kidozSDK?.loadBanner()
-                }
-            }
-        }
-    }
-    func kidozAndInterstitialInit() {
-        if !(defaults.bool(forKey:"IsPrimeUser")) {
-            self.viewTransperent.isHidden = false
-            self.imgViewLoader.isHidden = false
-            if Reachability.isConnectedToNetwork() {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
-                    if !(self.imgViewLoader.isHidden) {
-                        self.funcHideLoader()
-                    }
-                })
-                if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
-                    kidozSDK = KidozSDK.init()
-                    kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
-                } else {
-                    if (((kidozSDK?.isInterstitialInitialized()) == nil) || !(kidozSDK!.isInterstitialInitialized())){
-                        kidozSDK?.initializeInterstitial(with: self)
-                    } else {
-                        kidozSDK?.loadInterstitial()
-                    }
-                }
-            } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
-                    self.funcHideLoader()
-                    let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                    }))
-                    self.present(alert, animated: true, completion: nil)
-                })
-            }
-        }
-    }
+    
     // MARK: - CollectionView Functions
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -196,22 +203,42 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         self.scrollToNearestVisibleCollectionViewCell()
     }
 
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate {
-            self.scrollToNearestVisibleCollectionViewCell()
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let visibleIndex = Int(targetContentOffset.pointee.x / scrollView.frame.width)
+
+        print("Inside scrollViewDidEndDragging",checkCurrentindex)
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            if checkCurrentindex != visibleIndex {
+                clickCount = clickCount + 1
+                print("!!!!!!!!!!!!clickCount",clickCount)
+                if clickCount >= 10 {
+                    clickCount = 0
+                    callInterstitialOn10Tap()
+                }
+            }
+            checkCurrentindex = visibleIndex
         }
     }
+
+////        if !decelerate {
+////            self.scrollToNearestVisibleCollectionViewCell()
+////        }
+//    }
+
     // MARK: - User defined Functions
+    
     @objc func alarmToLoadBannerAds(){
         print("Inside alarmToLoadBannerAds")
-        if !fromHomeClick {
-            if Reachability.isConnectedToNetwork() {
-                kidozAndBannerInit()
+        if Reachability.isConnectedToNetwork() {
+            if bannerView != nil {
+                print("Inside Load bannerView")
+                DispatchQueue.main.async {
+                    self.bannerView.load(GADRequest())
+                }
             }
-        } else {
-            stopTimer()
         }
     }
+
 
     func playSoundOnImageClick(getSound : Int ) {
         let path = Bundle.main.path(forResource: imageNameArray[getSound], ofType : "mp3")!
@@ -237,31 +264,24 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     }
 
 
+    
     @IBAction func funcGoToHome(_ sender: Any) {
+       stopTimer()
         fromHomeClick = true
-        stopTimer()
         if defaults.bool(forKey:"IsPrimeUser") {
             navigationController?.popViewController(animated: true)
         } else {
-            nowInitializeInterstitial = true
             self.viewTransperent.isHidden = false
             self.imgViewLoader.isHidden = false
-
             if Reachability.isConnectedToNetwork() {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
-                    if !(self.imgViewLoader.isHidden) {
-                        self.funcHideLoader()
+                DispatchQueue.main.async {
+                    self.interstitial = self.createAndLoadInterstitial()
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                    if !self.viewTransperent.isHidden {
+                        self.viewTransperent.isHidden = true
+                        self.imgViewLoader.isHidden = true
                         self.navigationController?.popViewController(animated: true)
-                    }
-                })
-                if (((kidozSDK?.isSDKInitialized()) == nil) || !(kidozSDK!.isSDKInitialized())) {
-                    kidozSDK = KidozSDK.init()
-                    kidozSDK?.initialize(withPublisherID: CommanArray.Kidoz_Publisher_ID, securityToken: CommanArray.Kidoz_Publisher_token, with: self)
-                } else {
-                    if (((kidozSDK?.isInterstitialInitialized()) == nil) || !(kidozSDK!.isInterstitialInitialized())){
-                        kidozSDK?.initializeInterstitial(with: self)
-                    } else {
-                        kidozSDK?.loadInterstitial()
                     }
                 }
             } else {
@@ -276,18 +296,41 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             }
         }
     }
-
+    func funcHideLoader() {
+        self.viewTransperent.isHidden = true
+        self.imgViewLoader.isHidden = true
+    }
+    func callInterstitialOn10Tap(){
+        self.viewTransperent.isHidden = false
+        self.imgViewLoader.isHidden = false
+        if Reachability.isConnectedToNetwork() {
+            DispatchQueue.main.async {
+                self.interstitial = self.createAndLoadInterstitial()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                if !self.viewTransperent.isHidden {
+                    self.viewTransperent.isHidden = true
+                    self.imgViewLoader.isHidden = true
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+                self.funcHideLoader()
+                let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                }))
+                self.present(alert, animated: true, completion: nil)
+            })
+        }
+    }
     @IBAction func funcForwardBtnClick(_ sender: Any)
     {
         if !(defaults.bool(forKey:"IsPrimeUser")) {
             clickCount = clickCount + 1
-//            print("!!!!!!!!!!!!clickCount",clickCount)
+            print("!!!!!!!!!!!!clickCount",clickCount)
             if clickCount >= 10 {
-                self.viewTransperent.isHidden = false
-                self.imgViewLoader.isHidden = false
                 clickCount = 0
-                nowInitializeInterstitial = true
-                kidozAndInterstitialInit()
+                callInterstitialOn10Tap()
             }
         }
         let visibleItems: NSArray = self.collectionViewCard.indexPathsForVisibleItems as NSArray
@@ -314,15 +357,13 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
     {
         if !(defaults.bool(forKey:"IsPrimeUser")) {
             clickCount = clickCount + 1
-//            print("!!!!!!!!!!!!clickCount",clickCount)
+            print("!!!!!!!!!!!!clickCount",clickCount)
             if clickCount >= 10 {
-                self.viewTransperent.isHidden = false
-                self.imgViewLoader.isHidden = false
                 clickCount = 0
-                nowInitializeInterstitial = true
-                kidozAndInterstitialInit()
+                callInterstitialOn10Tap()
             }
         }
+
         let visibleItems: NSArray = self.collectionViewCard.indexPathsForVisibleItems as NSArray
         let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
         let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
@@ -342,9 +383,8 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
         checkCurrentindex = currentindex
         playSound(getSound : self.imageNameArray[nextItem.row])
     }
-
+    
     func scrollToNearestVisibleCollectionViewCell() {
-        print("scrollToNearestVisibleCollectionViewCell@@@@")
         self.collectionViewCard.decelerationRate = UIScrollView.DecelerationRate.fast
         let visibleCenterPositionOfScrollView = Float(self.collectionViewCard.contentOffset.x + (self.collectionViewCard.bounds.size.width / 2))
         var closestCellIndex = -1
@@ -377,23 +417,9 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             }
         }
         currentindex = closestCellIndex
-        
-        if !(defaults.bool(forKey:"IsPrimeUser")) {
-            if checkCurrentindex != currentindex {
-                clickCount = clickCount + 1
-//                print("!!!!!!!!!!!!clickCount",clickCount)
-                if clickCount >= 10 {
-                    self.viewTransperent.isHidden = false
-                    self.imgViewLoader.isHidden = false
-                    clickCount = 0
-                    nowInitializeInterstitial = true
-                    kidozAndInterstitialInit()
-                }
-            }
-            checkCurrentindex = currentindex
-        }
         playSound(getSound : imageNameArray[closestCellIndex])
     }
+    
 
     func playSound(getSound : String) {
         let path = Bundle.main.path(forResource: getSound, ofType : "mp3")!
@@ -407,10 +433,20 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             print ("There is an issue with this code!")
         }
     }
+    
+    private func createAndLoadInterstitial() -> GADInterstitial? {
+        interstitial = GADInterstitial(adUnitID: CommanArray.Interstitial_AdUnitId)
 
-    func funcHideLoader() {
-        self.viewTransperent.isHidden = true
-        self.imgViewLoader.isHidden = true
+        guard let interstitial = interstitial else {
+            return nil
+        }
+
+        let request = GADRequest()
+        // Remove the following line before you upload the app
+        interstitial.load(request)
+        interstitial.delegate = self
+
+        return interstitial
     }
 
     func stopTimer() {
@@ -420,108 +456,144 @@ class ImagesCollectionViewController: UIViewController, UICollectionViewDelegate
             timer = nil
         }
     }
-
-
 }
-extension ImagesCollectionViewController : KDZInitDelegate {
-    func onInitSuccess() {
-        print("onInitSuccess")
-        if(((kidozSDK?.isSDKInitialized()) != nil) && (kidozSDK!.isSDKInitialized()))
-        {
-            if nowInitializeInterstitial {
-                kidozSDK?.initializeInterstitial(with: self)
-            } else {
-                kidozSDK?.initializeBanner(with: self, with: self)
-                kidozSDK?.setBannerPosition(BOTTOM_CENTER)
-            }
+extension ImagesCollectionViewController: GADBannerViewDelegate {
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+      bannerView.translatesAutoresizingMaskIntoConstraints = false
+      view.addSubview(bannerView)
+        if #available(iOS 11.0, *) {
+          // In iOS 11, we need to constrain the view to the safe area.
+          positionBannerViewFullWidthAtBottomOfSafeArea(bannerView)
         }
+        else {
+          // In lower iOS versions, safe area is not available so we use
+          // bottom layout guide and view edges.
+          positionBannerViewFullWidthAtBottomOfView(bannerView)
+        }
+     }
+
+    func positionBannerViewFullWidthAtBottomOfSafeArea(_ bannerView: UIView) {
+      // Position the banner. Stick it to the bottom of the Safe Area.
+      // Make it constrained to the edges of the safe area.
+      let guide = view.safeAreaLayoutGuide
+      NSLayoutConstraint.activate([
+        guide.leftAnchor.constraint(equalTo: bannerView.leftAnchor),
+        guide.rightAnchor.constraint(equalTo: bannerView.rightAnchor),
+        guide.bottomAnchor.constraint(equalTo: bannerView.bottomAnchor)
+      ])
     }
-    func onInitError(error : String) {
-        print("onInitError")
+
+    func positionBannerViewFullWidthAtBottomOfView(_ bannerView: UIView) {
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .leading,
+                                            relatedBy: .equal,
+                                            toItem: view,
+                                            attribute: .leading,
+                                            multiplier: 1,
+                                            constant: 0))
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .trailing,
+                                            relatedBy: .equal,
+                                            toItem: view,
+                                            attribute: .trailing,
+                                            multiplier: 1,
+                                            constant: 0))
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .bottom,
+                                            relatedBy: .equal,
+                                            toItem: bottomLayoutGuide,
+                                            attribute: .top,
+                                            multiplier: 1,
+                                            constant: 0))
     }
-}
-extension ImagesCollectionViewController: KDZBannerDelegate {
-    func bannerDidInitialize() {
-        print("bannerDidInitialize")
-        kidozSDK?.loadBanner()
-    }
-    func bannerDidClose() {
-        print("bannerDidClose")
-    }
-    func bannerDidOpen() {
-        print("bannerDidOpen")
-    }
-    func bannerIsReady() {
-        print("bannerIsReady")
-        kidozSDK?.showBanner()
+
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+      print("adViewDidReceiveAd")
         if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
         }
+
     }
-    func bannerReturnedWithNoOffers() {
-        print("bannerReturnedWithNoOffers")
+
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+        didFailToReceiveAdWithError error: GADRequestError) {
+      print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
     }
-    func bannerLoadFailed() {
-        print("bannerLoadFailed")
+
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+      print("adViewWillPresentScreen")
     }
-    func bannerDidReciveError (_ errorMessage : String) {
-        print("bannerDidReciveError")
+
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewWillDismissScreen")
     }
-    func bannerLeftApplication() {
-        stopTimer()
-        print("bannerLeftApplication")
+
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewDidDismissScreen")
+    }
+
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+      print("adViewWillLeaveApplication")
     }
 }
-extension ImagesCollectionViewController: KDZInterstitialDelegate {
-    func interstitialDidInitialize() {
-        print("interstitialDidInitialize")
-        kidozSDK?.loadInterstitial()
-    }
-    func interstitialDidClose(){
-        print("interstitialDidClose")
-        if fromHomeClick {
-            navigationController?.popViewController(animated: true)
-        }
-    }
-    func interstitialDidOpen(){
-        print("interstitialDidOpen")
-    }
-    func interstitialIsReady(){
+extension ImagesCollectionViewController: GADInterstitialDelegate {
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("Interstitial loaded successfully")
         funcHideLoader()
-        print("interstitialIsReady")
-        kidozSDK?.showInterstitial()
-    }
-    func interstitialReturnedWithNoOffers() {
-        print("interstitialReturnedWithNoOffers")
-    }
-    func interstitialDidPause() {
-        print("interstitialDidPause")
-    }
-    func interstitialDidResume() {
-        print("interstitialDidResume")
-    }
-    func interstitialLoadFailed() {
-        print("interstitialLoadFailed")
-        funcHideLoader()
+        ad.present(fromRootViewController: self)
         if fromHomeClick {
             navigationController?.popViewController(animated: true)
         }
     }
 
-    func interstitialDidReciveError(_ errorMessage : String) {
-        print("interstitialDidReciveError", errorMessage)
+    func interstitialDidFail(toPresentScreen ad: GADInterstitial) {
+        funcHideLoader()
+        print("Fail to receive interstitial")
+        if fromHomeClick {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         funcHideLoader()
         if fromHomeClick {
-          navigationController?.popViewController(animated: true)
+            navigationController?.popViewController(animated: true)
         }
+        print("dismiss interstitial")
+    }
+}
+extension ImagesCollectionViewController : PayementForParentProtocol {
+    @IBAction func funcNoAds(_ sender: Any) {
+        showPaymentScreen()
     }
     
-    func interstitialLeftApplication() {
-        print("interstitialLeftApplication")
-        stopTimer()
-        funcHideLoader()
-        if fromHomeClick {
-            navigationController?.popViewController(animated: true)
-        }
+    //Delegate method implementation
+    func showPaymentCostScreen() {
+        paymentDetailVC?.view.removeFromSuperview()
+        let PaymentCostVC = PaymentCostController(nibName: "PaymentCostController", bundle: nil)
+        self.navigationController?.pushViewController(PaymentCostVC, animated: true)
     }
+    func showSubscriptionDetailScreen() {
+        
+    }
+    func showPaymentScreen(){
+        paymentDetailVC = PaymentDetailViewController(nibName: "PaymentDetailViewController", bundle: nil)
+        paymentDetailVC?.view.frame = self.view.bounds
+        paymentDetailVC?.delegatePayementForParent = self
+        self.view.addSubview(paymentDetailVC?.view ?? UIView())
+    }
+    
+    func appstoreRateAndReview() {
+    }
+    
+    func shareApp() {
+        
+    }
+
 }

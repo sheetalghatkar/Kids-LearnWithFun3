@@ -3,13 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4F04FA5425D52E280090F03E /* UIImageviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F04FA5325D52E280090F03E /* UIImageviewExtension.swift */; };
-		4F1BFAF325CA67CB00124D22 /* PaymentCostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */; };
-		4F1BFAF425CA67CB00124D22 /* PaymentCostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1BFAF225CA67CB00124D22 /* PaymentCostController.xib */; };
 		4F1BFB1725CB155900124D22 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB0825CB155900124D22 /* SKProduct+LocalizedPrice.swift */; };
 		4F1BFB1825CB155900124D22 /* InAppProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB0925CB155900124D22 /* InAppProductQueryRequest.swift */; };
 		4F1BFB1925CB155900124D22 /* InAppReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB0A25CB155900124D22 /* InAppReceiptRefreshRequest.swift */; };
@@ -26,7 +24,6 @@
 		4F1BFB2425CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB1525CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift */; };
 		4F1BFB2525CB155900124D22 /* AppleReceiptValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BFB1625CB155900124D22 /* AppleReceiptValidator.swift */; };
 		4F2BF55625D39B8E006B0D67 /* Loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4F2BF55525D39B8E006B0D67 /* Loading.gif */; };
-		4F316E6D25D423C30017E008 /* libKidozSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F316E6C25D423C30017E008 /* libKidozSDK.a */; };
 		4F3C08F425C92175006667B3 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08EE25C92175006667B3 /* FloatyManager.swift */; };
 		4F3C08F525C92175006667B3 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08EF25C92175006667B3 /* FloatyViewController.swift */; };
 		4F3C08F625C92175006667B3 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C08F025C92175006667B3 /* FloatyDelegate.swift */; };
@@ -70,6 +67,23 @@
 		4F45791D25C713220075A9F9 /* Custard Apple_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790C25C713220075A9F9 /* Custard Apple_Question.mp3 */; };
 		4F45791E25C713220075A9F9 /* Kiwi_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790D25C713220075A9F9 /* Kiwi_Question.mp3 */; };
 		4F45791F25C713220075A9F9 /* Muskmelon_Question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F45790E25C713220075A9F9 /* Muskmelon_Question.mp3 */; };
+		4F6BAD3D25E3B14200C39F55 /* SubscriptionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3725E3B14100C39F55 /* SubscriptionDetailsController.swift */; };
+		4F6BAD3E25E3B14200C39F55 /* PaymentCostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3825E3B14100C39F55 /* PaymentCostController.swift */; };
+		4F6BAD3F25E3B14200C39F55 /* CustomLiceneModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3925E3B14100C39F55 /* CustomLiceneModelController.swift */; };
+		4F6BAD4025E3B14200C39F55 /* CustomLiceneModelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3A25E3B14100C39F55 /* CustomLiceneModelController.xib */; };
+		4F6BAD4125E3B14200C39F55 /* PaymentCostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3B25E3B14100C39F55 /* PaymentCostController.xib */; };
+		4F6BAD4225E3B14200C39F55 /* SubscriptionDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD3C25E3B14200C39F55 /* SubscriptionDetailsController.xib */; };
+		4F6BAD5525E3C5A200C39F55 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD4A25E3C5A200C39F55 /* nanopb.xcframework */; };
+		4F6BAD5625E3C5A200C39F55 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD4B25E3C5A200C39F55 /* GoogleAppMeasurement.framework */; };
+		4F6BAD5725E3C5A200C39F55 /* Promises-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD4D25E3C5A200C39F55 /* Promises-LICENSE */; };
+		4F6BAD5825E3C5A200C39F55 /* NanoPB-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD4E25E3C5A200C39F55 /* NanoPB-LICENSE */; };
+		4F6BAD5925E3C5A200C39F55 /* OpenMeasurement-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD4F25E3C5A200C39F55 /* OpenMeasurement-LICENSE */; };
+		4F6BAD5A25E3C5A200C39F55 /* GoogleUtilities-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD5025E3C5A200C39F55 /* GoogleUtilities-LICENSE */; };
+		4F6BAD5B25E3C5A200C39F55 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD5125E3C5A200C39F55 /* PromisesObjC.xcframework */; };
+		4F6BAD5C25E3C5A200C39F55 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD5225E3C5A200C39F55 /* UserMessagingPlatform.xcframework */; };
+		4F6BAD5D25E3C5A200C39F55 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD5325E3C5A200C39F55 /* GoogleMobileAds.xcframework */; };
+		4F6BAD5E25E3C5A200C39F55 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6BAD5425E3C5A200C39F55 /* GoogleUtilities.xcframework */; };
+		4F6BAD6625E3EB8300C39F55 /* ClockBgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F6BAD6525E3EB8300C39F55 /* ClockBgMusic.mp3 */; };
 		4F8761D725C7AC3500F3A610 /* Cabbage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8761C225C7AC3500F3A610 /* Cabbage.mp3 */; };
 		4F8761D825C7AC3500F3A610 /* Beetroot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8761C325C7AC3500F3A610 /* Beetroot.mp3 */; };
 		4F8761D925C7AC3500F3A610 /* Spinach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8761C425C7AC3500F3A610 /* Spinach.mp3 */; };
@@ -291,10 +305,6 @@
 
 /* Begin PBXFileReference section */
 		4F04FA5325D52E280090F03E /* UIImageviewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageviewExtension.swift; sourceTree = "<group>"; };
-		4F18116725D13E5500647696 /* KidozSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidozSDK.h; sourceTree = "<group>"; };
-		4F18116825D13E5500647696 /* Learn Natural Food-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Learn Natural Food-Bridging-Header.h"; sourceTree = "<group>"; };
-		4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCostController.swift; sourceTree = "<group>"; };
-		4F1BFAF225CA67CB00124D22 /* PaymentCostController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCostController.xib; sourceTree = "<group>"; };
 		4F1BFB0825CB155900124D22 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		4F1BFB0925CB155900124D22 /* InAppProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppProductQueryRequest.swift; sourceTree = "<group>"; };
 		4F1BFB0A25CB155900124D22 /* InAppReceiptRefreshRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppReceiptRefreshRequest.swift; sourceTree = "<group>"; };
@@ -311,7 +321,6 @@
 		4F1BFB1525CB155900124D22 /* SKProductDiscount+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProductDiscount+LocalizedPrice.swift"; sourceTree = "<group>"; };
 		4F1BFB1625CB155900124D22 /* AppleReceiptValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleReceiptValidator.swift; sourceTree = "<group>"; };
 		4F2BF55525D39B8E006B0D67 /* Loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Loading.gif; sourceTree = "<group>"; };
-		4F316E6C25D423C30017E008 /* libKidozSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKidozSDK.a; sourceTree = "<group>"; };
 		4F3C08EE25C92175006667B3 /* FloatyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyManager.swift; sourceTree = "<group>"; };
 		4F3C08EF25C92175006667B3 /* FloatyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyViewController.swift; sourceTree = "<group>"; };
 		4F3C08F025C92175006667B3 /* FloatyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyDelegate.swift; sourceTree = "<group>"; };
@@ -355,6 +364,23 @@
 		4F45790C25C713220075A9F9 /* Custard Apple_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Custard Apple_Question.mp3"; sourceTree = "<group>"; };
 		4F45790D25C713220075A9F9 /* Kiwi_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kiwi_Question.mp3; sourceTree = "<group>"; };
 		4F45790E25C713220075A9F9 /* Muskmelon_Question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Muskmelon_Question.mp3; sourceTree = "<group>"; };
+		4F6BAD3725E3B14100C39F55 /* SubscriptionDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailsController.swift; sourceTree = "<group>"; };
+		4F6BAD3825E3B14100C39F55 /* PaymentCostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCostController.swift; sourceTree = "<group>"; };
+		4F6BAD3925E3B14100C39F55 /* CustomLiceneModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLiceneModelController.swift; sourceTree = "<group>"; };
+		4F6BAD3A25E3B14100C39F55 /* CustomLiceneModelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLiceneModelController.xib; sourceTree = "<group>"; };
+		4F6BAD3B25E3B14100C39F55 /* PaymentCostController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCostController.xib; sourceTree = "<group>"; };
+		4F6BAD3C25E3B14200C39F55 /* SubscriptionDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubscriptionDetailsController.xib; sourceTree = "<group>"; };
+		4F6BAD4A25E3C5A200C39F55 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = nanopb.xcframework; sourceTree = "<group>"; };
+		4F6BAD4B25E3C5A200C39F55 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		4F6BAD4D25E3C5A200C39F55 /* Promises-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Promises-LICENSE"; sourceTree = "<group>"; };
+		4F6BAD4E25E3C5A200C39F55 /* NanoPB-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NanoPB-LICENSE"; sourceTree = "<group>"; };
+		4F6BAD4F25E3C5A200C39F55 /* OpenMeasurement-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenMeasurement-LICENSE"; sourceTree = "<group>"; };
+		4F6BAD5025E3C5A200C39F55 /* GoogleUtilities-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GoogleUtilities-LICENSE"; sourceTree = "<group>"; };
+		4F6BAD5125E3C5A200C39F55 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PromisesObjC.xcframework; sourceTree = "<group>"; };
+		4F6BAD5225E3C5A200C39F55 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		4F6BAD5325E3C5A200C39F55 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		4F6BAD5425E3C5A200C39F55 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		4F6BAD6525E3EB8300C39F55 /* ClockBgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClockBgMusic.mp3; sourceTree = "<group>"; };
 		4F8761C225C7AC3500F3A610 /* Cabbage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cabbage.mp3; sourceTree = "<group>"; };
 		4F8761C325C7AC3500F3A610 /* Beetroot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beetroot.mp3; sourceTree = "<group>"; };
 		4F8761C425C7AC3500F3A610 /* Spinach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spinach.mp3; sourceTree = "<group>"; };
@@ -568,7 +594,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F316E6D25D423C30017E008 /* libKidozSDK.a in Frameworks */,
+				4F6BAD5B25E3C5A200C39F55 /* PromisesObjC.xcframework in Frameworks */,
+				4F6BAD5D25E3C5A200C39F55 /* GoogleMobileAds.xcframework in Frameworks */,
+				4F6BAD5625E3C5A200C39F55 /* GoogleAppMeasurement.framework in Frameworks */,
+				4F6BAD5C25E3C5A200C39F55 /* UserMessagingPlatform.xcframework in Frameworks */,
+				4F6BAD5525E3C5A200C39F55 /* nanopb.xcframework in Frameworks */,
+				4F6BAD5E25E3C5A200C39F55 /* GoogleUtilities.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,16 +620,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F18116525D13E4900647696 /* Kidoz */ = {
-			isa = PBXGroup;
-			children = (
-				4F316E6C25D423C30017E008 /* libKidozSDK.a */,
-				4F18116725D13E5500647696 /* KidozSDK.h */,
-				4F18116825D13E5500647696 /* Learn Natural Food-Bridging-Header.h */,
-			);
-			path = Kidoz;
-			sourceTree = "<group>";
-		};
 		4F1BFB0725CB155900124D22 /* SwiftyStoreKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,9 +694,13 @@
 		4F3C08FD25C92544006667B3 /* PaymentDetails */ = {
 			isa = PBXGroup;
 			children = (
-				4F1BFAF125CA67CB00124D22 /* PaymentCostController.swift */,
-				4F1BFAF225CA67CB00124D22 /* PaymentCostController.xib */,
 				4F3C08FF25C925B9006667B3 /* PaymentDetailViewController.swift */,
+				4F6BAD3925E3B14100C39F55 /* CustomLiceneModelController.swift */,
+				4F6BAD3A25E3B14100C39F55 /* CustomLiceneModelController.xib */,
+				4F6BAD3825E3B14100C39F55 /* PaymentCostController.swift */,
+				4F6BAD3B25E3B14100C39F55 /* PaymentCostController.xib */,
+				4F6BAD3725E3B14100C39F55 /* SubscriptionDetailsController.swift */,
+				4F6BAD3C25E3B14200C39F55 /* SubscriptionDetailsController.xib */,
 				4F3C08FE25C925B9006667B3 /* PaymentDetailViewController.xib */,
 			);
 			path = PaymentDetails;
@@ -727,6 +752,31 @@
 				4F45790825C713220075A9F9 /* Watermelon_Question.mp3 */,
 			);
 			path = Fruits_Question;
+			sourceTree = "<group>";
+		};
+		4F6BAD4925E3C5A200C39F55 /* GoogleMobileAdsSdkiOS-7.69.0 */ = {
+			isa = PBXGroup;
+			children = (
+				4F6BAD4A25E3C5A200C39F55 /* nanopb.xcframework */,
+				4F6BAD4B25E3C5A200C39F55 /* GoogleAppMeasurement.framework */,
+				4F6BAD4C25E3C5A200C39F55 /* Licenses */,
+				4F6BAD5125E3C5A200C39F55 /* PromisesObjC.xcframework */,
+				4F6BAD5225E3C5A200C39F55 /* UserMessagingPlatform.xcframework */,
+				4F6BAD5325E3C5A200C39F55 /* GoogleMobileAds.xcframework */,
+				4F6BAD5425E3C5A200C39F55 /* GoogleUtilities.xcframework */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.69.0";
+			sourceTree = "<group>";
+		};
+		4F6BAD4C25E3C5A200C39F55 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				4F6BAD4D25E3C5A200C39F55 /* Promises-LICENSE */,
+				4F6BAD4E25E3C5A200C39F55 /* NanoPB-LICENSE */,
+				4F6BAD4F25E3C5A200C39F55 /* OpenMeasurement-LICENSE */,
+				4F6BAD5025E3C5A200C39F55 /* GoogleUtilities-LICENSE */,
+			);
+			path = Licenses;
 			sourceTree = "<group>";
 		};
 		4F8761C125C7AC3500F3A610 /* Vegetables_Name */ = {
@@ -885,6 +935,7 @@
 		700D416C249E980A00AA3D1C /* SoundFile */ = {
 			isa = PBXGroup;
 			children = (
+				4F6BAD6525E3EB8300C39F55 /* ClockBgMusic.mp3 */,
 				4F3ADFB425C5E39000F5B8D6 /* SpicesSound */,
 				4F3ADFB125C5E38900F5B8D6 /* VegetablesSound */,
 				4F3ADFA025C5E35300F5B8D6 /* FruitsSound */,
@@ -1059,8 +1110,8 @@
 		70FF09352496450E002861AE /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				4F6BAD4925E3C5A200C39F55 /* GoogleMobileAdsSdkiOS-7.69.0 */,
 				4F2BF55525D39B8E006B0D67 /* Loading.gif */,
-				4F18116525D13E4900647696 /* Kidoz */,
 				4F1BFB0725CB155900124D22 /* SwiftyStoreKit */,
 				4F3C08EA25C92166006667B3 /* Floaty */,
 				7027932924CCAED700A863FB /* BackgroundMusic.mp3 */,
@@ -1201,6 +1252,7 @@
 				4F87628D25C803F300F3A610 /* Mustard Seeds.mp3 in Resources */,
 				70EC9B8824C72086009F8B8E /* Gate_Question.mp3 in Resources */,
 				4F87625F25C7FE7600F3A610 /* White Chickpeas_Question.mp3 in Resources */,
+				4F6BAD5925E3C5A200C39F55 /* OpenMeasurement-LICENSE in Resources */,
 				4F87629D25C803F300F3A610 /* Cardamom_Question.mp3 in Resources */,
 				4F45791A25C713220075A9F9 /* Guava_Question.mp3 in Resources */,
 				70EC9B8024C72086009F8B8E /* Wardrobe_Question.mp3 in Resources */,
@@ -1230,6 +1282,7 @@
 				4F4578EE25C70C4B0075A9F9 /* Watermelon.mp3 in Resources */,
 				4F87628B25C803F300F3A610 /* Black Pepper.mp3 in Resources */,
 				4F4578FA25C70C4B0075A9F9 /* Guava.mp3 in Resources */,
+				4F6BAD4225E3B14200C39F55 /* SubscriptionDetailsController.xib in Resources */,
 				4F87621325C7F3BD00F3A610 /* Ginger_Question.mp3 in Resources */,
 				4F45791325C713220075A9F9 /* Jackfruit_Question.mp3 in Resources */,
 				4F87620625C7F3BD00F3A610 /* Spring Onion_Question.mp3 in Resources */,
@@ -1246,6 +1299,7 @@
 				4F87629625C803F300F3A610 /* Asafoetida.mp3 in Resources */,
 				70FF091224962DB5002861AE /* LaunchScreen.storyboard in Resources */,
 				7017AA0324BB410100C46A97 /* Sofa.mp3 in Resources */,
+				4F6BAD5725E3C5A200C39F55 /* Promises-LICENSE in Resources */,
 				70F9024624AFAF5C00A3AA12 /* Wrong.mp3 in Resources */,
 				4F8761E925C7AC3500F3A610 /* Potato.mp3 in Resources */,
 				70DBD6CE24FE4230000AAA10 /* Brinjal.gif in Resources */,
@@ -1283,11 +1337,13 @@
 				4F87625325C7FE7600F3A610 /* Bengal Gram Lentil_Question.mp3 in Resources */,
 				4F8761D925C7AC3500F3A610 /* Spinach.mp3 in Resources */,
 				4F8761E825C7AC3500F3A610 /* Fenugreek Leaves.mp3 in Resources */,
+				4F6BAD4125E3B14200C39F55 /* PaymentCostController.xib in Resources */,
 				4F8761DF25C7AC3500F3A610 /* Brinjal.mp3 in Resources */,
 				70F9023D24AF88A500A3AA12 /* No.mp3 in Resources */,
 				7017AA0624BB410100C46A97 /* Gate.mp3 in Resources */,
 				4F87624425C7FE7600F3A610 /* White Chickpeas.mp3 in Resources */,
 				4F8761DB25C7AC3500F3A610 /* Cucumber.mp3 in Resources */,
+				4F6BAD5825E3C5A200C39F55 /* NanoPB-LICENSE in Resources */,
 				4F4578EF25C70C4B0075A9F9 /* Orange.mp3 in Resources */,
 				4F45791525C713220075A9F9 /* Banana_Question.mp3 in Resources */,
 				70EC9B8124C72086009F8B8E /* House_Question.mp3 in Resources */,
@@ -1297,6 +1353,7 @@
 				7017AA0024BB410100C46A97 /* Fan.mp3 in Resources */,
 				700CDCD024CB5E88004C8615 /* Air Cooler_Question.mp3 in Resources */,
 				4F4578F025C70C4B0075A9F9 /* Jackfruit.mp3 in Resources */,
+				4F6BAD4025E3B14200C39F55 /* CustomLiceneModelController.xib in Resources */,
 				4F8762A325C803F300F3A610 /* Carom Seeds_Question.mp3 in Resources */,
 				4F8761E125C7AC3500F3A610 /* Garlic.mp3 in Resources */,
 				4F4578F825C70C4B0075A9F9 /* Strawberry.mp3 in Resources */,
@@ -1335,6 +1392,7 @@
 				4F4578F225C70C4B0075A9F9 /* Banana.mp3 in Resources */,
 				70EC9B8624C72086009F8B8E /* Air Conditioner_Question.mp3 in Resources */,
 				4F87621725C7F3BD00F3A610 /* Fenugreek Leaves_Question.mp3 in Resources */,
+				4F6BAD6625E3EB8300C39F55 /* ClockBgMusic.mp3 in Resources */,
 				4F87624F25C7FE7600F3A610 /* Bengal Gram Lentil.mp3 in Resources */,
 				4F3C090C25C99EF9006667B3 /* QA.gif in Resources */,
 				4F87624825C7FE7600F3A610 /* Rice.mp3 in Resources */,
@@ -1365,7 +1423,6 @@
 				7017A9FA24BB410100C46A97 /* Ladder.mp3 in Resources */,
 				4F87625525C7FE7600F3A610 /* Sorghum Millet_Question.mp3 in Resources */,
 				4F45791825C713220075A9F9 /* Pear_Question.mp3 in Resources */,
-				4F1BFAF425CA67CB00124D22 /* PaymentCostController.xib in Resources */,
 				4F8761DA25C7AC3500F3A610 /* Green Peas.mp3 in Resources */,
 				7017A9FF24BB410100C46A97 /* Door.mp3 in Resources */,
 				4F8761EA25C7AC3500F3A610 /* Curry Leaves.mp3 in Resources */,
@@ -1382,6 +1439,7 @@
 				70F9024224AF88AE00A3AA12 /* Excellent.mp3 in Resources */,
 				4F87624325C7FE7600F3A610 /* Sorghum Millet.mp3 in Resources */,
 				4F8761E425C7AC3500F3A610 /* Carrot.mp3 in Resources */,
+				4F6BAD5A25E3C5A200C39F55 /* GoogleUtilities-LICENSE in Resources */,
 				4F4578F325C70C4B0075A9F9 /* Muskmelon.mp3 in Resources */,
 				4F87626025C7FE7600F3A610 /* Mung Beans_Question.mp3 in Resources */,
 				70EC9B8924C72086009F8B8E /* Window_Question.mp3 in Resources */,
@@ -1444,6 +1502,7 @@
 				707ECA22249CB3E10024D06C /* UIViewExtension.swift in Sources */,
 				4F1BFB1725CB155900124D22 /* SKProduct+LocalizedPrice.swift in Sources */,
 				70FF093724965879002861AE /* GIFSwift.swift in Sources */,
+				4F6BAD3D25E3B14200C39F55 /* SubscriptionDetailsController.swift in Sources */,
 				4F1BFB1925CB155900124D22 /* InAppReceiptRefreshRequest.swift in Sources */,
 				4F1BFB1E25CB155900124D22 /* CompleteTransactionsController.swift in Sources */,
 				70FF090A24962D9B002861AE /* HomeViewController.swift in Sources */,
@@ -1457,8 +1516,10 @@
 				4F1BFB1A25CB155900124D22 /* SwiftyStoreKit+Types.swift in Sources */,
 				70631FEB249776AB00DAE930 /* ImagesCollectionViewController.swift in Sources */,
 				70631FF32497F11B00DAE930 /* PictureCollectionCell.swift in Sources */,
+				4F6BAD3E25E3B14200C39F55 /* PaymentCostController.swift in Sources */,
 				4F1BFB1825CB155900124D22 /* InAppProductQueryRequest.swift in Sources */,
 				4F3C08F525C92175006667B3 /* FloatyViewController.swift in Sources */,
+				4F6BAD3F25E3B14200C39F55 /* CustomLiceneModelController.swift in Sources */,
 				4F1BFB2325CB155900124D22 /* InAppReceiptVerificator.swift in Sources */,
 				4F1BFB1B25CB155900124D22 /* InAppReceipt.swift in Sources */,
 				701EF78124A294C5006C0A36 /* UIExtension.swift in Sources */,
@@ -1468,7 +1529,6 @@
 				4F1BFB1F25CB155900124D22 /* PaymentsController.swift in Sources */,
 				4F1BFB2525CB155900124D22 /* AppleReceiptValidator.swift in Sources */,
 				70270FDB24A369A900EB8DAB /* TestViewController.swift in Sources */,
-				4F1BFAF325CA67CB00124D22 /* PaymentCostController.swift in Sources */,
 				4F1BFB2225CB155900124D22 /* PaymentQueueController.swift in Sources */,
 				7068EFD424AB5DCE00B448C3 /* TestSolveCollectionCell.swift in Sources */,
 				4F3C08F425C92175006667B3 /* FloatyManager.swift in Sources */,
@@ -1652,14 +1712,15 @@
 			buildSettings = {
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
 				);
 				INFOPLIST_FILE = "Kids-LearnWithFun3/Info.plist";
@@ -1673,12 +1734,12 @@
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1688,13 +1749,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
 				);
 				INFOPLIST_FILE = "Kids-LearnWithFun3/Info.plist";
@@ -1708,12 +1770,12 @@
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sheetalghatkar/Documents/Game 3/Kids-LearnWithFun3/Kids-LearnWithFun3/Third Party/Kidoz/Learn Natural Food-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -9,14 +9,13 @@
 import UIKit
 import StoreKit
 //import SwiftyStoreKit
-class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaymentTransactionObserver {
-    //CustomLiceneProtocol
+class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaymentTransactionObserver,CustomLiceneProtocol {
+    
     @IBOutlet weak var lblCostTitle: UILabel!
     @IBOutlet weak var btnRestore: UIButton!
     @IBOutlet weak var lblAlredyPurchased: UILabel!
     @IBOutlet weak var  widthHome: NSLayoutConstraint!
-    @IBOutlet weak var btnHome: UIButton!
-    @IBOutlet weak var heightHomeBtn: NSLayoutConstraint!
+
     //----------------------------------------
     //New
     @IBOutlet weak var viewBgYearly: UIView!
@@ -25,23 +24,32 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
     @IBOutlet weak var viewMonthly: UIView!
 
     
-    @IBOutlet weak var lblOneTimeTitle: UILabel!
-    @IBOutlet weak var lblOneTimePayment: UILabel!
-    @IBOutlet weak var lblOneTimePaymentPrice: UILabel!
-    @IBOutlet weak var btnBuy: UIButton!
-    @IBOutlet weak var bottomBgScreen: NSLayoutConstraint!
+    @IBOutlet weak var lblYearlyTitle: UILabel!
+    @IBOutlet weak var lblYearlyRecurring: UILabel!
+    @IBOutlet weak var lblYearlyPriceRecurring: UILabel!
+    @IBOutlet weak var lblYearlyNonRecurring: UILabel!
+    @IBOutlet weak var lblYearlyNonPriceRecurring: UILabel!
+    @IBOutlet weak var btnRadioRecurringYearly: UIButton!
+    @IBOutlet weak var btnRadioNonRecurringYearly: UIButton!
 
+    @IBOutlet weak var lblMonthlyTitle: UILabel!
+    @IBOutlet weak var lblMonthlyRecurring: UILabel!
+    @IBOutlet weak var lblMonthlyPriceRecurring: UILabel!
+    @IBOutlet weak var lblMonthlyNonRecurring: UILabel!
+    @IBOutlet weak var lblMonthlyPriceNonRecurring: UILabel!
+    @IBOutlet weak var btnMonthlyPayment: UIButton!
+    @IBOutlet weak var btnRadioRecurringMonthly: UIButton!
+    @IBOutlet weak var btnRadioNonRecurringMonthly: UIButton!
     
     @IBOutlet weak var lblPrivacyPolicy: UILabel!
 
-//    var licenseAgreementVC : CustomLiceneModelController?
+    var licenseAgreementVC : CustomLiceneModelController?
 
     @IBOutlet weak var viewTrasperentDisabled: UIView!
 
-   // var product_id = "com.mobiapps360.LearnNature.YearlyAutoRenew"
-    var selectedProductId = CommanArray.productId_OneTime
+    var selectedProductId = CommanArray.productId_Year_Auto_Recurring
     var isAutoRenewPurchase = true
-    var selectedSubscriptionPrice = CommanArray.productId_OneTime_Price
+    var selectedSubscriptionPrice = "$3.99"
 
     let defaults = UserDefaults.standard
     
@@ -50,6 +58,8 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
     //0 Not purchased
     //1 Purchased
     //2 Error Occurred
+
+    var product_ids = [CommanArray.productId_Year_Auto_Recurring,CommanArray.productId_Year_Non_Recurring,CommanArray.productId_Month_Auto_Recurring,CommanArray.productId_Month_Non_Recurring]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,113 +72,242 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
         textBuyOneTime.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 20, weight: .bold),range: NSRange(location: 16, length: (textBuyOneTime.length - 16)))
         btnBuyOneTime.setAttributedTitle(textBuyOneTime, for: .normal)*/
                 
-        btnRestore.setTitleColor(CommanArray.redBorderColor, for: .normal)
+        btnRestore.setTitleColor(CommanArray.paymentBtnTextColor, for: .normal)
         
         //Views
-        viewBgYearly.backgroundColor = CommanArray.greenBgColor
-        viewBgYearly.layer.borderColor = CommanArray.redBorderColor.cgColor
-
+        viewBgYearly.backgroundColor = CommanArray.paymentModeBgColor
         
         //Buttons
-        btnBuy.setTitle("Buy", for: .normal)
+        btnMonthlyPayment.setTitle("Buy", for: .normal)
         
-        btnBuy.setTitleColor(CommanArray.redBorderColor, for: .normal)
+        btnMonthlyPayment.setTitleColor(CommanArray.paymentBtnTextColor, for: .normal)
         
         //Label
-        lblOneTimeTitle.text = "One-Time Deal"
-        lblOneTimePayment.text = "One Time Payment"
-        lblOneTimePaymentPrice.text = "$3.99"
+        lblYearlyTitle.text = "Yearly Subscription"
+        lblYearlyRecurring.text = "Recurring Payment"
+        lblYearlyPriceRecurring.text = "$3.99"
+        lblYearlyNonRecurring.text = "Non-Recurring Payment"
+        lblYearlyNonPriceRecurring.text = "$5.99"
+        
+        lblMonthlyTitle.text = "Monthly Subscription"
+        lblMonthlyRecurring.text = "Recurring Payment "
+        lblMonthlyPriceRecurring.text = "$0.49"
+        lblMonthlyNonRecurring.text = "Non-Recurring Payment"
+        lblMonthlyPriceNonRecurring.text = "$0.99"
+        
+//        self.viewBgYearly.layer.shadowColor = UIColor.white.cgColor
+//        self.viewBgYearly.layer.borderWidth = 2.5
+        
+//        self.viewBgMonthly.layer.shadowColor = UIColor.black.cgColor
+//        self.viewBgMonthly.layer.borderWidth = 1.5
         
         if !(UIDevice.current.hasNotch) {
             widthHome.constant = 40
         }
+        viewTrasperentDisabled.isHidden = false
+        licenseAgreementVC = CustomLiceneModelController(nibName: "CustomLiceneModelController", bundle: nil)
+        licenseAgreementVC?.delegateCustomLicene = self
+        self.view.addSubview(licenseAgreementVC?.view ?? UIView())
         
-        btnRestore.layer.borderColor = CommanArray.redBorderColor.cgColor
-        btnBuy.layer.borderColor = CommanArray.redBorderColor.cgColor
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.privacyLinkClicked(sender:)))
+//        lblPrivacyPolicy.isUserInteractionEnabled = true
+//        lblPrivacyPolicy.addGestureRecognizer(tap)
+        
+        lblCostTitle.textColor = CommanArray.paymentBtnTextColor
+        lblAlredyPurchased.textColor = CommanArray.paymentBtnTextColor
 
-//        viewTrasperentDisabled.isHidden = false
-//        licenseAgreementVC = CustomLiceneModelController(nibName: "CustomLiceneModelController", bundle: nil)
-//        licenseAgreementVC?.delegateCustomLicene = self
-//        self.view.addSubview(licenseAgreementVC?.view ?? UIView())
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.privacyLinkClicked(sender:)))
-        lblPrivacyPolicy.isUserInteractionEnabled = true
-        lblPrivacyPolicy.addGestureRecognizer(tap)
-        
-        if UIScreen.main.bounds.height < 820 {
-            heightHomeBtn.constant = 42
+    }
+    
+    func removeViewFromApp() {
+        viewTrasperentDisabled.isHidden = true
+        licenseAgreementVC?.view.removeFromSuperview()
+    }
+
+    @IBAction func funcRadioRecurringYearlyClick(_ sender: Any) {
+        if btnRadioRecurringYearly.currentImage!.pngData() == (CommanArray.imageRadioUncheck!).pngData() {
+            btnRadioRecurringYearly.setImage(CommanArray.imageRadioCheck, for: .normal)
+            btnRadioNonRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioNonRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            selectedProductId = CommanArray.productId_Year_Auto_Recurring
+            selectedSubscriptionPrice = "$3.99"
+            isAutoRenewPurchase = true
         }
-        if UIScreen.main.bounds.height == 844 {
-            bottomBgScreen.constant = -20
+    }
+    @IBAction func funcRadioNonRecurringYearlyClick(_ sender: Any) {
+        if btnRadioNonRecurringYearly.currentImage!.pngData() == (CommanArray.imageRadioUncheck!).pngData() {
+            btnRadioNonRecurringYearly.setImage(CommanArray.imageRadioCheck, for: .normal)
+            btnRadioRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioNonRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            selectedProductId = CommanArray.productId_Year_Non_Recurring
+            selectedSubscriptionPrice = "$5.99"
+            isAutoRenewPurchase = false
         }
     }
     
-//    func removeViewFromApp() {
-//        viewTrasperentDisabled.isHidden = true
-//        licenseAgreementVC?.view.removeFromSuperview()
-//    }
-
+    @IBAction func funcRadioRecurringMonthlyClick(_ sender: Any) {
+        if btnRadioRecurringMonthly.currentImage!.pngData() == (CommanArray.imageRadioUncheck!).pngData() {
+            btnRadioRecurringMonthly.setImage(CommanArray.imageRadioCheck, for: .normal)
+            btnRadioNonRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioNonRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            selectedProductId = CommanArray.productId_Month_Auto_Recurring
+            selectedSubscriptionPrice = "$0.49"
+            isAutoRenewPurchase = true
+        }
+    }
+    @IBAction func funcRadioNonRecurringMonthlyClick(_ sender: Any) {
+        if btnRadioNonRecurringMonthly.currentImage!.pngData() == (CommanArray.imageRadioUncheck!).pngData() {
+            btnRadioNonRecurringMonthly.setImage(CommanArray.imageRadioCheck, for: .normal)
+            btnRadioRecurringMonthly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            btnRadioNonRecurringYearly.setImage(CommanArray.imageRadioUncheck, for: .normal)
+            selectedProductId = CommanArray.productId_Month_Non_Recurring
+            selectedSubscriptionPrice = "$0.99"
+            isAutoRenewPurchase = false
+        }
+    }
     @IBAction func funcHomeBtnClick(_ sender: Any) {
        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func funcPaymentBtnClick(_ sender: Any) {
-        buyConsumable()
+        self.viewTrasperentDisabled.isHidden = false
+        if Reachability.isConnectedToNetwork() {
+            buyConsumable()
+        } else {
+          let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+          // add an action (button)
+          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+              self.viewTrasperentDisabled.isHidden = true
+          }))
+          self.present(alert, animated: true, completion: nil)
+      }
     }
     
     @IBAction func funcRestoreBtnClick(_ sender: Any) {
-      print("Restore clicked.")
-      if Reachability.isConnectedToNetwork() {
         self.viewTrasperentDisabled.isHidden = false
-        let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: CommanArray.secretKey)
-        SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
-            switch result {
-            case .success(let receipt):
-                let productId = CommanArray.productId_OneTime
-                let purchaseResult = SwiftyStoreKit.verifyPurchase(
-                    productId: productId,
-                    inReceipt: receipt)
-                    
-                switch purchaseResult {
-                case .purchased(let receiptItem):
-                    print("\(productId) is purchased: \(receiptItem)")
-                    self.defaults.set(true, forKey: "IsPrimeUser")
+        if Reachability.isConnectedToNetwork() {
+            print("Restore clicked.")
+            let appleValidator = AppleReceiptValidator(service: CommanArray.environment, sharedSecret: CommanArray.secretKey)
+            let iCount = 0
+            SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
+                switch result {
+                case .success(let receipt):
+                    self.getPurchaseResult(getProductCount: iCount, getReceipt: receipt)
+                case .error(let error):
+                    print("Receipt verification failed: \(error)")
                     self.viewTrasperentDisabled.isHidden = true
-                    let alert = UIAlertController(title: "", message: "Product restored successfully.", preferredStyle: UIAlertController.Style.alert)
-                    // add an action (button)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                        self.navigationController?.popViewController(animated: true)
-                    }))
-                    self.present(alert, animated: true, completion: nil)
-                case .notPurchased:
-                    print("The user has never purchased \(productId)")
-                    self.viewTrasperentDisabled.isHidden = true
-                    self.defaults.set(false, forKey: "IsPrimeUser")
-                    let alert = UIAlertController(title: "", message: "No active subscription found.", preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: "Something went wrong. Please try after some time.", message: "\(error)", preferredStyle: UIAlertController.Style.alert)
                     // add an action (button)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
                     }))
                     self.present(alert, animated: true, completion: nil)
-
                 }
-            case .error(let error):
-                print("Receipt verification failed: \(error)")
+            }
+        } else {
+          let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+          // add an action (button)
+          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+              self.viewTrasperentDisabled.isHidden = true
+          }))
+          self.present(alert, animated: true, completion: nil)
+      }
+    }
+    
+    func getPurchaseResult(getProductCount : Int, getReceipt: ReceiptInfo) {
+        let getProductId = self.product_ids[getProductCount]
+        var subscriptionType = SubscriptionType.autoRenewable
+
+        // Verify the purchase of a Subscription
+        if (getProductId == CommanArray.productId_Month_Non_Recurring) {
+            subscriptionType = SubscriptionType.nonRenewing(validDuration: 3600 * 24 * 30)
+        
+        } else if (getProductId == CommanArray.productId_Year_Non_Recurring) {
+            subscriptionType = SubscriptionType.nonRenewing(validDuration: 3600 * 24 * 365)
+        }
+            
+        let purchaseResult = SwiftyStoreKit.verifySubscription(
+            ofType: subscriptionType, // or .nonRenewing (see below)
+            productId: getProductId,
+            inReceipt: getReceipt)
+            
+        switch purchaseResult {
+        case .purchased(let expiryDate, let items):
+            var getProductPrice = ""
+            if(getProductId == CommanArray.productId_Year_Auto_Recurring) {
+                getProductPrice = "$3.99"
+            } else if(getProductId == CommanArray.productId_Year_Non_Recurring) {
+                getProductPrice = "$5.99"
+            } else if(getProductId == CommanArray.productId_Month_Auto_Recurring) {
+                getProductPrice = "$0.49"
+            } else if(getProductId == CommanArray.productId_Month_Non_Recurring) {
+                getProductPrice = "$0.99"
+            }
+            let getReceiptItem = items[0] as ReceiptItem
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let pucrhaseDateString = formatter.string(from: getReceiptItem.purchaseDate as Date)
+            let originalPurchasedDateString = formatter.string(from: getReceiptItem.originalPurchaseDate as Date)
+            
+            var subscriptionExpirationDateString = ""
+            if getReceiptItem.subscriptionExpirationDate != nil {
+                subscriptionExpirationDateString = formatter.string(from: getReceiptItem.subscriptionExpirationDate! as Date)
+            }
+            var expirationDateString = ""
+            expirationDateString = formatter.string(from: expiryDate as Date)
+
+            var cancelDateString = ""
+            if getReceiptItem.cancellationDate != nil {
+                cancelDateString = formatter.string(from: getReceiptItem.cancellationDate! as Date)
+            }
+            let dictPurchaseDetail = [
+                "ProductId": getProductId,
+                //"iSAutoRenew": self.isAutoRenewPurchase,
+                "OriginalPurchasedDate": originalPurchasedDateString,
+                "PurchasedDate": pucrhaseDateString,
+                "ExpirationDate": expirationDateString,
+                "CancellationDate": cancelDateString,
+                "SubscriptionExpirationDate": subscriptionExpirationDateString,
+                "SubscriptionPrice":getProductPrice
+            ] as [String:Any]
+            self.defaults.set(dictPurchaseDetail, forKey: "PurchaseDetails")
+            self.defaults.set(true, forKey: "IsPrimeUser")
+            self.viewTrasperentDisabled.isHidden = true
+            let alert = UIAlertController(title: "", message: "Product restored successfully.", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                self.navigationController?.popViewController(animated: true)
+            }))
+            self.present(alert, animated: true, completion: nil)
+
+        case .expired(let expiryDate, let items):
+            print("\(getProductId) is expired since \(expiryDate)\n\(items)\n")
+            if getProductCount == 3 {
                 self.viewTrasperentDisabled.isHidden = true
-                let alert = UIAlertController(title: "", message: "Error occured. Error code Err01: \(error)", preferredStyle: UIAlertController.Style.alert)
+                self.defaults.set(false, forKey: "IsPrimeUser")
+                let alert = UIAlertController(title: "", message: "No active subscription found.", preferredStyle: UIAlertController.Style.alert)
                 // add an action (button)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
                 }))
                 self.present(alert, animated: true, completion: nil)
+            } else {
+                self.getPurchaseResult(getProductCount: getProductCount+1, getReceipt: getReceipt)
+            }
+        case .notPurchased:
+            print("The user has never purchased \(getProductId)")
+            if getProductCount == 3 {
+                self.viewTrasperentDisabled.isHidden = true
+                self.defaults.set(false, forKey: "IsPrimeUser")
+                let alert = UIAlertController(title: "", message: "No active subscription found.", preferredStyle: UIAlertController.Style.alert)
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                }))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                self.getPurchaseResult(getProductCount: getProductCount+1, getReceipt: getReceipt)
             }
         }
-      } else {
-        let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
-        // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-            self.viewTrasperentDisabled.isHidden = true
-        }))
-        self.present(alert, animated: true, completion: nil)
-
-    }
     }
 }
 
@@ -176,26 +315,14 @@ extension PaymentCostController {
     func buyConsumable(){
         print("About to fetch the products");
         // We check that we are allow to make the purchase.
-        if Reachability.isConnectedToNetwork() {
-            self.viewTrasperentDisabled.isHidden = false
-            if (SKPaymentQueue.canMakePayments())
-            {
-                let productsRequest = SKProductsRequest(productIdentifiers: Set(arrayLiteral: self.selectedProductId))
-                productsRequest.delegate = self
-                productsRequest.start()
-                print("Fething Products")
-            }else{
-                print("can't make purchases");
-            }
-        } else {
-
-            let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
-            // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                self.viewTrasperentDisabled.isHidden = true
-            }))
-            self.present(alert, animated: true, completion: nil)
-
+        if (SKPaymentQueue.canMakePayments())
+        {
+            let productsRequest = SKProductsRequest(productIdentifiers: Set(self.product_ids))
+            productsRequest.delegate = self
+            productsRequest.start()
+            print("Fething Products")
+        }else{
+            print("can't make purchases");
         }
     }
     
@@ -248,18 +375,14 @@ extension PaymentCostController {
                 case .purchased:
                     print("Product Purchased");
                     SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
-                    self.viewTrasperentDisabled.isHidden = true
-                    self.defaults.set(true, forKey: "IsPrimeUser")
-                    let alert = UIAlertController(title: "", message: "Payment transaction Successful.", preferredStyle: UIAlertController.Style.alert)
+                    self.verifyReciptOfPayment(getProductId: selectedProductId, getProductPrice: selectedSubscriptionPrice)
+                    let alert = UIAlertController(title: "", message: "Payment transaction Successful..", preferredStyle: UIAlertController.Style.alert)
                     // add an action (button)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                        self.navigationController?.popViewController(animated: true)
                     }))
-                    self.present(alert, animated: true, completion: nil)
                     break;
                 case .failed:
                     print("Purchased Failed");
-                    self.defaults.set(false, forKey: "IsPrimeUser")
                     SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
 //                    self.navigationController?.popViewController(animated: true)
                     let alert = UIAlertController(title: "", message: "Payment transaction failed. Please Try again.", preferredStyle: UIAlertController.Style.alert)
@@ -273,15 +396,7 @@ extension PaymentCostController {
                 case .restored:
                     print("Already Purchased")
                     //self.verifyReciptOfPayment()
-                    self.defaults.set(true, forKey: "IsPrimeUser")
                     SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
-                    let alert = UIAlertController(title: "", message: "Product restored successfully.", preferredStyle: UIAlertController.Style.alert)
-                    // add an action (button)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-                        self.navigationController?.popViewController(animated: true)
-                    }))
-                    self.present(alert, animated: true, completion: nil)
-
                     break;
                 default:
                     break;
@@ -292,19 +407,90 @@ extension PaymentCostController {
         
         
         }
+    func verifyReciptOfPayment(getProductId : String, getProductPrice : String) {
+            let appleValidator = AppleReceiptValidator(service: CommanArray.environment, sharedSecret: CommanArray.secretKey)
+            
+            SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
+                switch result {
+                case .success(let receipt):
+                    let productId = getProductId
+                    var subscriptionType = SubscriptionType.autoRenewable
 
-//        //If an error occurs, the code will go to this function
-//        func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
-//            print("transactions restored error")
-//            self.viewTrasperentDisabled.isHidden = true
-//            let alert = UIAlertController(title: "", message: "Unable to restore now. Please try after some time", preferredStyle: UIAlertController.Style.alert)
-//            // add an action (button)
-//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
-//            }))
-//            self.present(alert, animated: true, completion: nil)
-//
-//            //Handle Error
-//        }
+                    // Verify the purchase of a Subscription
+                    if (getProductId == CommanArray.productId_Month_Non_Recurring) {
+                        subscriptionType = SubscriptionType.nonRenewing(validDuration: 3600 * 24 * 30)
+                    
+                    } else if (getProductId == CommanArray.productId_Year_Non_Recurring) {
+                        subscriptionType = SubscriptionType.nonRenewing(validDuration: 3600 * 24 * 365)
+                    }
+                        
+                    let purchaseResult = SwiftyStoreKit.verifySubscription(
+                        ofType: subscriptionType, // or .nonRenewing (see below)
+                        productId: productId,
+                        inReceipt: receipt)
+                        
+                    switch purchaseResult {
+                    case .purchased(let expiryDate, let items):
+                        let getReceiptItem = items[0] as ReceiptItem
+                        let formatter = DateFormatter()
+                        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                        let pucrhaseDateString = formatter.string(from: getReceiptItem.purchaseDate as Date)
+                        let originalPurchasedDateString = formatter.string(from: getReceiptItem.originalPurchaseDate as Date)
+                        var subscriptionExpirationDateString = ""
+                        if getReceiptItem.subscriptionExpirationDate != nil {
+                            subscriptionExpirationDateString = formatter.string(from: getReceiptItem.subscriptionExpirationDate! as Date)
+                        }
+                        var expirationDateString = ""
+                        expirationDateString = formatter.string(from: expiryDate as Date)
+
+                        var cancelDateString = ""
+                        if getReceiptItem.cancellationDate != nil {
+                            cancelDateString = formatter.string(from: getReceiptItem.cancellationDate! as Date)
+                        }
+                        let dictPurchaseDetail = [
+                            "ProductId": getProductId,
+                            //"iSAutoRenew": self.isAutoRenewPurchase,
+                            "OriginalPurchasedDate": originalPurchasedDateString,
+                            "PurchasedDate": pucrhaseDateString,
+                            "ExpirationDate": expirationDateString,
+                            "CancellationDate": cancelDateString,
+                            "SubscriptionExpirationDate": subscriptionExpirationDateString,
+                            "SubscriptionPrice":getProductPrice
+                        ] as [String:Any]
+                        self.defaults.set(dictPurchaseDetail, forKey: "PurchaseDetails")
+                        self.defaults.set(true, forKey: "IsPrimeUser")
+                        self.viewTrasperentDisabled.isHidden = true
+                        self.navigationController?.popViewController(animated: true)
+                    case .expired(let expiryDate, let items):
+                        print("\(productId) is expired since \(expiryDate)\n\(items)\n")
+                        self.defaults.set(false, forKey: "IsPrimeUser")
+                        self.viewTrasperentDisabled.isHidden = true
+                        self.navigationController?.popViewController(animated: true)
+                    case .notPurchased:
+                        print("The user has never purchased \(productId)")
+                        self.defaults.set(false, forKey: "IsPrimeUser")
+                        self.viewTrasperentDisabled.isHidden = true
+                        self.navigationController?.popViewController(animated: true)
+                    }
+                case .error(let error):
+                    print("Receipt verification failed: \(error)")
+                    self.viewTrasperentDisabled.isHidden = true
+                    self.navigationController?.popViewController(animated: true)
+                }
+            }
+        }
+        //If an error occurs, the code will go to this function
+        func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+            print("transactions restored error")
+            self.viewTrasperentDisabled.isHidden = true
+            let alert = UIAlertController(title: "", message: "Unable to restore now. Please try after some time", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+            }))
+            self.present(alert, animated: true, completion: nil)
+
+            //Handle Error
+        }
     func paymentQueueRestoreCompletedTransactionsFinished(queue: SKPaymentQueue) {
         print("transactions restored")
             for transaction in queue.transactions {
@@ -323,10 +509,7 @@ extension PaymentCostController {
         SKPaymentQueue.default().restoreCompletedTransactions()
 
     }
-    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
-        print("restoreCompletedTransactionsFailedWithError")
-    }
-
+    
     @objc func privacyLinkClicked(sender:UITapGestureRecognizer) {
         openUrl(urlStr: "https://mobiapps360.com/privacy")
     }

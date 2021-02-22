@@ -78,10 +78,42 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "buyConsumable()"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "funcRestoreBtnClick(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822fc32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Learn_Natural_Food.VerifyReceiptResult) -&gt; () in Learn_Natural_Food.PaymentCostController.funcRestoreBtnClick(Any) -&gt; ()"
+                  moduleName = "Learn Natural Food"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822fc32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Learn_Natural_Food.VerifyReceiptResult) -&gt; () in Learn_Natural_Food.PaymentCostController.funcRestoreBtnClick(Any) -&gt; ()"
+                  moduleName = "Learn Natural Food"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,10 +126,10 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "PaymentCostController"
-            landmarkType = "21">
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "funcRestoreBtnClick(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -110,9 +142,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "buyConsumable()"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "funcRestoreBtnClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -126,9 +158,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "productsRequest(_:didReceive:)"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -142,9 +174,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "productsRequest(_:didReceive:)"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -158,9 +190,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
-            landmarkName = "productsRequest(_:didReceive:)"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -174,9 +206,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -190,9 +222,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "productsRequest(_:didReceive:)"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -206,9 +238,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
-            landmarkName = "productsRequest(_:didReceive:)"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -222,10 +254,10 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
-            landmarkName = "PaymentCostController"
-            landmarkType = "21">
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -238,9 +270,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -254,10 +286,10 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "300"
-            endingLineNumber = "300"
-            landmarkName = "PaymentCostController"
-            landmarkType = "21">
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,9 +302,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "271"
-            endingLineNumber = "271"
-            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -286,10 +318,10 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "PaymentCostController"
-            landmarkType = "21">
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,9 +382,9 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "funcRestoreBtnClick(_:)"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "funcRadioNonRecurringYearlyClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,200 +398,24 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "funcRestoreBtnClick(_:)"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "funcRadioNonRecurringYearlyClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "786F8FC0-3100-4217-9442-49BAF4FB13CF"
+            uuid = "F941DB7A-72F6-4B57-955E-2126C1E982F4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "335"
-            endingLineNumber = "335"
-            landmarkName = "onInitSuccess()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "173E4F2F-81E8-4B5E-BACF-6C3237E26612"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "396"
-            endingLineNumber = "396"
-            landmarkName = "interstitialIsReady()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B26C641-5CE3-4CBF-8F66-7F3EA6F05851"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "384"
-            endingLineNumber = "384"
-            landmarkName = "interstitialDidInitialize()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6DBFAE3E-FB73-4978-90DE-4E6375F2CE96"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "funcGoToHome(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BED66457-3AEA-4AA6-8E02-E6B3B3B5836C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
-            landmarkName = "funcGoToHome(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4738CC86-3AAB-4DE8-BB37-84414751CCD5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
-            landmarkName = "onInitError(error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "26214766-39AA-4174-AA31-43CF510F1270"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
-            landmarkName = "onInitSuccess()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CE935116-47E4-4623-99E9-543C88B1CBAF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
-            landmarkName = "onInitSuccess()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5FC576BF-FAEE-491B-843C-79B942D783C3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "388"
-            endingLineNumber = "388"
-            landmarkName = "interstitialDidClose()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CE8DF115-BDA9-41E8-A3C5-1861D1DF818B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "funcGoToHome(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DE599DAE-1E8E-4785-B057-7FDD7D707806"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "funcGoToHome(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A697168C-686B-4C31-85EC-A09C3A8DF834"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -567,32 +423,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "15E84ADE-5D40-45CD-8417-C1C33912D4E8"
+            uuid = "8A55E997-4011-4ED0-B3C3-A5B232C015A2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
+            landmarkName = "paymentQueue(_:updatedTransactions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C2BC9AEE-617F-4441-92B3-1C23C39FF291"
+            uuid = "020F1CBF-F700-433F-8DBD-FC35E7E782BD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/ViewController/ImagesCollectionViewController.swift"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
+            landmarkName = "paymentQueue(_:updatedTransactions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "381A01D0-FBCB-4A05-8242-29DF25FC2F2E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "411"
+            endingLineNumber = "411"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E558BBC8-E166-4B14-8B8D-70EB6209893A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "462"
+            endingLineNumber = "462"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A88625B2-6C25-46C2-B06C-681D6A4A0DF2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "466"
+            endingLineNumber = "466"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EB3772E-2192-4960-92B9-CF6507C28AC1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "472"
+            endingLineNumber = "472"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E300A66A-8E39-4F8D-A4B0-ADF38F66CEC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "477"
+            endingLineNumber = "477"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

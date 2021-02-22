@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class TestViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var btnHome: UIButton!
@@ -20,13 +21,21 @@ class TestViewController: UIViewController, PayementForParentProtocol {
     @IBOutlet weak var imgViewLock4: UIImageView!
     @IBOutlet weak var widthLockBgImg: NSLayoutConstraint!
     @IBOutlet weak var heightHomeImg: NSLayoutConstraint!
+    @IBOutlet weak var btnNoAds: UIButton!
 
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     let defaults = UserDefaults.standard
     var paymentDetailVC : PaymentDetailViewController?
+    var timer: Timer?
+    var bannerView: GADBannerView!
+    @IBOutlet weak var lblCostTitle: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblCostTitle.text = "Test Your Skills"
+        //lblCostTitle.textColor = CommanArray.paymentBtnTextColor
+
         imgViewLock2.layer.borderColor = UIColor.red.cgColor
         imgViewLock2.layer.borderWidth = 2.5
         imgViewLock2.layer.cornerRadius = imgViewLock2.frame.width / 2
@@ -71,19 +80,73 @@ class TestViewController: UIViewController, PayementForParentProtocol {
         if UIScreen.main.bounds.height < 700 {
             bgAnimateimgeView.isHidden = true
         }
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        if defaults.bool(forKey:"IsPrimeUser") {
-            if let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
-                self.imgViewLock2.isHidden = true
-                self.imgViewLock3.isHidden = true
-                self.imgViewLock4.isHidden = true
+        if !(defaults.bool(forKey:"IsPrimeUser")) {
+            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+            addBannerViewToView(bannerView)
+            bannerView.adUnitID = CommanArray.Banner_AdUnitId
+            bannerView.rootViewController = self
+            bannerView.delegate = self
+            if Reachability.isConnectedToNetwork() {
+                DispatchQueue.main.async {
+                    self.bannerView.load(GADRequest())
+                }
+            } else {
+                let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                    if self.timer == nil {
+                        self.timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                    }
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
-        } else {
-            if let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        stopTimer()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if !defaults.bool(forKey:"IsPrimeUser") {
+            if let _ = btnNoAds, let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
                 self.imgViewLock2.isHidden = false
                 self.imgViewLock3.isHidden = false
                 self.imgViewLock4.isHidden = false
+                if bannerView != nil {
+                    if timer == nil {
+                        if Reachability.isConnectedToNetwork() {
+                            DispatchQueue.main.async {
+                                self.bannerView.load(GADRequest())
+                            }
+                        } else {
+                            let alert = UIAlertController(title: "", message: "No Internet Connection.", preferredStyle: UIAlertController.Style.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                                if self.timer == nil {
+                                    self.timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                                }
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        if defaults.bool(forKey:"IsPrimeUser") {
+            if let _ = btnNoAds, let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
+                self.btnNoAds.isHidden = true
+                self.imgViewLock2.isHidden = true
+                self.imgViewLock3.isHidden = true
+                self.imgViewLock4.isHidden = true
+                if bannerView != nil {
+                    bannerView.removeFromSuperview()
+                }
+            }
+        } else {
+            if let _ = btnNoAds{
+                self.btnNoAds.isHidden = false
             }
         }
     }
@@ -546,29 +609,142 @@ class TestViewController: UIViewController, PayementForParentProtocol {
         }
     }
     // MARK: - User defined Functions
-        @IBAction func funcGoToTestHome(_ sender: Any) {
-            navigationController?.popViewController(animated: true)
+     
+     @objc func alarmToLoadBannerAds(){
+         print("Inside alarmToLoadBannerAds")
+         if Reachability.isConnectedToNetwork() {
+             if bannerView != nil {
+                 print("Inside Load bannerView")
+                DispatchQueue.main.async {
+                    self.bannerView.load(GADRequest())
+                }
+             }
+         }
+     }
+
+     //Start Payment flow
+     @IBAction func funcNoAds(_ sender: Any) {
+         showPaymentScreen()
+     }
+     func stopTimer() {
+         print("Inside stopTimer")
+         if timer != nil {
+             timer?.invalidate()
+             timer = nil
+         }
+     }
+
+     //Delegate method implementation
+     func showPaymentCostScreen() {
+         paymentDetailVC?.view.removeFromSuperview()
+         let PaymentCostVC = PaymentCostController(nibName: "PaymentCostController", bundle: nil)
+         self.navigationController?.pushViewController(PaymentCostVC, animated: true)
+     }
+     func showSubscriptionDetailScreen() {
+     }
+
+     func showPaymentScreen(){
+         paymentDetailVC = PaymentDetailViewController(nibName: "PaymentDetailViewController", bundle: nil)
+         paymentDetailVC?.view.frame = self.view.bounds
+         paymentDetailVC?.delegatePayementForParent = self
+         self.view.addSubview(paymentDetailVC?.view ?? UIView())
+     }
+     
+     func appstoreRateAndReview() {
+     }
+     
+     func shareApp() {
+         
+     }
+
+     @IBAction func funcGoToTestHome(_ sender: Any) {
+         stopTimer()
+         navigationController?.popViewController(animated: true)
+     }
+}
+extension TestViewController: GADBannerViewDelegate {
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+      bannerView.translatesAutoresizingMaskIntoConstraints = false
+      view.addSubview(bannerView)
+        if #available(iOS 11.0, *) {
+          // In iOS 11, we need to constrain the view to the safe area.
+          positionBannerViewFullWidthAtBottomOfSafeArea(bannerView)
         }
-    //Delegate method implementation
-    func showPaymentCostScreen() {
-        paymentDetailVC?.view.removeFromSuperview()
-        let PaymentCostVC = PaymentCostController(nibName: "PaymentCostController", bundle: nil)
-        self.navigationController?.pushViewController(PaymentCostVC, animated: true)
-    }
-    func showSubscriptionDetailScreen() {
+        else {
+          // In lower iOS versions, safe area is not available so we use
+          // bottom layout guide and view edges.
+          positionBannerViewFullWidthAtBottomOfView(bannerView)
+        }
+     }
+
+    func positionBannerViewFullWidthAtBottomOfSafeArea(_ bannerView: UIView) {
+      // Position the banner. Stick it to the bottom of the Safe Area.
+      // Make it constrained to the edges of the safe area.
+      let guide = view.safeAreaLayoutGuide
+      NSLayoutConstraint.activate([
+        guide.leftAnchor.constraint(equalTo: bannerView.leftAnchor),
+        guide.rightAnchor.constraint(equalTo: bannerView.rightAnchor),
+        guide.bottomAnchor.constraint(equalTo: bannerView.bottomAnchor)
+      ])
     }
 
-    func showPaymentScreen(){
-        paymentDetailVC = PaymentDetailViewController(nibName: "PaymentDetailViewController", bundle: nil)
-        paymentDetailVC?.view.frame = self.view.bounds
-        paymentDetailVC?.delegatePayementForParent = self
-        self.view.addSubview(paymentDetailVC?.view ?? UIView())
+    func positionBannerViewFullWidthAtBottomOfView(_ bannerView: UIView) {
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .leading,
+                                            relatedBy: .equal,
+                                            toItem: view,
+                                            attribute: .leading,
+                                            multiplier: 1,
+                                            constant: 0))
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .trailing,
+                                            relatedBy: .equal,
+                                            toItem: view,
+                                            attribute: .trailing,
+                                            multiplier: 1,
+                                            constant: 0))
+      view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                            attribute: .bottom,
+                                            relatedBy: .equal,
+                                            toItem: bottomLayoutGuide,
+                                            attribute: .top,
+                                            multiplier: 1,
+                                            constant: 0))
     }
-    
-    func appstoreRateAndReview() {
+
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+      print("adViewDidReceiveAd")
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+        }
+
     }
-    
-    func shareApp() {
-        
+
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+        didFailToReceiveAdWithError error: GADRequestError) {
+      print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+      print("adViewWillPresentScreen")
+    }
+
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewWillDismissScreen")
+    }
+
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewDidDismissScreen")
+    }
+
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+      print("adViewWillLeaveApplication")
     }
 }
