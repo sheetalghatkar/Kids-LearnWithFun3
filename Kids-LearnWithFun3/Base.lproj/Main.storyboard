@@ -281,13 +281,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="230" height="630"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="h9J-ei-IX8"/>
+                                    <constraint firstAttribute="width" constant="230" id="h9J-ei-IX8">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="260"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="630" id="uxz-rB-Lws"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-Dt-LFo" customClass="Floaty" customModule="Learn_Natural_Food" customModuleProvider="target">
                                 <rect key="frame" x="15" y="54" width="42" height="42"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gHr-Dt-LFo" secondAttribute="height" id="srh-2f-P46"/>
                                 </constraints>
@@ -575,9 +577,7 @@
                                     <constraint firstAttribute="trailing" secondItem="FDn-3d-xbu" secondAttribute="trailing" constant="10" id="5w2-5Q-ZYI"/>
                                     <constraint firstItem="b3s-cv-tM9" firstAttribute="leading" secondItem="Oy1-3L-C6Q" secondAttribute="leading" constant="20" id="Vtu-Ec-Wjt"/>
                                     <constraint firstAttribute="trailing" secondItem="wlH-pm-T5X" secondAttribute="trailing" constant="20" id="XAR-WN-GgO"/>
-                                    <constraint firstAttribute="width" secondItem="Oy1-3L-C6Q" secondAttribute="height" multiplier="1:1" constant="-60" id="ZtV-hF-Btn">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="-40"/>
-                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="Oy1-3L-C6Q" secondAttribute="height" multiplier="1:1" constant="-60" id="ZtV-hF-Btn"/>
                                     <constraint firstItem="vcF-od-evF" firstAttribute="leading" secondItem="b3s-cv-tM9" secondAttribute="trailing" constant="5" id="cbq-YZ-UCP"/>
                                     <constraint firstItem="wlH-pm-T5X" firstAttribute="leading" secondItem="vcF-od-evF" secondAttribute="trailing" constant="5" id="ddm-HY-XEh"/>
                                     <constraint firstItem="vcF-od-evF" firstAttribute="centerY" secondItem="b3s-cv-tM9" secondAttribute="centerY" id="i2Y-xc-RzO"/>
@@ -976,7 +976,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgHome" translatesAutoresizingMaskIntoConstraints="NO" id="9Oo-C3-RVs">
-                                <rect key="frame" x="82" y="576" width="250" height="270"/>
+                                <rect key="frame" x="82" y="601" width="250" height="270"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="LDw-EP-JLB"/>
@@ -1195,7 +1195,7 @@
                         <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UJu-nO-tSc" secondAttribute="trailing" id="4L1-66-8AM"/>
-                            <constraint firstAttribute="bottom" secondItem="9Oo-C3-RVs" secondAttribute="bottom" constant="50" id="EWU-eG-51X"/>
+                            <constraint firstAttribute="bottom" secondItem="9Oo-C3-RVs" secondAttribute="bottom" constant="25" id="EWU-eG-51X"/>
                             <constraint firstItem="XgC-Ur-G0M" firstAttribute="top" secondItem="ic0-qx-RYR" secondAttribute="top" constant="10" id="EfJ-hD-1tl">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Learn Clock - Kids</string>
+	<string>Learn Natural Food</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -68,7 +68,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-7546454767986772~4750166558</string>
 </dict>
 </plist>

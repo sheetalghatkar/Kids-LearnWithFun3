@@ -84,7 +84,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822fc32"
+                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822ffb6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -94,12 +94,12 @@
                   urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "196"
-                  endingLineNumber = "196"
-                  offsetFromSymbolStart = "156">
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "337">
                </Location>
                <Location
-                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822fc32"
+                  uuid = "6D75D3BD-939A-46E5-A4A0-E4AF32A1433D - d3d141095822ffb6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,9 +109,9 @@
                   urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "196"
-                  endingLineNumber = "196"
-                  offsetFromSymbolStart = "264">
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "414">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -290,6 +290,38 @@
             endingLineNumber = "308"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA414D12-083E-4E51-9238-147D031DC0A4 - e3107d2fec981e68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Learn_Natural_Food.PaymentCostController.getPurchaseResult(getProductCount: Swift.Int, getReceipt: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
+                  moduleName = "Learn Natural Food"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "308"
+                  endingLineNumber = "308"
+                  offsetFromSymbolStart = "9429">
+               </Location>
+               <Location
+                  uuid = "AA414D12-083E-4E51-9238-147D031DC0A4 - ae0dbfee7dfc09ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (__C.UIAlertAction) -&gt; () in Learn_Natural_Food.PaymentCostController.getPurchaseResult(getProductCount: Swift.Int, getReceipt: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
+                  moduleName = "Learn Natural Food"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheetalghatkar/Documents/Game%203/Kids-LearnWithFun3/Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "309"
+                  endingLineNumber = "309"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -529,6 +561,22 @@
             startingLineNumber = "481"
             endingLineNumber = "481"
             landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "181D8846-48BE-4E5A-8E73-521C66B01527"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/ViewController/TestViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "619"
+            endingLineNumber = "619"
+            landmarkName = "alarmToLoadBannerAds()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1712,12 +1712,12 @@
 			buildSettings = {
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
@@ -1738,7 +1738,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1749,7 +1749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
@@ -1774,7 +1774,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
-				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Learn Natural Food Distribution Profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

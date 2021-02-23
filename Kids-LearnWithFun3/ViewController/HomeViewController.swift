@@ -142,9 +142,10 @@ class HomeViewController: UIViewController {
         }
         
         if UIDevice.current.userInterfaceIdiom == .pad {
+            btnSetting.isHidden = true
+            floaty.isHidden = true
             if UIScreen.main.bounds.height < 1030 {
                 self.bgScreen.isHidden = true
-                
             }
         }
 
@@ -189,11 +190,8 @@ class HomeViewController: UIViewController {
             }
         } else {
             if let _ = btnCancelSubscription, let _ = btnCancelSubscription {
-//                self.btnCancelSubscription.isHidden = true
-//                self.btnNoAds.isHidden = false
-                self.btnCancelSubscription.isHidden = false
-                self.btnNoAds.isHidden = true
-
+                self.btnCancelSubscription.isHidden = true
+                self.btnNoAds.isHidden = false
             }
         }
     }
@@ -365,6 +363,15 @@ extension HomeViewController : PayementForParentProtocol {
             self.btnCancelSubscription.sendActions(for: .touchUpInside)
         }
         self.present(activityViewController, animated: true, completion: nil)
+        
+        //For iPad
+        if let popoverController = activityViewController.popoverPresentationController {
+            popoverController.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 0, height: 0)
+            popoverController.sourceView = self.view
+            popoverController.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        }
+        self.present(activityViewController, animated: true, completion: nil)
+
     }
 
 }

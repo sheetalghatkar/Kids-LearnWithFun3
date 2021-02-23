@@ -612,8 +612,8 @@ class TestViewController: UIViewController, PayementForParentProtocol {
      
      @objc func alarmToLoadBannerAds(){
          print("Inside alarmToLoadBannerAds")
-         if Reachability.isConnectedToNetwork() {
-             if bannerView != nil {
+            if Reachability.isConnectedToNetwork() {
+              if bannerView != nil {
                  print("Inside Load bannerView")
                 DispatchQueue.main.async {
                     self.bannerView.load(GADRequest())
@@ -714,10 +714,14 @@ extension TestViewController: GADBannerViewDelegate {
 
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
       print("adViewDidReceiveAd")
-        if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+        if let visibleViewCtrl = UIApplication.shared.keyWindow?.visibleViewController {
+            if(visibleViewCtrl.isKind(of: TestViewController.self)){
+                print("adViewDidReceiveAd Success")
+                if timer == nil {
+                    timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                }
+            }
         }
-
     }
 
     /// Tells the delegate an ad request failed.

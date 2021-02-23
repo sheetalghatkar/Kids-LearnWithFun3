@@ -93,8 +93,12 @@
                     <rect key="frame" x="157" y="778" width="100" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="4C0-9O-gCN"/>
-                        <constraint firstAttribute="height" constant="40" id="4nC-UL-wlk"/>
+                        <constraint firstAttribute="width" constant="100" id="4C0-9O-gCN">
+                            <variation key="heightClass=regular-widthClass=regular" constant="110"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="40" id="4nC-UL-wlk">
+                            <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
@@ -124,6 +128,9 @@
                             <color key="value" red="0.1450980392" green="0.62745098040000002" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                    </variation>
                     <connections>
                         <action selector="funcOK:" destination="-1" eventType="touchUpInside" id="iYs-no-aWb"/>
                     </connections>

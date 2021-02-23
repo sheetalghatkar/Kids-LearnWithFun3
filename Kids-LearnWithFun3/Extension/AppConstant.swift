@@ -131,12 +131,10 @@ class CommanArray {
 
 
     //Related to review and rating
-    static let app_AppStoreLink = URL(string: "https://apps.apple.com/app/id1551996699")
-    static var productId_OneTime = "com.mobiapps360.LearnNaturalFood.NonConsumable"
-    static var productId_OneTime_Price = "$3.99"
+    static let app_AppStoreLink = URL(string: "https://apps.apple.com/app/id1554806857")
         
     //Related to InAppPurchase
-    static var environment = AppleReceiptValidator.VerifyReceiptURLType.sandbox
+    static var environment = AppleReceiptValidator.VerifyReceiptURLType.production
     static var secretKey = "921c477cb41f4a6b839e16f53a600c04"
     
     static var productId_Year_Auto_Recurring = "com.mobiapps360.LearnNaturalFood.YearlyAutoRecurring"
@@ -144,11 +142,21 @@ class CommanArray {
     static var productId_Month_Auto_Recurring = "com.mobiapps360.LearnNaturalFood.MonthlyAutoRecurring"
     static var productId_Month_Non_Recurring = "com.mobiapps360.LearnNaturalFood.MonthlyNonRecurring"
     static var timerForAds = 12.0
+    
+    
+    //Related to Ads Production
+    static var Banner_AdUnitId = "ca-app-pub-7546454767986772/5984207231"
+    static var Interstitial_AdUnitId = "ca-app-pub-7546454767986772/8418798884"
+    static var Ad_App_ID = "ca-app-pub-7546454767986772~4750166558"
 
-    //Related to Ads Sandbox/Test
-    static var Banner_AdUnitId = "ca-app-pub-3940256099942544/2934735716"
-    static var Interstitial_AdUnitId = "ca-app-pub-3940256099942544/4411468910"
-    static var Ad_App_ID = "ca-app-pub-3940256099942544~1458002511"
+    
+
+//    //Related to Ads Sandbox/Test
+//    static var Banner_AdUnitId = "ca-app-pub-3940256099942544/2934735716"
+//    static var Interstitial_AdUnitId = "ca-app-pub-3940256099942544/4411468910"
+//    static var Ad_App_ID = "ca-app-pub-3940256099942544~1458002511"
+    
+    
 }
 
 extension UIDevice {
@@ -193,6 +201,35 @@ public class Reachability {
 
         return ret
 
+    }
+}
+
+extension UIWindow {
+    /// Returns the currently visible view controller if any reachable within the window.
+    public var visibleViewController: UIViewController? {
+        return UIWindow.visibleViewController(from: rootViewController)
+    }
+
+    /// Recursively follows navigation controllers, tab bar controllers and modal presented view controllers starting
+    /// from the given view controller to find the currently visible view controller.
+    ///
+    /// - Parameters:
+    ///   - viewController: The view controller to start the recursive search from.
+    /// - Returns: The view controller that is most probably visible on screen right now.
+    public static func visibleViewController(from viewController: UIViewController?) -> UIViewController? {
+        switch viewController {
+        case let navigationController as UINavigationController:
+            return UIWindow.visibleViewController(from: navigationController.visibleViewController ?? navigationController.topViewController)
+
+        case let tabBarController as UITabBarController:
+            return UIWindow.visibleViewController(from: tabBarController.selectedViewController)
+
+        case let presentingViewController where viewController?.presentedViewController != nil:
+            return UIWindow.visibleViewController(from: presentingViewController?.presentedViewController)
+
+        default:
+            return viewController
+        }
     }
 }
 

@@ -509,12 +509,15 @@ extension ImagesCollectionViewController: GADBannerViewDelegate {
 
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
       print("adViewDidReceiveAd")
-        if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+        if let visibleViewCtrl = UIApplication.shared.keyWindow?.visibleViewController {
+            if(visibleViewCtrl.isKind(of: ImagesCollectionViewController.self)){
+                if timer == nil {
+                    print("adViewDidReceiveAd Success")
+                    timer = Timer.scheduledTimer(timeInterval: CommanArray.timerForAds, target: self, selector: #selector(self.alarmToLoadBannerAds), userInfo: nil, repeats: true)
+                }
+            }
         }
-
     }
-
     /// Tells the delegate an ad request failed.
     func adView(_ bannerView: GADBannerView,
         didFailToReceiveAdWithError error: GADRequestError) {
