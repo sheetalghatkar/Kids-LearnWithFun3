@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             assertionFailure("Failed to configure `AVAAudioSession`: \(error.localizedDescription)")
         }
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GADMobileAds.sharedInstance().requestConfiguration.tag(forChildDirectedTreatment: true)
+        GADMobileAds.sharedInstance().requestConfiguration.tagForUnderAge(ofConsent: true)
+        GADMobileAds.sharedInstance().requestConfiguration.maxAdContentRating =
+            GADMaxAdContentRating.general
+
         return true
     }
     func applicationWillResignActive(_ application: UIApplication) {
