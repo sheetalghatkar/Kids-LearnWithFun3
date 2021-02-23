@@ -68,6 +68,9 @@ class SubscriptionDetailsController: UIViewController {
         if !(UIDevice.current.hasNotch) {
             widthHome.constant = 40
         }
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            widthHome.constant = 65
+        }
     }
     
     @IBAction func funcCancelSubscriptionClick(_ sender: Any) {

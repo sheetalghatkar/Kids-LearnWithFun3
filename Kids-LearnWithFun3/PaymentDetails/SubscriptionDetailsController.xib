@@ -36,12 +36,17 @@
                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
                     <color key="textColor" red="1" green="0.4549019608" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                    </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgC-wH-EKY">
                     <rect key="frame" x="15" y="58.5" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="RgC-wH-EKY" secondAttribute="height" multiplier="1:1" id="Myv-5q-x2I"/>
-                        <constraint firstAttribute="width" constant="50" id="l6f-68-AlM"/>
+                        <constraint firstAttribute="width" constant="50" id="l6f-68-AlM">
+                            <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                        </constraint>
                     </constraints>
                     <state key="normal" image="Home_Payment"/>
                     <connections>
@@ -66,25 +71,38 @@
                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                    </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8A-oa-mi2" userLabel="lblRecurring">
                                     <rect key="frame" x="15" y="62.5" width="44" height="21.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kw-uF-B9m" userLabel="lblPriceRecurring">
                                     <rect key="frame" x="269" y="62.5" width="47" height="21.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    </variation>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-MS-hHk" userLabel="btnYearRecurringBuy" customClass="RoundButton" customModule="Learn_Natural_Food" customModuleProvider="target">
                                     <rect key="frame" x="50.5" y="109" width="230" height="42"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="230" id="DIV-T5-WZe"/>
-                                        <constraint firstAttribute="height" constant="42" id="eTi-Ft-TsZ"/>
+                                        <constraint firstAttribute="width" constant="230" id="DIV-T5-WZe">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="280"/>
+                                        </constraint>
+                                        <constraint firstAttribute="height" constant="42" id="eTi-Ft-TsZ">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                        </constraint>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="6"/>
@@ -114,6 +132,9 @@
                                             <color key="value" red="0.1450980392" green="0.62745098040000002" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                    </variation>
                                     <connections>
                                         <action selector="funcCancelSubscriptionClick:" destination="-1" eventType="touchUpInside" id="dB9-Sm-fVK"/>
                                     </connections>
@@ -134,7 +155,9 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="175" id="Ccl-0A-yoD"/>
+                        <constraint firstAttribute="height" constant="175" id="Ccl-0A-yoD">
+                            <variation key="heightClass=regular-widthClass=regular" constant="210"/>
+                        </constraint>
                         <constraint firstItem="3qe-LH-FOb" firstAttribute="width" secondItem="IAd-Uc-mdQ" secondAttribute="width" id="dlo-JT-MBd"/>
                         <constraint firstItem="3qe-LH-FOb" firstAttribute="top" secondItem="IAd-Uc-mdQ" secondAttribute="top" id="n4b-wh-dn2"/>
                         <constraint firstItem="3qe-LH-FOb" firstAttribute="height" secondItem="IAd-Uc-mdQ" secondAttribute="height" id="pgH-Do-SeK"/>
@@ -166,7 +189,9 @@
                 <constraint firstAttribute="bottom" secondItem="xFh-C7-7Xb" secondAttribute="bottom" id="PoT-4g-JXh"/>
                 <constraint firstItem="IAd-Uc-mdQ" firstAttribute="width" secondItem="Nby-87-0iV" secondAttribute="width" multiplier="0.8" id="SAa-uI-trv"/>
                 <constraint firstAttribute="trailing" secondItem="BbQ-Ti-m0t" secondAttribute="trailing" id="ThD-BK-Y1L"/>
-                <constraint firstItem="2kF-IY-gQv" firstAttribute="leading" secondItem="RgC-wH-EKY" secondAttribute="trailing" constant="10" id="Zpb-C2-qJP"/>
+                <constraint firstItem="2kF-IY-gQv" firstAttribute="leading" secondItem="RgC-wH-EKY" secondAttribute="trailing" constant="10" id="Zpb-C2-qJP">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="xFh-C7-7Xb" secondAttribute="trailing" id="bQp-c5-lqT"/>
                 <constraint firstItem="RgC-wH-EKY" firstAttribute="centerY" secondItem="2kF-IY-gQv" secondAttribute="centerY" id="bty-JN-ySU"/>
                 <constraint firstItem="xFh-C7-7Xb" firstAttribute="top" secondItem="Nby-87-0iV" secondAttribute="top" id="cCh-rU-SOt"/>

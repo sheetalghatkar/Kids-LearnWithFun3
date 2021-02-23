@@ -51,6 +51,13 @@ class CustomLiceneModelController: UIViewController {
         let textNonRenewable = NSMutableAttributedString(string:"Non-renewable Subscriptions")
         texViewAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 18, weight: .semibold),range: NSRange(location: 582, length:textNonRenewable.length))
         
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            texViewAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 27, weight: .regular),range: NSRange(location: 0, length:texViewAttrString.length))
+            texViewAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 32, weight: .semibold),range: NSRange(location: 0, length:textAutoRenewable.length))
+            texViewAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 32, weight: .semibold),range: NSRange(location: 582, length:textNonRenewable.length))
+        }
+
+        
         txtViewLicenseInfo.attributedText = texViewAttrString
         txtViewLicenseInfo.isScrollEnabled = false
         txtViewLicenseInfo.isEditable = false

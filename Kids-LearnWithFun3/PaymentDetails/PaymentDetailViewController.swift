@@ -61,6 +61,10 @@ class PaymentDetailViewController: UIViewController {
 
         random = Int.random(in: 0 ..< arrayQuestionTest.count)
         lblQuestion.text = String(arrayQuestionTest[random][0]) + " + " + String(arrayQuestionTest[random][1])
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            fontOptionBtn = UIFont(name: "Noteworthy-Bold", size: 24)
+        }
+
         btnOption1.titleLabel?.font =  fontOptionBtn
         btnOption2.titleLabel?.font =  fontOptionBtn
         btnOption3.titleLabel?.font =  fontOptionBtn

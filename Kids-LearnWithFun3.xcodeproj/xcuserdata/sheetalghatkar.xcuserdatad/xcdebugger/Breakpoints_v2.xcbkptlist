@@ -78,8 +78,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "funcRestoreBtnClick(_:)"
             landmarkType = "7">
             <Locations>
@@ -126,8 +126,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "funcRestoreBtnClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "funcRestoreBtnClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,6 +168,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1AC4A02D-8905-4658-905A-2783EC41B112"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C2BE5C1-7EA9-43A4-8523-E4CB47E05D12"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -183,22 +199,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7C2BE5C1-7EA9-43A4-8523-E4CB47E05D12"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "71AEDA95-0467-4C36-99BE-0E9D81698B21"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -206,8 +206,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,8 +270,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -286,8 +286,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "304"
-            endingLineNumber = "304"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,8 +302,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
             landmarkName = "getPurchaseResult(getProductCount:getReceipt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -318,8 +318,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "PaymentCostController"
             landmarkType = "3">
          </BreakpointContent>
@@ -382,8 +382,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "funcRadioNonRecurringYearlyClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -398,8 +398,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "funcRadioNonRecurringYearlyClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -430,8 +430,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "375"
+            endingLineNumber = "375"
             landmarkName = "paymentQueue(_:updatedTransactions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "378"
-            endingLineNumber = "378"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "paymentQueue(_:updatedTransactions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,8 +462,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "411"
-            endingLineNumber = "411"
+            startingLineNumber = "415"
+            endingLineNumber = "415"
             landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -472,22 +472,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E558BBC8-E166-4B14-8B8D-70EB6209893A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "462"
-            endingLineNumber = "462"
-            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A88625B2-6C25-46C2-B06C-681D6A4A0DF2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -503,6 +487,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "A88625B2-6C25-46C2-B06C-681D6A4A0DF2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
+            landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "4EB3772E-2192-4960-92B9-CF6507C28AC1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -510,8 +510,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "476"
+            endingLineNumber = "476"
             landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -526,8 +526,8 @@
             filePath = "Kids-LearnWithFun3/PaymentDetails/PaymentCostController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "477"
-            endingLineNumber = "477"
+            startingLineNumber = "481"
+            endingLineNumber = "481"
             landmarkName = "verifyReciptOfPayment(getProductId:getProductPrice:)"
             landmarkType = "7">
          </BreakpointContent>

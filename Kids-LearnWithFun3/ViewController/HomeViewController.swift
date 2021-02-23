@@ -140,6 +140,15 @@ class HomeViewController: UIViewController {
         if UIScreen.main.bounds.height == 844 {
             bottomBgScreen.constant = -20
         }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if UIScreen.main.bounds.height < 1030 {
+                self.bgScreen.isHidden = true
+                
+            }
+        }
+
+        print("######Ipad size:",UIScreen.main.bounds.height)
     }
     
     func makeRound(getImgView : UIImageView) {
@@ -180,8 +189,11 @@ class HomeViewController: UIViewController {
             }
         } else {
             if let _ = btnCancelSubscription, let _ = btnCancelSubscription {
-                self.btnCancelSubscription.isHidden = true
-                self.btnNoAds.isHidden = false
+//                self.btnCancelSubscription.isHidden = true
+//                self.btnNoAds.isHidden = false
+                self.btnCancelSubscription.isHidden = false
+                self.btnNoAds.isHidden = true
+
             }
         }
     }

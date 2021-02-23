@@ -47,6 +47,9 @@
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                            </variation>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SPL-GL-vlI">
                             <rect key="frame" x="10" y="67" width="364" height="673"/>
@@ -60,7 +63,9 @@
                     <constraints>
                         <constraint firstItem="qkm-vV-Tme" firstAttribute="top" secondItem="MtS-Yh-G5w" secondAttribute="top" constant="17" id="1BY-A4-Aj9"/>
                         <constraint firstAttribute="trailing" secondItem="YM6-7S-nib" secondAttribute="trailing" id="7vo-Aj-KMI"/>
-                        <constraint firstAttribute="trailing" secondItem="SPL-GL-vlI" secondAttribute="trailing" constant="10" id="EkQ-Nk-Mzi"/>
+                        <constraint firstAttribute="trailing" secondItem="SPL-GL-vlI" secondAttribute="trailing" constant="10" id="EkQ-Nk-Mzi">
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
                         <constraint firstItem="YM6-7S-nib" firstAttribute="leading" secondItem="MtS-Yh-G5w" secondAttribute="leading" id="ExP-HY-aWD"/>
                         <constraint firstAttribute="bottom" secondItem="YM6-7S-nib" secondAttribute="bottom" id="Ptu-Mu-8e8"/>
                         <constraint firstAttribute="trailing" secondItem="qkm-vV-Tme" secondAttribute="trailing" constant="10" id="XzC-me-vF6"/>
@@ -68,7 +73,9 @@
                         <constraint firstItem="YM6-7S-nib" firstAttribute="top" secondItem="MtS-Yh-G5w" secondAttribute="top" id="rlu-r9-9hV"/>
                         <constraint firstAttribute="height" constant="780" id="wJo-Ov-2bH"/>
                         <constraint firstItem="SPL-GL-vlI" firstAttribute="leading" secondItem="MtS-Yh-G5w" secondAttribute="leading" constant="10" id="wzP-dq-MSv"/>
-                        <constraint firstItem="qkm-vV-Tme" firstAttribute="leading" secondItem="MtS-Yh-G5w" secondAttribute="leading" constant="10" id="yEi-QF-mAK"/>
+                        <constraint firstItem="qkm-vV-Tme" firstAttribute="leading" secondItem="MtS-Yh-G5w" secondAttribute="leading" constant="10" id="yEi-QF-mAK">
+                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                        </constraint>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">

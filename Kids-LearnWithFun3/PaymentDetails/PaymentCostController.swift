@@ -104,6 +104,10 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
         if !(UIDevice.current.hasNotch) {
             widthHome.constant = 40
         }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            widthHome.constant = 65
+        }
         viewTrasperentDisabled.isHidden = false
         licenseAgreementVC = CustomLiceneModelController(nibName: "CustomLiceneModelController", bundle: nil)
         licenseAgreementVC?.delegateCustomLicene = self
