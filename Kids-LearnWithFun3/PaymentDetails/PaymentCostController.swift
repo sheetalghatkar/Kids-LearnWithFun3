@@ -113,9 +113,9 @@ class PaymentCostController: UIViewController ,SKProductsRequestDelegate, SKPaym
         licenseAgreementVC?.delegateCustomLicene = self
         self.view.addSubview(licenseAgreementVC?.view ?? UIView())
         
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(self.privacyLinkClicked(sender:)))
-//        lblPrivacyPolicy.isUserInteractionEnabled = true
-//        lblPrivacyPolicy.addGestureRecognizer(tap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.privacyLinkClicked(sender:)))
+        lblPrivacyPolicy.isUserInteractionEnabled = true
+        lblPrivacyPolicy.addGestureRecognizer(tap)
         
         lblCostTitle.textColor = CommanArray.paymentBtnTextColor
         lblAlredyPurchased.textColor = CommanArray.paymentBtnTextColor

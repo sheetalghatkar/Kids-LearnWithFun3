@@ -24,6 +24,7 @@
                 <outlet property="lblMonthlyPriceRecurring" destination="ksY-X7-Vns" id="g7j-Hj-HYV"/>
                 <outlet property="lblMonthlyRecurring" destination="KC0-wj-DX0" id="NNV-hA-ekI"/>
                 <outlet property="lblMonthlyTitle" destination="Ah3-Vf-Cd9" id="pH7-2p-FBe"/>
+                <outlet property="lblPrivacyPolicy" destination="vjd-4R-j89" id="utn-G6-F0F"/>
                 <outlet property="lblYearlyNonPriceRecurring" destination="sNx-3b-cbB" id="BYH-FZ-BkM"/>
                 <outlet property="lblYearlyNonRecurring" destination="6eq-0E-j7v" id="Ysi-0b-3op"/>
                 <outlet property="lblYearlyPriceRecurring" destination="3gb-zj-0wR" id="SVv-uw-fg8"/>
@@ -45,7 +46,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper1" translatesAutoresizingMaskIntoConstraints="NO" id="Ls3-sf-2xR">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallerPaper" translatesAutoresizingMaskIntoConstraints="NO" id="AzO-ly-vGP">
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallerPaper" translatesAutoresizingMaskIntoConstraints="NO" id="AzO-ly-vGP">
                     <rect key="frame" x="0.0" y="576" width="414" height="320"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -443,6 +444,20 @@
                         <action selector="funcRestoreBtnClick:" destination="-1" eventType="touchUpInside" id="o7T-mw-DaU"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjd-4R-j89">
+                    <rect key="frame" x="148.5" y="646.5" width="117.5" height="22.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Privacy Policy">
+                            <attributes>
+                                <color key="NSColor" red="0.26419638634907278" green="0.34812374378463334" blue="0.86211340206185572" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="20"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <integer key="NSUnderline" value="1"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBr-mT-UYg" userLabel="viewTransperentDisabled">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -472,6 +487,7 @@
                 <constraint firstItem="tr8-xj-Cri" firstAttribute="leading" secondItem="2hb-Ww-MI3" secondAttribute="trailing" constant="10" id="N5q-hF-QG2">
                     <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                 </constraint>
+                <constraint firstItem="vjd-4R-j89" firstAttribute="top" secondItem="XAh-ma-3Tf" secondAttribute="bottom" constant="30" id="RXa-1B-poX"/>
                 <constraint firstItem="zBr-mT-UYg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tn8-FU-7zW"/>
                 <constraint firstAttribute="bottom" secondItem="Ls3-sf-2xR" secondAttribute="bottom" id="VDc-zb-Ap6"/>
                 <constraint firstItem="kVY-mD-cqk" firstAttribute="top" secondItem="csJ-KQ-BIT" secondAttribute="bottom" constant="5" id="a1f-Gh-Kvk"/>
@@ -489,6 +505,7 @@
                 <constraint firstItem="AzO-ly-vGP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="plZ-EQ-SeX"/>
                 <constraint firstItem="XAh-ma-3Tf" firstAttribute="top" secondItem="kVY-mD-cqk" secondAttribute="bottom" constant="15" id="uTn-Wx-AJ9"/>
                 <constraint firstItem="Ls3-sf-2xR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="urr-Na-xTP"/>
+                <constraint firstItem="vjd-4R-j89" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vQX-WK-bb1"/>
             </constraints>
             <point key="canvasLocation" x="5.7971014492753632" y="49.553571428571423"/>
         </view>
