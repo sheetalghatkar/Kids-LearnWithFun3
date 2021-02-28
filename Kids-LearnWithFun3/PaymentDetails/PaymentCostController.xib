@@ -55,8 +55,8 @@
                         </constraint>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-xj-Cri" userLabel="lblTitle">
-                    <rect key="frame" x="75" y="64" width="324" height="38.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-xj-Cri" userLabel="lblTitle">
+                    <rect key="frame" x="173" y="64" width="68.5" height="38.5"/>
                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -445,7 +445,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjd-4R-j89">
-                    <rect key="frame" x="148.5" y="646.5" width="117.5" height="22.5"/>
+                    <rect key="frame" x="146.5" y="646.5" width="121" height="24"/>
                     <attributedString key="attributedText">
                         <fragment content="Privacy Policy">
                             <attributes>
@@ -484,9 +484,6 @@
                 <constraint firstItem="2hb-Ww-MI3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="LkN-PH-O00">
                     <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                 </constraint>
-                <constraint firstItem="tr8-xj-Cri" firstAttribute="leading" secondItem="2hb-Ww-MI3" secondAttribute="trailing" constant="10" id="N5q-hF-QG2">
-                    <variation key="heightClass=regular-widthClass=regular" constant="25"/>
-                </constraint>
                 <constraint firstItem="vjd-4R-j89" firstAttribute="top" secondItem="XAh-ma-3Tf" secondAttribute="bottom" constant="30" id="RXa-1B-poX"/>
                 <constraint firstItem="zBr-mT-UYg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tn8-FU-7zW"/>
                 <constraint firstAttribute="bottom" secondItem="Ls3-sf-2xR" secondAttribute="bottom" id="VDc-zb-Ap6"/>
@@ -499,10 +496,10 @@
                 <constraint firstAttribute="bottom" secondItem="AzO-ly-vGP" secondAttribute="bottom" id="f4f-jL-q2O"/>
                 <constraint firstItem="Ls3-sf-2xR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gB0-lz-FMu"/>
                 <constraint firstAttribute="bottom" secondItem="Ls3-sf-2xR" secondAttribute="bottom" id="hjP-2L-KTp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tr8-xj-Cri" secondAttribute="trailing" constant="15" id="igo-HJ-Niy"/>
                 <constraint firstItem="2hb-Ww-MI3" firstAttribute="centerY" secondItem="tr8-xj-Cri" secondAttribute="centerY" id="ljO-Yq-hkm"/>
                 <constraint firstItem="XAh-ma-3Tf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mce-C8-YEx"/>
                 <constraint firstItem="AzO-ly-vGP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="plZ-EQ-SeX"/>
+                <constraint firstItem="tr8-xj-Cri" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qrs-Ip-PZM"/>
                 <constraint firstItem="XAh-ma-3Tf" firstAttribute="top" secondItem="kVY-mD-cqk" secondAttribute="bottom" constant="15" id="uTn-Wx-AJ9"/>
                 <constraint firstItem="Ls3-sf-2xR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="urr-Na-xTP"/>
                 <constraint firstItem="vjd-4R-j89" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vQX-WK-bb1"/>

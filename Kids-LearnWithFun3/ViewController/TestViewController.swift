@@ -36,7 +36,7 @@ class TestViewController: UIViewController, PayementForParentProtocol {
         lblCostTitle.text = "Test Your Skills"
         //lblCostTitle.textColor = CommanArray.paymentBtnTextColor
 
-        imgViewLock2.layer.borderColor = UIColor.red.cgColor
+       /* imgViewLock2.layer.borderColor = UIColor.red.cgColor
         imgViewLock2.layer.borderWidth = 2.5
         imgViewLock2.layer.cornerRadius = imgViewLock2.frame.width / 2
         
@@ -46,7 +46,7 @@ class TestViewController: UIViewController, PayementForParentProtocol {
 
         imgViewLock4.layer.borderColor = UIColor.red.cgColor
         imgViewLock4.layer.borderWidth = 2.5
-        imgViewLock4.layer.cornerRadius = imgViewLock4.frame.width / 2
+        imgViewLock4.layer.cornerRadius = imgViewLock4.frame.width / 2*/
 
 
         let tapGestureRecognImgVwTest1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
@@ -73,9 +73,9 @@ class TestViewController: UIViewController, PayementForParentProtocol {
         if UIScreen.main.bounds.height < 820 {
             widthLockBgImg.constant = 47
             heightHomeImg.constant = 43
-            imgViewLock2.layer.cornerRadius = widthLockBgImg.constant/2
+           /* imgViewLock2.layer.cornerRadius = widthLockBgImg.constant/2
             imgViewLock3.layer.cornerRadius = widthLockBgImg.constant/2
-            imgViewLock4.layer.cornerRadius = widthLockBgImg.constant/2
+            imgViewLock4.layer.cornerRadius = widthLockBgImg.constant/2*/
         }
         if UIScreen.main.bounds.height < 700 {
             bgAnimateimgeView.isHidden = true
@@ -108,10 +108,7 @@ class TestViewController: UIViewController, PayementForParentProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         if !defaults.bool(forKey:"IsPrimeUser") {
-            if let _ = btnNoAds, let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
-                self.imgViewLock2.isHidden = false
-                self.imgViewLock3.isHidden = false
-                self.imgViewLock4.isHidden = false
+            if let _ = btnNoAds {
                 if bannerView != nil {
                     if timer == nil {
                         if Reachability.isConnectedToNetwork() {
@@ -135,11 +132,8 @@ class TestViewController: UIViewController, PayementForParentProtocol {
 
     override func viewWillAppear(_ animated: Bool) {
         if defaults.bool(forKey:"IsPrimeUser") {
-            if let _ = btnNoAds, let _ = imgViewLock2, let _ = imgViewLock3, let _ = imgViewLock4 {
+            if let _ = btnNoAds {
                 self.btnNoAds.isHidden = true
-                self.imgViewLock2.isHidden = true
-                self.imgViewLock3.isHidden = true
-                self.imgViewLock4.isHidden = true
                 if bannerView != nil {
                     bannerView.removeFromSuperview()
                 }
@@ -262,350 +256,338 @@ class TestViewController: UIViewController, PayementForParentProtocol {
             self.navigationController?.pushViewController(setTestSolveVC, animated: true)
         }
         else if tapGestureRecognizer.view?.tag == 2 {
-            if defaults.bool(forKey:"IsPrimeUser") {
-                let solveTestArray = [[
-                          CommanArray.vegetablesNameArray[16]+"-"+"0",
-                          CommanArray.vegetablesNameArray[10]+"-"+"0",
-                          CommanArray.vegetablesNameArray[0]+"-"+"1",
-                          CommanArray.vegetablesNameArray[18]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[3]+"-"+"0",
-                           CommanArray.vegetablesNameArray[1]+"-"+"1",
-                           CommanArray.vegetablesNameArray[20]+"-"+"0",
-                           CommanArray.vegetablesNameArray[16]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[2]+"-"+"1",
-                           CommanArray.vegetablesNameArray[9]+"-"+"0",
-                           CommanArray.vegetablesNameArray[7]+"-"+"0",
-                           CommanArray.vegetablesNameArray[10]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[12]+"-"+"0",
-                           CommanArray.vegetablesNameArray[17]+"-"+"0",
-                           CommanArray.vegetablesNameArray[15]+"-"+"0",
-                           CommanArray.vegetablesNameArray[3]+"-"+"1"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[8]+"-"+"0",
-                           CommanArray.vegetablesNameArray[4]+"-"+"1",
-                           CommanArray.vegetablesNameArray[18]+"-"+"0",
-                           CommanArray.vegetablesNameArray[14]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[16]+"-"+"0",
-                           CommanArray.vegetablesNameArray[1]+"-"+"0",
-                           CommanArray.vegetablesNameArray[5]+"-"+"1",
-                           CommanArray.vegetablesNameArray[19]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[9]+"-"+"0",
-                           CommanArray.vegetablesNameArray[6]+"-"+"1",
-                           CommanArray.vegetablesNameArray[13]+"-"+"0",
-                           CommanArray.vegetablesNameArray[10]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.vegetablesNameArray[11]+"-"+"0",
-                           CommanArray.vegetablesNameArray[4]+"-"+"0",
-                           CommanArray.vegetablesNameArray[7]+"-"+"1",
-                           CommanArray.vegetablesNameArray[0]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[3]+"-"+"0",
-                           CommanArray.vegetablesNameArray[14]+"-"+"0",
-                           CommanArray.vegetablesNameArray[5]+"-"+"0",
-                           CommanArray.vegetablesNameArray[8]+"-"+"1"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[6]+"-"+"0",
-                           CommanArray.vegetablesNameArray[9]+"-"+"1",
-                           CommanArray.vegetablesNameArray[1]+"-"+"0",
-                           CommanArray.vegetablesNameArray[13]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[15]+"-"+"0",
-                           CommanArray.vegetablesNameArray[10]+"-"+"1",
-                           CommanArray.vegetablesNameArray[11]+"-"+"0",
-                           CommanArray.vegetablesNameArray[17]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[11]+"-"+"1",
-                           CommanArray.vegetablesNameArray[18]+"-"+"0",
-                           CommanArray.vegetablesNameArray[0]+"-"+"0",
-                           CommanArray.vegetablesNameArray[6]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[1]+"-"+"0",
-                           CommanArray.vegetablesNameArray[20]+"-"+"0",
-                           CommanArray.vegetablesNameArray[12]+"-"+"1",
-                           CommanArray.vegetablesNameArray[19]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[2]+"-"+"0",
-                           CommanArray.vegetablesNameArray[13]+"-"+"1",
-                           CommanArray.vegetablesNameArray[5]+"-"+"0",
-                           CommanArray.vegetablesNameArray[4]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[14]+"-"+"1",
-                           CommanArray.vegetablesNameArray[18]+"-"+"0",
-                           CommanArray.vegetablesNameArray[3]+"-"+"0",
-                           CommanArray.vegetablesNameArray[7]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.vegetablesNameArray[0]+"-"+"0",
-                           CommanArray.vegetablesNameArray[20]+"-"+"0",
-                           CommanArray.vegetablesNameArray[15]+"-"+"1",
-                           CommanArray.vegetablesNameArray[9]+"-"+"0"
-                       ],
-                       [
-                            CommanArray.vegetablesNameArray[16]+"-"+"1",
-                            CommanArray.vegetablesNameArray[1]+"-"+"0",
-                            CommanArray.vegetablesNameArray[6]+"-"+"0",
-                            CommanArray.vegetablesNameArray[4]+"-"+"0"
-                       ],
-                       [
-                            CommanArray.vegetablesNameArray[12]+"-"+"0",
-                            CommanArray.vegetablesNameArray[8]+"-"+"0",
-                            CommanArray.vegetablesNameArray[5]+"-"+"0",
-                            CommanArray.vegetablesNameArray[17]+"-"+"1"
-                        ],
-                        [
-                            CommanArray.vegetablesNameArray[13]+"-"+"0",
-                            CommanArray.vegetablesNameArray[18]+"-"+"1",
-                            CommanArray.vegetablesNameArray[2]+"-"+"0",
-                            CommanArray.vegetablesNameArray[7]+"-"+"0"
-                        ],
-                        [
-                            CommanArray.vegetablesNameArray[19]+"-"+"1",
-                            CommanArray.vegetablesNameArray[1]+"-"+"0",
-                            CommanArray.vegetablesNameArray[11]+"-"+"0",
-                            CommanArray.vegetablesNameArray[0]+"-"+"0"
-                        ],
-                        [
-                            CommanArray.vegetablesNameArray[3]+"-"+"0",
-                            CommanArray.vegetablesNameArray[12]+"-"+"0",
-                            CommanArray.vegetablesNameArray[20]+"-"+"1",
-                            CommanArray.vegetablesNameArray[9]+"-"+"0"
-                        ]
+            let solveTestArray = [[
+                  CommanArray.vegetablesNameArray[16]+"-"+"0",
+                  CommanArray.vegetablesNameArray[10]+"-"+"0",
+                  CommanArray.vegetablesNameArray[0]+"-"+"1",
+                  CommanArray.vegetablesNameArray[18]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[3]+"-"+"0",
+                   CommanArray.vegetablesNameArray[1]+"-"+"1",
+                   CommanArray.vegetablesNameArray[20]+"-"+"0",
+                   CommanArray.vegetablesNameArray[16]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[2]+"-"+"1",
+                   CommanArray.vegetablesNameArray[9]+"-"+"0",
+                   CommanArray.vegetablesNameArray[7]+"-"+"0",
+                   CommanArray.vegetablesNameArray[10]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[12]+"-"+"0",
+                   CommanArray.vegetablesNameArray[17]+"-"+"0",
+                   CommanArray.vegetablesNameArray[15]+"-"+"0",
+                   CommanArray.vegetablesNameArray[3]+"-"+"1"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[8]+"-"+"0",
+                   CommanArray.vegetablesNameArray[4]+"-"+"1",
+                   CommanArray.vegetablesNameArray[18]+"-"+"0",
+                   CommanArray.vegetablesNameArray[14]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[16]+"-"+"0",
+                   CommanArray.vegetablesNameArray[1]+"-"+"0",
+                   CommanArray.vegetablesNameArray[5]+"-"+"1",
+                   CommanArray.vegetablesNameArray[19]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[9]+"-"+"0",
+                   CommanArray.vegetablesNameArray[6]+"-"+"1",
+                   CommanArray.vegetablesNameArray[13]+"-"+"0",
+                   CommanArray.vegetablesNameArray[10]+"-"+"0"
+              ],
+              [
+                   CommanArray.vegetablesNameArray[11]+"-"+"0",
+                   CommanArray.vegetablesNameArray[4]+"-"+"0",
+                   CommanArray.vegetablesNameArray[7]+"-"+"1",
+                   CommanArray.vegetablesNameArray[0]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[3]+"-"+"0",
+                   CommanArray.vegetablesNameArray[14]+"-"+"0",
+                   CommanArray.vegetablesNameArray[5]+"-"+"0",
+                   CommanArray.vegetablesNameArray[8]+"-"+"1"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[6]+"-"+"0",
+                   CommanArray.vegetablesNameArray[9]+"-"+"1",
+                   CommanArray.vegetablesNameArray[1]+"-"+"0",
+                   CommanArray.vegetablesNameArray[13]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[15]+"-"+"0",
+                   CommanArray.vegetablesNameArray[10]+"-"+"1",
+                   CommanArray.vegetablesNameArray[11]+"-"+"0",
+                   CommanArray.vegetablesNameArray[17]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[11]+"-"+"1",
+                   CommanArray.vegetablesNameArray[18]+"-"+"0",
+                   CommanArray.vegetablesNameArray[0]+"-"+"0",
+                   CommanArray.vegetablesNameArray[6]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[1]+"-"+"0",
+                   CommanArray.vegetablesNameArray[20]+"-"+"0",
+                   CommanArray.vegetablesNameArray[12]+"-"+"1",
+                   CommanArray.vegetablesNameArray[19]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[2]+"-"+"0",
+                   CommanArray.vegetablesNameArray[13]+"-"+"1",
+                   CommanArray.vegetablesNameArray[5]+"-"+"0",
+                   CommanArray.vegetablesNameArray[4]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[14]+"-"+"1",
+                   CommanArray.vegetablesNameArray[18]+"-"+"0",
+                   CommanArray.vegetablesNameArray[3]+"-"+"0",
+                   CommanArray.vegetablesNameArray[7]+"-"+"0"
+               ],
+               [
+                   CommanArray.vegetablesNameArray[0]+"-"+"0",
+                   CommanArray.vegetablesNameArray[20]+"-"+"0",
+                   CommanArray.vegetablesNameArray[15]+"-"+"1",
+                   CommanArray.vegetablesNameArray[9]+"-"+"0"
+               ],
+               [
+                    CommanArray.vegetablesNameArray[16]+"-"+"1",
+                    CommanArray.vegetablesNameArray[1]+"-"+"0",
+                    CommanArray.vegetablesNameArray[6]+"-"+"0",
+                    CommanArray.vegetablesNameArray[4]+"-"+"0"
+               ],
+               [
+                    CommanArray.vegetablesNameArray[12]+"-"+"0",
+                    CommanArray.vegetablesNameArray[8]+"-"+"0",
+                    CommanArray.vegetablesNameArray[5]+"-"+"0",
+                    CommanArray.vegetablesNameArray[17]+"-"+"1"
+                ],
+                [
+                    CommanArray.vegetablesNameArray[13]+"-"+"0",
+                    CommanArray.vegetablesNameArray[18]+"-"+"1",
+                    CommanArray.vegetablesNameArray[2]+"-"+"0",
+                    CommanArray.vegetablesNameArray[7]+"-"+"0"
+                ],
+                [
+                    CommanArray.vegetablesNameArray[19]+"-"+"1",
+                    CommanArray.vegetablesNameArray[1]+"-"+"0",
+                    CommanArray.vegetablesNameArray[11]+"-"+"0",
+                    CommanArray.vegetablesNameArray[0]+"-"+"0"
+                ],
+                [
+                    CommanArray.vegetablesNameArray[3]+"-"+"0",
+                    CommanArray.vegetablesNameArray[12]+"-"+"0",
+                    CommanArray.vegetablesNameArray[20]+"-"+"1",
+                    CommanArray.vegetablesNameArray[9]+"-"+"0"
                 ]
-                setTestSolveVC.showOptionsArray = solveTestArray
-                setTestSolveVC.getImageNameArray = CommanArray.vegetablesNameArray
-                self.navigationController?.pushViewController(setTestSolveVC, animated: true)
-            } else {
-                showPaymentScreen()
-            }
+            ]
+            setTestSolveVC.showOptionsArray = solveTestArray
+            setTestSolveVC.getImageNameArray = CommanArray.vegetablesNameArray
+            self.navigationController?.pushViewController(setTestSolveVC, animated: true)
         }
         else if tapGestureRecognizer.view?.tag == 3 {
-            if defaults.bool(forKey:"IsPrimeUser") {
-                    let solveTestArray = [[
-                        CommanArray.grainsNameArray[2]+"-"+"0",
-                        CommanArray.grainsNameArray[10]+"-"+"0",
-                        CommanArray.grainsNameArray[0]+"-"+"1",
-                        CommanArray.grainsNameArray[16]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[3]+"-"+"0",
-                         CommanArray.grainsNameArray[1]+"-"+"1",
-                         CommanArray.grainsNameArray[5]+"-"+"0",
-                         CommanArray.grainsNameArray[11]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[2]+"-"+"1",
-                         CommanArray.grainsNameArray[0]+"-"+"0",
-                         CommanArray.grainsNameArray[7]+"-"+"0",
-                         CommanArray.grainsNameArray[10]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[9]+"-"+"0",
-                         CommanArray.grainsNameArray[16]+"-"+"0",
-                         CommanArray.grainsNameArray[15]+"-"+"0",
-                         CommanArray.grainsNameArray[3]+"-"+"1"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[8]+"-"+"0",
-                         CommanArray.grainsNameArray[4]+"-"+"1",
-                         CommanArray.grainsNameArray[15]+"-"+"0",
-                         CommanArray.grainsNameArray[14]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[3]+"-"+"0",
-                         CommanArray.grainsNameArray[1]+"-"+"0",
-                         CommanArray.grainsNameArray[5]+"-"+"1",
-                         CommanArray.grainsNameArray[6]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[0]+"-"+"0",
-                         CommanArray.grainsNameArray[6]+"-"+"1",
-                         CommanArray.grainsNameArray[13]+"-"+"0",
-                         CommanArray.grainsNameArray[10]+"-"+"0"
-                    ],
-                    [
-                         CommanArray.grainsNameArray[11]+"-"+"0",
-                         CommanArray.grainsNameArray[4]+"-"+"0",
-                         CommanArray.grainsNameArray[7]+"-"+"1",
-                         CommanArray.grainsNameArray[16]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[3]+"-"+"0",
-                         CommanArray.grainsNameArray[1]+"-"+"0",
-                         CommanArray.grainsNameArray[5]+"-"+"0",
-                         CommanArray.grainsNameArray[8]+"-"+"1"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[0]+"-"+"0",
-                         CommanArray.grainsNameArray[9]+"-"+"1",
-                         CommanArray.grainsNameArray[7]+"-"+"0",
-                         CommanArray.grainsNameArray[13]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[3]+"-"+"0",
-                         CommanArray.grainsNameArray[10]+"-"+"1",
-                         CommanArray.grainsNameArray[14]+"-"+"0",
-                         CommanArray.grainsNameArray[6]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[11]+"-"+"1",
-                         CommanArray.grainsNameArray[4]+"-"+"0",
-                         CommanArray.grainsNameArray[0]+"-"+"0",
-                         CommanArray.grainsNameArray[10]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[1]+"-"+"0",
-                         CommanArray.grainsNameArray[8]+"-"+"0",
-                         CommanArray.grainsNameArray[12]+"-"+"1",
-                         CommanArray.grainsNameArray[15]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[2]+"-"+"0",
-                         CommanArray.grainsNameArray[13]+"-"+"1",
-                         CommanArray.grainsNameArray[5]+"-"+"0",
-                         CommanArray.grainsNameArray[4]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[14]+"-"+"1",
-                         CommanArray.grainsNameArray[8]+"-"+"0",
-                         CommanArray.grainsNameArray[3]+"-"+"0",
-                         CommanArray.grainsNameArray[7]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[0]+"-"+"0",
-                         CommanArray.grainsNameArray[2]+"-"+"0",
-                         CommanArray.grainsNameArray[15]+"-"+"1",
-                         CommanArray.grainsNameArray[9]+"-"+"0"
-                     ],
-                     [
-                         CommanArray.grainsNameArray[6]+"-"+"0",
-                         CommanArray.grainsNameArray[9]+"-"+"0",
-                         CommanArray.grainsNameArray[1]+"-"+"0",
-                         CommanArray.grainsNameArray[16]+"-"+"1"
-                     ]]
-                setTestSolveVC.showOptionsArray = solveTestArray
-                setTestSolveVC.getImageNameArray = CommanArray.grainsNameArray
-                self.navigationController?.pushViewController(setTestSolveVC, animated: true)
-            } else {
-                showPaymentScreen()
-            }
+                let solveTestArray = [[
+                    CommanArray.grainsNameArray[2]+"-"+"0",
+                    CommanArray.grainsNameArray[10]+"-"+"0",
+                    CommanArray.grainsNameArray[0]+"-"+"1",
+                    CommanArray.grainsNameArray[16]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[3]+"-"+"0",
+                     CommanArray.grainsNameArray[1]+"-"+"1",
+                     CommanArray.grainsNameArray[5]+"-"+"0",
+                     CommanArray.grainsNameArray[11]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[2]+"-"+"1",
+                     CommanArray.grainsNameArray[0]+"-"+"0",
+                     CommanArray.grainsNameArray[7]+"-"+"0",
+                     CommanArray.grainsNameArray[10]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[9]+"-"+"0",
+                     CommanArray.grainsNameArray[16]+"-"+"0",
+                     CommanArray.grainsNameArray[15]+"-"+"0",
+                     CommanArray.grainsNameArray[3]+"-"+"1"
+                ],
+                [
+                     CommanArray.grainsNameArray[8]+"-"+"0",
+                     CommanArray.grainsNameArray[4]+"-"+"1",
+                     CommanArray.grainsNameArray[15]+"-"+"0",
+                     CommanArray.grainsNameArray[14]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[3]+"-"+"0",
+                     CommanArray.grainsNameArray[1]+"-"+"0",
+                     CommanArray.grainsNameArray[5]+"-"+"1",
+                     CommanArray.grainsNameArray[6]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[0]+"-"+"0",
+                     CommanArray.grainsNameArray[6]+"-"+"1",
+                     CommanArray.grainsNameArray[13]+"-"+"0",
+                     CommanArray.grainsNameArray[10]+"-"+"0"
+                ],
+                [
+                     CommanArray.grainsNameArray[11]+"-"+"0",
+                     CommanArray.grainsNameArray[4]+"-"+"0",
+                     CommanArray.grainsNameArray[7]+"-"+"1",
+                     CommanArray.grainsNameArray[16]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[3]+"-"+"0",
+                     CommanArray.grainsNameArray[1]+"-"+"0",
+                     CommanArray.grainsNameArray[5]+"-"+"0",
+                     CommanArray.grainsNameArray[8]+"-"+"1"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[0]+"-"+"0",
+                     CommanArray.grainsNameArray[9]+"-"+"1",
+                     CommanArray.grainsNameArray[7]+"-"+"0",
+                     CommanArray.grainsNameArray[13]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[3]+"-"+"0",
+                     CommanArray.grainsNameArray[10]+"-"+"1",
+                     CommanArray.grainsNameArray[14]+"-"+"0",
+                     CommanArray.grainsNameArray[6]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[11]+"-"+"1",
+                     CommanArray.grainsNameArray[4]+"-"+"0",
+                     CommanArray.grainsNameArray[0]+"-"+"0",
+                     CommanArray.grainsNameArray[10]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[1]+"-"+"0",
+                     CommanArray.grainsNameArray[8]+"-"+"0",
+                     CommanArray.grainsNameArray[12]+"-"+"1",
+                     CommanArray.grainsNameArray[15]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[2]+"-"+"0",
+                     CommanArray.grainsNameArray[13]+"-"+"1",
+                     CommanArray.grainsNameArray[5]+"-"+"0",
+                     CommanArray.grainsNameArray[4]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[14]+"-"+"1",
+                     CommanArray.grainsNameArray[8]+"-"+"0",
+                     CommanArray.grainsNameArray[3]+"-"+"0",
+                     CommanArray.grainsNameArray[7]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[0]+"-"+"0",
+                     CommanArray.grainsNameArray[2]+"-"+"0",
+                     CommanArray.grainsNameArray[15]+"-"+"1",
+                     CommanArray.grainsNameArray[9]+"-"+"0"
+                 ],
+                 [
+                     CommanArray.grainsNameArray[6]+"-"+"0",
+                     CommanArray.grainsNameArray[9]+"-"+"0",
+                     CommanArray.grainsNameArray[1]+"-"+"0",
+                     CommanArray.grainsNameArray[16]+"-"+"1"
+                 ]]
+            setTestSolveVC.showOptionsArray = solveTestArray
+            setTestSolveVC.getImageNameArray = CommanArray.grainsNameArray
+            self.navigationController?.pushViewController(setTestSolveVC, animated: true)
         }
         else if tapGestureRecognizer.view?.tag == 4 {
-            if defaults.bool(forKey:"IsPrimeUser") {
-                    let solveTestArray = [[
-                           CommanArray.spicesNameArray[14]+"-"+"0",
-                           CommanArray.spicesNameArray[10]+"-"+"0",
-                           CommanArray.spicesNameArray[0]+"-"+"1",
-                           CommanArray.spicesNameArray[13]+"-"+"0"
-                    ],
-                    [
-                           CommanArray.spicesNameArray[11]+"-"+"0",
-                           CommanArray.spicesNameArray[1]+"-"+"1",
-                           CommanArray.spicesNameArray[12]+"-"+"0",
-                           CommanArray.spicesNameArray[9]+"-"+"0"
-                    ],
-                    [
-                           CommanArray.spicesNameArray[2]+"-"+"1",
-                           CommanArray.spicesNameArray[0]+"-"+"0",
-                           CommanArray.spicesNameArray[7]+"-"+"0",
-                           CommanArray.spicesNameArray[10]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[13]+"-"+"0",
-                           CommanArray.spicesNameArray[6]+"-"+"0",
-                           CommanArray.spicesNameArray[5]+"-"+"0",
-                           CommanArray.spicesNameArray[3]+"-"+"1"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[8]+"-"+"0",
-                           CommanArray.spicesNameArray[4]+"-"+"1",
-                           CommanArray.spicesNameArray[7]+"-"+"0",
-                           CommanArray.spicesNameArray[2]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[3]+"-"+"0",
-                           CommanArray.spicesNameArray[1]+"-"+"0",
-                           CommanArray.spicesNameArray[5]+"-"+"1",
-                           CommanArray.spicesNameArray[11]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[0]+"-"+"0",
-                           CommanArray.spicesNameArray[6]+"-"+"1",
-                           CommanArray.spicesNameArray[12]+"-"+"0",
-                           CommanArray.spicesNameArray[10]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[14]+"-"+"0",
-                           CommanArray.spicesNameArray[4]+"-"+"0",
-                           CommanArray.spicesNameArray[7]+"-"+"1",
-                           CommanArray.spicesNameArray[9]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[3]+"-"+"0",
-                           CommanArray.spicesNameArray[6]+"-"+"0",
-                           CommanArray.spicesNameArray[5]+"-"+"0",
-                           CommanArray.spicesNameArray[8]+"-"+"1"
-                      ],
-                      [
-                           CommanArray.spicesNameArray[12]+"-"+"0",
-                           CommanArray.spicesNameArray[9]+"-"+"1",
-                           CommanArray.spicesNameArray[13]+"-"+"0",
-                           CommanArray.spicesNameArray[2]+"-"+"0"
-                     ],
-                     [
-                           CommanArray.spicesNameArray[6]+"-"+"0",
-                           CommanArray.spicesNameArray[10]+"-"+"1",
-                           CommanArray.spicesNameArray[4]+"-"+"0",
-                           CommanArray.spicesNameArray[1]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.spicesNameArray[11]+"-"+"1",
-                           CommanArray.spicesNameArray[5]+"-"+"0",
-                           CommanArray.spicesNameArray[0]+"-"+"0",
-                           CommanArray.spicesNameArray[8]+"-"+"0"
-                      ],
-                      [
-                           CommanArray.spicesNameArray[1]+"-"+"0",
-                           CommanArray.spicesNameArray[8]+"-"+"0",
-                           CommanArray.spicesNameArray[12]+"-"+"1",
-                           CommanArray.spicesNameArray[7]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.spicesNameArray[3]+"-"+"0",
-                           CommanArray.spicesNameArray[13]+"-"+"1",
-                           CommanArray.spicesNameArray[4]+"-"+"0",
-                           CommanArray.spicesNameArray[9]+"-"+"0"
-                       ],
-                       [
-                           CommanArray.spicesNameArray[14]+"-"+"1",
-                           CommanArray.spicesNameArray[6]+"-"+"0",
-                           CommanArray.spicesNameArray[2]+"-"+"0",
-                           CommanArray.spicesNameArray[10]+"-"+"0"
-                      ]]
-                setTestSolveVC.showOptionsArray = solveTestArray
-                setTestSolveVC.getImageNameArray = CommanArray.spicesNameArray
-                self.navigationController?.pushViewController(setTestSolveVC, animated: true)
-            } else {
-                showPaymentScreen()
-            }
+                let solveTestArray = [[
+                       CommanArray.spicesNameArray[14]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0",
+                       CommanArray.spicesNameArray[0]+"-"+"1",
+                       CommanArray.spicesNameArray[13]+"-"+"0"
+                ],
+                [
+                       CommanArray.spicesNameArray[11]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"1",
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                ],
+                [
+                       CommanArray.spicesNameArray[2]+"-"+"1",
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[7]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[13]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[3]+"-"+"1"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[8]+"-"+"0",
+                       CommanArray.spicesNameArray[4]+"-"+"1",
+                       CommanArray.spicesNameArray[7]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"1",
+                       CommanArray.spicesNameArray[11]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"1",
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[14]+"-"+"0",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[7]+"-"+"1",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"1"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[12]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"1",
+                       CommanArray.spicesNameArray[13]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0"
+                 ],
+                 [
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"1",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[1]+"-"+"0"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[11]+"-"+"1",
+                       CommanArray.spicesNameArray[5]+"-"+"0",
+                       CommanArray.spicesNameArray[0]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"0"
+                  ],
+                  [
+                       CommanArray.spicesNameArray[1]+"-"+"0",
+                       CommanArray.spicesNameArray[8]+"-"+"0",
+                       CommanArray.spicesNameArray[12]+"-"+"1",
+                       CommanArray.spicesNameArray[7]+"-"+"0"
+                   ],
+                   [
+                       CommanArray.spicesNameArray[3]+"-"+"0",
+                       CommanArray.spicesNameArray[13]+"-"+"1",
+                       CommanArray.spicesNameArray[4]+"-"+"0",
+                       CommanArray.spicesNameArray[9]+"-"+"0"
+                   ],
+                   [
+                       CommanArray.spicesNameArray[14]+"-"+"1",
+                       CommanArray.spicesNameArray[6]+"-"+"0",
+                       CommanArray.spicesNameArray[2]+"-"+"0",
+                       CommanArray.spicesNameArray[10]+"-"+"0"
+                  ]]
+            setTestSolveVC.showOptionsArray = solveTestArray
+            setTestSolveVC.getImageNameArray = CommanArray.spicesNameArray
+            self.navigationController?.pushViewController(setTestSolveVC, animated: true)
         }
     }
     // MARK: - User defined Functions

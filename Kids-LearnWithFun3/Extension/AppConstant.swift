@@ -145,16 +145,16 @@ class CommanArray {
     
     
     //Related to Ads Production
-    static var Banner_AdUnitId = "ca-app-pub-7546454767986772/5984207231"
+    /*static var Banner_AdUnitId = "ca-app-pub-7546454767986772/5984207231"
     static var Interstitial_AdUnitId = "ca-app-pub-7546454767986772/8418798884"
-    static var Ad_App_ID = "ca-app-pub-7546454767986772~4750166558"
+    static var Ad_App_ID = "ca-app-pub-7546454767986772~4750166558"*/
 
     
 
 //    //Related to Ads Sandbox/Test
-//    static var Banner_AdUnitId = "ca-app-pub-3940256099942544/2934735716"
-//    static var Interstitial_AdUnitId = "ca-app-pub-3940256099942544/4411468910"
-//    static var Ad_App_ID = "ca-app-pub-3940256099942544~1458002511"
+    static var Banner_AdUnitId = "ca-app-pub-3940256099942544/2934735716"
+    static var Interstitial_AdUnitId = "ca-app-pub-3940256099942544/4411468910"
+    static var Ad_App_ID = "ca-app-pub-3940256099942544~1458002511"
     
     
 }
