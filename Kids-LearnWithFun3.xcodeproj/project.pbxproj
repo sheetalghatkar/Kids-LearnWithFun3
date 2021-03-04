@@ -1716,8 +1716,8 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
-				EXCLUDED_ARCHS = arm64;
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
@@ -1734,7 +1734,7 @@
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
@@ -1753,7 +1753,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9C32R6P4U;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/GoogleMobileAdsSdkiOS-7.69.0",
@@ -1770,7 +1770,7 @@
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 					"$(PROJECT_DIR)/Kids-LearnWithFun3/Third\\ Party/Kidoz",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiapps360.LearnNaturalFoods;
 				PRODUCT_NAME = "Learn Natural Food";
