@@ -145,9 +145,9 @@ class CommanArray {
     
     
     //Related to Ads Production
-    static var Banner_AdUnitId = "ca-app-pub-7546454767986772/5984207231"
-    static var Interstitial_AdUnitId = "ca-app-pub-7546454767986772/8418798884"
-    static var Ad_App_ID = "ca-app-pub-7546454767986772~4750166558"
+    static var Banner_AdUnitId = "ca-app-pub-7546454767986772/7184917305"
+    static var Interstitial_AdUnitId = "ca-app-pub-7546454767986772/3245672292"
+    static var Ad_App_ID = "ca-app-pub-7546454767986772~5063340362"
 
     
 
