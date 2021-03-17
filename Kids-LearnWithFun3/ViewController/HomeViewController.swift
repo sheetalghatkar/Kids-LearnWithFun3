@@ -150,6 +150,7 @@ class HomeViewController: UIViewController {
         }
 
         print("######Ipad size:",UIScreen.main.bounds.height)
+
     }
     
     func makeRound(getImgView : UIImageView) {

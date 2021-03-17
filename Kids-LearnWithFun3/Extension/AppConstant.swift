@@ -141,7 +141,7 @@ class CommanArray {
     static var productId_Year_Non_Recurring = "com.mobiapps360.LearnNaturalFood.YearlyNonRecurring"
     static var productId_Month_Auto_Recurring = "com.mobiapps360.LearnNaturalFood.MonthlyAutoRecurring"
     static var productId_Month_Non_Recurring = "com.mobiapps360.LearnNaturalFood.MonthlyNonRecurring"
-    static var timerForAds = 12.0
+    static var timerForAds = 30.0
     
     
     //Related to Ads Production
